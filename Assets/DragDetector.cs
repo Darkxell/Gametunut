@@ -52,7 +52,7 @@ public interface DragCallable
 {
 
     /// <summary>
-    /// Event called by a DragDetector each update
+    /// Event called by a DragDetector each update per drag event. Positions are in world position.
     /// </summary>
     public abstract void OnDrag(Vector2 Position, Vector2 force, int actionID);
 

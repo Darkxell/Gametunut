@@ -31,11 +31,11 @@ public class DragDetector : MonoBehaviour
             Vector3 touchPosition = Camera.main.ScreenToWorldPoint(Input.touches[i].position);
             Vector2 culledPos = new Vector2(touchPosition.x, touchPosition.y);
             touchPosition.z = 0f;
-            if(i==0)
+            if (i == 0)
                 transform.position = touchPosition;
-            foreach(c in callbacks) -> {
-                c.OnDrag(culledPos,culledPos - positionBuffer[i], i);
-            };
+            callbacks.ForEach(
+                c => c.OnDrag(culledPos, culledPos - positionBuffer[i], i)
+                );
             positionBuffer[i] = culledPos;
         }
 
@@ -55,5 +55,5 @@ public interface DragCallable
     /// Event called by a DragDetector each update
     /// </summary>
     public abstract void OnDrag(Vector2 Position, Vector2 force, int actionID);
-    
+
 }

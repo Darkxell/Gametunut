@@ -14,15 +14,16 @@ public class IngredientsList : MonoBehaviour, DragCallable
     private readonly static float unitHeight = 0.8f;
 
     // Half horizontal size of the cull drag ui box, in unity world unit
-    float dragBoxSizeX = 2f;
+    public float dragBoxSizeX = 0.5f;
     // Half vertical size of the cull drag ui box, in unity world unit
-    float dragBoxSizeY = 0.5f;
+    public float dragBoxSizeY = 2f;
 
     void Start()
     {
         // TODO: replace this with procedural ingredients
         foreach (Transform child in transform)
             ingredients.Add(child.gameObject);
+        DragDetector.lastInstance.callbacks.Add(this);
     }
 
     void Update()
@@ -37,19 +38,26 @@ public class IngredientsList : MonoBehaviour, DragCallable
     {
         for (int i = 0; i < ingredients.Count; i++)
         {
-            ingredients[i].gameObject.transform.position = new Vector3(transform.position.x, transform.position.y - (i * unitHeight) - 2, 0);
+            ingredients[i].gameObject.transform.position = new Vector3(transform.position.x, transform.position.y - (i * unitHeight) + 1.3f + scroll, 0);
         }
     }
 
     public void OnDrag(Vector2 Position, Vector2 force, int actionID)
     {
-        bool inside = Position.x < transform.position.x + dragBoxSizeX &&
-            Position.x > transform.position.x - dragBoxSizeX &&
-            Position.y < transform.position.y + dragBoxSizeY &&
-            Position.y > transform.position.y - dragBoxSizeY;
+        bool inside = Position.x < transform.position.x + dragBoxSizeY &&
+            Position.x > transform.position.x - dragBoxSizeY &&
+            Position.y < transform.position.y + dragBoxSizeX &&
+            Position.y > transform.position.y - dragBoxSizeX;
+        Debug.Log("list debug position : " + Position + " / force : " + force + " / inside : " + inside);
         if (inside)
         {
             scroll += force.y;
         }
+    }
+
+    void OnDestroy()
+    {
+        // Unnessessary, but cleaner.
+        DragDetector.lastInstance.callbacks.Remove(this);
     }
 }

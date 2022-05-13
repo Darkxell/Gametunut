@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class SubIngredientsList : MonoBehaviour, DragCallable
 {
@@ -27,6 +28,8 @@ public class SubIngredientsList : MonoBehaviour, DragCallable
 
     private float scroll = 0f;
     private readonly static float unitHeight = 0.8f;
+
+    private int selectedID;
 
     void Start()
     {
@@ -65,6 +68,13 @@ public class SubIngredientsList : MonoBehaviour, DragCallable
         float maxscroll = (ingredients.Count - 1) * unitHeight;
         if (scroll < 0) scroll = 0;
         else if (scroll > maxscroll) scroll = maxscroll;
+        // Update header text
+        selectedID = (int)((scroll + unitHeight / 2f) / unitHeight);
+        TextMeshPro tm = HeaderTextRef?.GetComponent<TextMeshPro>();
+        if (tm != null)
+        {
+            tm.text = "Selected id : " + selectedID;
+        }
     }
 
     /// <summary>

@@ -23,6 +23,9 @@ public class IngredientsList : MonoBehaviour, DragCallable
     // Half vertical size of the cull drag ui box, in unity world unit
     private float dragBoxSizeY = 2f;
 
+    private static float snapCooldown = 0.10f;
+    private float snapCooldownCurrent = 0f;
+
     void Start()
     {
         // TODO: replace this with procedural ingredients
@@ -34,6 +37,32 @@ public class IngredientsList : MonoBehaviour, DragCallable
     void Update()
     {
         RebaseElements();
+        snapCooldownCurrent -= Time.deltaTime;
+    }
+
+    void FixedUpdate()
+    {
+        float autoscrollspeed = 0.05f;
+        // If no scroll for a while, snap scroll to nearest element index.
+        if (snapCooldownCurrent <= 0)
+        {
+            float scrolloffset = scroll % unitHeight;
+            if (Mathf.Abs(scrolloffset) < autoscrollspeed * 2)
+            {
+                if (scrolloffset <= unitHeight / 2)
+                    if (Mathf.Abs(scrolloffset) > 0.001f) scroll -= scrolloffset;
+                    else if (Mathf.Abs(scrolloffset) < unitHeight - 0.001f) scroll += scrolloffset;
+            }
+            else
+            {
+                scroll += (scrolloffset >= unitHeight / 2) ? autoscrollspeed : -autoscrollspeed;
+            }
+
+        }
+        // If outside array range, force go back in it.
+        float maxscroll = (categories.Count - 1) * unitHeight;
+        if (scroll < 0) scroll = 0;
+        else if (scroll > maxscroll) scroll = maxscroll;
     }
 
     /// <summary>
@@ -55,6 +84,7 @@ public class IngredientsList : MonoBehaviour, DragCallable
             Position.y > transform.position.y - dragBoxSizeY;
         if (inside)
         {
+            snapCooldownCurrent = snapCooldown;
             scroll += force.y;
         }
     }

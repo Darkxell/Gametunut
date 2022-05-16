@@ -11,9 +11,16 @@ public class IngredientsList : MonoBehaviour, DragCallable
     public List<GameObject> categories = new List<GameObject>(25);
 
     /// <summary>
+    /// Category item prefab for display and mechanical purposes
+    /// </summary>
+    [SerializeField]
+    private GameObject CategoryPrefab;
+
+    /// <summary>
     /// Sub ingredients list, aka the wheel containing the drag/droppable elements on the right
     /// </summary>
-    public GameObject sublist;
+    [SerializeField]
+    private GameObject sublist;
 
     private float scroll = 0f;
     private readonly static float unitHeight = 0.8f;

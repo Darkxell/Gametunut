@@ -35,10 +35,20 @@ public class IngredientsList : MonoBehaviour, DragCallable
 
     void Start()
     {
-        // TODO: replace this with procedural ingredients
+        /*
+        // Legacy debug code to create debug child elements
         foreach (Transform child in transform)
             categories.Add(child.gameObject);
         DragDetector.lastInstance.callbacks.Add(this);
+        */
+        List<string> keys = CategoryManager.getKeySet();
+        for (int i = 0; i < keys.Count; i++)
+        {
+            GameObject localechild = Instantiate(CategoryPrefab, transform);
+            CategoryBehavior behavior = localechild.GetComponent<CategoryBehavior>();
+            behavior.data = CategoryManager.getDataFor(keys[i]);
+            // behavior.gameObject.GetComponent<SpriteRenderer>()?.sprite = 
+        }
     }
 
     void Update()

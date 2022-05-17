@@ -15,7 +15,7 @@ public class CategoryBehavior : MonoBehaviour
     /// Note that this instance may NOT be shared with the global dictionnary if it were to change during runtime, 
     /// but will share pointers for data linked after dictionnary deserialisation.
     /// </summary>
-    CategoryData data;
+    public CategoryData data;
 
     private void Start()
     {
@@ -58,18 +58,27 @@ public static class CategoryManager
     public static Boolean isSetup = false;
 
     private static Dictionary<String, CategoryData> content = new Dictionary<string, CategoryData>(1);
+    private static List<String> Categories = new List<String>(1);
 
     public static void Setup()
     {
         isSetup = false;
         content = new Dictionary<string, CategoryData>(100);
+        Categories = new List<String>(100);
         var jsonTextFile = Resources.Load<TextAsset>("Data/categories"); // no .json extension btw
+        if (!jsonTextFile) {
+            Debug.Log("Unable to setup info from Json file.");
+            return;
+        }
         using (var streamReader = new StreamReader(jsonTextFile.text, Encoding.UTF8))
         {
             String textjson = streamReader.ReadToEnd();
             CategoryData[] data = JsonHelper.FromJson<CategoryData>(textjson);
             for (int i = 0; i < data.Length; i++)
+            {
                 content.TryAdd(data[i].name, data[i]);
+                Categories.Add(data[i].name);
+            }
         }
         isSetup = true;
     }
@@ -87,6 +96,12 @@ public static class CategoryManager
         CategoryData toreturn = null;
         content.TryGetValue(categoryName, out toreturn);
         return toreturn;
+    }
+
+    public static List<String> getKeySet() {
+        if (!isSetup)
+            Setup();
+        return Categories;
     }
 
 }

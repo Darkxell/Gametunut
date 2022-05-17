@@ -35,11 +35,11 @@ public class IngredientsList : MonoBehaviour, DragCallable
 
     void Start()
     {
+        DragDetector.lastInstance.callbacks.Add(this);
         /*
         // Legacy debug code to create debug child elements
         foreach (Transform child in transform)
             categories.Add(child.gameObject);
-        DragDetector.lastInstance.callbacks.Add(this);
         */
         List<string> keys = CategoryManager.getKeySet();
         for (int i = 0; i < keys.Count; i++)
@@ -47,6 +47,7 @@ public class IngredientsList : MonoBehaviour, DragCallable
             GameObject localechild = Instantiate(CategoryPrefab, transform);
             CategoryBehavior behavior = localechild.GetComponent<CategoryBehavior>();
             behavior.data = CategoryManager.getDataFor(keys[i]);
+            categories.Add(localechild);
             // behavior.gameObject.GetComponent<SpriteRenderer>()?.sprite = 
         }
     }

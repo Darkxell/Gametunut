@@ -1,4 +1,4 @@
-[
+{"Items":[
 	{ 
 		"name":"Categorie1", 
 		"sprite":"blueberries",
@@ -16,4 +16,4 @@
 		"sprite":"tomatoes",
 		"ingredients":["blueberries","bread","salad","tomatoes"]
 	}
-]
+]}

@@ -1,4 +1,4 @@
-[
+{"Items":[
 	{ 
 		"name":"blueberries", 
 		"spriteMenu":"blueberries",
@@ -63,4 +63,4 @@
 		"vitamineB9": 11.0,
 		"vitamineB12": 12.0
 	}
-]
+]}

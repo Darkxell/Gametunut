@@ -17,11 +17,9 @@ public class CategoryBehavior : MonoBehaviour
     /// </summary>
     public CategoryData data;
 
-    private void Start()
-    {
-
+    public override string ToString() {
+        return "Category : " + data.name + ", containing " + data.ingredients.Length + " ingredients.";
     }
-
 
 }
 
@@ -66,19 +64,18 @@ public static class CategoryManager
         content = new Dictionary<string, CategoryData>(100);
         Categories = new List<String>(100);
         var jsonTextFile = Resources.Load<TextAsset>("Data/categories"); // no .json extension btw
-        if (!jsonTextFile) {
+        if (!jsonTextFile)
+        {
             Debug.Log("Unable to setup info from Json file.");
             return;
         }
-        using (var streamReader = new StreamReader(jsonTextFile.text, Encoding.UTF8))
+        Debug.Log("Reading Json information from file : " + jsonTextFile.name);
+        CategoryData[] data = JsonHelper.FromJson<CategoryData>(jsonTextFile.text);
+        Debug.Log("Found Json information for " + data.Length + " categories!");
+        for (int i = 0; i < data.Length; i++)
         {
-            String textjson = streamReader.ReadToEnd();
-            CategoryData[] data = JsonHelper.FromJson<CategoryData>(textjson);
-            for (int i = 0; i < data.Length; i++)
-            {
-                content.TryAdd(data[i].name, data[i]);
-                Categories.Add(data[i].name);
-            }
+            content.TryAdd(data[i].name, data[i]);
+            Categories.Add(data[i].name);
         }
         isSetup = true;
     }
@@ -98,7 +95,8 @@ public static class CategoryManager
         return toreturn;
     }
 
-    public static List<String> getKeySet() {
+    public static List<String> getKeySet()
+    {
         if (!isSetup)
             Setup();
         return Categories;

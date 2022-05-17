@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class IngredientsList : MonoBehaviour, DragCallable
+public class CategoriesList : MonoBehaviour, DragCallable
 {
     /// <summary>
     /// List of ingredients categories prefabs in the scroll list
@@ -15,6 +15,12 @@ public class IngredientsList : MonoBehaviour, DragCallable
     /// </summary>
     [SerializeField]
     private GameObject CategoryPrefab;
+
+    /// <summary>
+    /// Ingredient item prefab for display and mechanical purposes
+    /// </summary>
+    [SerializeField]
+    private GameObject IngredientPrefab;
 
     /// <summary>
     /// Sub ingredients list, aka the wheel containing the drag/droppable elements on the right
@@ -33,14 +39,15 @@ public class IngredientsList : MonoBehaviour, DragCallable
     private static float snapCooldown = 0.10f;
     private float snapCooldownCurrent = 0f;
 
+    /// <summary>
+    /// Last index used to set child ingredients, to not set them multiple times.
+    /// </summary>
+    private int lastSubSet = -1;
+    private int selectedID;
+
     void Start()
     {
         DragDetector.lastInstance.callbacks.Add(this);
-        /*
-        // Legacy debug code to create debug child elements
-        foreach (Transform child in transform)
-            categories.Add(child.gameObject);
-        */
         List<string> keys = CategoryManager.getKeySet();
         for (int i = 0; i < keys.Count; i++)
         {
@@ -48,7 +55,7 @@ public class IngredientsList : MonoBehaviour, DragCallable
             CategoryBehavior behavior = localechild.GetComponent<CategoryBehavior>();
             behavior.data = CategoryManager.getDataFor(keys[i]);
             categories.Add(localechild);
-            // behavior.gameObject.GetComponent<SpriteRenderer>()?.sprite = 
+            behavior.gameObject.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("composer/ingredients/" + behavior.data.sprite);
         }
     }
 
@@ -60,6 +67,7 @@ public class IngredientsList : MonoBehaviour, DragCallable
 
     void FixedUpdate()
     {
+        selectedID = (int)((scroll + unitHeight / 2f) / unitHeight);
         float autoscrollspeed = 0.05f;
         // If no scroll for a while, snap scroll to nearest element index.
         if (snapCooldownCurrent <= 0)
@@ -81,6 +89,31 @@ public class IngredientsList : MonoBehaviour, DragCallable
         float maxscroll = (categories.Count - 1) * unitHeight;
         if (scroll < 0) scroll = 0;
         else if (scroll > maxscroll) scroll = maxscroll;
+        // Sets the sub ingredients list to the right content, if needed.
+        // But does not do it while scrolling.
+        if (snapCooldownCurrent <= 0 && selectedID != lastSubSet)
+        {
+            lastSubSet = selectedID;
+            SubIngredientsList slist = sublist.GetComponent<SubIngredientsList>();
+            if (slist == null)
+            {
+                Debug.LogError("Sub ingredient list reference is broken, or does not have a behavior element. Cannot set ingredients to display.");
+            }
+            else
+            {
+                Debug.Log("Loading ingredients from new selected category");
+                slist.ingredients = new List<GameObject>(25);
+                CategoryData currentSelected = categories[selectedID].GetComponent<CategoryBehavior>().data;
+                for (int i = 0; i < currentSelected.ingredients.Length; i++)
+                {
+                    GameObject localechild = Instantiate(IngredientPrefab, sublist.transform);
+                    IngredientBehavior behavior = localechild.GetComponent<IngredientBehavior>();
+                    behavior.data = IngredientsManager.getDataFor(currentSelected.ingredients[i]);
+                    sublist.GetComponent<SubIngredientsList>().ingredients.Add(localechild);
+                    behavior.gameObject.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("composer/ingredients/" + behavior.data.spriteMenu);
+                }
+            }
+        }
     }
 
     /// <summary>

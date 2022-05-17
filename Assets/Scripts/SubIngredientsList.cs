@@ -31,14 +31,6 @@ public class SubIngredientsList : MonoBehaviour, DragCallable
 
     private int selectedID;
 
-    void Start()
-    {
-        // TODO: replace this with procedural ingredients
-        foreach (Transform child in transform)
-            ingredients.Add(child.gameObject);
-        DragDetector.lastInstance.callbacks.Add(this);
-    }
-
     void Update()
     {
         RebaseElements();

@@ -17,8 +17,9 @@ public class CategoryBehavior : MonoBehaviour
     /// </summary>
     public CategoryData data;
 
-    public override string ToString() {
-        return "Category : " + data.name + ", containing " + data.ingredients.Length + " ingredients.";
+    public override string ToString() 
+    {
+        return "Category : " + data.name + ", containing " + data.ingredients.Length + " ingredients";
     }
 
 }

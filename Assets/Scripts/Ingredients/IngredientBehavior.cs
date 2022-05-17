@@ -15,13 +15,12 @@ public class IngredientBehavior : MonoBehaviour
     /// Note that this instance may NOT be shared with the global dictionnary if it were to change during runtime, 
     /// but will share pointers for data linked after dictionnary deserialisation.
     /// </summary>
-    IngredientData data;
+    public IngredientData data;
 
-    private void Start()
+    public override string ToString()
     {
-       
+        return "Ingredient : " + data.name + " (" + data.energie + " Kcal)";
     }
-
 
 }
 
@@ -73,18 +72,26 @@ public static class IngredientsManager
     public static Boolean isSetup = false;
 
     private static Dictionary<String, IngredientData> content = new Dictionary<string, IngredientData>(1);
+    private static List<String> Ingredients = new List<String>(1);
 
     public static void Setup()
     {
         isSetup = false;
         content = new Dictionary<string, IngredientData>(100);
+        Ingredients = new List<String>(100);
         var jsonTextFile = Resources.Load<TextAsset>("Data/ingredients"); // no .json extension btw
-        using (var streamReader = new StreamReader(jsonTextFile.text, Encoding.UTF8))
+        if (!jsonTextFile)
         {
-            String textjson = streamReader.ReadToEnd();
-            IngredientData[] data = JsonHelper.FromJson<IngredientData>(textjson);
-            for (int i = 0; i < data.Length; i++)
-                content.TryAdd(data[i].name, data[i]);
+            Debug.Log("Unable to setup info from Json file.");
+            return;
+        }
+        Debug.Log("Reading Json information from file : " + jsonTextFile.name);
+        IngredientData[] data = JsonHelper.FromJson<IngredientData>(jsonTextFile.text);
+        Debug.Log("Found Json information for " + data.Length + " ingredients (global cached library)!");
+        for (int i = 0; i < data.Length; i++)
+        {
+            content.TryAdd(data[i].name, data[i]);
+            Ingredients.Add(data[i].name);
         }
         isSetup = true;
     }
@@ -102,6 +109,13 @@ public static class IngredientsManager
         IngredientData toreturn = null;
         content.TryGetValue(ingredientName, out toreturn);
         return toreturn;
+    }
+
+    public static List<String> getKeySet()
+    {
+        if (!isSetup)
+            Setup();
+        return Ingredients;
     }
 
 }

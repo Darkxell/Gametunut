@@ -15,7 +15,7 @@
 		"vitamineB9": 11.0,
 		"vitamineB12": 12.0
 	},
-	{ 
+	{
 		"name":"bread", 
 		"spriteMenu":"bread",
 		"spriteInGame":"bread",
@@ -31,7 +31,7 @@
 		"vitamineB9": 11.0,
 		"vitamineB12": 12.0
 	},
-	{ 
+	{
 		"name":"salad", 
 		"spriteMenu":"salad",
 		"spriteInGame":"salad",

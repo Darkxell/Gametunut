@@ -1,15 +1,15 @@
 {"Items":[
 	{ 
 		"name":"Fruits", 
-		"sprite":"blueberries",
+		"sprite":"fruits",
 		"ingredients":["blueberries","salad","tomatoes","melon","apple"]
 	},{
 		"name":"Feculents",
-		"sprite":"bread",
+		"sprite":"feculents",
 		"ingredients":["pasta","bread","rice"]
 	},{
 		"name":"PLaitiers",
-		"sprite":"salad",
+		"sprite":"plaitiers",
 		"ingredients":["milk","yogurt","cheese"]
 	}
 ]}

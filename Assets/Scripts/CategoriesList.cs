@@ -55,7 +55,7 @@ public class CategoriesList : MonoBehaviour, DragCallable
             CategoryBehavior behavior = localechild.GetComponent<CategoryBehavior>();
             behavior.data = CategoryManager.getDataFor(keys[i]);
             categories.Add(localechild);
-            behavior.gameObject.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("composer/ingredients/" + behavior.data.sprite);
+            behavior.gameObject.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("composer/categories/" + behavior.data.sprite);
         }
     }
 

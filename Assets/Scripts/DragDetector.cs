@@ -31,7 +31,6 @@ public class DragDetector : MonoBehaviour
             Vector2 culledPos = new Vector2(touchPosition.x, touchPosition.y);
             touchPosition.z = 0f;
             if (i == 0) {
-                Debug.Log("Gizmo updated position (world): " + touchPosition);
                 transform.position = touchPosition;
             }
             for (int j = 0; j < callbacks.Count; j++)

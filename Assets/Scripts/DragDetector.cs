@@ -18,6 +18,9 @@ public class DragDetector : MonoBehaviour
 
     private Vector2[] positionBuffer = new Vector2[10];
 
+    private static float touchCooldown = 0.1f;
+    public float touchCooldownCurrent = touchCooldown;
+
     private void Awake()
     {
         lastInstance = this;
@@ -30,7 +33,8 @@ public class DragDetector : MonoBehaviour
             Vector3 touchPosition = Camera.main.ScreenToWorldPoint(Input.touches[i].position);
             Vector2 culledPos = new Vector2(touchPosition.x, touchPosition.y);
             touchPosition.z = 0f;
-            if (i == 0) {
+            if (i == 0)
+            {
                 transform.position = touchPosition;
             }
             for (int j = 0; j < callbacks.Count; j++)
@@ -40,7 +44,10 @@ public class DragDetector : MonoBehaviour
             }
             positionBuffer[i] = culledPos;
         }
-
+        if (Input.touchCount > 0)
+            touchCooldownCurrent = touchCooldown;
+        else
+            touchCooldownCurrent -= Time.deltaTime;
     }
 
 }

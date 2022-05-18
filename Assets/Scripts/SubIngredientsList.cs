@@ -31,6 +31,11 @@ public class SubIngredientsList : MonoBehaviour, DragCallable
 
     private int selectedID;
 
+    void Start()
+    {
+        DragDetector.lastInstance.callbacks.Add(this);
+    }
+
     void Update()
     {
         RebaseElements();

@@ -14,6 +14,11 @@ public class SubIngredientsList : MonoBehaviour, DragCallable
     public List<GameObject> ingredients = new List<GameObject>(25);
 
     /// <summary>
+    /// Prefab for plate content
+    /// </summary>
+    public GameObject PlateContentPrefab = null;
+
+    /// <summary>
     /// Reference to the header text to display current ingredients and debug info
     /// </summary>
     public GameObject HeaderTextRef = null;
@@ -25,6 +30,12 @@ public class SubIngredientsList : MonoBehaviour, DragCallable
 
     private static float snapCooldown = 0.10f;
     private float snapCooldownCurrent = 0f;
+
+    private static float createRightCooldown = 0.20f;
+    private float createCooldownCurrent = 0f;
+    private float createXbuffer = 0f;
+    private static float spawnCooldown = 1f;
+    private float spawnCooldownCurrent = 0f;
 
     private float scroll = 0f;
     private readonly static float unitHeight = 0.8f;
@@ -40,6 +51,12 @@ public class SubIngredientsList : MonoBehaviour, DragCallable
     {
         RebaseElements();
         snapCooldownCurrent -= Time.deltaTime;
+        createCooldownCurrent -= Time.deltaTime;
+        if (createCooldownCurrent < 0)
+            createXbuffer = 0;
+        spawnCooldownCurrent -= Time.deltaTime;
+
+        Debug.Log("Current state : CreateX " + createXbuffer + " / spawnCooldownCurrent " + spawnCooldownCurrent + " / createCooldownCurrent " + createCooldownCurrent);
     }
 
     void FixedUpdate()
@@ -68,9 +85,9 @@ public class SubIngredientsList : MonoBehaviour, DragCallable
         // Update header text
         selectedID = (int)((scroll + unitHeight / 2f) / unitHeight);
         TextMeshPro tm = HeaderTextRef?.GetComponent<TextMeshPro>();
-        if (tm != null)
+        if (tm != null && selectedID >= 0 && selectedID < ingredients.Count)
         {
-            tm.text = "Selected id : " + selectedID;
+            tm.text = ingredients[selectedID].GetComponent<IngredientBehavior>().data.name;
         }
     }
 
@@ -89,6 +106,7 @@ public class SubIngredientsList : MonoBehaviour, DragCallable
 
     public void OnDrag(Vector2 Position, Vector2 force, int actionID)
     {
+        // Vertical list scroll logic
         bool inside = Position.x < transform.position.x + dragBoxSizeX &&
             Position.x > transform.position.x - dragBoxSizeX &&
             Position.y < transform.position.y + dragBoxSizeY &&
@@ -97,6 +115,25 @@ public class SubIngredientsList : MonoBehaviour, DragCallable
         {
             snapCooldownCurrent = snapCooldown;
             scroll += force.y;
+        }
+        // Ingredient PlateContent create logic
+        bool createinside = Position.x < transform.position.x + dragBoxSizeX &&
+            Position.x > transform.position.x - dragBoxSizeX &&
+            Position.y < transform.position.y + dragBoxSizeX &&
+            Position.y > transform.position.y - dragBoxSizeX;
+        if (createinside && spawnCooldownCurrent <= 0)
+        {
+            createCooldownCurrent = createRightCooldown;
+            createXbuffer += force.x;
+        }
+        selectedID = (int)((scroll + unitHeight / 2f) / unitHeight);
+        if (createXbuffer >= 0.35f && selectedID >= 0 && selectedID < ingredients.Count)
+        {
+            spawnCooldownCurrent = spawnCooldown;
+            createXbuffer = 0;
+            GameObject pcontent = Instantiate(PlateContentPrefab);
+            pcontent.GetComponent<PlateContent>().isSelected = true;
+            pcontent.GetComponent<PlateContent>().data = ingredients[selectedID].GetComponent<IngredientBehavior>().data;
         }
     }
 

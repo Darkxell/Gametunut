@@ -10,16 +10,37 @@ public class Plate : MonoBehaviour
 {
 
     /// <summary>
+    /// Last created (started) instance of a plate. May be null or point to a deleted GameObject
+    /// </summary>
+    public static GameObject lastInstance = null;
+
+    /// <summary>
     /// Child content of this plate in gameobjects form
     /// </summary>
-    public List<GameObject> content = new List<GameObject>(10);
+    private List<GameObject> content = new List<GameObject>(10);
 
-    private void Update()
+    /// <summary>
+    /// Serializable mirror of the content in this plate
+    /// </summary>
+    private PlateInfo contentinfo = new PlateInfo();
+
+    void Start()
     {
-        
+        lastInstance = gameObject;
     }
 
-    void instanciateFromData(PlateInfo data) { 
+
+    public void addContent(PlateContent content)
+    {
+        // TODO
+    }
+    public void addContent(PlateItem cotnent)
+    {
+        // TODO
+    }
+
+    void instanciateFromData(PlateInfo data) 
+    { 
         // TODO: actually make this happen
     }
 

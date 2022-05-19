@@ -12,9 +12,14 @@ public class PlateContent : MonoBehaviour
     public bool isSelected = false;
 
     /// <summary>
-    /// Reference to the plate object, containing all ingredients
+    /// Data about the ingredient. May be null, with a 0 info ingredient and a default texture
     /// </summary>
-    public GameObject plateRef;
+    public IngredientData data = null;
+
+    /// <summary>
+    /// True once this component has set its own price according to its data (if not null)
+    /// </summary>
+    private bool spriteSet = false;
 
     void Start()
     {
@@ -24,10 +29,17 @@ public class PlateContent : MonoBehaviour
 
     void Update()
     {
-        if (isSelected && DragDetector.lastInstance != null) {
+        if (isSelected && DragDetector.lastInstance != null)
+        {
             transform.position = DragDetector.lastInstance.transform.position;
             if (DragDetector.lastInstance.touchCooldownCurrent < 0)
                 drop();
+        }
+
+        if (!spriteSet && data != null)
+        {
+            spriteSet = true;
+            //TODO: set sprite here
         }
     }
 
@@ -37,6 +49,15 @@ public class PlateContent : MonoBehaviour
     void drop()
     {
         isSelected = false;
-        // check if on plate, add to plate
+        if (Plate.lastInstance != null && Plate.lastInstance.activeSelf)
+        {
+            // check if on plate, add to plate
+
+            Plate.lastInstance.GetComponent<Plate>().addContent(this);
+
+
+
+
+        }
     }
 }

@@ -121,13 +121,13 @@ public class SubIngredientsList : MonoBehaviour, DragCallable
             Position.x > transform.position.x - dragBoxSizeX &&
             Position.y < transform.position.y + dragBoxSizeX &&
             Position.y > transform.position.y - dragBoxSizeX;
-        if (createinside && spawnCooldownCurrent <= 0)
+        if (createinside && spawnCooldownCurrent <= 0 && Mathf.Abs(force.x) >= Mathf.Abs(force.y))
         {
             createCooldownCurrent = createRightCooldown;
             createXbuffer += force.x;
         }
         selectedID = (int)((scroll + unitHeight / 2f) / unitHeight);
-        if (createXbuffer >= 0.35f && selectedID >= 0 && selectedID < ingredients.Count)
+        if (createXbuffer >= 0.25f && selectedID >= 0 && selectedID < ingredients.Count)
         {
             spawnCooldownCurrent = spawnCooldown;
             createXbuffer = 0;

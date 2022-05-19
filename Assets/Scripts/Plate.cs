@@ -29,19 +29,22 @@ public class Plate : MonoBehaviour
         lastInstance = gameObject;
     }
 
-
     public void addContent(PlateContent content)
     {
-        // TODO
+        GameObject c = content.gameObject;
+        c.transform.parent = this.transform;
+        contentinfo.content.Add(new PlateItem(c.transform.position.x, c.transform.position.y, content.data.name));
     }
-    public void addContent(PlateItem cotnent)
+    public void addContent(PlateItem content)
     {
-        // TODO
+        contentinfo.content.Add(content);
+        // TODO: add gameobjects at the right place here
     }
 
-    void instanciateFromData(PlateInfo data) 
-    { 
-        // TODO: actually make this happen
+    void instanciateFromData(PlateInfo data)
+    {
+        for (int i = 0; i < data.content.Count; i++)
+            addContent(data.content[i]);    
     }
 
 }
@@ -63,4 +66,11 @@ public class PlateItem
 {
     public float x, y;
     public string ingredientID;
+
+    public PlateItem(float x, float y, string ingredientID)
+    {
+        this.x = x;
+        this.y = y;
+        this.ingredientID = ingredientID;
+    }
 }

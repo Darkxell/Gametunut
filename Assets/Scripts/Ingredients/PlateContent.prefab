@@ -46,7 +46,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isSelected: 0
-  plateRef: {fileID: 0}
+  data:
+    name: 
+    spriteMenu: 
+    spriteInGame: 
+    energie: 0
+    proteines: 0
+    lipides: 0
+    glucides: 0
+    fibres: 0
+    fer: 0
+    calcium: 0
+    vitamineC: 0
+    vitamineA: 0
+    vitamineB9: 0
+    vitamineB12: 0
 --- !u!212 &6193793607050655290
 SpriteRenderer:
   m_ObjectHideFlags: 0

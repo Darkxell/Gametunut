@@ -21,12 +21,6 @@ public class PlateContent : MonoBehaviour
     /// </summary>
     private bool spriteSet = false;
 
-    void Start()
-    {
-        isSelected = true;
-
-    }
-
     void Update()
     {
         if (isSelected && DragDetector.lastInstance != null)
@@ -39,7 +33,7 @@ public class PlateContent : MonoBehaviour
         if (!spriteSet && data != null)
         {
             spriteSet = true;
-            //TODO: set sprite here
+            gameObject.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("composer/ingredients/" + data.spriteInGame);
         }
     }
 

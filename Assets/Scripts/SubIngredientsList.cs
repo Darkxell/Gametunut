@@ -55,8 +55,7 @@ public class SubIngredientsList : MonoBehaviour, DragCallable
         if (createCooldownCurrent < 0)
             createXbuffer = 0;
         spawnCooldownCurrent -= Time.deltaTime;
-
-        Debug.Log("Current state : CreateX " + createXbuffer + " / spawnCooldownCurrent " + spawnCooldownCurrent + " / createCooldownCurrent " + createCooldownCurrent);
+        //Debug.Log("Current state : CreateX " + createXbuffer + " / spawnCooldownCurrent " + spawnCooldownCurrent + " / createCooldownCurrent " + createCooldownCurrent);
     }
 
     void FixedUpdate()

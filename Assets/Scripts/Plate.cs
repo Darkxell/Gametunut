@@ -10,6 +10,11 @@ public class Plate : MonoBehaviour
 {
 
     /// <summary>
+    /// Prefab for plate content
+    /// </summary>
+    public GameObject PlateContentPrefab = null;
+
+    /// <summary>
     /// Last created (started) instance of a plate. May be null or point to a deleted GameObject
     /// </summary>
     public static GameObject lastInstance = null;
@@ -38,13 +43,15 @@ public class Plate : MonoBehaviour
     public void addContent(PlateItem content)
     {
         contentinfo.content.Add(content);
-        // TODO: add gameobjects at the right place here
+        GameObject pcontent = Instantiate(PlateContentPrefab, transform);
+        pcontent.transform.position = new Vector3(content.x, content.y, pcontent.transform.position.z);
+        pcontent.GetComponent<PlateContent>().data = IngredientsManager.getDataFor(content.ingredientID);
     }
 
     void instanciateFromData(PlateInfo data)
     {
         for (int i = 0; i < data.content.Count; i++)
-            addContent(data.content[i]);    
+            addContent(data.content[i]);
     }
 
 }

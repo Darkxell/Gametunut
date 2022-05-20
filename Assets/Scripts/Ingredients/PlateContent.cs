@@ -46,12 +46,14 @@ public class PlateContent : MonoBehaviour
         if (Plate.lastInstance != null && Plate.lastInstance.activeSelf)
         {
             // check if on plate, add to plate
-
-            Plate.lastInstance.GetComponent<Plate>().addContent(this);
-
-
-
-
+            bool inside = transform.position.x >= Plate.lastInstance.transform.position.x - Plate.lastInstance.GetComponent<Plate>().sizeX
+                && transform.position.x <= Plate.lastInstance.transform.position.x + Plate.lastInstance.GetComponent<Plate>().sizeX
+                && transform.position.y >= Plate.lastInstance.transform.position.y - Plate.lastInstance.GetComponent<Plate>().sizeY
+                && transform.position.y <= Plate.lastInstance.transform.position.y + Plate.lastInstance.GetComponent<Plate>().sizeY;
+            if (inside)
+                Plate.lastInstance.GetComponent<Plate>().addContent(this);
+            else
+                Destroy(gameObject);
         }
     }
 }

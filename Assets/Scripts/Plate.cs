@@ -4,10 +4,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
-/// Plate behavior, containing
+/// Plate behavior, containing ingredients in a specific disposition
 /// </summary>
 public class Plate : MonoBehaviour
 {
+
+    /// <summary>
+    /// Half size of the plate, around the middle pivot point.
+    /// </summary>
+    public float sizeX, sizeY;
 
     /// <summary>
     /// Prefab for plate content

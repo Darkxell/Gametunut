@@ -1720,9 +1720,9 @@ GameObject:
   - component: {fileID: 716118604}
   - component: {fileID: 716118605}
   - component: {fileID: 716118606}
-  - component: {fileID: 716118607}
   - component: {fileID: 716118609}
   - component: {fileID: 716118608}
+  - component: {fileID: 716118607}
   m_Layer: 5
   m_Name: Footer
   m_TagString: Untagged
@@ -1821,7 +1821,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentView: 0
-  maskingSelector: {fileID: 0}
+  maskingSelector: {fileID: 65963333}
   Button_Menu: {fileID: 1742340223}
   Button_Profil: {fileID: 506412094}
   Button_Compose: {fileID: 1849127153}

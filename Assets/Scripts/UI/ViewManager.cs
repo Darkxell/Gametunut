@@ -23,6 +23,8 @@ public class ViewManager : MonoBehaviour
     /// </summary>
     public GameObject Button_Menu, Button_Profil, Button_Compose;
 
+    private float currentXanimator = 0, xTargetDefault = -200, xTargetCurrent = -200;
+
     /// <returns>A gameobject of the footer button for that page, if available.</returns>
     public GameObject IDtoButtonOject(GameView id)
     {
@@ -44,9 +46,19 @@ public class ViewManager : MonoBehaviour
         Instance = this;
     }
 
-    public void Update()
+    public void FixedUpdate()
     {
-
+        maskingSelector.position = new Vector3(currentXanimator, maskingSelector.position.y, 0);
+        float epsilon = 1f;
+        if (currentXanimator > xTargetCurrent + epsilon || currentXanimator < xTargetCurrent - epsilon)
+        {
+            float difference = (xTargetCurrent - currentXanimator) / 4f;
+            currentXanimator += difference;
+        }
+        else
+        {
+            currentXanimator = xTargetCurrent;
+        }
 
     }
 
@@ -58,10 +70,7 @@ public class ViewManager : MonoBehaviour
     {
         Debug.Log("Changing view to : " + target);
         GameObject button = IDtoButtonOject(target);
-        if (button && button.activeInHierarchy) {
-            Debug.Log("Clicked button position is : " + button.transform.position);
-        }
-
+        xTargetCurrent = (button && button.activeInHierarchy) ? button.transform.position.x : xTargetDefault;
     }
 
     public void OnViewChange(int target)

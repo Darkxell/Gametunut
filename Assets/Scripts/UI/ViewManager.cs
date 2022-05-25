@@ -21,7 +21,13 @@ public class ViewManager : MonoBehaviour
     /// <summary>
     /// Reference to the UI buttons, even when hidden
     /// </summary>
-    public GameObject Button_Menu, Button_Profil, Button_Compose;
+    public GameObject Button_Menu, Button_Profil, Button_Compose, Button_Info;
+
+    /// <summary>
+    /// Reference to the red ball object
+    /// </summary>
+    public GameObject BallReference;
+    private float BallGrowthPerSec = 3f, BalllMaxSize = 1f, BallSize = 0f;
 
     private float currentXanimator = 0, xTargetDefault = -200, xTargetCurrent = -200;
 
@@ -36,6 +42,8 @@ public class ViewManager : MonoBehaviour
                 return Button_Profil;
             case GameView.Compose:
                 return Button_Compose;
+            case GameView.Info:
+                return Button_Info;
             default:
                 return null;
         }
@@ -52,7 +60,7 @@ public class ViewManager : MonoBehaviour
         float epsilon = 1f;
         if (currentXanimator > xTargetCurrent + epsilon || currentXanimator < xTargetCurrent - epsilon)
         {
-            float difference = (xTargetCurrent - currentXanimator) / 4f;
+            float difference = (xTargetCurrent - currentXanimator) / 3f;
             currentXanimator += difference;
         }
         else
@@ -60,6 +68,10 @@ public class ViewManager : MonoBehaviour
             currentXanimator = xTargetCurrent;
         }
 
+        BallSize += Time.fixedDeltaTime * BallGrowthPerSec;
+        if (BallSize >= BalllMaxSize)
+            BallSize = BalllMaxSize;
+        BallReference.transform.localScale = new Vector3(BallSize, BallSize, BallSize);
     }
 
     /// <summary>
@@ -68,6 +80,8 @@ public class ViewManager : MonoBehaviour
     /// </summary>
     public void OnViewChange(GameView target)
     {
+        BallReference.transform.localScale = Vector3.zero;
+        BallSize = 0f;
         Debug.Log("Changing view to : " + target);
         GameObject button = IDtoButtonOject(target);
         xTargetCurrent = (button && button.activeInHierarchy) ? button.transform.position.x : xTargetDefault;
@@ -86,5 +100,5 @@ public class ViewManager : MonoBehaviour
 /// </summary>
 public enum GameView
 {
-    Menu = 0, Profil = 1, Compose = 2, Credits = 10
+    Menu = 0, Profil = 1, Compose = 2, Info = 3, Credits = 10
 }

@@ -100,5 +100,5 @@ public class ViewManager : MonoBehaviour
 /// </summary>
 public enum GameView
 {
-    Menu = 0, Profil = 1, Compose = 2, Info = 3, Credits = 10
+    Menu = 0, Profil = 1, Compose = 2, Info = 3, Credits = 10, Undefined = 99
 }

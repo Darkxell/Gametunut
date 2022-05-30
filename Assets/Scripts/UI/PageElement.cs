@@ -8,10 +8,18 @@ using UnityEngine;
 /// </summary>
 public class PageElement : MonoBehaviour
 {
-    void FixedUpdate()
+    /// <summary>
+    /// Singleton like list of all page elements for quick iterating
+    /// </summary>
+    public static List<PageElement> elements = new List<PageElement>(20);
+
+    /// <summary>
+    /// Type of this Element, will only be active when the type here matches 
+    /// </summary>
+    public int GameViewType;
+
+    private void Awake()
     {
-        if (ViewManager.Instance) { 
-            
-        }
+        elements.Add(this);
     }
 }

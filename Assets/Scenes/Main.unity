@@ -1961,7 +1961,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_AdditionalShaderChannelsFlag: 1
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
@@ -2298,7 +2298,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_AdditionalShaderChannelsFlag: 1
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
@@ -4830,7 +4830,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 956491576}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.361262
+  m_Size: 0.76225907
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:

@@ -22,4 +22,9 @@ public class PageElement : MonoBehaviour
     {
         elements.Add(this);
     }
+
+    private void Start()
+    {
+        gameObject.SetActive(false);
+    }
 }

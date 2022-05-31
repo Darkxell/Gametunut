@@ -1,5 +1,5 @@
 {
-	"categories":["Help caterogy 1","Help caterogy 3","Help caterogy 3","Help caterogy 4"],
+	"categories":["Help caterogy 1","Help caterogy 2","Help caterogy 3","Help caterogy 4"],
 	"content":[
 		{"name":"About datapoint 1-01", "parent":"Help caterogy 1", "image":"path"},
 		{"name":"About datapoint 1-02", "parent":"Help caterogy 1", "image":"path"},

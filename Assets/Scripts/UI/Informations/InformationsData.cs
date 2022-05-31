@@ -19,6 +19,20 @@ public class InformationsData
     /// </summary>
     public InformationAsset[] content;
 
+    private static InformationsData instance = null;
+
+    /// <summary>
+    /// Cached method to return all information data from the information json file. Heavy resource useage at first call, next to free after.
+    /// </summary>
+    /// <returns>An InformationData Object, containing information categories and </returns>
+    public static InformationsData Get() {
+        if (instance == null) {
+            var jsonTextFile = Resources.Load<TextAsset>("Data/informations");
+            instance = JsonUtility.FromJson<InformationsData>(jsonTextFile.text);
+        }
+        return instance;
+    }
+
 }
 
 /// <summary>

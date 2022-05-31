@@ -80,11 +80,24 @@ public class ViewManager : MonoBehaviour
     /// </summary>
     public void OnViewChange(GameView target)
     {
+        // Local footer UI changes
         BallReference.transform.localScale = Vector3.zero;
         BallSize = 0f;
         Debug.Log("Changing view to : " + target);
         GameObject button = IDtoButtonOject(target);
         xTargetCurrent = (button && button.activeInHierarchy) ? button.transform.position.x : xTargetDefault;
+        // Global UI swap notification
+        foreach (var item in PageElement.elements)
+        {
+            if (item.GameViewType == (int)target)
+            {
+                item.gameObject.SetActive(true);
+            }
+            else
+            {
+                item.gameObject.SetActive(false);
+            }
+        }
     }
 
     public void OnViewChange(int target)
@@ -100,5 +113,5 @@ public class ViewManager : MonoBehaviour
 /// </summary>
 public enum GameView
 {
-    Menu = 0, Profil = 1, Compose = 2, Info = 3, Credits = 10, Undefined = 99
+    Menu = 0, Profil = 1, Compose = 2, Info = 3, InfoSub1 = 4, InfoSub2 = 5, Credits = 10, Undefined = 99
 }

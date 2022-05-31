@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2001692468025873762}
   - component: {fileID: 2001692468025873763}
   - component: {fileID: 2001692468025873760}
+  - component: {fileID: 2475414064806130395}
   m_Layer: 5
   m_Name: InfoPanelButton
   m_TagString: Untagged
@@ -121,7 +122,33 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2001692468025873763}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2475414064806130395}
+        m_TargetAssemblyTypeName: InfoEnterButton, Assembly-CSharp
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2475414064806130395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001692468025873774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bdb5517b0cb42d4385948dee3360624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PanelName: 
+  PanelImagePath: 
 --- !u!1 &2001692468343021831
 GameObject:
   m_ObjectHideFlags: 0

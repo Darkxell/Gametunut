@@ -22,7 +22,8 @@ public class CategoryButton : MonoBehaviour
             {
                 GameObject buttonlocale = Instantiate(InfoListContainer.Instance.InfopanelButtonPrefab, InfoListContainer.Instance.transform);
                 buttonlocale.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = data.content[i].name;
-
+                buttonlocale.GetComponent<InfoEnterButton>().PanelName = data.content[i].name;
+                buttonlocale.GetComponent<InfoEnterButton>().PanelImagePath = data.content[i].image;
             }
         }
 

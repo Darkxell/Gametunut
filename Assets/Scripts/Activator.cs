@@ -8,11 +8,14 @@ using UnityEngine;
 public class Activator : MonoBehaviour
 {
 
+    /// <summary>
+    /// List of subscribers that will be force activated once this object awakens (chain trigerring their own awake method).
+    /// </summary>
     public List<GameObject> subscribers;
 
     public void Awake()
     {
-        subscribers.ForEach(n => n.SetActive(true));
+        subscribers.ForEach(sub => sub.SetActive(true));
     }
 
 }

@@ -3819,7 +3819,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 956491577}
   m_HandleRect: {fileID: 956491576}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -6455,7 +6455,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 344910622}
   m_HandleRect: {fileID: 344910621}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -7922,7 +7922,6 @@ GameObject:
   - component: {fileID: 2138236552}
   - component: {fileID: 2138236551}
   - component: {fileID: 2138236549}
-  - component: {fileID: 2138236548}
   m_Layer: 5
   m_Name: ListContent
   m_TagString: Untagged
@@ -7951,19 +7950,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 575.5056}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
---- !u!114 &2138236548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2138236546}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2e98e3f06e4b8c4e9e5f14257ffc4f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InfopanelButtonPrefab: {fileID: 2001692468025873774, guid: 056f05ca6a7efc242a763b613dd06294, type: 3}
 --- !u!114 &2138236549
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -30,8 +30,7 @@ public class CategoryButton : MonoBehaviour
         // Calls the manager to change UI elements visibility
         ViewManager.Instance.OnViewChange(GameView.InfoSub1);
 
-
-
+        Debug.Log("Loaded InfoSub1 category : " + CategoryName + " with data content containing " + data.content.Length + " items.");
     }
 
 }

@@ -27,10 +27,12 @@ public class CategoryButton : MonoBehaviour
             }
         }
 
+        // Changes the sub1 panel text header
+        InfoListContainer.Instance.TitleTextObject.GetComponent<TextMeshProUGUI>().text = CategoryName;
+
         // Calls the manager to change UI elements visibility
         ViewManager.Instance.OnViewChange(GameView.InfoSub1);
 
-        Debug.Log("Loaded InfoSub1 category : " + CategoryName + " with data content containing " + data.content.Length + " items.");
     }
 
 }

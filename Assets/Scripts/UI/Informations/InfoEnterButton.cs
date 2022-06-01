@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class InfoEnterButton : MonoBehaviour
 {
@@ -10,11 +11,15 @@ public class InfoEnterButton : MonoBehaviour
     public void OnClick()
     {
         Debug.Log("Clicked info button : " + PanelName + ", loading info panel at path " + PanelImagePath);
+        // Change infopanel title
+        InfoPanelView.Instance.TitleGameObject.GetComponent<TextMeshProUGUI>().text = PanelName;
+        // Change infopanel image content
+
+        // TODO: show/hide back button here
+
+
 
         ViewManager.Instance.OnViewChange(GameView.InfoSub2);
-
-        // TODO: change infopanel content according to data above (title, back button on and image content)
-
     }
 
 

@@ -1,0 +1,32 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using TMPro;
+
+public class MessageButton : MonoBehaviour
+{
+
+    public GameObject Image;
+    public GameObject TextHead;
+    public GameObject TextContent;
+
+    public void ChangeText(string content)
+    {
+
+    }
+
+    public void ChangeTextHeader(string content)
+    {
+
+    }
+
+    /// <summary>
+    /// Changes the profile picture of the message sender in this button
+    /// </summary>
+    /// <param name="path">name of the profile picture file, without extension</param>
+    public void ChangeImage(string path)
+    {
+
+    }
+
+}

@@ -12,12 +12,12 @@ public class MessageButton : MonoBehaviour
 
     public void ChangeText(string content)
     {
-
+        TextContent.GetComponent<TextMeshProUGUI>().text = content;
     }
 
     public void ChangeTextHeader(string content)
     {
-
+        TextHead.GetComponent<TextMeshProUGUI>().text = content;
     }
 
     /// <summary>

@@ -9,7 +9,7 @@ using System;
 public static class MessageDatabase
 {
 
-    private static  MessageInfo[] database = null;
+    private static MessageInfo[] database = null;
 
     private static void Setup()
     {

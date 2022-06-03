@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class MessageButton : MonoBehaviour
 {
@@ -26,7 +27,7 @@ public class MessageButton : MonoBehaviour
     /// <param name="path">name of the profile picture file, without extension</param>
     public void ChangeImage(string path)
     {
-
+        Image.GetComponent<Image>().sprite = Resources.Load<Sprite>("profiles/" + path);
     }
 
 }

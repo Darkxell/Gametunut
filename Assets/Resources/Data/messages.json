@@ -1,0 +1,23 @@
+{"Items":[
+	{ 
+		"id":1, 
+		"sender":"MichouDu94",
+		"picture":"profil3",
+		"textshort":"Lorem ipsum<br>dolor sit amet...",
+		"textlong":"Lorem ipsum<br>dolor sit amet...",
+		"releasedate":"0",
+		"infos":{
+			"nom":"Michel",
+			"sexe":"Homme",
+			"age":40,
+			"taille":180,
+			"poids":75,
+			"imc":23.1,
+			"probleme":"Diagnostic maladie coeliaque recent"
+			"requete":"Plat complet sans lactose"
+		},
+		"respectbars":true,
+		"whitelist":[],
+		"blacklist":[]
+	}
+]}

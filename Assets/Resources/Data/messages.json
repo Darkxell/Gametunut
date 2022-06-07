@@ -2,7 +2,7 @@
 	{ 
 		"id":1, 
 		"sender":"MichouDu94",
-		"picture":"profil3",
+		"picture":"profil1",
 		"textshort":"Lorem ipsum<br>dolor sit amet...",
 		"textlong":"Lorem ipsum<br>dolor sit amet...",
 		"releasedate":"0",
@@ -13,8 +13,50 @@
 			"taille":180,
 			"poids":75,
 			"imc":23.1,
-			"probleme":"Diagnostic maladie coeliaque recent"
+			"probleme":"Diagnostic maladie coeliaque recent",
 			"requete":"Plat complet sans lactose"
+		},
+		"respectbars":true,
+		"whitelist":[],
+		"blacklist":[]
+	},
+	{ 
+		"id":2, 
+		"sender":"DadaisLeGrand",
+		"picture":"profil2",
+		"textshort":"Lorem ipsum<br>dolor sit amet...",
+		"textlong":"Lorem ipsum<br>dolor sit amet...",
+		"releasedate":"0",
+		"infos":{
+			"nom":"Lilou",
+			"sexe":"Femme",
+			"age":24,
+			"taille":165,
+			"poids":55,
+			"imc":23.1,
+			"probleme":"Diarrhées et douleurs abdominales",
+			"requete":"Repas complet sans gluten"
+		},
+		"respectbars":true,
+		"whitelist":[],
+		"blacklist":[]
+	},
+	{ 
+		"id":1, 
+		"sender":"Jépadidé",
+		"picture":"profil3",
+		"textshort":"Lorem ipsum<br>dolor sit amet...",
+		"textlong":"Lorem ipsum<br>dolor sit amet...",
+		"releasedate":"0",
+		"infos":{
+			"nom":"Elsa",
+			"sexe":"Femme",
+			"age":35,
+			"taille":170,
+			"poids":60,
+			"imc":23.1,
+			"probleme":"Vegan depuis peu, Absence de connaissances en nutrition",
+			"requete":"Plat complet sans produits animaux riche en fer"
 		},
 		"respectbars":true,
 		"whitelist":[],

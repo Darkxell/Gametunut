@@ -13,7 +13,7 @@ public class ButtonContainer : MonoBehaviour
     void Start()
     {
         MessageInfo[] db = MessageDatabase.getList();
-
+        Debug.Log("Loading messages from database in UI, found " + db.Length + " entries.\nTodays date is " + "?" + " and we are day " + "?" + " in the experiment.");
         for (int i = 0; i < db.Length; i++)
         {
             if (/*check date of db[i] here*/ true)
@@ -23,7 +23,7 @@ public class ButtonContainer : MonoBehaviour
                 instanceLocale.GetComponent<MessageButton>().ChangeText(db[i].textlong);
                 instanceLocale.GetComponent<MessageButton>().ChangeTextHeader(db[i].sender);
                 instanceLocale.GetComponent<MessageButton>().ChangeImage(db[i].picture);
-
+                instanceLocale.GetComponent<MessageButton>().ChangeNotifIcon(NotifIconType.Seen);
             }
         }
     }

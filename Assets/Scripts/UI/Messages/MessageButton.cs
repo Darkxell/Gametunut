@@ -8,8 +8,11 @@ public class MessageButton : MonoBehaviour
 {
 
     public GameObject Image;
+    public GameObject NotifIcon;
     public GameObject TextHead;
     public GameObject TextContent;
+
+    public Sprite icon_new, icon_seen, icon_completed;
 
     public void ChangeText(string content)
     {
@@ -30,4 +33,29 @@ public class MessageButton : MonoBehaviour
         Image.GetComponent<Image>().sprite = Resources.Load<Sprite>("profiles/" + path);
     }
 
+    /// <summary>
+    /// Changes the notification icon on the right to the desired sprite type
+    /// </summary>
+    public void ChangeNotifIcon(NotifIconType type)
+    {
+        switch (type)
+        {
+            case NotifIconType.New:
+                NotifIcon.GetComponent<Image>().sprite = icon_new;
+                break;
+            case NotifIconType.Seen:
+                NotifIcon.GetComponent<Image>().sprite = icon_seen;
+                break;
+            case NotifIconType.Completed:
+                NotifIcon.GetComponent<Image>().sprite = icon_completed;
+                break;
+        }
+    }
+
+
+
+}
+
+public enum NotifIconType { 
+    New, Seen, Completed
 }

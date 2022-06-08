@@ -1329,10 +1329,10 @@ RectTransform:
   m_Father: {fileID: 1007356921}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -75.63596}
+  m_SizeDelta: {x: 800, y: 151.27193}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &294361161
 MonoBehaviour:
@@ -3115,13 +3115,14 @@ GameObject:
   - component: {fileID: 531316323}
   - component: {fileID: 531316322}
   - component: {fileID: 531316321}
+  - component: {fileID: 531316326}
   m_Layer: 5
   m_Name: MessageInnerUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &531316321
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3217,6 +3218,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &531316326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 531316320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f852e816aa131874ebfe9a97a20483e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NameHeader: {fileID: 785827829}
+  ProfilePicture: {fileID: 586335251}
+  RecievedText: {fileID: 115122112}
+  ContentText: {fileID: 993981822}
+  NameSmall: {fileID: 1525480175}
+  PictureSmall: {fileID: 1394460798}
 --- !u!1 &537788905
 GameObject:
   m_ObjectHideFlags: 0
@@ -4120,7 +4139,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4804,6 +4823,7 @@ MonoBehaviour:
   - {fileID: 412520564}
   - {fileID: 151164653}
   - {fileID: 2006417790}
+  - {fileID: 531316320}
 --- !u!4 &835287623
 Transform:
   m_ObjectHideFlags: 0
@@ -9498,10 +9518,10 @@ RectTransform:
   m_Father: {fileID: 1007356921}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -787.23816}
+  m_SizeDelta: {x: 800, y: 1271.9325}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1757981877
 CanvasRenderer:

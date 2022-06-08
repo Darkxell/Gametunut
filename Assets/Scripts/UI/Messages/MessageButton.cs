@@ -14,6 +14,8 @@ public class MessageButton : MonoBehaviour
 
     public Sprite icon_new, icon_seen, icon_completed;
 
+    public MessageInfo data;
+
     public void ChangeText(string content)
     {
         TextContent.GetComponent<TextMeshProUGUI>().text = content;
@@ -52,10 +54,18 @@ public class MessageButton : MonoBehaviour
         }
     }
 
-
+    /// <summary>
+    /// Event called when 
+    /// </summary>
+    public void OnClick()
+    {
+        ViewManager.Instance.OnViewChange(GameView.MessageInner);
+        // TODO: change view7 (not the nes one) to use "data"
+    }
 
 }
 
-public enum NotifIconType { 
+public enum NotifIconType
+{
     New, Seen, Completed
 }

@@ -24,6 +24,8 @@ public class ButtonContainer : MonoBehaviour
                 instanceLocale.GetComponent<MessageButton>().ChangeTextHeader(db[i].sender);
                 instanceLocale.GetComponent<MessageButton>().ChangeImage(db[i].picture);
                 instanceLocale.GetComponent<MessageButton>().ChangeNotifIcon(NotifIconType.Seen);
+
+                instanceLocale.GetComponent<MessageButton>().data = db[i];
             }
         }
     }

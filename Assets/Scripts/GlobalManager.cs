@@ -23,6 +23,7 @@ public class GlobalManager : MonoBehaviour
     /// <summary>
     /// Hashed player ID, unique per device
     /// </summary>
+    [HideInInspector]
     public string playerID, playerIDShort;
 
     /// <summary>

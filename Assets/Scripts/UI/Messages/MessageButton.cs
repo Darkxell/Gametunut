@@ -60,7 +60,7 @@ public class MessageButton : MonoBehaviour
     public void OnClick()
     {
         ViewManager.Instance.OnViewChange(GameView.MessageInner);
-        // TODO: change view7 (not the nes one) to use "data"
+        MessageInnerBehavior.Instance.SetFromData(data);
     }
 
 }

@@ -71,8 +71,10 @@ public static class PublicationDatabase
     public static Publication[] get()
     {
         if (database != null) return database;
+        Debug.Log("Reading Json information for daily posts in feed...");
 
-
+        var jsonTextFile = Resources.Load<TextAsset>("Data/publicposts");
+        database = JsonHelper.FromJson<Publication>(jsonTextFile.text);
         return database;
     }
 

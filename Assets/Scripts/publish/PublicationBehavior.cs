@@ -63,11 +63,18 @@ public class Publication
 /// <summary>
 /// Singleton class to hold data about Feed publications that appear on the feed page.
 /// </summary>
-public static class PublicationDatabase{ 
+public static class PublicationDatabase
+{
+
+    private static Publication[] database = null;
+
+    public static Publication[] get()
+    {
+        if (database != null) return database;
 
 
-
-
+        return database;
+    }
 
 
 }

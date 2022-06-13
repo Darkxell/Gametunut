@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using TMPro;
+using UnityEngine.UI;
 
 public class PublicationBehavior : MonoBehaviour
 {
@@ -19,7 +21,15 @@ public class PublicationBehavior : MonoBehaviour
     /// </summary>
     public void SetFromData(Publication Data)
     {
-
+        // Text setters
+        PosterName.GetComponent<TextMeshProUGUI>().text = Data.posterName;
+        DateText.GetComponent<TextMeshProUGUI>().text = "Aujourd'hui";
+        DescriptionText.GetComponent<TextMeshProUGUI>().text = Data.description;
+        LikeText.GetComponent<TextMeshProUGUI>().text = Data.likeText;
+        CommentsText.GetComponent<TextMeshProUGUI>().text = Data.comments;
+        // Image setters
+        ProfilePicture.GetComponent<Image>().sprite = Resources.Load<Sprite>("profiles/" + Data.profilePath);
+        ContentImage.GetComponent<Image>().sprite = Resources.Load<Sprite>("postImages/" + Data.imagePath);
     }
 }
 
@@ -48,4 +58,16 @@ public class Publication
 
     public string likeText;
     public string comments;
+}
+
+/// <summary>
+/// Singleton class to hold data about Feed publications that appear on the feed page.
+/// </summary>
+public static class PublicationDatabase{ 
+
+
+
+
+
+
 }

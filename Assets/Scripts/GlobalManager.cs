@@ -35,7 +35,7 @@ public class GlobalManager : MonoBehaviour
     {
         Instance = this;
         // Computes the current experiment day
-        CurrentDay = System.DateTime.Compare(StartDate, System.DateTime.Today);
+        CurrentDay = Mathf.Max(0, (System.DateTime.Today - StartDate).Days);
         // Computes the unique hashed playerID based on deviceidentifier suffix-salted
         int seed;
         using (SHA256 sha256 = SHA256.Create())
@@ -51,7 +51,9 @@ public class GlobalManager : MonoBehaviour
         UnityEngine.Random.InitState(seed);
         CurentTestClass = (TestClass)UnityEngine.Random.Range(0, 8);
         // Logging
-        Debug.Log("[Global info setup]\nDAY:" + CurrentDay + " / PlayerID:" + playerID + " (" + playerIDShort + ") / TestClass : " + CurentTestClass
+        Debug.Log("[Global info setup]"
+            + "\n Current day : " + System.DateTime.Today + " / Start day : " + StartDate
+            + "\nDAY:" + CurrentDay + " / PlayerID:" + playerID + " (" + playerIDShort + ") / TestClass : " + CurentTestClass
             + "\n Goal : " + hasGoal() + " - Awards : " + hasAwards() + " - Storytelling : " + hasStorytelling());
     }
 

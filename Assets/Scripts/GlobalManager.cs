@@ -57,6 +57,52 @@ public class GlobalManager : MonoBehaviour
             + "\n Goal : " + hasGoal() + " - Awards : " + hasAwards() + " - Storytelling : " + hasStorytelling());
     }
 
+
+    private bool globalSetup = false;
+    /// <summary>
+    /// First game update post start setup
+    /// </summary>
+    public void Update()
+    {
+        if (!globalSetup)
+        {
+            globalSetup = true;
+            // Start page mover
+            switch (CurentTestClass)
+            {
+                case TestClass.Class_Goal:
+                    ViewManager.Instance.OnViewChange(GameView.Messages);
+                    break;
+                case TestClass.Class_Awards:
+                    ViewManager.Instance.OnViewChange(GameView.Profil);
+                    break;
+                case TestClass.Class_Storytelling:
+                    ViewManager.Instance.OnViewChange(GameView.Menu);
+                    break;
+                case TestClass.Class_GoalAwards:
+                    ViewManager.Instance.OnViewChange(GameView.Profil);
+                    break;
+                case TestClass.Class_AwardsStorytelling:
+                    ViewManager.Instance.OnViewChange(GameView.Profil);
+                    break;
+                case TestClass.Class_GoalStorytelling:
+                    ViewManager.Instance.OnViewChange(GameView.Menu);
+                    break;
+                case TestClass.Class_All:
+                    ViewManager.Instance.OnViewChange(GameView.Menu);
+                    break;
+                case TestClass.Undefined:
+                default:
+                    Debug.LogError("TestClass was undefined or outside of possible range. This is an error and should be fixed.");
+                    break;
+            }
+
+
+            // TODO : setup code here
+            // do we actually want code here, or do we want dynamic mode changer for debug? Performance hit is almost negligible anyways
+        }
+    }
+
     /// <summary>
     /// https://stackoverflow.com/questions/6165171/convert-byte-array-to-int
     /// </summary>

@@ -31,6 +31,11 @@ public class ViewManager : MonoBehaviour
 
     private float currentXanimator = 0, xTargetDefault = -200, xTargetCurrent = -200;
 
+    /// <summary>
+    /// List of gameobjects that can be activated or deactivated depending on the test class.
+    /// </summary>
+    public List<GameObject> classHandles;
+
     /// <returns>A gameobject of the footer button for that page, if available.</returns>
     public GameObject IDtoButtonOject(GameView id)
     {
@@ -103,6 +108,14 @@ public class ViewManager : MonoBehaviour
     public void OnViewChange(int target)
     {
         OnViewChange((GameView)target);
+    }
+
+    /// <summary>
+    /// Notices and updates any registered handles so that they can show or hide according to the current testclass
+    /// </summary>
+    public void updateRegisteredHandles()
+    {
+        classHandles.ForEach(n => n.GetComponent<TestCaseHandle>().updateVisibility());
     }
 
 }

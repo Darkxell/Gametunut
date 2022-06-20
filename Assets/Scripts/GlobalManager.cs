@@ -48,8 +48,11 @@ public class GlobalManager : MonoBehaviour
             sha256.Clear();
         }
         // Computes random class assigements from playerhash
-        UnityEngine.Random.InitState(seed);
-        CurentTestClass = (TestClass)UnityEngine.Random.Range(0, 8);
+        if (CurentTestClass == TestClass.Undefined)
+        {
+            UnityEngine.Random.InitState(seed);
+            CurentTestClass = (TestClass)UnityEngine.Random.Range(0, 8);
+        }
         // Logging
         Debug.Log("[Global info setup]"
             + "\n Current day : " + System.DateTime.Today + " / Start day : " + StartDate
@@ -96,10 +99,6 @@ public class GlobalManager : MonoBehaviour
                     Debug.LogError("TestClass was undefined or outside of possible range. This is an error and should be fixed.");
                     break;
             }
-
-
-            // TODO : setup code here
-            // do we actually want code here, or do we want dynamic mode changer for debug? Performance hit is almost negligible anyways
         }
     }
 

@@ -6078,6 +6078,7 @@ MonoBehaviour:
   Button_Compose: {fileID: 1849127153}
   Button_Info: {fileID: 1045568193}
   BallReference: {fileID: 213392098}
+  classHandles: []
 --- !u!114 &716118608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15341,6 +15342,7 @@ GameObject:
   - component: {fileID: 1893208011}
   - component: {fileID: 1893208010}
   - component: {fileID: 1893208009}
+  - component: {fileID: 1893208012}
   m_Layer: 5
   m_Name: MessagesButton
   m_TagString: Untagged
@@ -15463,6 +15465,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1893208007}
   m_CullTransparentMesh: 1
+--- !u!114 &1893208012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893208007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5e9d0ff0cf40c14f9ddc7f06eaed6ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowOnClass_Goal: 1
+  ShowOnClass_Awards: 0
+  ShowOnClass_Storytelling: 0
+  ShowOnClass_GoalAwards: 1
+  ShowOnClass_AwardsStorytelling: 0
+  ShowOnClass_GoalStorytelling: 1
+  ShowOnClass_All: 1
 --- !u!1 &1894039154
 GameObject:
   m_ObjectHideFlags: 0

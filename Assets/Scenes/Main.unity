@@ -2144,6 +2144,7 @@ GameObject:
   - component: {fileID: 310178534}
   - component: {fileID: 310178533}
   - component: {fileID: 310178532}
+  - component: {fileID: 310178535}
   m_Layer: 5
   m_Name: BattlePassButton
   m_TagString: Untagged
@@ -2266,6 +2267,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 310178530}
   m_CullTransparentMesh: 1
+--- !u!114 &310178535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 310178530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5e9d0ff0cf40c14f9ddc7f06eaed6ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShowOnClass_Goal: 0
+  ShowOnClass_Awards: 0
+  ShowOnClass_Storytelling: 0
+  ShowOnClass_GoalAwards: 1
+  ShowOnClass_AwardsStorytelling: 0
+  ShowOnClass_GoalStorytelling: 0
+  ShowOnClass_All: 1
 --- !u!1 &315944307
 GameObject:
   m_ObjectHideFlags: 0

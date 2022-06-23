@@ -8686,7 +8686,7 @@ MonoBehaviour:
   CurrentDay: 0
   playerID: 
   playerIDShort: 
-  CurentTestClass: 3
+  CurentTestClass: 1
 --- !u!1 &1004877384
 GameObject:
   m_ObjectHideFlags: 0
@@ -14081,7 +14081,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShowOnClass_Goal: 1
-  ShowOnClass_Awards: 1
+  ShowOnClass_Awards: 0
   ShowOnClass_Storytelling: 1
   ShowOnClass_GoalAwards: 0
   ShowOnClass_AwardsStorytelling: 1

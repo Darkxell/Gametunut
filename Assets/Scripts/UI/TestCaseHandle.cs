@@ -24,7 +24,7 @@ public class TestCaseHandle : MonoBehaviour
     public bool ShowOnClass_GoalStorytelling;
     public bool ShowOnClass_All;
 
-    public bool ShouldShowOn(GlobalManager.TestClass testclass)
+    public virtual bool ShouldShowOn(GlobalManager.TestClass testclass)
     {
         switch (testclass)
         {

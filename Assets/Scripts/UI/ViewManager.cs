@@ -36,6 +36,11 @@ public class ViewManager : MonoBehaviour
     /// </summary>
     public List<GameObject> classHandles;
 
+    /// <summary>
+    /// Reference to the message Button, allowing access to its custom handle behavior
+    /// </summary>
+    public GameObject MessagesButtonReference;
+
     /// <returns>A gameobject of the footer button for that page, if available.</returns>
     public GameObject IDtoButtonOject(GameView id)
     {
@@ -110,6 +115,8 @@ public class ViewManager : MonoBehaviour
                 item.gameObject.SetActive(false);
             }
         }
+        // Messages button notice to recompute its test case handle
+        MessagesButtonReference.GetComponent<MessagesButtonBehavior>().updateVisibility();
     }
 
     public void OnViewChange(int target)

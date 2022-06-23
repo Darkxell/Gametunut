@@ -4095,7 +4095,7 @@ RectTransform:
   m_Children:
   - {fileID: 333039727}
   m_Father: {fileID: 716118602}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6155,8 +6155,8 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 65963333}
-  - {fileID: 1742340224}
   - {fileID: 506412095}
+  - {fileID: 1742340224}
   - {fileID: 159356943}
   - {fileID: 1849127154}
   - {fileID: 1045568194}
@@ -6242,6 +6242,7 @@ MonoBehaviour:
   Button_Info: {fileID: 1045568193}
   BallReference: {fileID: 213392098}
   classHandles: []
+  MessagesButtonReference: {fileID: 1893208007}
 --- !u!114 &716118608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14109,7 +14110,7 @@ RectTransform:
   m_Children:
   - {fileID: 851398178}
   m_Father: {fileID: 716118602}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -15736,7 +15737,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1893208007}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5e9d0ff0cf40c14f9ddc7f06eaed6ef, type: 3}
+  m_Script: {fileID: 11500000, guid: 10f6a262d21e6f34e819b1fd50d4257a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ShowOnClass_Goal: 1

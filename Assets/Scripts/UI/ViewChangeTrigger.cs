@@ -8,14 +8,22 @@ using UnityEngine;
 public class ViewChangeTrigger : MonoBehaviour
 {
 
-    public void changeView(int GameView)
+    public void changeView(int gameView)
     {
         if (ViewManager.Instance == null)
         {
-            Debug.LogError("Fatal : ViewMnaager does not exist or has been culled, Game view may not be changed anymore.");
+            Debug.LogError("Fatal : ViewManager does not exist or has been culled, Game view may not be changed anymore.");
             return;
         }
-        ViewManager.Instance.OnViewChange(GameView);
+        // Dogshit code, but simplest solution to not have back buttons move you out of bounds
+        int changeto = gameView;
+        if (GlobalManager.Instance.CurentTestClass == GlobalManager.TestClass.Class_Awards
+            || GlobalManager.Instance.CurentTestClass == GlobalManager.TestClass.Class_Goal
+            || GlobalManager.Instance.CurentTestClass == GlobalManager.TestClass.Class_GoalAwards)
+        {
+            if (gameView == (int)GameView.Menu) changeto = (int)GameView.Profil;
+        }
+        ViewManager.Instance.OnViewChange(changeto);
     }
 
 }

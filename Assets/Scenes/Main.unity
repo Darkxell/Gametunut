@@ -814,7 +814,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &152797918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3787,10 +3787,10 @@ RectTransform:
   m_Father: {fileID: 1991133686}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -957.06836}
+  m_SizeDelta: {x: 800, y: 932.2722}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &494306399
 MonoBehaviour:
@@ -8686,7 +8686,7 @@ MonoBehaviour:
   CurrentDay: 0
   playerID: 
   playerIDShort: 
-  CurentTestClass: 4
+  CurentTestClass: 3
 --- !u!1 &1004877384
 GameObject:
   m_ObjectHideFlags: 0
@@ -10673,7 +10673,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 682.7278}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1269608205
 MonoBehaviour:
@@ -12734,10 +12734,10 @@ RectTransform:
   m_Father: {fileID: 1991133686}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -245.46614}
+  m_SizeDelta: {x: 800, y: 490.93228}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1607690816
 MonoBehaviour:
@@ -14083,7 +14083,7 @@ MonoBehaviour:
   ShowOnClass_Goal: 1
   ShowOnClass_Awards: 1
   ShowOnClass_Storytelling: 1
-  ShowOnClass_GoalAwards: 1
+  ShowOnClass_GoalAwards: 0
   ShowOnClass_AwardsStorytelling: 1
   ShowOnClass_GoalStorytelling: 1
   ShowOnClass_All: 1

@@ -53,6 +53,10 @@ public class GlobalManager : MonoBehaviour
             UnityEngine.Random.InitState(seed);
             CurentTestClass = (TestClass)UnityEngine.Random.Range(0, 8);
         }
+        else
+        {
+            Debug.Log("Test class assignement skipped, overriden by a class set in unity. Please set to UNDEFINED before release and for pseudorandom assignement using device ID.");
+        }
         // Logging
         Debug.Log("[Global info setup]"
             + "\n Current day : " + System.DateTime.Today + " / Start day : " + StartDate

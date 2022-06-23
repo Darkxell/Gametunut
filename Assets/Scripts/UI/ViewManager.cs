@@ -111,7 +111,8 @@ public class ViewManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Notices and updates any registered handles so that they can show or hide according to the current testclass
+    /// Notices and updates any registered handles so that they can show or hide according to the current testclass.<br>
+    /// This is mostly pointless, unless you change class at runtime.
     /// </summary>
     public void updateRegisteredHandles()
     {

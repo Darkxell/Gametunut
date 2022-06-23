@@ -18,10 +18,13 @@ public class ViewChangeTrigger : MonoBehaviour
         // Dogshit code, but simplest solution to not have back buttons move you out of bounds
         int changeto = gameView;
         if (GlobalManager.Instance.CurentTestClass == GlobalManager.TestClass.Class_Awards
-            || GlobalManager.Instance.CurentTestClass == GlobalManager.TestClass.Class_Goal
             || GlobalManager.Instance.CurentTestClass == GlobalManager.TestClass.Class_GoalAwards)
         {
             if (gameView == (int)GameView.Menu) changeto = (int)GameView.Profil;
+        }
+        if (GlobalManager.Instance.CurentTestClass == GlobalManager.TestClass.Class_Goal)
+        {
+            if (gameView == (int)GameView.Menu || gameView == (int)GameView.Profil) changeto = (int)GameView.Messages;
         }
         ViewManager.Instance.OnViewChange(changeto);
     }

@@ -14,11 +14,6 @@ public class TestCaseHandle : MonoBehaviour
         updateVisibility();
     }
 
-    void Update()
-    {
-
-    }
-
     private bool registered = false;
 
     public bool ShowOnClass_Goal;

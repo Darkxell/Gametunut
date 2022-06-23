@@ -61,6 +61,12 @@ public class ViewManager : MonoBehaviour
 
     public void FixedUpdate()
     {
+        // No idea why this gets triggered, but in case it does, thgis fixes a bug where the ball gets stuck on the left side of the screen
+        if (xTargetCurrent == 0) {
+            GameObject button = IDtoButtonOject(currentView);
+            xTargetCurrent = (button && button.activeInHierarchy) ? button.transform.position.x : xTargetDefault;
+        }
+
         maskingSelector.position = new Vector3(currentXanimator, maskingSelector.position.y, 0);
         float epsilon = 1f;
         if (currentXanimator > xTargetCurrent + epsilon || currentXanimator < xTargetCurrent - epsilon)
@@ -85,6 +91,7 @@ public class ViewManager : MonoBehaviour
     /// </summary>
     public void OnViewChange(GameView target)
     {
+        currentView = target;
         // Local footer UI changes
         BallReference.transform.localScale = Vector3.zero;
         BallSize = 0f;

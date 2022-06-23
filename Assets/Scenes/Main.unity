@@ -8731,7 +8731,7 @@ MonoBehaviour:
   CurrentDay: 0
   playerID: 
   playerIDShort: 
-  CurentTestClass: 2
+  CurentTestClass: 6
 --- !u!1 &1004877384
 GameObject:
   m_ObjectHideFlags: 0

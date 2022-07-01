@@ -19,6 +19,8 @@ public class MessageInnerBehavior : MonoBehaviour
     public GameObject NameSmall;
     public GameObject PictureSmall;
 
+    public MessageInfo lastData = null;
+
     public void Awake()
     {
         Instance = this;
@@ -26,6 +28,7 @@ public class MessageInnerBehavior : MonoBehaviour
 
     public void SetFromData(MessageInfo data)
     {
+        lastData = data;
         // Text setters
 
         NameHeader.GetComponent<TextMeshProUGUI>().text = data.sender;

@@ -61,6 +61,11 @@ public class IngredientData
     /// </summary>
     public float vitamineA, vitamineB9, vitamineB12;
 
+    /// <summary>
+    /// List of ingredient tags, used for quest messages mainly
+    /// </summary>
+    public List<string> tags;
+
 }
 
 /// <summary>

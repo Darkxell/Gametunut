@@ -38,7 +38,7 @@
 			"requete":"Repas complet sans lactose"
 		},
 		"respectbars":true,
-		"whitelist":[""],
+		"whitelist":[],
 		"blacklist":["Lactose"]
 	},
 	{ 
@@ -80,7 +80,7 @@
 			"requete":"Repas complet faibles en sucres. Sans sodas ni jus de fruit. Sans produit ultratransformé.  Sans aliment gras."
 		},
 		"respectbars":true,
-		"whitelist":[""],
+		"whitelist":[],
 		"blacklist":["Sodasjus","Produitultratransformé","Alimentgras"]
 	},
 	{ 
@@ -102,7 +102,7 @@
 		},
 		"respectbars":true,
 		"whitelist":["Eau","Richeenfibres","Alimentlaxatif"],
-		"blacklist":[""]
+		"blacklist":[]
 	},
 	{ 
 		"id":6,
@@ -165,7 +165,7 @@
 		},
 		"respectbars":true,
 		"whitelist":["Protéinevégétale"],
-		"blacklist":[""]
+		"blacklist":[]
 	},
 	{ 
 		"id":9,
@@ -186,7 +186,7 @@
 		},
 		"respectbars":false,
 		"whitelist":["Saison"],
-		"blacklist":[""]
+		"blacklist":[]
 	},
 	{ 
 		"id":10,
@@ -228,7 +228,7 @@
 		},
 		"respectbars":true,
 		"whitelist":["Légumescuits"],
-		"blacklist":[""]
+		"blacklist":[]
 	},
 	{ 
 		"id":12,

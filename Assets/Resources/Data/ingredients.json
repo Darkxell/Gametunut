@@ -140,7 +140,7 @@
 		"proteines": 3.33,
 		"lipides": 16.83,
 		"glucides": 1.72,
-		"tags":["Fruitsàcoque","Alimentgras","Alimentlaxatif","Résidu","","Alimentsantiinflammatoire"]
+		"tags":["Fruitsàcoque","Alimentgras","Alimentlaxatif","Résidu","Alimentsantiinflammatoire"]
 	},{
 		"name":"Brocoli", 
 		"spriteMenu":"blueberries",
@@ -262,7 +262,7 @@
 		"glucides": 4.55,
 		"tags":["Légumes","Solanacées","VitamineC","Saison", "Résidu"]
 	},{
-		"name":"Foie de volaille ", 
+		"name":"Foie de volaille", 
 		"spriteMenu":"blueberries",
 		"spriteInGame":"blueberries",
 		"quantité": 125.0,
@@ -272,7 +272,7 @@
 		"glucides": 0,
 		"tags":["Protéine","VitamineB9","Produitsanimaux","Fer","VitamineB12","VitamineA"]
 	},{
-		"name":"Steak de boeuf ", 
+		"name":"Steak de boeuf", 
 		"spriteMenu":"blueberries",
 		"spriteInGame":"blueberries",
 		"quantité": 125.0,
@@ -752,16 +752,6 @@
 		"lipides": 0,
 		"glucides": 8.17,
 		"tags":["Sucresajoutés","Fructose"]
-	},{
-		"name":"Steak", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
-		"quantité": 0,
-		"energie": 0,
-		"proteines": 0,
-		"lipides": 0,
-		"glucides": 0,
-		"tags":["","","",""]
 	},{
 		"name":"Chocolat noir", 
 		"spriteMenu":"blueberries",

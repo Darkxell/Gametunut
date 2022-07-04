@@ -1,65 +1,257 @@
 {"Items":[
 	{ 
-		"id":1, 
-		"sender":"MichouDu94",
+		"id":1,
+		"sender":"Tristan",
 		"picture":"profil1",
-		"textshort":"Lorem ipsum<br>dolor sit amet...",
-		"textlong":"Lorem ipsum<br>dolor sit amet...",
+		"textshort":"",
+		"textlong":"Salut, je ne sais pas si vous allez pouvoir m'aider, j'ai été diagnostiqué par mon médecin, il y a seulement une semaine de la maladie cœliaque, j'ai réussi à me faire une liste des aliments qui ne contiennent pas de gluten, mais j'ai du mal à me préparer des plats équilibrés et qui répondent à mes besoins nutritionnels. Est ce que vous pouvez me proposer un repas complet sans gluten s'il vous plaît? ",
 		"releasedate":"0",
 		"infos":{
-			"nom":"Michel",
+			"nom":"Tristan",
 			"sexe":"Homme",
-			"age":40,
+			"age":22,
 			"taille":180,
 			"poids":75,
 			"imc":23.1,
-			"probleme":"Diagnostic maladie coeliaque recent",
-			"requete":"Plat complet sans lactose"
-		},
-		"respectbars":true,
-		"whitelist":[],
-		"blacklist":[]
-	},
-	{ 
-		"id":2, 
-		"sender":"DadaisLeGrand",
-		"picture":"profil2",
-		"textshort":"Lorem ipsum<br>dolor sit amet...",
-		"textlong":"Lorem ipsum<br>dolor sit amet...",
-		"releasedate":"0",
-		"infos":{
-			"nom":"Lilou",
-			"sexe":"Femme",
-			"age":24,
-			"taille":165,
-			"poids":55,
-			"imc":23.1,
-			"probleme":"Diarrhées et douleurs abdominales",
+			"probleme":"Diagnostic maladie cœliaque récent",
 			"requete":"Repas complet sans gluten"
 		},
 		"respectbars":true,
 		"whitelist":[],
-		"blacklist":[]
+		"blacklist":["Gluten"]
 	},
 	{ 
-		"id":1, 
-		"sender":"Jépadidé",
-		"picture":"profil3",
-		"textshort":"Lorem ipsum<br>dolor sit amet...",
-		"textlong":"Lorem ipsum<br>dolor sit amet...",
+		"id":2,
+		"sender":"Lilou",
+		"picture":"profil1",
+		"textshort":"",
+		"textlong":"Bonjour, je sors tout juste de chez mon médecin, car depuis hier j'ai des douleurs abdominales et je passe un sale quart d'heure dans les toilettes à chaque fois que j'y vais, mon médecin m'a demandé de ne pas consommer de lactose pendant quelques jours, j'aimerais avoir un exemple de repas complet sans lactose afin de ne plus avoir de douleurs et de garder une bonne alimentation pendant cette période compliquée.",
+		"releasedate":"0",
+		"infos":{
+			"nom":"Lilou",
+			"sexe":"Femme",
+			"age":20,
+			"taille":1.65,
+			"poids":55,
+			"imc":20.2,
+			"probleme":"Gaz intestinaux / Diarrhées /  Douleurs abdominales",
+			"requete":"Repas complet sans lactose"
+		},
+		"respectbars":true,
+		"whitelist":[""],
+		"blacklist":["Lactose"]
+	},
+	{ 
+		"id":3,
+		"sender":"Elsa",
+		"picture":"profil1",
+		"textshort":"",
+		"textlong":"Hey, on m'a raconté beaucoup de bien à propos de votre page et des conseils que vous apportez aux personnes qui viennent vous demandez de l'aide, personnellement je n'ai pas de maladie ou de problème en particulier, j'ai décidé depuis peu de commencer un régime vegan pour des raisons personnelles, je ne sais pas trop quelles sont les aliments à éviter en tant que vegan, c'est pour cela que je vous demande de l'aide afin d'avoir un exemple de menu sympa !",
 		"releasedate":"0",
 		"infos":{
 			"nom":"Elsa",
 			"sexe":"Femme",
-			"age":35,
-			"taille":170,
+			"age":23,
+			"taille":1.70,
 			"poids":60,
-			"imc":23.1,
-			"probleme":"Vegan depuis peu, Absence de connaissances en nutrition",
-			"requete":"Plat complet sans produits animaux riche en fer"
+			"imc":20.8,
+			"probleme":"Vegan depuis peu / Absence de connaissances en nutrition",
+			"requete":"Menu sans produits animaux, riche en protéines végétales et riche en fer végétal"
+		},
+		"respectbars":false,
+		"whitelist":["Protéinevégétale","FerVégétal"],
+		"blacklist":["Produitsanimaux"]
+	},
+	{ 
+		"id":4,
+		"sender":"Alexandra",
+		"picture":"profil1",
+		"textshort":"",
+		"textlong":"Bonjour, j'ai découvert votre page en recherchant des menus qui pourraient m'aider à me préparer à mon opération de chirurgie bariatrique (chirurgie de l'obésité) et d'après mon chirurgien, je dois suivre un régime hypocalorique pour diminuer la taille de mon foie. Je regrette de ne pas avoir découvert votre page plus tôt, j'aurais peut-être pu éviter tout ça, mais le mal est fait et je me suis abonnée à vous, j'espère que vous pourrez m'aider et hâte de me faire opérer !",
+		"releasedate":"0",
+		"infos":{
+			"nom":"Alexandra",
+			"sexe":"Femme",
+			"age":25,
+			"taille":1.60,
+			"poids":85,
+			"imc":33.2,
+			"probleme":"Opération chirurgie bariatrique prévue.  / Régime hypocalorique pour diminuer la taille du foie.",
+			"requete":"Repas complet faibles en sucres. Sans sodas ni jus de fruit. Sans produit ultratransformé.  Sans aliment gras."
 		},
 		"respectbars":true,
-		"whitelist":[],
-		"blacklist":[]
-	}
+		"whitelist":[""],
+		"blacklist":["Sodasjus","Produitultratransformé","Alimentgras"]
+	},
+	{ 
+		"id":5,
+		"sender":"Pierre",
+		"picture":"profil1",
+		"textshort":"",
+		"textlong":"Bonjour, je viens vers vous car j'ai souvent des problèmes de constipation, mon médecin m'a conseillé de boire beaucoup d'eau et manger des plats riches en fibre et avec des aliments laxatifs, le problème, c'est que je n'arrive pas à trouver un bon équilibre qui pourrait répondre à mes besoins nutritionnels, est-ce-que vous pouvez me créer un menu adapté aux demandes des personnes qui me suivent et complet pour répondre à mes besoins nutritionnels. ",
+		"releasedate":"0",
+		"infos":{
+			"nom":"Pierre",
+			"sexe":"Homme",
+			"age":23,
+			"taille":1.76,
+			"poids":72,
+			"imc":23.2,
+			"probleme":"Constipation",
+			"requete":"Repas complet riches en fibres, eau"
+		},
+		"respectbars":true,
+		"whitelist":["Eau","Richeenfibres","Alimentlaxatif"],
+		"blacklist":[""]
+	},
+	{ 
+		"id":6,
+		"sender":"Amandine",
+		"picture":"profil1",
+		"textshort":"",
+		"textlong":"Bonsoir, je suis tellement contente que la Covid soit derrière nous, cette période était très compliquée pour nous tous, et surtout pour nos balances et jean haha, personnellement je faisais que commander des plats sur les applications car je ne voulais pas sortir et prendre le risque d'attraper cette maladie qui fait vraiment peur, j'ai réussi à ne jamais à l'attraper par contre mon corps à attraper autre chose, 10KG !!! Aujourd'hui c'est décidé je veux me reprendre en main et consommer que des repas complet sans sucres sans sodas ni de jus de fruits et avec plein de légumineuses, je n'y connais rien c'est mon coach sportif qui m'a conseillé ça haha, je suis justement ici pour vous demander si vous pouvez me suggérer un plat que je pourrais consommer par exemple car j'ai peur de faire des erreurs et rechuter dans ma prise de poids.",
+		"releasedate":"0",
+		"infos":{
+			"nom":"Amandine",
+			"sexe":"Femme",
+			"age":29,
+			"taille":1.65,
+			"poids":86,
+			"imc":31.6,
+			"probleme":"Obésité stade 1",
+			"requete":"Repas complet  Sans sucres ajoutés Sans sodas ni jus de fruits Avec des légumineuses"
+		},
+		"respectbars":true,
+		"whitelist":["Légumineuse"],
+		"blacklist":["Sucresajoutés","Sodasjus"]
+	},
+	{ 
+		"id":7,
+		"sender":"Marie",
+		"picture":"profil1",
+		"textshort":"",
+		"textlong":"Bonjour, j'ai vu hier soir avant de dormir des vidéos d'animaux dans des enclos et des abattoirs, ça m'a vraiment choqué et dégoûté de voir les conditions dans lesquelles ils sont traités. Je me suis renseigné sur les régimes vegan car je ne veux pas participer ou donner mon argent à ce genre d'organisme, et j'ai trouvé ça super intéressant et pas complexe comme régime. J'ai vu que vous avez aidé beaucoup de vegan sur votre page et je voulais savoir si c'était possible de me donner un exemple de menu s'il vous plaît ? ",
+		"releasedate":"0",
+		"infos":{
+			"nom":"Marie",
+			"sexe":"Femme",
+			"age":28,
+			"taille":1.71,
+			"poids":67,
+			"imc":22.9,
+			"probleme":"Veut devenir vegan",
+			"requete":"Repas complet avec des protéines végétales et sans produits animaux."
+		},
+		"respectbars":true,
+		"whitelist":["Protéinevégétale"],
+		"blacklist":["Produitsanimaux"]
+	},
+	{ 
+		"id":8,
+		"sender":"Raphaël",
+		"picture":"profil1",
+		"textshort":"",
+		"textlong":"Salut, je viens de regarder un reportage sur les maladies cardiovasculaires, j'ai appris qu'on peut attraper cette maladie si on abuse de la consommation de viande ! Vous le saviez ? Vous savez, je déteste les maladies c'est quelque chose qui me stresse ? J'ai contacté un spécialiste en nutrition et il m'a conseillé de manger des repas complets avec des produits riches en protéine végétale pour ainsi compenser ma réduction de consommation de viande.",
+		"releasedate":"0",
+		"infos":{
+			"nom":"Raphaël",
+			"sexe":"Homme",
+			"age":22,
+			"taille":1.78,
+			"poids":69,
+			"imc":21.8,
+			"probleme":"Veut baisser sa consommation de viandes",
+			"requete":"Repas complet avec des protéines végétales"
+		},
+		"respectbars":true,
+		"whitelist":["Protéinevégétale"],
+		"blacklist":[""]
+	},
+	{ 
+		"id":9,
+		"sender":"Marine",
+		"picture":"profil1",
+		"textshort":"",
+		"textlong":"Salut, j'ai essayé de chercher des menus sur votre page pour les personnes qui consomment uniquement des légumes de saison, donc je ne sais pas si vous connaissez ce 'concept' ou plutôt mode de vie, j'ai pour habitude et passion de consommer uniquement des fruits et légumes de saison car cela est moins cher, les produits sont de meilleur qualité que ça soit visuelle, nutritionnelle ou même au niveau du goût et surtout cela a moins d'impact sur l'environnement. L'été est bientôt fini et la saison d'automne va bientôt commencer, c'est l'une de mes saisons préférées, j'aimerais juste que vous me fassiez un repas avec de bons fruits et légumes de saison !",
+		"releasedate":"0",
+		"infos":{
+			"nom":"Marine",
+			"sexe":"Femme",
+			"age":28,
+			"taille":1.71,
+			"poids":73,
+			"imc":21.8,
+			"probleme":"Je veux consommer des fruits et légumes de saison",
+			"requete":"Fruits et légumes de saison"
+		},
+		"respectbars":false,
+		"whitelist":["Saison"],
+		"blacklist":[""]
+	},
+	{ 
+		"id":10,
+		"sender":"Brice",
+		"picture":"profil1",
+		"textshort":"",
+		"textlong":"Heyy, ça fait un an que je suis en étude de game design, et j'entame ma 2ème année, tu sais mon domaine consiste a rester toute la journée devant mon ordinateur et je ne bouge quasi plus, j'ai pris du poids depuis et j'aimerais bien faire attention cette année. Je me suis déjà renseigné et j'ai vu que je devais manger des repas complets avec des aliments qui ont un index glycémique bas et éviter les sucres ajoutés, les sodas, les jus de fruits et les produits ultra transformés. J'espère que toutes ces informations vont te permettre de me proposer un menu 'mangeable' car je déteste les restrictions bizarres.",
+		"releasedate":"0",
+		"infos":{
+			"nom":"Brice",
+			"sexe":"Homme",
+			"age":29,
+			"taille":1.72,
+			"poids":70,
+			"imc":23.7,
+			"probleme":"Perte de poids de 3-4 kilos",
+			"requete":"Menu avec des aliments qui ont un index glycémique bas (inférieur à 55). Sans sucres ajoutés. Sans soda ni jus de fruit. Alimentation sans produit ultratransformé."
+		},
+		"respectbars":false,
+		"whitelist":["Indexglycémiquebas"],
+		"blacklist":["Sucresajoutés","Sodasjus","Produitultratransformé"]
+	},
+	{ 
+		"id":11,
+		"sender":"Emma",
+		"picture":"profil1",
+		"textshort":"",
+		"textlong":"Hey, ça fait 1 mois que j'ai commencé mes études supérieures, j'ai pris un appartement et qui dit vivre seul dit cuisiner et franchement j'ai vraiment la flemme de cuisiner, je pense que vous me comprenez après une journée de cours chargée, j'ai vraiment pas envie d'aller au magasin acheter des aliments et les cuisiner, depuis quelques temps je fais que de manger dehors et prendre des plats à chauffer au micro onde, et j'aimerais changer ça, j'aimerais un exemple de repas complet qui ne demande pas trop d'effort en cuisine et avec des légumes cuits, parce que j'adore ça !! et que ma maman m'a toujours dit de manger des légumes car c'était bon pour la santé. (ils sont surtout bons quand ils sont cuits.)",
+		"releasedate":"0",
+		"infos":{
+			"nom":"Emma",
+			"sexe":"Femme",
+			"age":24,
+			"taille":1.60,
+			"poids":53,
+			"imc":20.7,
+			"probleme":"Flemme de cuisiner ",
+			"requete":"Repas complet avec légumes cuits"
+		},
+		"respectbars":true,
+		"whitelist":["Légumescuits"],
+		"blacklist":[""]
+	},
+	{ 
+		"id":12,
+		"sender":"Jordan",
+		"picture":"profil1",
+		"textshort":"",
+		"textlong":"Bonjour, je suis un addict de la junk food, ouai la mauvaise alimentation, j'adore les fast-foods ou tous les aliments gras qu'on peut trouver dans les supermarchés, rien que d'y penser, hmmmm, des chips au fromage accompagné d'un bon soda, c'est ça le paradis !! mais je dis STOP car aujourd'hui je veux faire des efforts et arrêter ça, j'ai déja fait une demande a un nutritionniste professionnel pour m'aider et il ma dit de manger des repas complet et d'arrêter les sucres ajoutés, les aliments gras et ultratransformés et surtout manger des légumes ou légumineuse, beurk je déteste ça mais j'ai entendu dire que cuit ça peut être meilleur, je sais que ça fait beaucoup de chose mais c'est pour ça que je viens voir la meilleur page de GAMENUT, je veux trouver un menu qui me correspond et qui m'aiderais à arrêter tout ça.",
+		"releasedate":"0",
+		"infos":{
+			"nom":"Jordan",
+			"sexe":"Homme",
+			"age":22,
+			"taille":1.80,
+			"poids":93,
+			"imc":28.7,
+			"probleme":"Malbouffe",
+			"requete":"Repas complet avec légumineuses, légumes, sans sucres ajoutés, sans produits gras. Sans produit ultratransformé."
+		},
+		"respectbars":true,
+		"whitelist":["Légumes","Légumineuse"],
+		"blacklist":["Sucresajoutés","Alimentgras","Produitultratransformé"]
+	}	
 ]}
+
+
+

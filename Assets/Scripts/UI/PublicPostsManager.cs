@@ -5,15 +5,17 @@ using UnityEngine;
 
 public class PublicPostsManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+
+    public GameObject postPrefab;
+
     void Start()
     {
-        
+        Publication[] db = PublicationDatabase.get();
+        for (int i = 0; i < db.Length; i++)
+        {
+            GameObject post = Instantiate(postPrefab, transform);
+            post.GetComponent<PublicationBehavior>().SetFromData(db[i]);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

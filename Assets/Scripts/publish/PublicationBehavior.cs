@@ -78,5 +78,4 @@ public static class PublicationDatabase
         return database;
     }
 
-
 }

@@ -17,8 +17,3 @@ public class PublicPostsManager : MonoBehaviour
         
     }
 }
-
-[Serializable]
-public class PublicPost { 
-
-}

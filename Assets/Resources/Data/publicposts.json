@@ -18,5 +18,15 @@
 		"imagePath":"placeholder",
 		"likeText":"Aimé par Jean Bombeur et 348 autres personnes",
 		"comments":"Vera: simple et efficace!!<br>Coco: les gens qui vont a la muscu concentrez vous sur la droite!"
+	},
+	{
+		"posterName":"Poster name string",
+		"profilePath":"profil1",
+		"day":1,
+		"description":"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...",
+		"isPlate":false,
+		"imagePath":"placeholder",
+		"likeText":"Aimé par Jean Bombeur et 348 autres personnes",
+		"comments":"Vera: simple et efficace!!<br>Coco: les gens qui vont a la muscu concentrez vous sur la droite!"
 	}
 ]}

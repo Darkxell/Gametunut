@@ -10,6 +10,12 @@ public class Plate : MonoBehaviour
 {
 
     /// <summary>
+    /// Current quest message active, relevent if the current view is a composer.
+    /// May be null if there's no current quest, in which case the goal bars will be hidden.
+    /// </summary>
+    public MessageInfo currentQuest = null;
+
+    /// <summary>
     /// Half size of the plate, around the middle pivot point.
     /// </summary>
     public float sizeX, sizeY;
@@ -34,7 +40,9 @@ public class Plate : MonoBehaviour
     /// </summary>
     private PlateInfo contentinfo = new PlateInfo();
 
-    void Start()
+    public GameObject contentSlider1, contentSlider2, contentSlider3, contentSlider4;
+
+    void Awake()
     {
         lastInstance = gameObject;
     }
@@ -57,6 +65,36 @@ public class Plate : MonoBehaviour
     {
         for (int i = 0; i < data.content.Count; i++)
             addContent(data.content[i]);
+        // TODO: if this method is needed, add the gameobjects here at the correct locations
+    }
+
+    /// <summary>
+    /// removes the current quest from the interface, if it exists.
+    /// </summary>
+    public void startQuestless()
+    {
+        currentQuest = null;
+        contentSlider1.SetActive(false);
+        contentSlider2.SetActive(false);
+        contentSlider3.SetActive(false);
+        contentSlider4.SetActive(false);
+    }
+
+    /// <summary>
+    /// Initialises the plate and interface with the last data seen in the message inner behavior ui.
+    /// </summary>
+    public void startQuest()
+    {
+        if (MessageInnerBehavior.Instance.lastData == null)
+        {
+            startQuestless(); return;
+        }
+
+        currentQuest = MessageInnerBehavior.Instance.lastData;
+        contentSlider1.SetActive(true);
+        contentSlider2.SetActive(true);
+        contentSlider3.SetActive(true);
+        contentSlider4.SetActive(true);
     }
 
 }

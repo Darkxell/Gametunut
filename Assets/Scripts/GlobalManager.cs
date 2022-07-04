@@ -4,7 +4,7 @@ using UnityEngine;
 using System;
 using System.Security.Cryptography;
 using System.Text;
-using System.Runtime.Serialization.Formatters.Binary;
+using UnityEngine.Networking;
 
 public class GlobalManager : MonoBehaviour
 {
@@ -143,4 +143,24 @@ public class GlobalManager : MonoBehaviour
     {
         return CurentTestClass == TestClass.Class_Storytelling || CurentTestClass == TestClass.Class_GoalStorytelling || CurentTestClass == TestClass.Class_AwardsStorytelling || CurentTestClass == TestClass.Class_All;
     }
+
+    /// <summary>
+    /// Sends a pseudoaninimlized log to the server for any action the player makes.
+    /// <param name="data">String data, in csv format. Can contain anything and will be posted to the server as a singleline log. Will not be parsed in any case. 
+    /// Note that serevr may cull carriage returns for security, but content will be only lightly sanitized and should not be considered safe.</param>
+    /// </summary>
+    public IEnumerator sendLogToServer(String data)
+    {
+        string tosend = System.DateTime.UtcNow + "," + playerID + "," + data;
+        WWWForm form = new WWWForm();
+        form.AddField("source", "gametunut-" + playerID);
+        form.AddField("datacontent", tosend);
+        using (UnityWebRequest www = UnityWebRequest.Post("https://www.example.com/sendData", form))
+        {
+            yield return www.SendWebRequest();
+            if (www.result != UnityWebRequest.Result.Success)
+                Debug.Log(www.error);
+        }
+    }
+
 }

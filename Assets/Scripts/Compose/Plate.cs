@@ -100,7 +100,7 @@ public class Plate : MonoBehaviour
 }
 
 /// <summary>
-/// Serializable object containing
+/// Serializable object containing information about a plate, 
 /// </summary>
 [Serializable]
 public class PlateInfo

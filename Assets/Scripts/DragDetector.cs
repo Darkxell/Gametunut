@@ -26,28 +26,65 @@ public class DragDetector : MonoBehaviour
         lastInstance = this;
     }
 
+    /// <summary>
+    /// Touch mode for the drag detector gizmo.<br/>
+    /// Multitouch calls events for each touch independently with the position being the position of the touch and the force being calculated with the last update.<br/>
+    /// Predictive calls events for single touch with position being the start of the touch, and 
+    /// </summary>
+    enum TouchMode
+    {
+        Multitouch, Predictive
+    }
+
+    private TouchMode currentTouchMode = TouchMode.Multitouch;
+
     void Update()
     {
-        for (int i = 0; i < Input.touchCount && i < positionBuffer.Length; i++)
+        switch (currentTouchMode)
         {
-            Vector3 touchPosition = Camera.main.ScreenToWorldPoint(Input.touches[i].position);
-            Vector2 culledPos = new Vector2(touchPosition.x, touchPosition.y);
-            touchPosition.z = 0f;
-            if (i == 0)
-            {
-                transform.position = touchPosition;
-            }
-            for (int j = 0; j < callbacks.Count; j++)
-            {
-                if (Input.touches[i].phase == TouchPhase.Moved)
-                    callbacks[j]?.OnDrag(culledPos, culledPos - positionBuffer[i], i);
-            }
-            positionBuffer[i] = culledPos;
+            case TouchMode.Multitouch:
+                for (int i = 0; i < Input.touchCount && i < positionBuffer.Length; i++)
+                {
+                    Vector3 touchPosition = Camera.main.ScreenToWorldPoint(Input.touches[i].position);
+                    Vector2 culledPos = new Vector2(touchPosition.x, touchPosition.y);
+                    touchPosition.z = 0f;
+                    if (i == 0)
+                    {
+                        transform.position = touchPosition;
+                    }
+                    if (Input.touches[i].phase == TouchPhase.Moved)
+                        for (int j = 0; j < callbacks.Count; j++)
+                        {
+                            callbacks[j]?.OnDrag(culledPos, culledPos - positionBuffer[i], i);
+                        }
+                    positionBuffer[i] = culledPos;
+                }
+                if (Input.touchCount > 0)
+                    touchCooldownCurrent = touchCooldown;
+                else
+                    touchCooldownCurrent -= Time.deltaTime;
+                break;
+            case TouchMode.Predictive:
+                if (Input.touchCount <= 0)
+                    break;
+                {
+                    Vector3 touchPosition = Camera.main.ScreenToWorldPoint(Input.touches[0].position);
+                    Vector2 culledPos = new Vector2(touchPosition.x, touchPosition.y);
+                    touchPosition.z = 0f;
+                    transform.position = touchPosition;
+                    if (Input.touches[0].phase == TouchPhase.Began)
+                        positionBuffer[1] = touchPosition;
+                    if (Input.touches[0].phase == TouchPhase.Moved)
+                        for (int j = 0; j < callbacks.Count; j++)
+                        {
+                            callbacks[j]?.OnDrag(positionBuffer[1], culledPos - positionBuffer[0], 0);
+                        }
+                    positionBuffer[0] = culledPos;
+                }
+                break;
         }
-        if (Input.touchCount > 0)
-            touchCooldownCurrent = touchCooldown;
-        else
-            touchCooldownCurrent -= Time.deltaTime;
+
+
     }
 
 }

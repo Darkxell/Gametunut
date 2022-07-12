@@ -60,6 +60,7 @@ public class Plate : MonoBehaviour
         GameObject c = content.gameObject;
         c.transform.parent = this.transform;
         contentinfo.content.Add(new PlateItem(c.transform.position.x, c.transform.position.y, content.data.name));
+        this.content.Add(content.gameObject);
     }
     public void addContent(PlateItem content)
     {
@@ -67,6 +68,18 @@ public class Plate : MonoBehaviour
         GameObject pcontent = Instantiate(PlateContentPrefab, transform);
         pcontent.transform.position = new Vector3(content.x, content.y, pcontent.transform.position.z);
         pcontent.GetComponent<PlateContent>().data = IngredientsManager.getDataFor(content.ingredientID);
+    }
+
+    /// <summary>
+    /// Removes the last content added to this plate
+    /// </summary>
+    public void removeContent() {
+        if (content.Count != contentinfo.content.Count) 
+            return;
+        int removeIndex = content.Count - 1;
+        GameObject.Destroy(content[removeIndex]);
+        content.RemoveAt(removeIndex);
+        contentinfo.content.RemoveAt(removeIndex);
     }
 
     void instanciateFromData(PlateInfo data)
@@ -122,7 +135,7 @@ public class PlateInfo
         for (int i = 0; i < content.Count; i++)
             sb.Append(content[i]);
         sb.Append("]");
-        return base.ToString();
+        return sb.ToString();
     }
 }
 

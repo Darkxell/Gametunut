@@ -74,7 +74,7 @@ public class Plate : MonoBehaviour
     /// Removes the last content added to this plate
     /// </summary>
     public void removeContent() {
-        if (content.Count != contentinfo.content.Count) 
+        if (content.Count <= 0 || content.Count != contentinfo.content.Count) 
             return;
         int removeIndex = content.Count - 1;
         GameObject.Destroy(content[removeIndex]);

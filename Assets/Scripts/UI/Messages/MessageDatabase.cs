@@ -33,7 +33,8 @@ public static class MessageDatabase
         return null;
     }
 
-    public static MessageInfo[] getList() {
+    public static MessageInfo[] getList()
+    {
         if (database == null)
             Setup();
         return database;
@@ -55,6 +56,11 @@ public class MessageInfo
     public bool respectbars;
     public string[] whitelist;
     public string[] blacklist;
+
+    public override string ToString()
+    {
+        return "[Message:" + id + " / From:" + infos.nom + "]";
+    }
 }
 
 [Serializable]

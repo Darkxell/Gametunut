@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 using UnityEngine;
 
 /// <summary>
@@ -45,6 +46,13 @@ public class Plate : MonoBehaviour
     void Awake()
     {
         lastInstance = gameObject;
+    }
+
+    private void Update()
+    {
+        Debug.Log("Plate update state : " + currentQuest + "\n"
+            + "Plate content : " + content.Count + " items\n"
+            + contentinfo);
     }
 
     public void addContent(PlateContent content)
@@ -106,6 +114,16 @@ public class Plate : MonoBehaviour
 public class PlateInfo
 {
     public List<PlateItem> content = new List<PlateItem>();
+
+    public override string ToString()
+    {
+        StringBuilder sb = new StringBuilder();
+        sb.Append("[PlateInfo (" + content.Count + "): ");
+        for (int i = 0; i < content.Count; i++)
+            sb.Append(content[i]);
+        sb.Append("]");
+        return base.ToString();
+    }
 }
 
 /// <summary>
@@ -122,5 +140,9 @@ public class PlateItem
         this.x = x;
         this.y = y;
         this.ingredientID = ingredientID;
+    }
+    public override string ToString()
+    {
+        return "[" + ingredientID + "{" + x + "/" + y + "}]";
     }
 }

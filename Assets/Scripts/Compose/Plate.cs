@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 using UnityEngine;
+using UnityEngine.UI;
 
 /// <summary>
 /// Plate behavior, containing ingredients in a specific disposition
@@ -50,9 +51,9 @@ public class Plate : MonoBehaviour
 
     private void Update()
     {
-       /* Debug.Log("Plate update state : " + currentQuest + "\n"
-            + "Plate content : " + content.Count + " items\n"
-            + contentinfo);*/
+        /* Debug.Log("Plate update state : " + currentQuest + "\n"
+             + "Plate content : " + content.Count + " items\n"
+             + contentinfo); */
     }
 
     public void addContent(PlateContent content)
@@ -68,18 +69,53 @@ public class Plate : MonoBehaviour
         GameObject pcontent = Instantiate(PlateContentPrefab, transform);
         pcontent.transform.position = new Vector3(content.x, content.y, pcontent.transform.position.z);
         pcontent.GetComponent<PlateContent>().data = IngredientsManager.getDataFor(content.ingredientID);
+        UpdateGauges();
     }
 
     /// <summary>
     /// Removes the last content added to this plate
     /// </summary>
-    public void removeContent() {
-        if (content.Count <= 0 || content.Count != contentinfo.content.Count) 
+    public void removeContent()
+    {
+        if (content.Count <= 0 || content.Count != contentinfo.content.Count)
             return;
         int removeIndex = content.Count - 1;
         GameObject.Destroy(content[removeIndex]);
         content.RemoveAt(removeIndex);
         contentinfo.content.RemoveAt(removeIndex);
+        UpdateGauges();
+    }
+
+
+    public void UpdateGauges()
+    {
+        // Computes the total amount of Nutritional values in the plate for the sliders
+        float totalEnergy = 0f, totalProteins = 0f, totalLipids = 0f, totalGlucids = 0f;
+        for (int i = 0; i < contentinfo.content.Count; i++)
+        {
+            IngredientData datai = IngredientsManager.getDataFor(contentinfo.content[i].ingredientID);
+            if (datai != null)
+            {
+                totalEnergy += datai.energie;
+                totalProteins += datai.proteines;
+                totalLipids += datai.lipides;
+                totalGlucids += datai.glucides;
+            }
+        }
+        // Computes the sliders max values
+        contentSlider1.GetComponent<Slider>().maxValue = 2100;
+        contentSlider2.GetComponent<Slider>().maxValue = 300;
+        contentSlider3.GetComponent<Slider>().maxValue = 1200;
+        contentSlider4.GetComponent<Slider>().maxValue = 1600;
+    }
+
+    /// <summary>
+    /// Validates this plate as completed.<br>
+    /// Goes back to personal feed, saves the plate as completion, and if it was a mission, saves and resolves the mission attempt.
+    /// </summary>
+    public void ValidatePlate()
+    {
+        // TODO
     }
 
     void instanciateFromData(PlateInfo data)

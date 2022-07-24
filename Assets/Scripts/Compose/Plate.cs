@@ -50,9 +50,9 @@ public class Plate : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log("Plate update state : " + currentQuest + "\n"
+       /* Debug.Log("Plate update state : " + currentQuest + "\n"
             + "Plate content : " + content.Count + " items\n"
-            + contentinfo);
+            + contentinfo);*/
     }
 
     public void addContent(PlateContent content)

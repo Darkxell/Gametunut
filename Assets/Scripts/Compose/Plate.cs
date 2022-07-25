@@ -123,7 +123,7 @@ public class Plate : MonoBehaviour
         // Saves mission completion
         if (currentQuest != null /* && TODO : Check if mission is complete and won */) {
             string savedmissionsstr = PlayerPrefs.GetString("missions", "");
-            PlayerPrefs.SetString("plates", savedmissionsstr + "|" + currentQuest.id);
+            PlayerPrefs.SetString("missions", savedmissionsstr + "|" + currentQuest.id);
         }
         // sends a server packet with data about the completion
         // TODO

@@ -118,9 +118,15 @@ public class Plate : MonoBehaviour
         // Switches the UI panel to main
         ViewManager.Instance.OnViewChange(GameView.Profil);
         // Saves the plate done in phone and profile feed
-
+        string savedplatesstr = PlayerPrefs.GetString("plates", "");
+        PlayerPrefs.SetString("plates", savedplatesstr + "|" + JsonUtility.ToJson(contentinfo));
         // Saves mission completion
-
+        if (currentQuest != null /* && TODO : Check if mission is complete and won */) {
+            string savedmissionsstr = PlayerPrefs.GetString("missions", "");
+            PlayerPrefs.SetString("plates", savedmissionsstr + "|" + currentQuest.id);
+        }
+        // sends a server packet with data about the completion
+        // TODO
 
     }
 

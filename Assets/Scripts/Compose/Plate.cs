@@ -51,9 +51,6 @@ public class Plate : MonoBehaviour
 
     private void Update()
     {
-        /* Debug.Log("Plate update state : " + currentQuest + "\n"
-             + "Plate content : " + content.Count + " items\n"
-             + contentinfo); */
     }
 
     public void addContent(PlateContent content)
@@ -115,7 +112,16 @@ public class Plate : MonoBehaviour
     /// </summary>
     public void ValidatePlate()
     {
-        // TODO
+        Debug.Log("Validating plate!\nQuest :  " + currentQuest + "\n"
+             + "Plate content : " + content.Count + " items\n"
+             + contentinfo);
+        // Switches the UI panel to main
+        ViewManager.Instance.OnViewChange(GameView.Profil);
+        // Saves the plate done in phone and profile feed
+
+        // Saves mission completion
+
+
     }
 
     void instanciateFromData(PlateInfo data)

@@ -1,8 +1,8 @@
 {"Items":[
 	{ 
 		"name":"Ananas", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
+		"spriteMenu":"Ananas - icone",
+		"spriteInGame":"anans tranche",
 		"quantité": 100.0,
 		"energie": 54.0,
 		"proteines": 0.5,
@@ -12,8 +12,8 @@
 	},
 	{
 		"name":"Avocat", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
+		"spriteMenu":"Avocat - icone",
+		"spriteInGame":"avocat tranche",
 		"quantité": 100.0,
 		"energie": 205.0,
 		"proteines": 1.56,
@@ -23,8 +23,8 @@
 	},
 	{
 		"name":"Banane", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
+		"spriteMenu":"Banane - Icone",
+		"spriteInGame":"bananes tranches",
 		"quantité": 100.0,
 		"energie": 91.0,
 		"proteines": 1.06,
@@ -34,8 +34,8 @@
 	},
 	{ 
 		"name":"Cassis", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
+		"spriteMenu":"cassis icone",
+		"spriteInGame":"cassis portion",
 		"quantité": 100.0,
 		"energie": 51.8,
 		"proteines": 1.33,
@@ -46,8 +46,8 @@
 	
 	{ 
 		"name":"Concombre", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
+		"spriteMenu":"Concombre - Icones",
+		"spriteInGame":"conconbre tranches",
 		"quantité": 100.0,
 		"energie": 15.0,
 		"proteines": 0.56,
@@ -57,8 +57,8 @@
 	},
 	{ 
 		"name":"Myrtilles", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
+		"spriteMenu":"Myrtilles - Icones",
+		"spriteInGame":"myrtilles portion",
 		"quantité": 100.0,
 		"energie": 57.7,
 		"proteines": 0.87,
@@ -68,8 +68,8 @@
 	},
 	{ 
 		"name":"Fraise", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
+		"spriteMenu":"Fraises - Icones",
+		"spriteInGame":"fraises tranches",
 		"quantité": 100.0,
 		"energie": 39.0,
 		"proteines": 0.63,
@@ -79,8 +79,8 @@
 	},
 	{ 
 		"name":"Pomme", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
+		"spriteMenu":"pomme - icone",
+		"spriteInGame":"pomme tranches",
 		"quantité": 100.0,
 		"energie": 45.1,
 		"proteines": 0.27,
@@ -90,8 +90,8 @@
 	},
 	{ 
 		"name":"Pruneaux sec", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
+		"spriteMenu":"pruneaux sec",
+		"spriteInGame":"pruneaux sec",
 		"quantité": 30.0,
 		"energie": 68.7,
 		"proteines": 0.49,
@@ -101,8 +101,8 @@
 	},
 	{
 		"name":"Raisin", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
+		"spriteMenu":"raisin - icone",
+		"spriteInGame":"raisin - icone",
 		"quantité": 50.0,
 		"energie": 33.6,
 		"proteines": 0.36,
@@ -112,8 +112,8 @@
 	},
 	{
 		"name":"Tomate", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
+		"spriteMenu":"tomate - icone",
+		"spriteInGame":"tomats tranches",
 		"quantité": 100.0,
 		"energie": 20.1,
 		"proteines": 0.5,
@@ -123,8 +123,8 @@
 	},
 	{
 		"name":"Amande", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
+		"spriteMenu":"amandes",
+		"spriteInGame":"amandes",
 		"quantité": 25.0,
 		"energie": 143.7,
 		"proteines": 4.7,
@@ -133,8 +133,8 @@
 		"tags":["Fruitsàcoque","Indexglycémiquebas","Richeenfibres","Alimentlaxatif","Résidu","Alimentsantiinflammatoire"]
 	},{
 		"name":"Noix", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
+		"spriteMenu":"noix",
+		"spriteInGame":"noix",
 		"quantité": 25.0,
 		"energie": 171.6,
 		"proteines": 3.33,
@@ -143,8 +143,8 @@
 		"tags":["Fruitsàcoque","Alimentgras","Alimentlaxatif","Résidu","Alimentsantiinflammatoire"]
 	},{
 		"name":"Brocoli", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
+		"spriteMenu":"Brocolis - Icone",
+		"spriteInGame":"brocolis morceaux",
 		"quantité": 100.0,
 		"energie": 19.8,
 		"proteines": 2.1,
@@ -153,8 +153,8 @@
 		"tags":["Légumes","Légumescuits","VitamineC","VitamineB9","Alimentlaxatif","VitamineA","Saison","Résidu"]
 	},{
 		"name":"Carotte", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
+		"spriteMenu":"Carotte - Icone",
+		"spriteInGame":"carotte rondelles",
 		"quantité": 100.0,
 		"energie": 40.2,
 		"proteines": 0.63,
@@ -163,8 +163,8 @@
 		"tags":["Légumes","Antioxydant","VitamineA","Alimentlaxatif","Saison","Résidu"]
 	},{
 		"name":"Chou-fleur", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
+		"spriteMenu":"Choux-Fleur - Icone",
+		"spriteInGame":"choux fleur morceaux",
 		"quantité": 100.0,
 		"energie": 20.9,
 		"proteines": 1.6,
@@ -173,8 +173,8 @@
 		"tags":["Légumes","Légumescuits","VitamineC","Richeenfibres","Alimentlaxatif","VitamineB9","Saison","Résidu"]
 	},{
 		"name":"Courgette", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
+		"spriteMenu":"Courgettes - Icones",
+		"spriteInGame":"courgettes rondelles",
 		"quantité": 100.0,
 		"energie": 15.5,
 		"proteines": 0.93,
@@ -183,8 +183,8 @@
 		"tags":["Légumes","Légumescuits","Eau","Résidu"]
 	},{
 		"name":"Champignons", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
+		"spriteMenu":"Champignons - Icones",
+		"spriteInGame":"champi morceaux",
 		"quantité": 100.0,
 		"energie": 21.7,
 		"proteines": 2.37,
@@ -193,8 +193,8 @@
 		"tags":["Légumes","Résidu"]
 	},{
 		"name":"Oignons", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
+		"spriteMenu":"Oignons - Icones",
+		"spriteInGame":"oignons rondelles",
 		"quantité": 25.0,
 		"energie": 8.7,
 		"proteines": 0.275,
@@ -203,8 +203,8 @@
 		"tags":["Légumes","Saison","Résidu","Alimentsantiinflammatoire"]
 	},{
 		"name":"Betterave", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
+		"spriteMenu":"betterave",
+		"spriteInGame":"bettrave rondelles",
 		"quantité": 100.0,
 		"energie": 42.8,
 		"proteines": 1.44,
@@ -213,8 +213,8 @@
 		"tags":["Légumes","Légumescuits","Résidu"]
 	},{
 		"name":"Haricot vert", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
+		"spriteMenu":"harcicots icones",
+		"spriteInGame":"haricots verts portions",
 		"quantité": 100.0,
 		"energie": 28.0,
 		"proteines": 1.75,
@@ -223,8 +223,8 @@
 		"tags":["Légumes","Légumescuits","VitamineB9","Richeenfibres","Alimentlaxatif","Saison","Résidu"]
 	},{
 		"name":"Epinard", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
+		"spriteMenu":"epinards icones",
+		"spriteInGame":"epinards icones",
 		"quantité": 100.0,
 		"energie": 28.1,
 		"proteines": 3.38,
@@ -233,8 +233,8 @@
 		"tags":["Légumes","Légumescuits","VitamineC","Richeenfibres","Alimentlaxatif","VitamineB9","Résidu","VitamineA"]
 	},{
 		"name":"Poireau", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
+		"spriteMenu":"poireau icone",
+		"spriteInGame":"poireau découpe",
 		"quantité": 100.0,
 		"energie": 27.4,
 		"proteines": 2.56,
@@ -243,8 +243,8 @@
 		"tags":["Légumes","Légumescuits","Richeenfibres","Résidu"]
 	},{
 		"name":"Laitue", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
+		"spriteMenu":"Laitue icone",
+		"spriteInGame":"Salade portion",
 		"quantité": 100.0,
 		"energie": 12.3,
 		"proteines": 1.3,
@@ -253,8 +253,8 @@
 		"tags":["Légumes","Eau","Résidu","VitamineA"]
 	},{
 		"name":"Poivron", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
+		"spriteMenu":"Poivron rouge icone",
+		"spriteInGame":"poivrons rouges",
 		"quantité": 100.0,
 		"energie": 23.8,
 		"proteines": 0.8,
@@ -273,8 +273,8 @@
 		"tags":["Protéine","VitamineB9","Produitsanimaux","Fer","VitamineB12","VitamineA"]
 	},{
 		"name":"Steak de boeuf", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
+		"spriteMenu":"Steak - Aliment",
+		"spriteInGame":"Brochettes boeuf - Aliment",
 		"quantité": 125.0,
 		"energie": 194.0,
 		"proteines": 39.84,
@@ -283,8 +283,8 @@
 		"tags":["Protéine","Produitsanimaux","Fer"]
 	},{
 		"name":"Escalope de dinde", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
+		"spriteMenu":"Blanc de Dinde - Aliment",
+		"spriteInGame":"Patte de poulet - Aliment",
 		"quantité": 125.0,
 		"energie": 155.0,
 		"proteines": 35.625,
@@ -293,8 +293,8 @@
 		"tags":["Protéine","Produitsanimaux"]
 	},{
 		"name":"Sardine", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
+		"spriteMenu":"sardine icone",
+		"spriteInGame":"sardine icone",
 		"quantité": 125.0,
 		"energie": 243.0,
 		"proteines": 31.375,
@@ -303,8 +303,8 @@
 		"tags":["Protéine","Produitsanimaux","Alimentgras","Alimentsantiinflammatoire"]
 	},{
 		"name":"Saumon", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
+		"spriteMenu":"Saumon - Icone",
+		"spriteInGame":"Saumon - Aliment",
 		"quantité": 125.0,
 		"energie": 263.0,
 		"proteines": 27.625,
@@ -313,8 +313,8 @@
 		"tags":["Protéine","Produitsanimaux","Alimentgras","Alimentsantiinflammatoire"]
 	},{
 		"name":"Thon", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
+		"spriteMenu":"thon icone",
+		"spriteInGame":"thon cuit",
 		"quantité": 125.0,
 		"energie": 170.0,
 		"proteines": 37.38,
@@ -323,8 +323,8 @@
 		"tags":["Protéine","Produitsanimaux"]
 	},{
 		"name":"Cabillaud", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
+		"spriteMenu":"cabillaud icone",
+		"spriteInGame":"cabillaud portion",
 		"quantité": 125.0,
 		"energie": 118.3,
 		"proteines": 27.88,
@@ -333,8 +333,8 @@
 		"tags":["Protéine","Produitsanimaux"]
 	},{
 		"name":"Crevettes", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
+		"spriteMenu":"crevettes",
+		"spriteInGame":"crevettes décortiquées",
 		"quantité": 125.0,
 		"energie": 117.3,
 		"proteines": 23.75,
@@ -343,8 +343,8 @@
 		"tags":["Protéine","Crustacés","Produitsanimaux"]
 	},{
 		"name":"Oeuf dur", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
+		"spriteMenu":"Oeufs - Icones",
+		"spriteInGame":"Oeufs Durs",
 		"quantité": 60.0,
 		"energie": 80.4,
 		"proteines": 8.1,
@@ -353,8 +353,8 @@
 		"tags":["Protéine","Produitsanimaux"]
 	},{
 		"name":"Tofu", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
+		"spriteMenu":"tofu icone",
+		"spriteInGame":"tofu détails",
 		"quantité": 125.0,
 		"energie": 185.0,
 		"proteines": 16.75,
@@ -394,8 +394,8 @@
 		"tags":["Légumineuse","Richeenfibres","FerVégétal","Alimentlaxatif","Indexglycémiquebas","Résidu"]
 	},{
 		"name":"Pois chiches", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
+		"spriteMenu":"Pois Chiches - Icones",
+		"spriteInGame":"Pois Chiches - Aliments",
 		"quantité": 100.0,
 		"energie": 147,
 		"proteines": 8.31,
@@ -554,8 +554,8 @@
 		"tags":["VitamineA"]
 	},{
 		"name":"Beurre", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
+		"spriteMenu":"beurre",
+		"spriteInGame":"beurre",
 		"quantité": 10.0,
 		"energie": 75.3,
 		"proteines": 0.07,
@@ -624,8 +624,8 @@
 		"tags":["Alimentgras","Produitultratransformé","Indexglycémiquebas"]
 	},{
 		"name":"Lait demi-écrémé", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
+		"spriteMenu":"lait semi-écrémé",
+		"spriteInGame":"lait semi-écrémé",
 		"quantité": 150.0,
 		"energie": 103.58,
 		"proteines": 7.35,
@@ -634,8 +634,8 @@
 		"tags":["Lactose","Protéine","Indexglycémiquebas","Résidu"]
 	},{
 		"name":"Lait sans lactose", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
+		"spriteMenu":"lait sans lactose",
+		"spriteInGame":"lait sans lactose",
 		"quantité": 150.0,
 		"energie": 98.79,
 		"proteines": 7.035,
@@ -664,8 +664,8 @@
 		"tags":["Lactose","Indexglycémiquebas"]
 	},{
 		"name":"Yaourt nature", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
+		"spriteMenu":"yaourt nature",
+		"spriteInGame":"yaourt nature",
 		"quantité": 125.0,
 		"energie": 68.525,
 		"proteines": 4.75,
@@ -684,8 +684,8 @@
 		"tags":["Protéine","Lactose"]
 	},{
 		"name":"Yaourt aromatisé", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
+		"spriteMenu":"yaourt aux fruits",
+		"spriteInGame":"yaourt aux fruits",
 		"quantité": 125.0,
 		"energie": 116.50,
 		"proteines": 3.96,
@@ -714,8 +714,8 @@
 		"tags":["Sucresajoutés"]
 	},{
 		"name":"Sucre blanc", 
-		"spriteMenu":"blueberries",
-		"spriteInGame":"blueberries",
+		"spriteMenu":"sucre blanc",
+		"spriteInGame":"sucre blanc",
 		"quantité": 8.0,
 		"energie": 31.95,
 		"proteines": 0,

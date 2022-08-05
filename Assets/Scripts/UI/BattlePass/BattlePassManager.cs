@@ -5,9 +5,16 @@ using UnityEngine;
 public class BattlePassManager : MonoBehaviour
 {
 
+    /// <summary>
+    /// No time to make a proper json for this, I'm sorry.
+    /// </summary>
+    public static BattlePassAward[] AwardsDatabase = new BattlePassAward[] { };
+
     public static BattlePassManager Instance;
 
     public GameObject Slider;
+
+    public GameObject ContentView;
 
     void Awake()
     {
@@ -30,4 +37,31 @@ public class BattlePassManager : MonoBehaviour
     {
         gameObject.SetActive(false);
     }
+}
+
+public class BattlePassAward
+{
+
+    /// <summary>
+    /// Number of points required to unlock this award
+    /// </summary>
+    public int points;
+
+    public BattlePassAwardType type;
+
+    /// <summary>
+    /// How many of the award you get
+    /// </summary>
+    public int count;
+
+    /// <summary>
+    /// ID of the award, used notably for ingredient awards
+    /// </summary>
+    public string id;
+
+}
+
+public enum BattlePassAwardType
+{
+    Subscribers, Ingredient
 }

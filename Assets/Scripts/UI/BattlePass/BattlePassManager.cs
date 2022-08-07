@@ -8,7 +8,34 @@ public class BattlePassManager : MonoBehaviour
     /// <summary>
     /// No time to make a proper json for this, I'm sorry.
     /// </summary>
-    public static BattlePassAward[] AwardsDatabase = new BattlePassAward[] { };
+    public static BattlePassAward[] AwardsDatabase = new BattlePassAward[] {
+        new BattlePassAward(50, "Ananas"),
+        new BattlePassAward(152, "Ananas"),
+        new BattlePassAward(205, "Ananas"),
+        new BattlePassAward(305, "Ananas"),
+        new BattlePassAward(355, "Ananas"),
+        new BattlePassAward(455, "Ananas"),
+        new BattlePassAward(510, "Ananas"),
+        new BattlePassAward(610, "Ananas"),
+        new BattlePassAward(665, "Ananas"),
+        new BattlePassAward(765, "Ananas"),
+        new BattlePassAward(810, "Ananas"),
+        new BattlePassAward(920, "Ananas"),
+        new BattlePassAward(970, "Ananas"),
+        new BattlePassAward(1070, "Ananas"),
+        new BattlePassAward(1120, "Ananas"),
+        new BattlePassAward(1225, "Ananas"),
+        new BattlePassAward(1275, "Ananas"),
+        new BattlePassAward(1375, "Ananas"),
+        new BattlePassAward(1480, "Ananas"),
+        new BattlePassAward(1530, "Ananas"),
+        new BattlePassAward(1630, "Ananas"),
+        new BattlePassAward(1685, "Ananas"),
+        new BattlePassAward(1785, "Ananas"),
+        new BattlePassAward(1840, "Ananas"),
+        new BattlePassAward(1940, "Ananas"),
+        new BattlePassAward(1990, "Ananas"),
+        new BattlePassAward(2100, "Ananas")};
 
     public static BattlePassManager Instance;
 

@@ -2,12 +2,12 @@
 	{ 
 		"name":"Fruits & Légumes", 
 		"sprite":"fruits",
-		"ingredients":["Ananas","Avocat","Banane","Cassis","Concombre","Myrtilles","Fraise","Pomme","Pruneaux sec","Raisin","Tomate","Amande","Noix","Brocoli","Carotte","Chou-fleur","Courgette","Champignons","Oignons","Betterave","Haricot vert","Epinard","Poireau","Laitue","Poivron"]
+		"ingredients": [ "Ananas", "Avocat", "Banane", "Cassis", "Concombre", "Myrtilles", "Fraise", "Pomme", "Pruneaux sec", "Raisin", "Tomate", "Amande", "Noix", "Brocoli", "Carotte", "Chou-fleur", "Courgette", "Champignons", "Oignons", "Betterave", "Haricot vert", "Epinard", "Poireau", "Laitue", "Poivron Rouge", "Poivron Jaune", "Poivron Vert" ]
 	},
 	{ 
 		"name":"Viandes, poissons, oeufs & alte", 
 		"sprite":"fruits",
-		"ingredients":["Foie de volaille","Steak de boeuf","Escalope de dinde","Sardine","Saumon","Thon","Cabillaud","Crevettes","Oeuf dur","Tofu","Steak vegan"]
+		"ingredients": [ "Foie de volaille", "Steak de boeuf", "Brochette de boeuf", "Escalope de dinde", "Sardine", "Saumon", "Thon", "Cabillaud", "Crevettes", "Oeuf dur", "Omelette", "Tofu", "Steak vegan" ]
 	},
 	{ 
 		"name":"Légumineuses, céréales & tuberc", 

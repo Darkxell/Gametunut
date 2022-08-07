@@ -42,6 +42,22 @@ public class BattlePassManager : MonoBehaviour
 public class BattlePassAward
 {
 
+    public BattlePassAward(int points, int count)
+    {
+        this.points = points;
+        this.type = BattlePassAwardType.Subscribers;
+        this.count = count;
+        this.id = "subscribers";
+    }
+
+    public BattlePassAward(int points, string id)
+    {
+        this.points = points;
+        this.type = BattlePassAwardType.Ingredient;
+        this.count = 1;
+        this.id = id;
+    }
+
     /// <summary>
     /// Number of points required to unlock this award
     /// </summary>

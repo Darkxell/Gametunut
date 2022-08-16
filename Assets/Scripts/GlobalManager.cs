@@ -18,7 +18,7 @@ public class GlobalManager : MonoBehaviour
     public int CurrentDay;
 
     // mm/dd/yyyy US format : https://docs.microsoft.com/fr-fr/dotnet/api/system.datetime.parse?view=net-6.0
-    public DateTime StartDate = System.DateTime.Parse("06/08/2022");
+    public DateTime StartDate = System.DateTime.Parse("12/08/2022");
 
     /// <summary>
     /// Hashed player ID, unique per device

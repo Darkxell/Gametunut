@@ -10,12 +10,14 @@ public class PublicPostsManager : MonoBehaviour
 
     void Start()
     {
-        // TODO : check publication date here to not flood everything from the start
         Publication[] db = PublicationDatabase.get();
         for (int i = db.Length - 1; i >= 0; i--)
         {
-            GameObject post = Instantiate(postPrefab, transform);
-            post.GetComponent<PublicationBehavior>().SetFromData(db[i]);
+            if (db[i].day <= GlobalManager.Instance.CurrentDay)
+            {
+                GameObject post = Instantiate(postPrefab, transform);
+                post.GetComponent<PublicationBehavior>().SetFromData(db[i]);
+            }
         }
     }
 

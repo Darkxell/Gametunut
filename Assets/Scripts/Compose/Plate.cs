@@ -119,12 +119,13 @@ public class Plate : MonoBehaviour
         ViewManager.Instance.OnViewChange(GameView.Profil);
         // Saves the plate done in phone and profile feed
         string savedplatesstr = PlayerPrefs.GetString("plates", "");
-        PlayerPrefs.SetString("plates", savedplatesstr + "|" + JsonUtility.ToJson(contentinfo));
+        PlayerPrefs.SetString("plates", (savedplatesstr.Equals("")?"": savedplatesstr + "|") + JsonUtility.ToJson(contentinfo));
         // Saves mission completion
         if (currentQuest != null /* && TODO : Check if mission is complete and won */) {
             string savedmissionsstr = PlayerPrefs.GetString("missions", "");
-            PlayerPrefs.SetString("missions", savedmissionsstr + "|" + currentQuest.id);
+            PlayerPrefs.SetString("missions", (savedmissionsstr.Equals("") ? "" : savedmissionsstr + "|") + "|" + currentQuest.id);
         }
+        BattlePassManager.Instance.computeCurentPoints();
         // sends a server packet with data about the completion
         // TODO
 

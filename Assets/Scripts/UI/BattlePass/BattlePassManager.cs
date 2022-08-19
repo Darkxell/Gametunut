@@ -43,9 +43,16 @@ public class BattlePassManager : MonoBehaviour
 
     public GameObject ContentView;
 
+    /// <summary>
+    /// Current battlepass completion, in points.
+    /// Gets set on app launch depending on savestate progression, and updates when you gain points.
+    /// </summary>
+    private int currentpoints = 0;
+
     void Awake()
     {
         Instance = this;
+        computeCurentPoints();
         close();
     }
 
@@ -63,6 +70,15 @@ public class BattlePassManager : MonoBehaviour
     public void close()
     {
         gameObject.SetActive(false);
+    }
+
+    /// <summary>
+    /// Forces a recompute of current points from the save data.
+    /// This will also recompute and update the amount of visible subscribers the player has.
+    /// </summary>
+    public void computeCurentPoints() {
+        string savedmissionsstr = PlayerPrefs.GetString("missions", "");
+        string plates = PlayerPrefs.GetString("missions", "");
     }
 }
 

@@ -98,7 +98,7 @@ public class SubIngredientsList : MonoBehaviour, DragCallable
         for (int i = 0; i < ingredients.Count; i++)
         {
             float yoffset = scroll - (i * unitHeight), yoffsetabs = Mathf.Abs(yoffset);
-            float xoffset = Mathf.Min(-100, (Mathf.Log10(yoffsetabs + 0.1f) + Mathf.Exp(Mathf.Pow(yoffsetabs, 2) / 10)) * 0.4f);
+            float xoffset = Mathf.Max(-100, (Mathf.Log10(yoffsetabs + 0.1f) + Mathf.Exp(Mathf.Pow(yoffsetabs, 2) / 10)) * 0.4f);
             ingredients[i].gameObject.transform.position = new Vector3(transform.position.x - xoffset, transform.position.y + yoffset, 0);
         }
     }

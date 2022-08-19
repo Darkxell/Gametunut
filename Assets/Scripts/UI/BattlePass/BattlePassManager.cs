@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BattlePassManager : MonoBehaviour
 {
@@ -76,9 +77,13 @@ public class BattlePassManager : MonoBehaviour
     /// Forces a recompute of current points from the save data.
     /// This will also recompute and update the amount of visible subscribers the player has.
     /// </summary>
-    public void computeCurentPoints() {
+    public void computeCurentPoints()
+    {
         string savedmissionsstr = PlayerPrefs.GetString("missions", "");
-        string plates = PlayerPrefs.GetString("missions", "");
+        string savedplatesstr = PlayerPrefs.GetString("missions", "");
+        int amount_missions = savedmissionsstr.Split("|").Length, amount_plates = savedplatesstr.Split("|").Length;
+        currentpoints = 40 * amount_missions + 10 * amount_plates;
+        Slider.GetComponent<Slider>().value = Mathf.Clamp(currentpoints, 0f, Slider.GetComponent<Slider>().maxValue);
     }
 }
 

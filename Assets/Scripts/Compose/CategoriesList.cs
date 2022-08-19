@@ -110,11 +110,14 @@ public class CategoriesList : MonoBehaviour, DragCallable
                 }
                 for (int i = 0; i < currentSelected.ingredients.Length; i++)
                 {
-                    GameObject localechild = Instantiate(IngredientPrefab, sublist.transform);
-                    IngredientBehavior behavior = localechild.GetComponent<IngredientBehavior>();
-                    behavior.data = IngredientsManager.getDataFor(currentSelected.ingredients[i]);
-                    slist.ingredients.Add(localechild);
-                    behavior.gameObject.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("composer/ingredients/" + behavior.data.spriteMenu);
+                    if (!BattlePassManager.Instance.ingredientsBlacklist.Contains(currentSelected.ingredients[i]))
+                    {
+                        GameObject localechild = Instantiate(IngredientPrefab, sublist.transform);
+                        IngredientBehavior behavior = localechild.GetComponent<IngredientBehavior>();
+                        behavior.data = IngredientsManager.getDataFor(currentSelected.ingredients[i]);
+                        slist.ingredients.Add(localechild);
+                        behavior.gameObject.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("composer/ingredients/" + behavior.data.spriteMenu);
+                    }
                 }
             }
         }

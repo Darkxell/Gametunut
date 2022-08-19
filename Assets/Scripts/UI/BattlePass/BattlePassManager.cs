@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class BattlePassManager : MonoBehaviour
 {
@@ -42,6 +43,8 @@ public class BattlePassManager : MonoBehaviour
 
     public GameObject Slider;
 
+    public GameObject SubscriberText;
+
     public GameObject ContentView;
 
     /// <summary>
@@ -53,6 +56,10 @@ public class BattlePassManager : MonoBehaviour
     void Awake()
     {
         Instance = this;
+    }
+
+    private void Start()
+    {
         computeCurentPoints();
         close();
     }
@@ -79,11 +86,19 @@ public class BattlePassManager : MonoBehaviour
     /// </summary>
     public void computeCurentPoints()
     {
+        // Save data gather
         string savedmissionsstr = PlayerPrefs.GetString("missions", "");
         string savedplatesstr = PlayerPrefs.GetString("missions", "");
         int amount_missions = savedmissionsstr.Split("|").Length, amount_plates = savedplatesstr.Split("|").Length;
+        // Points math
         currentpoints = 40 * amount_missions + 10 * amount_plates;
         Slider.GetComponent<Slider>().value = Mathf.Clamp(currentpoints, 0f, Slider.GetComponent<Slider>().maxValue);
+        // Subscribers math
+        int subscribers = 250 + 7 * GlobalManager.Instance.CurrentDay * 13 * amount_plates;
+        foreach (BattlePassAward award in AwardsDatabase)
+            if (award.points <= currentpoints && award.type == BattlePassAwardType.Subscribers)
+                subscribers += award.count;
+        SubscriberText.GetComponent<TextMeshProUGUI>().text = subscribers + "\nAbonnés";
     }
 }
 

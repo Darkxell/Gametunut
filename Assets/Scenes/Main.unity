@@ -11478,8 +11478,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 6.9623, y: -280.597}
-  m_SizeDelta: {x: 620.9, y: 81.376}
+  m_AnchoredPosition: {x: 6.9623, y: -300.37906}
+  m_SizeDelta: {x: 620.9, y: 41.812}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1080173131
 MonoBehaviour:
@@ -11501,7 +11501,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Points Actuels : 245\nProchaine r\xE9sompense dans 170 points"
+  m_text: 'Points Actuels : 245'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -19594,7 +19594,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Slider: {fileID: 315944307}
   SubscriberText: {fileID: 342453661}
+  PublicationsText: {fileID: 1813107840}
+  currentPointsText: {fileID: 1080173129}
   ContentView: {fileID: 1887085275}
+  objectFrames:
+  - {fileID: 1832098958}
+  - {fileID: 265901653}
+  - {fileID: 427529172}
+  - {fileID: 541313418}
+  - {fileID: 2018728803}
+  - {fileID: 35820252}
+  - {fileID: 1907955465}
+  - {fileID: 1936029094}
+  - {fileID: 249465529}
+  - {fileID: 1890614033}
+  - {fileID: 1871555169}
+  - {fileID: 1468356732}
+  - {fileID: 757753681}
+  - {fileID: 386991743}
+  - {fileID: 389410997}
+  - {fileID: 686446567}
+  - {fileID: 982516286}
+  - {fileID: 1026011260}
+  - {fileID: 515127965}
+  - {fileID: 1534669361}
+  - {fileID: 1599802739}
+  - {fileID: 1165805966}
+  - {fileID: 1406323528}
+  - {fileID: 443796155}
+  - {fileID: 493939107}
+  - {fileID: 1883029660}
+  - {fileID: 536527431}
+  FrameLocked: {fileID: 21300000, guid: d27da7d1500b161479d49bbe9a497f26, type: 3}
+  FrameUnlocked: {fileID: 21300000, guid: f5914f79d57d5974f9da1db1b18a8d5a, type: 3}
 --- !u!1 &1962084236
 GameObject:
   m_ObjectHideFlags: 0

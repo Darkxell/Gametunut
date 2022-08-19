@@ -44,8 +44,18 @@ public class BattlePassManager : MonoBehaviour
     public GameObject Slider;
 
     public GameObject SubscriberText;
+    public GameObject PublicationsText;
+
+    public GameObject currentPointsText;
 
     public GameObject ContentView;
+
+    public List<GameObject> objectFrames;
+
+    public Sprite FrameLocked;
+    public Sprite FrameUnlocked;
+
+    public HashSet<string> ingredientsBlacklist = new HashSet<string>(25);
 
     /// <summary>
     /// Current battlepass completion, in points.
@@ -82,23 +92,40 @@ public class BattlePassManager : MonoBehaviour
 
     /// <summary>
     /// Forces a recompute of current points from the save data.
-    /// This will also recompute and update the amount of visible subscribers the player has.
+    /// This will also recompute and update the following:<br>
+    ///  - amount of visible subscribers the player has.<br>
+    ///  - number of visible publications on the player profile (just the numbers, not the posts themselves)<br>
+    ///  - all content in the battlepass window<br>
+    ///  - The HashSet of blacklisted ingredients because of the battlepass, if player has awards
     /// </summary>
     public void computeCurentPoints()
     {
         // Save data gather
         string savedmissionsstr = PlayerPrefs.GetString("missions", "");
         string savedplatesstr = PlayerPrefs.GetString("missions", "");
-        int amount_missions = savedmissionsstr.Split("|").Length, amount_plates = savedplatesstr.Split("|").Length;
+        int amount_missions = savedmissionsstr.EndsWith("") ? 0 : savedmissionsstr.Split("|").Length, amount_plates = savedplatesstr.EndsWith("") ? 0 : savedplatesstr.Split("|").Length;
         // Points math
         currentpoints = 40 * amount_missions + 10 * amount_plates;
-        Slider.GetComponent<Slider>().value = Mathf.Clamp(currentpoints, 0f, Slider.GetComponent<Slider>().maxValue);
         // Subscribers math
-        int subscribers = 250 + 7 * GlobalManager.Instance.CurrentDay * 13 * amount_plates;
+        int subscribers = 250 + 7 * GlobalManager.Instance.CurrentDay + 13 * amount_plates;
         foreach (BattlePassAward award in AwardsDatabase)
             if (award.points <= currentpoints && award.type == BattlePassAwardType.Subscribers)
                 subscribers += award.count;
         SubscriberText.GetComponent<TextMeshProUGUI>().text = subscribers + "\nAbonnés";
+        PublicationsText.GetComponent<TextMeshProUGUI>().text = amount_plates + "\nPublications";
+        // Slider graphical update
+        Slider.GetComponent<Slider>().value = Mathf.Clamp(currentpoints, 0f, Slider.GetComponent<Slider>().maxValue);
+        currentPointsText.GetComponent<TextMeshProUGUI>().text = "Points Actuels : " + currentpoints;
+        ingredientsBlacklist.Clear();
+        for (int i = 0; i < AwardsDatabase.Length; ++i)
+            if (AwardsDatabase[i].points <=currentpoints) {
+                objectFrames[i].GetComponent<Image>().sprite = FrameUnlocked;
+            } else {
+                objectFrames[i].GetComponent<Image>().sprite = FrameLocked;
+                if (GlobalManager.Instance.hasAwards() && AwardsDatabase[i].type == BattlePassAwardType.Ingredient)
+                    ingredientsBlacklist.Add(AwardsDatabase[i].id);
+            }
+        //TODO: BLACKLIST INGREDIENTS HERE
     }
 }
 

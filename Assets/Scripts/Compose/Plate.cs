@@ -126,7 +126,9 @@ public class Plate : MonoBehaviour
             string savedmissionsstr = PlayerPrefs.GetString("missions", "");
             PlayerPrefs.SetString("missions", (savedmissionsstr.Equals("") ? "" : savedmissionsstr + "|") + "|" + currentQuest.id);
         }
+        // Updates battlepass and mission list
         BattlePassManager.Instance.computeCurentPoints();
+        ButtonContainer.Instance.updateNotifIcons();
         // sends a server packet with data about the completion
         // TODO
 

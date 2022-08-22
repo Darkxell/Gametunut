@@ -7,8 +7,14 @@ using UnityEngine;
 /// </summary>
 public class ButtonContainer : MonoBehaviour
 {
+    public static ButtonContainer Instance;
 
     public GameObject messageButtonPrefab;
+
+    private void Awake()
+    {
+        Instance = this;
+    }
 
     void Start()
     {
@@ -28,6 +34,26 @@ public class ButtonContainer : MonoBehaviour
                 instanceLocale.GetComponent<MessageButton>().data = db[i];
             }
         }
+        updateNotifIcons();
+    }
+
+    /// <summary>
+    /// Updates the notification icons of all childs
+    /// </summary>
+    public void updateNotifIcons() {
+        HashSet<int> completedMissions = new HashSet<int>();
+        string workbuffer = PlayerPrefs.GetString("missions", "");
+        if (!workbuffer.Equals("")) {
+            string[] buffarray = workbuffer.Split("|");
+            for (int i = 0; i < buffarray.Length; i++)
+                completedMissions.Add(int.Parse(buffarray[i]));
+        }
+
+        foreach (Transform child in transform)
+            if (child.GetComponent<MessageButton>() != null) {
+                MessageButton obj = child.GetComponent<MessageButton>();
+                obj.ChangeNotifIcon(completedMissions.Contains(obj.data.id) ? NotifIconType.Completed : NotifIconType.New);
+            }
     }
 
 }

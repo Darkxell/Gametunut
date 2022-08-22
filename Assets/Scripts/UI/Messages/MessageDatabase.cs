@@ -51,7 +51,7 @@ public class MessageInfo
     public string picture;
     public string textshort;
     public string textlong;
-    public string releasedate;
+    public int releasedate;
     public SenderInfo infos;
     public bool respectbars;
     public string[] whitelist;

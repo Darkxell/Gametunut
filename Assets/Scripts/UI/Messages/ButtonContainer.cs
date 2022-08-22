@@ -13,10 +13,10 @@ public class ButtonContainer : MonoBehaviour
     void Start()
     {
         MessageInfo[] db = MessageDatabase.getList();
-        Debug.Log("Loading messages from database in UI, found " + db.Length + " entries.\nTodays date is " + "?" + " and we are day " + "?" + " in the experiment.");
+        Debug.Log("Loading messages from database in UI, found " + db.Length + " entries.\nTodays date is " + System.DateTime.Today + " and we are day " + GlobalManager.Instance.CurrentDay + " in the experiment.");
         for (int i = 0; i < db.Length; i++)
         {
-            if (/*check date of db[i] here*/ true)
+            if (db[i].releasedate <= GlobalManager.Instance.CurrentDay)
             {
                 GameObject instanceLocale = Instantiate(messageButtonPrefab, transform);
 

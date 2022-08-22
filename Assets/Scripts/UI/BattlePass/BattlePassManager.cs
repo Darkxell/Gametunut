@@ -103,7 +103,7 @@ public class BattlePassManager : MonoBehaviour
         // Save data gather
         string savedmissionsstr = PlayerPrefs.GetString("missions", "");
         string savedplatesstr = PlayerPrefs.GetString("missions", "");
-        int amount_missions = savedmissionsstr.EndsWith("") ? 0 : savedmissionsstr.Split("|").Length, amount_plates = savedplatesstr.EndsWith("") ? 0 : savedplatesstr.Split("|").Length;
+        int amount_missions = savedmissionsstr.Equals("") ? 0 : savedmissionsstr.Split("|").Length, amount_plates = savedplatesstr.Equals("") ? 0 : savedplatesstr.Split("|").Length;
         // Points math
         currentpoints = 40 * amount_missions + 10 * amount_plates;
         // Subscribers math
@@ -125,7 +125,6 @@ public class BattlePassManager : MonoBehaviour
                 if (GlobalManager.Instance.hasAwards() && AwardsDatabase[i].type == BattlePassAwardType.Ingredient)
                     ingredientsBlacklist.Add(AwardsDatabase[i].id);
             }
-        //TODO: BLACKLIST INGREDIENTS HERE
     }
 }
 

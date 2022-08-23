@@ -116,7 +116,7 @@ public class Plate : MonoBehaviour
             float fourchette1a = 10, fourchette1b = 15, fourchette2a = 35, fourchette2b = 40, fourchette3a = 40, fourchette3b = 55;
             SenderInfo personinfos = currentQuest.infos;
             // Energy
-            double MB = (personinfos.sexe.Equals("Homme") ? 1.083 : 0.963) * Mathf.Pow(personinfos.poids, (float)0.48) * Mathf.Pow(personinfos.taille, (float)0.5) * (personinfos.age - 0.13) * dailymultiplier;
+            double MB = (personinfos.sexe.Equals("Homme") ? 1.083 : 0.963) * Mathf.Pow(personinfos.poids, (float)0.48) * Mathf.Pow(personinfos.taille, (float)0.5) * Mathf.Pow(personinfos.age, -0.13f) * dailymultiplier;
             maxvalue1 = (int)(MB * 1.63 * 239);
             // Proteins
             maxvalue2 = (int)(MB * 1000 * (fourchette1a / 100) / 17);

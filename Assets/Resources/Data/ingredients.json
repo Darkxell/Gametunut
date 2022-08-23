@@ -739,7 +739,7 @@
 			"tags": [ "Protéine", "Indexglycémiquebas" ]
 		},
 		{
-			"name": "Emmental ",
+			"name": "Emmental",
 			"spriteMenu": "blueberries",
 			"spriteInGame": "blueberries",
 			"quantité": 30.0,

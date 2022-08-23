@@ -11,14 +11,14 @@ public class PublicPostsManager : MonoBehaviour
     void Start()
     {
         Publication[] db = PublicationDatabase.get();
-        for (int i = db.Length - 1; i >= 0; i--)
-        {
-            if (db[i].day <= GlobalManager.Instance.CurrentDay)
-            {
-                GameObject post = Instantiate(postPrefab, transform);
-                post.GetComponent<PublicationBehavior>().SetFromData(db[i]);
-            }
-        }
+        // For each day in the experiment, add posts matching that day to the list
+        for (int i = GlobalManager.Instance.CurrentDay; i >= 0; i--)
+            for (int j = db.Length - 1; j >= 0; j--)
+                if (db[j].day == i)
+                {
+                    GameObject post = Instantiate(postPrefab, transform);
+                    post.GetComponent<PublicationBehavior>().SetFromData(db[j]);
+                }
     }
 
 }

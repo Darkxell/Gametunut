@@ -68,6 +68,7 @@ public class CategoriesList : MonoBehaviour, DragCallable
     void FixedUpdate()
     {
         selectedID = (int)((scroll + unitHeight / 2f) / unitHeight);
+        selectedID = Mathf.Clamp(selectedID, 0, categories.Count -1);
         float autoscrollspeed = 0.05f;
         // If no scroll for a while, snap scroll to nearest element index.
         if (snapCooldownCurrent <= 0)

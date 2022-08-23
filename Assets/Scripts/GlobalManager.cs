@@ -33,6 +33,7 @@ public class GlobalManager : MonoBehaviour
 
     void Awake()
     {
+        Application.SetStackTraceLogType(LogType.Log, StackTraceLogType.None);
         Instance = this;
         // Computes the current experiment day
         CurrentDay = Mathf.Max(0, (System.DateTime.Today - StartDate).Days);

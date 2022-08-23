@@ -40,17 +40,22 @@ public class ButtonContainer : MonoBehaviour
     /// <summary>
     /// Updates the notification icons of all childs
     /// </summary>
-    public void updateNotifIcons() {
+    public void updateNotifIcons()
+    {
         HashSet<int> completedMissions = new HashSet<int>();
         string workbuffer = PlayerPrefs.GetString("missions", "");
-        if (!workbuffer.Equals("")) {
+        Debug.Log("Updating notification icons from saved data : " + workbuffer);
+        if (!workbuffer.Equals(""))
+        {
             string[] buffarray = workbuffer.Split("|");
             for (int i = 0; i < buffarray.Length; i++)
-                completedMissions.Add(int.Parse(buffarray[i]));
+                if (buffarray[i] != "")
+                    completedMissions.Add(int.Parse(buffarray[i]));
         }
 
         foreach (Transform child in transform)
-            if (child.GetComponent<MessageButton>() != null) {
+            if (child.GetComponent<MessageButton>() != null)
+            {
                 MessageButton obj = child.GetComponent<MessageButton>();
                 obj.ChangeNotifIcon(completedMissions.Contains(obj.data.id) ? NotifIconType.Completed : NotifIconType.New);
             }

@@ -31,6 +31,10 @@ public class PersonalFeedFiller : MonoBehaviour
             Debug.Log("Adding " + data.Length + " Personal post to display viewport");
             for (int i = 0; i < data.Length; i++)
             {
+                if (data[i].Equals("")) {
+                    Debug.Log("Empty plate data, this is a save corruption bug. Ignoring the post in personal feed at position : " + i);
+                    continue;
+                }
                 PlateInfo localeinfo = JsonUtility.FromJson<PlateInfo>(data[i]);
                 GameObject localePostInstance = Instantiate(postPrefab, viewContent.transform);
                 Publication parsedData = new Publication();

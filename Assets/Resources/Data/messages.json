@@ -67,7 +67,7 @@
 		"sender":"Alexandra",
 		"picture":"PPAlexandra",
 		"textshort":"",
-		"textlong":"Bonjour, j'ai découvert votre page en recherchant des menus qui pourraient m'aider à me préparer à mon opération de chirurgie bariatrique (chirurgie de l'obésité) et d'après mon chirurgien, je dois suivre un régime hypocalorique pour diminuer la taille de mon foie. En gros je dois manger 'sans sucre ajoutés', 'sans produits gras', 'sans produits ultratransformés', bref 'sans" "sans'...<br>Je regrette de ne pas avoir découvert votre page plus tôt, j'aurais peut-être pu éviter tout ça, mais le mal est fait et je me suis abonnée à vous, j'espère que vous pourrez m'aider et hâte de me faire opérer !",
+		"textlong":"Bonjour, j'ai découvert votre page en recherchant des menus qui pourraient m'aider à me préparer à mon opération de chirurgie bariatrique (chirurgie de l'obésité) et d'après mon chirurgien, je dois suivre un régime hypocalorique pour diminuer la taille de mon foie. En gros je dois manger 'sans sucre ajoutés', 'sans produits gras', 'sans produits ultratransformés', bref 'sans' 'sans'...<br>Je regrette de ne pas avoir découvert votre page plus tôt, j'aurais peut-être pu éviter tout ça, mais le mal est fait et je me suis abonnée à vous, j'espère que vous pourrez m'aider et hâte de me faire opérer !",
 		"releasedate":0,
 		"infos":{
 			"nom":"Alexandra",
@@ -77,7 +77,7 @@
 			"poids":85,
 			"imc":33.2,
 			"probleme":"Opération chirurgie bariatrique prévue.  / Régime hypocalorique pour diminuer la taille du foie.",
-			"requete":"Repas complet faibles en sucres. Sans sodas ni jus de fruit. Sans produit ultratransformé.  Sans aliment gras."
+			"requete":"Repas complet faibles en sucres. Sans sodas ni jus de fruit. Sans produit ultratransformé. Sans aliment gras."
 		},
 		"respectbars":true,
 		"whitelist":[],

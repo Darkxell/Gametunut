@@ -1,42 +1,42 @@
 {"Items":[
 	{ 
 		"name":"Fruits & Légumes", 
-		"sprite":"fruits",
+		"sprite":"fruits et legumes",
 		"ingredients": [ "Ananas", "Avocat", "Banane", "Cassis", "Concombre", "Myrtilles", "Fraise", "Pomme", "Pruneaux sec", "Raisin", "Tomate", "Amande", "Noix", "Brocoli", "Carotte", "Chou-fleur", "Courgette", "Champignons", "Oignons", "Betterave", "Haricot vert", "Epinard", "Poireau", "Laitue", "Poivron Rouge", "Poivron Jaune", "Poivron Vert" ]
 	},
 	{ 
 		"name":"Viandes, poissons, oeufs & alte", 
-		"sprite":"fruits",
+		"sprite":"viande& poisson",
 		"ingredients": [ "Foie de volaille", "Steak de boeuf", "Brochette de boeuf", "Escalope de dinde", "Sardine", "Saumon", "Thon", "Cabillaud", "Crevettes", "Oeuf dur", "Omelette", "Tofu", "Steak vegan" ]
 	},
 	{ 
 		"name":"Légumineuses, céréales & tuberc", 
-		"sprite":"fruits",
+		"sprite":"légumineuses",
 		"ingredients":["Haricots blancs","Lentilles vertes","Pois chiches","Petits pois","Fèves","Pois cassés","Pain seigle","Pain sans gluten","Pain blanc","Pain complet","Pâtes blé","Pâtes blé complet","Riz basmati","Riz complet","Quinoa","Maïs","Pomme de terre","Patate douce"]
 	},
 	{ 
 		"name":"Matières grasses et produits gras", 
-		"sprite":"fruits",
+		"sprite":"matières grasses & produits gras",
 		"ingredients":["Beurre","Crème fraîche","Huile d'olive","Huile de colza","Burger","Pizza","Jambon de porc"]
 	},
 	{ 
 		"name":"Lait, produits laitiers et alternatives végétales", 
-		"sprite":"fruits",
+		"sprite":"Produits laitiers",
 		"ingredients":["Lait demi-écrémé","Lait sans lactose","Emmental","Mozzarella","Yaourt nature","Skyr","Yaourt aromatisé","Boisson à l'amande","Dessert au soja"]
 	},
 	{ 
 		"name":"Sucres et produits sucrés", 
-		"sprite":"fruits",
+		"sprite":"Aliments sucrés",
 		"ingredients":["Sucre blanc","Crème dessert au chocolat","Muffins","Miel","Chocolat noir"]
 	},
 	{ 
 		"name":"Epices et condiments", 
-		"sprite":"fruits",
+		"sprite":"Epices et condiments",
 		"ingredients":["Sauce tomate","Sel","Poivre"]
 	},
 	{ 
 		"name":"Eau et boissons", 
-		"sprite":"fruits",
+		"sprite":"boissons",
 		"ingredients":["Eau","Café","Thé","Jus de fruits","Soda"]
 	}
 ]}

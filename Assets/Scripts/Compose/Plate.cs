@@ -146,7 +146,7 @@ public class Plate : MonoBehaviour
         Debug.Log("Changed slider values! For the current plate and client, here is the data:" +
             "\n[GOALS] Energy : " + maxvalue1 + " | Proteins : " + maxvalue2 + " | Lipids : " + maxvalue3 + " | Glucids : " + maxvalue4 +
             "\n[CURRENT]" + totalEnergy + " | " + totalProteins + " | " + totalLipids + " | " + totalGlucids
-            ) ;
+            );
     }
 
     /// <summary>
@@ -158,8 +158,6 @@ public class Plate : MonoBehaviour
         Debug.Log("Validating plate!\nQuest :  " + currentQuest + "\n"
              + "Plate content : " + content.Count + " items\n"
              + contentinfo);
-        // Switches the UI panel to main
-        ViewManager.Instance.OnViewChange(GameView.Profil);
         // Saves the plate done in phone and profile feed
         string savedplatesstr = PlayerPrefs.GetString("plates", "");
         PlayerPrefs.SetString("plates",
@@ -180,6 +178,9 @@ public class Plate : MonoBehaviour
         // Updates battlepass and mission list
         BattlePassManager.Instance.computeCurentPoints();
         ButtonContainer.Instance.updateNotifIcons();
+        // Setup plate validation UI
+        PlateValidationUI.Instance.ChangeContent(true, false, "");
+        PlateValidationUI.Instance.gameObject.SetActive(true);
         // sends a server packet with data about the completion
         // TODO
 

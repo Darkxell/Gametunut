@@ -42,6 +42,10 @@ public class Plate : MonoBehaviour
     /// </summary>
     private PlateInfo contentinfo = new PlateInfo();
 
+
+    /// <summary>
+    /// Sliders content : Energy, Proteins, Lipids, Glucids
+    /// </summary>
     public GameObject contentSlider1, contentSlider2, contentSlider3, contentSlider4;
 
     void Awake()
@@ -59,6 +63,8 @@ public class Plate : MonoBehaviour
         c.transform.parent = this.transform;
         contentinfo.content.Add(new PlateItem(c.transform.position.x, c.transform.position.y, content.data.name));
         this.content.Add(content.gameObject);
+        if (currentQuest != null)
+            UpdateGauges();
     }
     public void addContent(PlateItem content)
     {
@@ -66,7 +72,8 @@ public class Plate : MonoBehaviour
         GameObject pcontent = Instantiate(PlateContentPrefab, transform);
         pcontent.transform.position = new Vector3(content.x, content.y, pcontent.transform.position.z);
         pcontent.GetComponent<PlateContent>().data = IngredientsManager.getDataFor(content.ingredientID);
-        UpdateGauges();
+        if (currentQuest != null)
+            UpdateGauges();
     }
 
     /// <summary>
@@ -80,7 +87,8 @@ public class Plate : MonoBehaviour
         GameObject.Destroy(content[removeIndex]);
         content.RemoveAt(removeIndex);
         contentinfo.content.RemoveAt(removeIndex);
-        UpdateGauges();
+        if (currentQuest != null)
+            UpdateGauges();
     }
 
 
@@ -99,11 +107,46 @@ public class Plate : MonoBehaviour
                 totalGlucids += datai.glucides;
             }
         }
+        Debug.Log("Updating compose jauges (plate contains " + contentinfo.content.Count + " elements). Total energy : " + totalEnergy);
         // Computes the sliders max values
-        contentSlider1.GetComponent<Slider>().maxValue = 2100;
-        contentSlider2.GetComponent<Slider>().maxValue = 300;
-        contentSlider3.GetComponent<Slider>().maxValue = 1200;
-        contentSlider4.GetComponent<Slider>().maxValue = 1600;
+        int maxvalue1 = 2100, maxvalue2 = 300, maxvalue3 = 1200, maxvalue4 = 1600;
+        try
+        {
+            float dailymultiplier = 0.3f; // math is for one day, this is to bring it to one meal, more or less
+            float fourchette1a = 10, fourchette1b = 15, fourchette2a = 35, fourchette2b = 40, fourchette3a = 40, fourchette3b = 55;
+            SenderInfo personinfos = currentQuest.infos;
+            // Energy
+            double MB = (personinfos.sexe.Equals("Homme") ? 1.083 : 0.963) * Mathf.Pow(personinfos.poids, (float)0.48) * Mathf.Pow(personinfos.taille, (float)0.5) * Mathf.Pow(personinfos.age, -0.13f) * dailymultiplier;
+            maxvalue1 = (int)(MB * 1.63 * 239);
+            // Proteins
+            maxvalue2 = (int)(MB * 1000 * (fourchette1a / 100) / 17);
+            // Lipids
+            maxvalue3 = (int)(MB * 1000 * (fourchette2a / 100) / 38);
+            // Glucids
+            maxvalue4 = (int)(MB * 1000 * (fourchette3a / 100) / 17);
+        }
+        catch (Exception)
+        {
+            Debug.LogError("Couldn't compute max slider vanules for quest giver. Using factory defaults.");
+        }
+        contentSlider1.GetComponent<Slider>().maxValue = maxvalue1;
+        contentSlider2.GetComponent<Slider>().maxValue = maxvalue2;
+        contentSlider3.GetComponent<Slider>().maxValue = maxvalue3;
+        contentSlider4.GetComponent<Slider>().maxValue = maxvalue4;
+        // Updates slider vanules
+        totalEnergy = Mathf.Clamp(totalEnergy, 0, maxvalue1);
+        totalProteins = Mathf.Clamp(totalProteins, 0, maxvalue2);
+        totalLipids = Mathf.Clamp(totalLipids, 0, maxvalue3);
+        totalGlucids = Mathf.Clamp(totalGlucids, 0, maxvalue4);
+        contentSlider1.GetComponent<Slider>().value = totalEnergy;
+        contentSlider2.GetComponent<Slider>().value = totalProteins;
+        contentSlider3.GetComponent<Slider>().value = totalLipids;
+        contentSlider4.GetComponent<Slider>().value = totalGlucids;
+        // Complete log values
+        Debug.Log("Changed slider values! For the current plate and client, here is the data:" +
+            "\n[GOALS] Energy : " + maxvalue1 + " | Proteins : " + maxvalue2 + " | Lipids : " + maxvalue3 + " | Glucids : " + maxvalue4 +
+            "\n[CURRENT]" + totalEnergy + " | " + totalProteins + " | " + totalLipids + " | " + totalGlucids
+            ) ;
     }
 
     /// <summary>

@@ -48,6 +48,13 @@ public class Plate : MonoBehaviour
     /// </summary>
     public GameObject contentSlider1, contentSlider2, contentSlider3, contentSlider4;
 
+    /// <summary>
+    /// Easily accessible mirrors for the slider values
+    /// </summary>
+    private float slider_energy_max = 2000, slider_proteins_max = 30, slider_lipids_max = 50, slider_glucids_max = 50,
+        slider_energy_overcap = 2500, slider_proteins_overcap = 45, slider_lipids_overcap = 70, slider_glucids_overcap = 70,
+        slider_energy_current = 0, slider_proteins_current = 0, slider_lipids_current = 0, slider_glucids_current = 0;
+
     void Awake()
     {
         lastInstance = gameObject;
@@ -107,44 +114,51 @@ public class Plate : MonoBehaviour
                 totalGlucids += datai.glucides;
             }
         }
+        slider_energy_current = totalEnergy;
+        slider_proteins_current = totalProteins;
+        slider_lipids_current = totalLipids;
+        slider_glucids_current = totalGlucids;
         Debug.Log("Updating compose jauges (plate contains " + contentinfo.content.Count + " elements). Total energy : " + totalEnergy);
         // Computes the sliders max values
-        int maxvalue1 = 2100, maxvalue2 = 300, maxvalue3 = 1200, maxvalue4 = 1600;
+        slider_energy_max = 2000; slider_proteins_max = 30; slider_lipids_max = 50; slider_glucids_max = 50;
+        slider_energy_overcap = 2500; slider_proteins_overcap = 45; slider_lipids_overcap = 70; slider_glucids_overcap = 70;
         try
         {
             float dailymultiplier = 0.3f; // math is for one day, this is to bring it to one meal, more or less
+            float energyovercapmulti = 1.5f;
             float fourchette1a = 10, fourchette1b = 15, fourchette2a = 35, fourchette2b = 40, fourchette3a = 40, fourchette3b = 55;
+            // fourchette B for overcap maximum. Could probbaly be a percentage, but actually correct this way.
             SenderInfo personinfos = currentQuest.infos;
             // Energy
             double MB = (personinfos.sexe.Equals("Homme") ? 1.083 : 0.963) * Mathf.Pow(personinfos.poids, (float)0.48) * Mathf.Pow(personinfos.taille, (float)0.5) * Mathf.Pow(personinfos.age, -0.13f) * dailymultiplier;
-            maxvalue1 = (int)(MB * 1.63 * 239);
+            slider_energy_max = (int)(MB * 1.63 * 239);
+            slider_energy_overcap = slider_energy_max * energyovercapmulti;
             // Proteins
-            maxvalue2 = (int)(MB * 1000 * (fourchette1a / 100) / 17);
+            slider_proteins_max = (int)(MB * 1000 * (fourchette1a / 100) / 17);
+            slider_proteins_overcap = (int)(MB * 1000 * (fourchette1b / 100) / 17);
             // Lipids
-            maxvalue3 = (int)(MB * 1000 * (fourchette2a / 100) / 38);
+            slider_lipids_max = (int)(MB * 1000 * (fourchette2a / 100) / 38);
+            slider_lipids_overcap = (int)(MB * 1000 * (fourchette2b / 100) / 38);
             // Glucids
-            maxvalue4 = (int)(MB * 1000 * (fourchette3a / 100) / 17);
+            slider_glucids_max = (int)(MB * 1000 * (fourchette3a / 100) / 17);
+            slider_glucids_overcap = (int)(MB * 1000 * (fourchette3b / 100) / 17);
         }
         catch (Exception)
         {
             Debug.LogError("Couldn't compute max slider vanules for quest giver. Using factory defaults.");
         }
-        contentSlider1.GetComponent<Slider>().maxValue = maxvalue1;
-        contentSlider2.GetComponent<Slider>().maxValue = maxvalue2;
-        contentSlider3.GetComponent<Slider>().maxValue = maxvalue3;
-        contentSlider4.GetComponent<Slider>().maxValue = maxvalue4;
-        // Updates slider vanules
-        totalEnergy = Mathf.Clamp(totalEnergy, 0, maxvalue1);
-        totalProteins = Mathf.Clamp(totalProteins, 0, maxvalue2);
-        totalLipids = Mathf.Clamp(totalLipids, 0, maxvalue3);
-        totalGlucids = Mathf.Clamp(totalGlucids, 0, maxvalue4);
-        contentSlider1.GetComponent<Slider>().value = totalEnergy;
-        contentSlider2.GetComponent<Slider>().value = totalProteins;
-        contentSlider3.GetComponent<Slider>().value = totalLipids;
-        contentSlider4.GetComponent<Slider>().value = totalGlucids;
+        contentSlider1.GetComponent<Slider>().maxValue = slider_energy_max;
+        contentSlider2.GetComponent<Slider>().maxValue = slider_proteins_max;
+        contentSlider3.GetComponent<Slider>().maxValue = slider_lipids_max;
+        contentSlider4.GetComponent<Slider>().maxValue = slider_glucids_max;
+        // Updates slider values
+        contentSlider1.GetComponent<Slider>().value = Mathf.Clamp(totalEnergy, 0, slider_energy_max);
+        contentSlider2.GetComponent<Slider>().value = Mathf.Clamp(totalProteins, 0, slider_proteins_max);
+        contentSlider3.GetComponent<Slider>().value = Mathf.Clamp(totalLipids, 0, slider_lipids_max);
+        contentSlider4.GetComponent<Slider>().value = Mathf.Clamp(totalGlucids, 0, slider_glucids_max);
         // Complete log values
         Debug.Log("Changed slider values! For the current plate and client, here is the data:" +
-            "\n[GOALS] Energy : " + maxvalue1 + " | Proteins : " + maxvalue2 + " | Lipids : " + maxvalue3 + " | Glucids : " + maxvalue4 +
+            "\n[GOALS] Energy : " + slider_energy_max + " | Proteins : " + slider_proteins_max + " | Lipids : " + slider_lipids_max + " | Glucids : " + slider_glucids_max +
             "\n[CURRENT]" + totalEnergy + " | " + totalProteins + " | " + totalLipids + " | " + totalGlucids
             );
     }
@@ -184,6 +198,46 @@ public class Plate : MonoBehaviour
         // sends a server packet with data about the completion
         // TODO
 
+    }
+
+    /// <summary>
+    /// Predicate that returns true if the curent plate is a good post for the current quest.
+    /// Will always return false if the plate is empty.
+    /// Will always return true if there's no current quest (unless empty)
+    /// </summary>
+    private bool checkQuestCompletion()
+    {
+        if (contentinfo.content.Count <= 0)
+            return false;
+        if (currentQuest == null)
+            return true;
+        bool whitelistcheck = false, blacklistcheck = true;
+        for (int i = 0; i < currentQuest.whitelist.Length; i++)
+            if (contentinfo.containsID(currentQuest.whitelist[i]))
+                whitelistcheck = true;
+        for (int i = 0; i < currentQuest.whitelist.Length; i++)
+            if (contentinfo.containsID(currentQuest.blacklist[i]))
+                blacklistcheck = false;
+        bool barschecked = false;
+        if (!currentQuest.respectbars)
+            barschecked = true;
+        else
+            if (slider_energy_current <= slider_energy_overcap && slider_energy_current >= slider_energy_max
+            && slider_glucids_current <= slider_glucids_overcap && slider_glucids_current >= slider_glucids_max
+            && slider_lipids_current <= slider_lipids_overcap && slider_lipids_current >= slider_lipids_max
+            && slider_proteins_current <= slider_proteins_overcap && slider_proteins_current >= slider_proteins_max)
+            barschecked = true;
+
+
+        Debug.Log("Checking if plate follows current quest standards!\n"
+             + "Whitelist respected : " + whitelistcheck + " | Blacklist respected : " + blacklistcheck + " | Sliders respected : " + barschecked
+             + "\nSLiders overview :\nEnergy : " + slider_energy_current + " / min goal : " + slider_energy_max + " / max goal : " + slider_energy_overcap
+             + "\nGlucids : " + slider_glucids_current + " / min goal: " + slider_glucids_max + " / max goal: " + slider_glucids_overcap
+             + "\nLipids : " + slider_lipids_current + " / min goal: " + slider_lipids_max + " / max goal: " + slider_lipids_overcap
+             + "\nProteins : " + slider_proteins_current + " / min goal: " + slider_proteins_max + " / max goal: " + slider_proteins_overcap
+             );
+
+        return whitelistcheck && blacklistcheck && barschecked;
     }
 
     void instanciateFromData(PlateInfo data)
@@ -240,6 +294,14 @@ public class PlateInfo
             sb.Append(content[i]);
         sb.Append("]");
         return sb.ToString();
+    }
+
+    public bool containsID(string id)
+    {
+        for (int i = 0; i < content.Count; i++)
+            if (content[i].ingredientID.Equals(id))
+                return true;
+        return false;
     }
 }
 

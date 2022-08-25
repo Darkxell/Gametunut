@@ -2,12 +2,12 @@
 	{ 
 		"name":"Fruits & Légumes", 
 		"sprite":"fruits et legumes",
-		"ingredients": [ "Ananas", "Avocat", "Banane", "Cassis", "Concombre", "Myrtilles", "Fraise", "Pomme", "Pruneaux sec", "Raisin", "Tomate", "Amande", "Noix", "Brocoli", "Carotte", "Chou-fleur", "Courgette", "Champignons", "Oignons", "Betterave", "Haricot vert", "Epinard", "Poireau", "Laitue", "Poivron Rouge", "Poivron Jaune", "Poivron Vert" ]
+		"ingredients": [ "Ananas", "Avocat", "Banane", "Cassis", "Concombre", "Myrtille", "Fraise", "Pomme", "Pruneau sec", "Raisin", "Tomate", "Amande", "Noix", "Brocoli", "Carotte", "Chou-fleur", "Courgette", "Champignon", "Oignon", "Betterave", "Haricot vert", "Epinard", "Poireau", "Laitue", "Poivron Rouge", "Poivron Jaune", "Poivron Vert"]
 	},
 	{ 
 		"name":"Viandes, poissons, oeufs & alte", 
 		"sprite":"viande& poisson",
-		"ingredients": [ "Foie de volaille", "Steak de boeuf", "Brochette de boeuf", "Escalope de dinde", "Sardine", "Saumon", "Thon", "Cabillaud", "Crevettes", "Oeuf dur", "Omelette", "Tofu", "Steak vegan" ]
+		"ingredients": [ "Foie de volaille", "Steak de boeuf", "Brochette de boeuf", "Escalope de dinde", "Pilon de poulet","Jambon", "Sardine", "Saumon", "Thon", "Cabillaud", "Crevettes", "Oeuf dur", "Omelette", "Œuf au plat", "Tofu", "Steak vegan"]
 	},
 	{ 
 		"name":"Légumineuses, céréales & tuberc", 
@@ -17,7 +17,7 @@
 	{ 
 		"name":"Matières grasses et produits gras", 
 		"sprite":"matières grasses & produits gras",
-		"ingredients":["Beurre","Crème fraîche","Huile d'olive","Huile de colza","Burger","Pizza","Jambon de porc"]
+		"ingredients":["Beurre","Crème fraîche","Huile d'olive","Huile de colza","Burger","Pizza"]
 	},
 	{ 
 		"name":"Lait, produits laitiers et alternatives végétales", 
@@ -27,7 +27,7 @@
 	{ 
 		"name":"Sucres et produits sucrés", 
 		"sprite":"Aliments sucrés",
-		"ingredients":["Sucre blanc","Crème dessert au chocolat","Muffins","Miel","Chocolat noir"]
+		"ingredients":["Dessert au chocolat","Muffins","Sucre blanc","Miel","Chocolat noir"]
 	},
 	{ 
 		"name":"Epices et condiments", 

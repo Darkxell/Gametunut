@@ -71,6 +71,8 @@ public class PlateValidationUI : MonoBehaviour
         }
         else
         {
+            // ViewManager.Instance.OnViewChange(GameView.Compose);
+            // Unneeded, since you can't be outside compose when this code is run...?
         }
         gameObject.SetActive(false);
     }

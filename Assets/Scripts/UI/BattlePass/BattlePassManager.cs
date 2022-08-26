@@ -97,9 +97,12 @@ public class BattlePassManager : MonoBehaviour
     ///  - number of visible publications on the player profile (just the numbers, not the posts themselves)<br>
     ///  - all content in the battlepass window<br>
     ///  - The HashSet of blacklisted ingredients because of the battlepass, if player has awards
+    ///  <returns>A string of the newest unlocked ingredient ID, if this detected unlocking of a new reward. Null otherwise.</returns>
     /// </summary>
-    public void computeCurentPoints()
+    public string computeCurentPoints()
     {
+        string toreturn = null;
+        int currentpointsbackup = currentpoints;
         // Save data gather
         string savedmissionsstr = PlayerPrefs.GetString("missions", "");
         string savedplatesstr = PlayerPrefs.GetString("missions", "");
@@ -118,13 +121,16 @@ public class BattlePassManager : MonoBehaviour
         currentPointsText.GetComponent<TextMeshProUGUI>().text = "Points Actuels : " + currentpoints;
         ingredientsBlacklist.Clear();
         for (int i = 0; i < AwardsDatabase.Length; ++i)
-            if (AwardsDatabase[i].points <=currentpoints) {
+            if (AwardsDatabase[i].points <= currentpoints) {
                 objectFrames[i].GetComponent<Image>().sprite = FrameUnlocked;
+                if (AwardsDatabase[i].points > currentpointsbackup && AwardsDatabase[i].type == BattlePassAwardType.Ingredient)
+                    toreturn = AwardsDatabase[i].id;
             } else {
                 objectFrames[i].GetComponent<Image>().sprite = FrameLocked;
                 if (GlobalManager.Instance.hasAwards() && AwardsDatabase[i].type == BattlePassAwardType.Ingredient)
                     ingredientsBlacklist.Add(AwardsDatabase[i].id);
             }
+        return toreturn;
     }
 }
 

@@ -66,6 +66,7 @@ public class Plate : MonoBehaviour
 
     public void addContent(PlateContent content)
     {
+        Debug.Log("Adding content to plate using PlateContent gameobject : " + content.transform);
         GameObject c = content.gameObject;
         c.transform.parent = this.transform;
         contentinfo.content.Add(new PlateItem(c.transform.position.x, c.transform.position.y, content.data.name));
@@ -75,6 +76,7 @@ public class Plate : MonoBehaviour
     }
     public void addContent(PlateItem content)
     {
+        Debug.Log("Adding content to plate using PlateItem data content : " + content);
         contentinfo.content.Add(content);
         GameObject pcontent = Instantiate(PlateContentPrefab, transform);
         pcontent.transform.position = new Vector3(content.x, content.y, pcontent.transform.position.z);
@@ -169,31 +171,36 @@ public class Plate : MonoBehaviour
     /// </summary>
     public void ValidatePlate()
     {
+        string unlock = null;
+        bool questcomplete = checkQuestCompletion();
         Debug.Log("Validating plate!\nQuest :  " + currentQuest + "\n"
              + "Plate content : " + content.Count + " items\n"
-             + contentinfo);
+             + contentinfo + "\nQuestComplete : " + questcomplete);
         // Saves the plate done in phone and profile feed
-        string savedplatesstr = PlayerPrefs.GetString("plates", "");
-        PlayerPrefs.SetString("plates",
-            savedplatesstr.Equals("") ?
-            JsonUtility.ToJson(contentinfo) :
-            (savedplatesstr + "|" + JsonUtility.ToJson(contentinfo))
-            );
-        // Saves mission completion
-        if (currentQuest != null /* && TODO : Check if mission is complete and won */)
+        if (questcomplete)
         {
-            string savedmissionsstr = PlayerPrefs.GetString("missions", "");
-            PlayerPrefs.SetString("missions",
-            savedmissionsstr.Equals("") ?
-            "" + currentQuest.id :
-            (savedmissionsstr + "|" + currentQuest.id)
-            );
+            string savedplatesstr = PlayerPrefs.GetString("plates", "");
+            PlayerPrefs.SetString("plates",
+                savedplatesstr.Equals("") ?
+                JsonUtility.ToJson(contentinfo) :
+                (savedplatesstr + "|" + JsonUtility.ToJson(contentinfo))
+                );
+            // Saves mission completion
+            if (currentQuest != null)
+            {
+                string savedmissionsstr = PlayerPrefs.GetString("missions", "");
+                PlayerPrefs.SetString("missions",
+                savedmissionsstr.Equals("") ?
+                "" + currentQuest.id :
+                (savedmissionsstr + "|" + currentQuest.id)
+                );
+            }
+            // Updates battlepass and mission list
+            unlock = BattlePassManager.Instance.computeCurentPoints();
+            ButtonContainer.Instance.updateNotifIcons();
         }
-        // Updates battlepass and mission list
-        BattlePassManager.Instance.computeCurentPoints();
-        ButtonContainer.Instance.updateNotifIcons();
         // Setup plate validation UI
-        PlateValidationUI.Instance.ChangeContent(true, false, "");
+        PlateValidationUI.Instance.ChangeContent(questcomplete, unlock != null, unlock);
         PlateValidationUI.Instance.gameObject.SetActive(true);
         // sends a server packet with data about the completion
         // TODO

@@ -218,13 +218,19 @@ public class Plate : MonoBehaviour
             return false;
         if (currentQuest == null)
             return true;
-        bool whitelistcheck = false, blacklistcheck = true;
+        bool whitelistcheck = true, blacklistcheck = true;
         for (int i = 0; i < currentQuest.whitelist.Length; i++)
-            if (contentinfo.containsID(currentQuest.whitelist[i]))
-                whitelistcheck = true;
-        for (int i = 0; i < currentQuest.whitelist.Length; i++)
-            if (contentinfo.containsID(currentQuest.blacklist[i]))
+            if (!contentinfo.containsTagID(currentQuest.whitelist[i]))
+            {
+                Debug.Log("Quest validation failed by missing whitelist tag : " + currentQuest.whitelist[i]);
+                whitelistcheck = false;
+            }
+        for (int i = 0; i < currentQuest.blacklist.Length; i++)
+            if (contentinfo.containsTagID(currentQuest.blacklist[i]))
+            {
                 blacklistcheck = false;
+                Debug.Log("Quest validation failed by present blacklist tag : " + currentQuest.blacklist[i]);
+            }
         bool barschecked = false;
         if (!currentQuest.respectbars)
             barschecked = true;
@@ -303,11 +309,17 @@ public class PlateInfo
         return sb.ToString();
     }
 
-    public bool containsID(string id)
+    public bool containsTagID(string id)
     {
         for (int i = 0; i < content.Count; i++)
-            if (content[i].ingredientID.Equals(id))
-                return true;
+        {
+            IngredientData data = IngredientsManager.getDataFor(content[i].ingredientID);
+            if (data == null)
+                continue;
+            for (int j = 0; j < data.tags.Count; j++)
+                if (data.tags[j].Equals(id))
+                    return true;
+        }
         return false;
     }
 }

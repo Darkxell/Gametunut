@@ -128,8 +128,8 @@ public class Plate : MonoBehaviour
         {
             float dailymultiplier = 0.3f; // math is for one day, this is to bring it to one meal, more or less
             float energyovercapmulti = 1.5f;
-            float fourchette1a = 10, fourchette1b = 15, fourchette2a = 35, fourchette2b = 40, fourchette3a = 40, fourchette3b = 55;
-            // fourchette B for overcap maximum. Could probbaly be a percentage, but actually correct this way.
+            float fourchette1a = 10, fourchette1b = 15, fourchette2a = 35, fourchette2b = 52, fourchette3a = 40, fourchette3b = 60;
+            // fourchette B for overcap maximum. Could probbaly be a percentage, but actually correct this way. Edit: actually changet to ALWAYS be equivalent to a 50% more change, for balance. Also, I don't have time to make procedural sliders.
             SenderInfo personinfos = currentQuest.infos;
             // Energy
             double MB = (personinfos.sexe.Equals("Homme") ? 1.083 : 0.963) * Mathf.Pow(personinfos.poids, (float)0.48) * Mathf.Pow(personinfos.taille, (float)0.5) * Mathf.Pow(personinfos.age, -0.13f) * dailymultiplier;
@@ -149,10 +149,10 @@ public class Plate : MonoBehaviour
         {
             Debug.LogError("Couldn't compute max slider vanules for quest giver. Using factory defaults.");
         }
-        contentSlider1.GetComponent<Slider>().maxValue = slider_energy_max;
-        contentSlider2.GetComponent<Slider>().maxValue = slider_proteins_max;
-        contentSlider3.GetComponent<Slider>().maxValue = slider_lipids_max;
-        contentSlider4.GetComponent<Slider>().maxValue = slider_glucids_max;
+        contentSlider1.GetComponent<Slider>().maxValue = slider_energy_max * 2;
+        contentSlider2.GetComponent<Slider>().maxValue = slider_proteins_max * 2;
+        contentSlider3.GetComponent<Slider>().maxValue = slider_lipids_max * 2;
+        contentSlider4.GetComponent<Slider>().maxValue = slider_glucids_max * 2;
         // Updates slider values
         contentSlider1.GetComponent<Slider>().value = Mathf.Clamp(totalEnergy, 0, slider_energy_max);
         contentSlider2.GetComponent<Slider>().value = Mathf.Clamp(totalProteins, 0, slider_proteins_max);

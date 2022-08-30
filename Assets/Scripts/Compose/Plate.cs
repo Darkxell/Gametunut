@@ -154,10 +154,10 @@ public class Plate : MonoBehaviour
         contentSlider3.GetComponent<Slider>().maxValue = slider_lipids_max * 2;
         contentSlider4.GetComponent<Slider>().maxValue = slider_glucids_max * 2;
         // Updates slider values
-        contentSlider1.GetComponent<Slider>().value = Mathf.Clamp(totalEnergy, 0, slider_energy_max);
-        contentSlider2.GetComponent<Slider>().value = Mathf.Clamp(totalProteins, 0, slider_proteins_max);
-        contentSlider3.GetComponent<Slider>().value = Mathf.Clamp(totalLipids, 0, slider_lipids_max);
-        contentSlider4.GetComponent<Slider>().value = Mathf.Clamp(totalGlucids, 0, slider_glucids_max);
+        contentSlider1.GetComponent<Slider>().value = Mathf.Clamp(totalEnergy, 0, slider_energy_max * 2);
+        contentSlider2.GetComponent<Slider>().value = Mathf.Clamp(totalProteins, 0, slider_proteins_max * 2);
+        contentSlider3.GetComponent<Slider>().value = Mathf.Clamp(totalLipids, 0, slider_lipids_max * 2);
+        contentSlider4.GetComponent<Slider>().value = Mathf.Clamp(totalGlucids, 0, slider_glucids_max * 2);
         // Complete log values
         Debug.Log("Changed slider values! For the current plate and client, here is the data:" +
             "\n[GOALS] Energy : " + slider_energy_max + " | Proteins : " + slider_proteins_max + " | Lipids : " + slider_lipids_max + " | Glucids : " + slider_glucids_max +

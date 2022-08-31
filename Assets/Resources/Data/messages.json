@@ -5,7 +5,7 @@
 		"picture":"PPMarine",
 		"textshort":"",
 		"textlong":"Salut, j'ai essayé de chercher des menus sur votre page pour les personnes qui consomment uniquement des légumes de saison, donc je ne sais pas si vous connaissez ce 'concept' ou plutôt ce mode de vie, j'ai pour habitude de consommer uniquement des fruits et légumes de saison car cela est moins cher, les produits sont de meilleure qualité que ça soit visuelle, nutritionnelle ou même au niveau du goût et surtout cela a moins d'impact sur l'environnement. L'été est bientôt fini et la saison d'automne va bientôt commencer, c'est l'une de mes saisons préférées, j'aimerais juste que vous me fassiez un repas avec de bons fruits et légumes de saison (pour le mois de septembre, je vous donne quelques exemples: brocoli, carotte, tomate, pomme, raisin, cassis).",
-		"releasedate":1,
+		"releasedate":0,
 		"infos":{
 			"nom":"Marine",
 			"sexe":"Femme",
@@ -25,8 +25,8 @@
 		"sender":"DelaZero",
 		"picture":"PPDelaZero",
 		"textshort":"",
-		"textlong":"Salut, je viens à contre cœur vous voir car ma copine me rend oufff !! elle m'en veut car je ne mange jamais de légumes ou fruits, pourquoi? c'est simple je déteste ça. Moi ce que j'aime c'est la viande, mais je veux lui faire plaisir, vous pensez que vous pouvez me proposer un repas complet avec des fruits et légumes s'il vous plait?",
-		"releasedate":1,
+		"textlong":"Salut, je viens à contre cœur vous voir car ma copine me rend oufff !! elle m'en veut car je ne mange jamais de légumes ou fruits, pourquoi? c'est simple je déteste ça. Moi ce que j'aime c'est la viande, mais je veux lui faire plaisir, vous pensez que vous pouvez me proposer un repas avec des fruits et légumes s'il vous plait?",
+		"releasedate":0,
 		"infos":{
 			"nom":"DelaZero",
 			"sexe":"Homme",
@@ -35,7 +35,7 @@
 			"poids":80.0,
 			"imc":21.7,
 			"probleme":"Ne consomme jamais de fruits et légumes",
-			"requete":"Repas complet avec légumes et fruits"
+			"requete":"Repas avec fruits et légumes"
 		},
 		"respectbars":false,
 		"whitelist":["Légumes", "Fruit"],
@@ -46,8 +46,8 @@
 		"sender":"SkyWhite",
 		"picture":"PPSkyWhite",
 		"textshort":"",
-		"textlong":"Salut, depuis quelques temps je perds du poids de manière involontaire. Je suis parti voir un médecin et il m'a dit que c'était dû à une dénutrition et que ça fragilise et diminue mes défenses naturelles et augmente le risque d'infection. Je veux à tout prix corriger mon alimentation pour éviter de plus gros problème, tout ce que je sais pour l'instant c'est que je dois manger des repas riches en protéines et riches en 'bonnes graisses' (poissons gras, oléagineux)",
-		"releasedate":1,
+		"textlong":"Salut, depuis quelques temps je perds du poids de manière involontaire. Je suis parti voir un médecin et il m'a dit que c'était dû à une dénutrition et que ça fragilise et diminue mes défenses naturelles et augmente le risque d'infection. Je veux à tout prix corriger mon alimentation pour éviter de plus gros problème, tout ce que je sais pour l'instant c'est que je dois manger des repas riches en protéines et riches en 'bonnes graisses' (poissons gras, oléagineux).",
+		"releasedate":0,
 		"infos":{
 			"nom":"SkyWhite",
 			"sexe":"Femme",
@@ -67,8 +67,8 @@
 		"sender":"Tristan",
 		"picture":"PPTristan",
 		"textshort":"",
-		"textlong":"Salut, je ne sais pas si vous allez pouvoir m'aider, j'ai été diagnostiqué par mon médecin, il y a seulement une semaine de la maladie cœliaque, j'ai réussi à me faire une liste des aliments qui ne contiennent pas de gluten, mais j'ai du mal à me préparer des plats équilibrés et qui répondent à mes besoins nutritionnels. Est ce que vous pouvez me proposer un repas complet sans gluten s'il vous plaît? ",
-		"releasedate":1,
+		"textlong":"Salut, je ne sais pas si vous allez pouvoir m'aider, j'ai été diagnostiqué par mon médecin, il y a seulement une semaine de la maladie cœliaque, j'ai réussi à me faire une liste des aliments qui ne contiennent pas de gluten, mais j'ai du mal à me préparer des plats équilibrés et qui répondent à mes besoins nutritionnels. Est ce que vous pouvez me proposer un repas complet sans gluten s'il vous plaît ? ",
+		"releasedate":0,
 		"infos":{
 			"nom":"Tristan",
 			"sexe":"Homme",
@@ -89,7 +89,7 @@
 		"picture":"PPPickleDela",
 		"textshort":"",
 		"textlong":"Salut, je vous parle actuellement avec un paquet de chips à côté de moi, je vous laisse deviner mon problème ! et oui j'ai du mal à me préparer des plats, je ne fais que grignoter tout le temps. Ma mère m'a conseillé de me préparer des repas sans produits ultra-transformés et sans sucres ajoutés en gros sans produits industriels. J'espère que je vais arrêter de grignoter avec ce que vous allez me proposer et promis je suivrais vos conseils !",
-		"releasedate":2,
+		"releasedate":1,
 		"infos":{
 			"nom":"PickleDela",
 			"sexe":"Femme",
@@ -110,7 +110,7 @@
 		"picture":"PPRiderBest",
 		"textshort":"",
 		"textlong":"Bonjour, mon médecin a analysé ma prise de sang et il a remarqué que j'avais un taux anormalement bas d'hémoglobine. Je fais de l'anémie, j'ai des carences en fer et en vitamine B12. Pour accompagner mon traitement il m'a demandé de manger des repas riches en fer et en vitamine B12, j'espère que vous allez pouvoir m'aider, merci énormément !",
-		"releasedate":2,
+		"releasedate":1,
 		"infos":{
 			"nom":"RiderBest",
 			"sexe":"Femme",
@@ -128,10 +128,10 @@
 	{ 
 		"id":7,
 		"sender":"CrazyLag ",
-		"picture":"PPCrazyLag ",
+		"picture":"PPCrazyLag",
 		"textshort":"",
 		"textlong":"Bonjour, mon problème c'est que je ne bois pas assez d'eau et je le sais, mais franchement j'ai pas le temps. Ma grand-mère m'a dit de manger des fruits et légumes parcequ'ils contiennent de l'eau mais de continuer ou plutôt de commencer à boire de l'eau ... Youhouuu",
-		"releasedate":2,
+		"releasedate":1,
 		"infos":{
 			"nom":"CrazyLag ",
 			"sexe":"Homme",
@@ -152,7 +152,7 @@
 		"picture":"PPEmma",
 		"textshort":"",
 		"textlong":"Hey, ça fait 1 mois que j'ai commencé mes études supérieures en archi, j'ai pris un appartement et qui dit vivre seul dit cuisiner et franchement j'ai vraiment la flemme de cuisiner, je pense que vous me comprenez après une journée de cours chargée, j'ai vraiment pas envie d'aller au magasin acheter des aliments et les cuisiner, depuis quelques temps je fais que manger dehors et prendre des plats à chauffer au micro onde, et j'aimerais changer ça, j'aimerais un exemple de repas complet qui ne demande pas trop d'effort en cuisine et avec des légumes cuits, parce que j'adore ça !! et que ma maman m'a toujours dit de manger des légumes car c'était bon pour la santé (ils sont surtout bons quand ils sont cuits, on sent moins le côté végétal lol).",
-		"releasedate":2,
+		"releasedate":1,
 		"infos":{
 			"nom":"Emma",
 			"sexe":"Femme",
@@ -173,7 +173,7 @@
 		"picture":"PPTruckDino",
 		"textshort":"",
 		"textlong":"Salut, avec mes copines on a pris la décision de devenir végétarienne, le problème c'est qu'on y connait rien à cette alimentation, on aimerait vraiment bien faire les choses et avoir un exemple de menu, en se renseignant on a vu qu'on devait manger des repas sans produis animaux avec des protéines végétales et des légumineuses pour répondre aux besoins de notre corps. Go testerrrrrr !",
-		"releasedate":3,
+		"releasedate":2,
 		"infos":{
 			"nom":"TruckDino",
 			"sexe":"Femme",
@@ -194,7 +194,7 @@
 		"picture":"PPPierre",
 		"textshort":"",
 		"textlong":"Bonjour, je viens vers vous car j'ai souvent des problèmes de constipation, mon médecin m'a conseillé de boire beaucoup d'eau et de manger des plats riches en fibre et avec des aliments laxatifs (pruneau sec). Est-ce-que vous pouvez me créer un menu riche en fibres, eau et avec au moins un aliment laxatif. ",
-		"releasedate":3,
+		"releasedate":2,
 		"infos":{
 			"nom":"Pierre",
 			"sexe":"Homme",
@@ -214,11 +214,11 @@
 		"sender":"MajNight",
 		"picture":"PPMajNight",
 		"textshort":"",
-		"textlong":"Bonjour, je me présente je m'appelle Eva, j'ai 25 ans, et je viens vous voir aujourd'hui parce que j'ai l'impression de toujours manger la même chose et en plus je cuisine des plats qui ne sont pas très beau visuellement, j'aimerais avoir de la couleur, plein de couleur ! vous savez je fais de la peinture et j'adore trouver mon inspiration dans mon quotidien, j'adorerais avec des plats très colorés. Mes amis m'ont conseillé de cuisiner des fruits et légumes pour avoir plein de couleur et surtout parce que c'était riche en antioxydant (fruits rouges, raisin, carottes) j'ai déjà essayer de cuisiner toute seule après leurs conseils mais c'était pas très bon :( , est ce que vous pouvez me proposer un exemple de menu qui pourrait reprendre les conseils de mes amis et ma passion pour les couleurs s'il vous plait ? ",
-		"releasedate":3,
+		"textlong":"Bonjour, je me présente je m'appelle Eva, j'ai 25 ans, et je viens vous voir aujourd'hui parce que j'ai l'impression de toujours manger la même chose et en plus je cuisine des plats qui ne sont pas très beau visuellement, j'aimerais avoir de la couleur, plein de couleur ! vous savez je fais de la peinture et j'adore trouver mon inspiration dans mon quotidien, j'adorerais des plats très colorés. Mes amis m'ont conseillé de cuisiner des fruits et légumes pour avoir plein de couleur et surtout parce que c'était riche en antioxydant (fruits rouges, raisin, carottes) j'ai déjà essayer de cuisiner toute seule après leurs conseils mais c'était pas très bon :( , est ce que vous pouvez me proposer un exemple de menu qui pourrait reprendre les conseils de mes amis et ma passion pour les couleurs s'il vous plait ? ",
+		"releasedate":2,
 		"infos":{
 			"nom":"MajNight",
-			"sexe":"Homme",
+			"sexe":"Femme",
 			"age":25.0,
 			"taille":1.52,
 			"poids":44.0,
@@ -236,7 +236,7 @@
 		"picture":"PPLilou",
 		"textshort":"",
 		"textlong":"Bonjour, je sors tout juste de chez mon médecin, car depuis hier j'ai des douleurs abdominales et je passe un sale quart d'heure dans les toilettes à chaque fois que je bois mon verre de lait le matin. Mon médecin m'a conseillé d'éviter de consommer du lactose pendant quelques jours, j'aimerais avoir un exemple de repas complet sans lactose afin de ne plus avoir des douleurs et de garder une bonne alimentation pendant cette période compliquée.",
-		"releasedate":3,
+		"releasedate":2,
 		"infos":{
 			"nom":"Lilou",
 			"sexe":"Femme",
@@ -257,7 +257,7 @@
 		"picture":"PPFlammeZe",
 		"textshort":"",
 		"textlong":"Yoo, j'en peux plus... je passe vraiment des sales quarts d'heure au toilette, je n'ose même plus sortir dehors. J'ai vraiment mal au ventre, j'ai contacté mon médecin et il m'a dit de manger des repas pauvres en fibres, sans lactose et boire beaucoup d'eau. Moi j'y connais rien je veux vraiment appliquer ce qu'il me dit pour passer cette période compliquée, j'espère que vous allez pouvoir m'aider.",
-		"releasedate":4,
+		"releasedate":3,
 		"infos":{
 			"nom":"FlammeZe",
 			"sexe":"Homme",
@@ -277,8 +277,8 @@
 		"sender":"Baptiste",
 		"picture":"PPBaptiste",
 		"textshort":"",
-		"textlong":"Yoo, un pote m'a parlé de votre page et il m'a dit que vous êtes les meilleurs sur cette application et en plus vous faites ça gratuitement, alors voilà je suis atteint d'une stéatose hépatique, pour résumer c'est une maladie du foie, appelée aussi maladie du soda je sais pas si vous connaissez, mais en gros je dois manger des aliments riches en fibres et aucun produit ultra-transformé ni de boissons sucrées, je suis persuadé que vous pouvez me proposerez quelque chose de vraiment cool, merci beaucoup. C'est vraiment une maladie qui sort de nulle part (bon j'avoue que c'est parceque je buvais 1L de soda par jour, il est encore temps pour moi de faire attention avant que ça ne soit trop tard !)",
-		"releasedate":4,
+		"textlong":"Yoo, un pote m'a parlé de votre page et il m'a dit que vous êtes les meilleurs sur cette application et en plus vous faites ça gratuitement, alors voilà je suis atteint d'une stéatose hépatique, pour résumer c'est une maladie du foie, appelée aussi maladie du soda je sais pas si vous connaissez, mais en gros je dois manger des aliments riches en fibres et aucun produit ultra-transformé ni de boissons sucrées et sans sucres ajoutés. Je suis persuadé que vous pouvez me proposerequelque chose de vraiment cool, merci beaucoup. C'est vraiment une maladie qui sort de nulle part (bon j'avoue que c'est parceque je buvais 1L de soda par jour, il est encore temps pour moi de faire attention avant que ça ne soit trop tard !)",
+		"releasedate":3,
 		"infos":{
 			"nom":"Baptiste",
 			"sexe":"Homme",
@@ -287,11 +287,11 @@
 			"poids":84.0,
 			"imc":27.1,
 			"probleme":"Stéatose hépatique (maladie du foie gras, maladie du soda)",
-			"requete":"Repas riche en fibres, sans produit ultra-transformé et sans sodas ni jus de fruits."
+			"requete":"Repas riche en fibres, sans produit ultra-transformé, sans sucre ajouté et sans sodas ni jus de fruits."
 		},
 		"respectbars":false,
 		"whitelist":["Richeenfibres"],
-		"blacklist":["Produitultratransformé","Sodasjus"]
+		"blacklist":["Produitultratransformé","Sodasjus", "Sucresajoutés"]
 	},
 	{ 
 		"id":15,
@@ -299,7 +299,7 @@
 		"picture":"PPRaphaël",
 		"textshort":"",
 		"textlong":"Salut, je viens de regarder un reportage sur les maladies cardiovasculaires, j'ai appris qu'on peut attraper cette maladie si on abuse de la consommation de viande ! Vous le saviez ? Vous savez, j'ai trop peur des maladies c'est quelque chose qui me stresse ? J'ai contacté un spécialiste en nutrition et il m'a conseillé de manger des repas complets avec des produits riches en protéine végétale pour ainsi compenser ma réduction de consommation de viande. ",
-		"releasedate":4,
+		"releasedate":3,
 		"infos":{
 			"nom":"Raphaël",
 			"sexe":"Homme",
@@ -320,7 +320,7 @@
 		"picture":"PPRubisLava",
 		"textshort":"",
 		"textlong":"Bonjour, j'ai invité une copine demain soir pour un dîner, elle me plait énormément et j'aimerais vraiment faire quelque chose de super bon ! Le seul soucis c'est que je suis végétarien et elle est atteinte de maladie coeliaque gluten blabla, ça rend la tâche très compliquée pour trouver une idée de repas, est-ce que vous pouvez m'aider à faire un petit repas sympa qui nous plais à tous les deux, please?? Vous allez me sauver !",
-		"releasedate":5,
+		"releasedate":4,
 		"infos":{
 			"nom":"RubisLava",
 			"sexe":"Homme",
@@ -341,7 +341,7 @@
 		"picture":"PPJustFrench",
 		"textshort":"",
 		"textlong":"Kon'nichiwa, haha c'est une petite blague, je vous contacte depuis le Japon, j'ai débarqué hier matin, malheureusement j'ai pas pu profiter aujourd'hui car après le restaurant d'hier, j'ai fais une intoxication alimentaire, j'ai des nausées et des vomissements. J'ai contacté rapidement un médecin dans le coin qui est venu me voir et il m'a conseillé de manger des repas sans sucres, sans lactose et pas d'aliment gras, alors je sais pas comment je vais faire mais aidez-moi à trouver une solution je veux profiter des mes vacances s'il vous plait, merci d'avance.",
-		"releasedate":5,
+		"releasedate":4,
 		"infos":{
 			"nom":"JustFrench",
 			"sexe":"Homme",
@@ -362,7 +362,7 @@
 		"picture":"PPBurgerPhantom",
 		"textshort":"",
 		"textlong":"Coucou ! Ça va faire quelques jours que j'ai des diarrhées constantes, je n'en peux plus c'est très handicapant, je ne peux plus aller travailler normalement ni sortir avec mes amis... Ça ne fait aucun doute qu'il y a un problème avec mon alimentation, mon diététicien m'a conseillé de manger des repas complets avec des aliments pauvres en fibres, mais je ne vois pas ce que je pourrais manger de varié qui contient peu de fibres... Merci de m'aider.",
-		"releasedate":5,
+		"releasedate":4,
 		"infos":{
 			"nom":"BurgerPhantom",
 			"sexe":"Femme",
@@ -383,7 +383,7 @@
 		"picture":"PPPotatoMini",
 		"textshort":"",
 		"textlong":"Salut ! J'ai des remontées acides depuis quelques jours. J'étais au téléphone avec mon diététicien et j'ai hésité à écrire ce message car je pensais pouvoir me débrouiller. Mon diététicien m'avait conseillé de faire des repas sans aliments ultra-transformés et sans aliments gras non plus pour éviter mes remontées acides. Sans compter qu'il m'a également conseillé d'éviter de consommer des solanacées (tomates, poivrons) pour le moment parceque ça peut amplifier mes remontées acides. Aujourd'hui je suis un peu à la ramasse car je n'arrive pas à manger sans avoir mes remontées acides et ça me frustre. Auriez-vous des repas à me proposer avec les conseils de mon diététicien s'il vous plait ?",
-		"releasedate":6,
+		"releasedate":5,
 		"infos":{
 			"nom":"PotatoMini",
 			"sexe":"Femme",
@@ -404,7 +404,7 @@
 		"picture":"PPElsa",
 		"textshort":"",
 		"textlong":"Hey, on m'a raconté beaucoup de bien à propos de votre page et des conseils que vous apportez aux personnes qui viennent vous demander de l'aide, personnellement je n'ai pas de maladie ou de problème en particulier, j'ai décidé depuis peu de commencer une alimentation vegan pour des raisons personnelles, je ne sais pas trop ce que je peux consommer, c'est pour cela que je vous demande de l'aide afin d'avoir un exemple de repas sympa riche en fer végétal, sans produits animaux avec des protéines végétales. ",
-		"releasedate":6,
+		"releasedate":5,
 		"infos":{
 			"nom":"Elsa",
 			"sexe":"Femme",
@@ -425,7 +425,7 @@
 		"picture":"PPRushHyper",
 		"textshort":"",
 		"textlong":"Bonjour, je viens vous voir car j'aurais besoin d'un exemple de menu. J'ai jamais eu le courage d'en parler sur le net, merci aux pages comme la votre d'exister; bon voila je suis atteinte d'une endométriose, c'est une maladie gynécologique chronique. Et j'ai des douleurs horribles, mon médecin m'a dis qu'on pouvait limiter les symptômes avec des aliments anti-inflammatoires sans pour autant soigner la maladie et je me dis ben pk pas essayer, j'ai rien à perdre surtout que c'est pas comme ci les aliments anti-inflammatoires c'était des produits industriels et mauvais. Je pense que vous êtes les meilleurs pour aider les gens, merci d'avance.",
-		"releasedate":6,
+		"releasedate":5,
 		"infos":{
 			"nom":"RushHyper",
 			"sexe":"FemmeHomme",
@@ -446,7 +446,7 @@
 		"picture":"PPPorteBlue",
 		"textshort":"",
 		"textlong":"Bonjour, j'ai des douleurs depuis quelques semaines à l'estomac et beaucoup de passage au toilette, je suis parti voir un spécialiste, et il a diagnostiqué un syndrôme de l'intestin irritable. Il m'a dit que c'était un trouble de fonctionnement de l’intestin sans gravité mais responsable d’une gêne importante. Je commence donc un traitement en plusieurs phases, avec une première où je dois manger des aliments sans lactose, sans gluten et sans fructose (pour simplifier la phase). Si vous me proposez un bon menu promis je reviens pour les autres phases vous allez me sauver la vie, je vous adore (franchement je veux juste arrêter de faire des allers-retours aux toilettes toutes les heures).",
-		"releasedate":7,
+		"releasedate":6,
 		"infos":{
 			"nom":"PorteBlue",
 			"sexe":"Homme",
@@ -467,7 +467,7 @@
 		"picture":"PPMambaBadboy",
 		"textshort":"",
 		"textlong":"Hello ! Rdv chez mon nutritionniste hier (rdv que j'attendais depuis plusieurs semaines) résultat : il me conseille de manger plus d'aliments pauvres en fibres, de supprimer mes apports en lactose (mais comment je vais faire sans mon verre de lait du matin, au secooouurs) ! de manger plus de légumes cuits et de boire beaucoup d'eau pour garder une bonne hydratation. Mais le problème est que je ne suis pas habitué à changer drastiquement mes habitudes alimentaires, que me conseilleriez-vous comme plat pour suivre les conseils de mon nutritionniste ?",
-		"releasedate":7,
+		"releasedate":6,
 		"infos":{
 			"nom":"MambaBadboy",
 			"sexe":"Homme",
@@ -488,7 +488,7 @@
 		"picture":"PPVirusOscar",
 		"textshort":"",
 		"textlong":"Salut, personnellement j'ai pas vraiment de demande spécifique ou de problème à traiter. Je viens juste vous demander un exemple de repas complet, mais attention y'a quand même un petit mais ! Je suis allergique aux fruits à coques donc à éviter absolument sinon je gonfleeeeee comme un ballon.",
-		"releasedate":7,
+		"releasedate":6,
 		"infos":{
 			"nom":"VirusOscar",
 			"sexe":"Homme",
@@ -509,7 +509,7 @@
 		"picture":"PPNightSun",
 		"textshort":"",
 		"textlong":"Bonjour, je viens de revenir de chez mon médecin avec mon bilan sanguin. Ma glycémie a augmenté ces derniers mois...<br>Du coup, mon médecin m'a donné des conseils diététiques en m'incitant à adopter des repas riches en fibres, des aliments avec un Index glycémique bas, sans sucres ajoutés, bien évidemment éviter les sodas et les jus de fruits.<br>Auriez-vous des idées de repas à partager avec moi ? Merci beaucoup.",
-		"releasedate":8,
+		"releasedate":7,
 		"infos":{
 			"nom":"NightSun",
 			"sexe":"Femme",
@@ -530,7 +530,7 @@
 		"picture":"PPCheatFish",
 		"textshort":"",
 		"textlong":"Bonjour, je viens tout juste de prendre mon appartement étudiant, je vais devoir faire ma propre bouf et j'y connais rien du tout mdr. Pour éviter de passer ma vie dans les fast-food j'aimerais avoir un exemple de repas qui me correspond bien genre avec des protéines, des légumineuses des légumes et des fruits bien sûr.",
-		"releasedate":8,
+		"releasedate":7,
 		"infos":{
 			"nom":"CheatFish",
 			"sexe":"Homme",
@@ -551,7 +551,7 @@
 		"picture":"PPOxygèneRonin",
 		"textshort":"",
 		"textlong":"Bonjour, je viens d'apprendre que d'après mes analyses sanguines, j'ai une carence en vitamine B9, j'ai vraiment besoin de manger des aliments riches en B9 pour compenser ce manque, vous pensez pouvoir m'aider en me proposant un menu complet riche en vitamine B9?",
-		"releasedate":8,
+		"releasedate":7,
 		"infos":{
 			"nom":"OxygèneRonin",
 			"sexe":"Homme",
@@ -572,7 +572,7 @@
 		"picture":"PPShadowPython",
 		"textshort":"",
 		"textlong":"Bonjour, je sais pas si vous avez la même sensation parfois mais j'ai l'impression de manger toujours la même chose. J'aimerais manger des repas avec des fruits, des légumes, des légumineuses et bien sûr des protéines; ça fait beaucoup de chose je sais pas si je vais tenir mais c'est important pour moi d'essayer, j'espère que vous allez pouvoir m'aider.",
-		"releasedate":9,
+		"releasedate":8,
 		"infos":{
 			"nom":"ShadowPython",
 			"sexe":"Homme",
@@ -593,7 +593,7 @@
 		"picture":"PPAlexandra",
 		"textshort":"",
 		"textlong":"Bonjour, j'ai découvert votre page en recherchant des menus qui pourraient m'aider à me préparer à mon opération de chirurgie bariatrique (chirurgie de l'obésité) et d'après mon chirurgien, je dois suivre un régime hypocalorique pour diminuer la taille de mon foie. En gros je dois manger 'sans sucre ajoutés', 'sans produits gras', 'sans produits ultratransformés', bref 'sans' 'sans'...  mais c'est exceptionnel les gars et c'est mon chirurgien qui me le conseille <br>Je regrette de ne pas avoir découvert votre page plus tôt, j'aurais peut-être pu éviter tout ça, mais le mal est fait et je me suis abonnée à vous, j'espère que vous pourrez m'aider et hâte de me faire opérer !",
-		"releasedate":9,
+		"releasedate":8,
 		"infos":{
 			"nom":"Alexandra",
 			"sexe":"Femme",
@@ -614,7 +614,7 @@
 		"picture":"PPCyberRush",
 		"textshort":"",
 		"textlong":"Salut, personnellement j'ai pas vraiment de demande spécifique ou de problème à traiter. Je viens juste vous demander un exemple de repas complet, mais attention y'a quand même un petit mais ! je suis allergique aux crustacés donc à éviter absolument (en + c'est dégueu).",
-		"releasedate":9,
+		"releasedate":8,
 		"infos":{
 			"nom":"CyberRush",
 			"sexe":"Femme",
@@ -635,7 +635,7 @@
 		"picture":"PPSeaGalactic",
 		"textshort":"",
 		"textlong":"Salut toi, alors tu vas sûrement me trouver chelou mais je viens vous écrire parceque je n'en peux plus de mes boutons qui gâchent mon visage. Bon je t'avoue que je mange assez gras voire même très gras et bim ça se ressent sur ma face j'ai une tonne de boutons mais je sais et aussi d'après ma dermato que c'est à cause de ma bouffe. Je t'avoue que je ne mange pas de fruits et légumes, je ne bois pas d'eau non plus. Bref please, je veux bien un menu sans produits gras ultratransformés, avec des fruits et légumes, et de l'eau. Bisous et oublie pas les prot",
-		"releasedate":10,
+		"releasedate":9,
 		"infos":{
 			"nom":"SeaGalactic",
 			"sexe":"Femme",
@@ -656,7 +656,7 @@
 		"picture":"PPAmandine",
 		"textshort":"",
 		"textlong":"Bonsoir, je suis tellement contente que la Covid soit derrière nous, cette période était très compliquée pour nous tous, et surtout pour nos balances et jean haha, personnellement je faisais que commander des plats sur les applications car je ne voulais pas sortir et prendre le risque d'attraper ce virus qui fait vraiment peur, j'ai réussi à ne jamais l'attraper par contre mon corps à attraper autre chose, 10KG !!!<br> Aujourd'hui c'est décidé je veux me reprendre en main et consommer que des repas sans sucres ajoutés sans sodas ni de jus de fruits et avec plein de légumes et légumineuses, je n'y connais rien c'est mon coach sportif qui m'a conseillé ça haha, je suis justement ici pour vous demander si vous pouvez me suggérer un plat que je pourrais consommer par exemple car j'ai peur de faire des erreurs et rechuter dans ma prise de poids.",
-		"releasedate":10,
+		"releasedate":9,
 		"infos":{
 			"nom":"Amandine",
 			"sexe":"Femme",
@@ -677,7 +677,7 @@
 		"picture":"PPShoqapikFreedom",
 		"textshort":"",
 		"textlong":"Salut, je suis une grande soeur et j'adore m'occuper de mes petites soeurs, j'essaye de leur transmettre ma passion pour la 'healthy food', je leur cuisine des repas complets sans produits ultra transformés, j'adorerais varier un peu en leur proposant de nouvelles choses, est-ce que vous pouvez me donner une idée de menu?",
-		"releasedate":10,
+		"releasedate":9,
 		"infos":{
 			"nom":"ShoqapikFreedom",
 			"sexe":"Femme",
@@ -698,7 +698,7 @@
 		"picture":"PPBrice",
 		"textshort":"",
 		"textlong":"Heyy, ça fait un an que je suis en étude de game design, et j'entame ma 2ème année, tu sais mon domaine consiste à rester toute la journée devant mon ordinateur et je ne bouge quasi plus, j'ai pris du poids depuis et j'aimerais bien faire attention cette année. Je me suis déjà renseigné et j'ai vu que je devais manger des repas avec des aliments qui ont un index glycémique bas et éviter les sucres ajoutés, les sodas, les jus de fruits et les produits ultra-transformés. Et à côté de ça je veux pas perdre du muscle du coup n'oublie pas les protéines dans mon menu.<br>J'espère que toutes ces informations vont te permettre de me proposer un menu 'mangeable' car je déteste les restrictions bizarres et j'aime pas trop les changements.",
-		"releasedate":11,
+		"releasedate":10,
 		"infos":{
 			"nom":"Brice",
 			"sexe":"Homme",
@@ -719,7 +719,7 @@
 		"picture":"PPJordan",
 		"textshort":"",
 		"textlong":"Bonjour, je suis un addict de la junk food, ouai la mauvaise alimentation, j'adore les fast-foods ou tous les aliments gras qu'on peut trouver dans les supermarchés, rien que d'y penser, hmmmm, des chips au fromage accompagné d'un bon soda, c'est ça le paradis !! mais je dis STOP car aujourd'hui je veux faire des efforts et arrêter ça, j'ai déjà fait une demande à un nutritionniste pour m'aider et il m'a dit d'arrêter les sucres ajoutés, les aliments gras et ultratransformés et surtout manger des légumes ou légumineuses beurk je déteste ça mais j'ai entendu dire que cuits ça peut être meilleur, je sais que ça fait beaucoup de chose mais c'est pour ça que je viens voir la meilleure page de GAMETUNUT, je veux trouver un menu qui me correspond et qui m'aiderait à arrêter tout ça.",
-		"releasedate":11,
+		"releasedate":10,
 		"infos":{
 			"nom":"Jordan",
 			"sexe":"Homme",
@@ -740,7 +740,7 @@
 		"picture":"PPLouise",
 		"textshort":"",
 		"textlong":"Hey, j'ai fais des analyses sanguines récemment, et j'ai transmis mes résultats à mon médecin et il a constaté une carence en vitamine B12. Il m'a conseillé de manger des repas complets riches en cette vitamine, le problème c'est que je ne sais pas quels sont les aliments riches en B12, est-ce que vous pouvez m'aider s'il vous plait? ",
-		"releasedate":11,
+		"releasedate":10,
 		"infos":{
 			"nom":"Louise",
 			"sexe":"Femme",
@@ -761,7 +761,7 @@
 		"picture":"PPMarie",
 		"textshort":"",
 		"textlong":"Bonjour, j'ai vu hier soir avant de dormir des vidéos d'animaux dans des enclos et des abattoirs, ça m'a vraiment choqué et dégoûté de voir les conditions dans lesquelles ils sont traités. Je me suis renseignée sur les régimes vegan car je ne veux pas participer ou donner mon argent à ce genre d'organisme, et j'ai trouvé ça super cool <br>J'ai vu que vous avez aidé beaucoup de vegan sur votre page et je voulais savoir si c'était possible de me donner un exemple de menu s'il vous plaît ? ",
-		"releasedate":12,
+		"releasedate":11,
 		"infos":{
 			"nom":"Marie",
 			"sexe":"Femme",
@@ -782,7 +782,7 @@
 		"picture":"PPCrabyViper",
 		"textshort":"",
 		"textlong":"Bonjour, un jour j'ai des problèmes de constipation et un jour des problèmes de diarrhée, je suis parti voir mon médecin, et il m'a dit que j'avais des problèmes de transit. Il m'a prescrit des médicaments et m'a conseillé de manger des repas complets avec des aliments laxatifs et de boire beaucoup d'eau; il m'a conseillé aussi de vous envoyer un message pour me proposer un exemple de menu qui pourrait m'aider. C'est pas très fun ce message, j'avoue surtout que j'attaque direct en vous donnant les détails lol mais j'ai vraiment besoin d'aide pour la réalisation des repas.",
-		"releasedate":12,
+		"releasedate":11,
 		"infos":{
 			"nom":"CrabyViper",
 			"sexe":"Femme",
@@ -803,7 +803,7 @@
 		"picture":"PPPrincessOscar",
 		"textshort":"",
 		"textlong":"Hey ! Alors voilà, j'expose rapidement mon problème : ça fait déjà plusieurs mois que je me sens fatiguée, que j'ai une faiblesse musculaire etc. Je suis donc allée voir mon médecin traitant qui m'a orienté vers un nutritionniste. Il m'a indiqué que les problèmes que je rencontrais étaient le genre de problèmes qu'on pouvait avoir quand on avait des carences en vitamine A et C et avec les analyses ça c'est confirmé. Je voudrais donc savoir si vous pouviez me conseiller un repas complet riche en vitamine A et C pour pallier mes carences ? Merci beaucoup !",
-		"releasedate":12,
+		"releasedate":11,
 		"infos":{
 			"nom":"PrincessOscar",
 			"sexe":"Femme",
@@ -824,7 +824,7 @@
 		"picture":"PPLagBad",
 		"textshort":"",
 		"textlong":"Heyy, j'étais avec des copines cet après-midi, et l'une d'entre elle a parlé de légumineuse, je crois qu'elle essaye de se trouver un nouveau menu , j'aurais bien aimé l'aider mais je ne savais pas ce que c'était et j'avais honte de lui demander. En rentrant, j'ai fais quelques recherches, et finalement c'est des aliments que je mange assez souvent je ne connaissais pas juste de nom haha, mais j'ai eu l'idée de venir vous contacter peut être que vous pouvez lui proposer un menu complet qui contient des protéines végétales et des légumineuses.",
-		"releasedate":13,
+		"releasedate":12,
 		"infos":{
 			"nom":"LagBad",
 			"sexe":"Femme",
@@ -845,7 +845,7 @@
 		"picture":"PPPatrick",
 		"textshort":"",
 		"textlong":"Bonjour, je suis atteint du diabète de type 2 et pour ne rien arranger j'ai en ce moment des problèmes de transit, mon médecin m'a demandé de manger des repas complets riches en fibres et bien sûr sans sucres ajoutés, j'espère que vous allez pouvoir m'aider rapidement, merci beaucoup. Et franchement si je peux vous donner un conseil ne mangez pas de produits industriels bourrés de sucre et faites du sport vous en arriverez pas là ou j'en suis. Salut :)",
-		"releasedate":13,
+		"releasedate":12,
 		"infos":{
 			"nom":"Patrick",
 			"sexe":"Homme",
@@ -866,7 +866,7 @@
 		"picture":"PPNovaKing",
 		"textshort":"",
 		"textlong":"Salut, après des analyses, mon médecin m'a dit que j'avais un taux de sucre dans le sang, plus élevée que la normale, mais pas suffisamment pour poser un diagnostic de diabète; d'après lui ça s'appelle le prédiabète. En gros, c'est réversible à ce stade là. Il m'a dit de manger des repas complets riches en fibre, sans sucres ajoutés et évidement interdiction aux boissons sucrées (soda ou jus).",
-		"releasedate":13,
+		"releasedate":12,
 		"infos":{
 			"nom":"NovaKing",
 			"sexe":"Homme",
@@ -887,7 +887,7 @@
 		"picture":"PPCloudTwo",
 		"textshort":"",
 		"textlong":"Salut, en ce moment je jeûne par intermittence. Je voulais juste voir comment mon corps réagirait. J'ai consulté une nutritionniste qui m'a conseillé de manger des repas complets riches en fibres et en protéines, avec des légumineuses. Vous pouvez me proposer un exemple de repas s'il vous plait?",
-		"releasedate":14,
+		"releasedate":13,
 		"infos":{
 			"nom":"CloudTwo",
 			"sexe":"Femme",
@@ -908,7 +908,7 @@
 		"picture":"PPTekVador",
 		"textshort":"",
 		"textlong":"Bonjour, je viens vous voir car j'aimerais prendre de la masse, j'en peux plus d'être toute maigre, j'aimerais prendre des formes et des muscles. Ça fait quelques mois que je suis inscrit à la salle et mon coach m'a conseillé de manger des repas complets riches en protéines avec des aliments faibles en index glycémique et d'arrêter les conneries de produits industriels, sucrées et ultra-transformés, vous pensez pouvoir m'aider?",
-		"releasedate":14,
+		"releasedate":13,
 		"infos":{
 			"nom":"TekVador",
 			"sexe":"Femme",
@@ -929,7 +929,7 @@
 		"picture":"PPRexRiver",
 		"textshort":"",
 		"textlong":"Salut, j'essaie depuis un an de me motiver pour aller à la salle pour prendre du muscle et devenir énorme et sec haha, au début j'avais de beaux résultats rapidement mais là depuis quelques mois je stagne, et mon coach sportif m'a dit que cela venait de mon alimentation, il m'a conseillé de manger des repas complets riches en protéines et sans aliments ultra transformés et bien sûr sans boissons sucrées ni sans sucres ajoutés.",
-		"releasedate":14,
+		"releasedate":13,
 		"infos":{
 			"nom":"RexRiver",
 			"sexe":"Homme",

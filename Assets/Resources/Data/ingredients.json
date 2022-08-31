@@ -9,7 +9,7 @@
 			"proteines": 0.5,
 			"lipides": 0.5,
 			"glucides": 11.7,
-			"tags": [ "Eau", "VitamineC", "Antioxydant", "Fructose", "Fruit", "Résidu" ]
+			"tags": [ "Eau", "VitamineC", "Antioxydant", "Fructose", "Fruit"]
 		},
 		{
 			"name": "Avocat",
@@ -20,7 +20,7 @@
 			"proteines": 1.56,
 			"lipides": 20.6,
 			"glucides": 0.83,
-			"tags": [ "Légumes", "Eau", "Indexglycémiquebas", "Antioxydant", "Résidu" ]
+			"tags": [ "Légumes","Fruit", "Alimentgras", "Eau", "Indexglycémiquebas", "Antioxydant"]
 		},
 		{
 			"name": "Banane",
@@ -31,7 +31,7 @@
 			"proteines": 1.06,
 			"lipides": 0.5,
 			"glucides": 19.7,
-			"tags": [ "Fruit", "Fructose", "Alimentlaxatif", "Résidu" ]
+			"tags": [ "Fruit", "Fructose", "Alimentlaxatif"]
 		},
 		{
 			"name": "Cassis",
@@ -42,7 +42,7 @@
 			"proteines": 1.33,
 			"lipides": 0.86,
 			"glucides": 9.68,
-			"tags": [ "Fruit", "VitamineC", "Fructose", "Résidu" ]
+			"tags": [ "Fruit", "VitamineC", "Fructose", "Saison"]
 		},
 
 		{
@@ -54,7 +54,7 @@
 			"proteines": 0.56,
 			"lipides": 0.5,
 			"glucides": 2.23,
-			"tags": [ "Légumes", "Eau", "Indexglycémiquebas", "Résidu" ]
+			"tags": [ "Légumes", "Eau", "Indexglycémiquebas"]
 		},
 		{
 			"name": "Myrtille",
@@ -65,7 +65,7 @@
 			"proteines": 0.87,
 			"lipides": 0.33,
 			"glucides": 10.6,
-			"tags": [ "Fruit", "Fructose", "Antioxydant", "Indexglycémiquebas", "Résidu", "Alimentsantiinflammatoire" ]
+			"tags": [ "Fruit", "Fructose", "Antioxydant", "Indexglycémiquebas", "Alimentsantiinflammatoire"]
 		},
 		{
 			"name": "Fraise",
@@ -76,7 +76,7 @@
 			"proteines": 0.63,
 			"lipides": 0.5,
 			"glucides": 6.03,
-			"tags": [ "Fruit", "VitamineC", "Fructose", "Eau", "Richeenfibres", "Indexglycémiquebas", "Antioxydant", "VitamineB9", "Saison", "Résidu", "Alimentsantiinflammatoire" ]
+			"tags": [ "Fruit", "VitamineC", "Fructose", "Eau", "Richeenfibres", "Indexglycémiquebas", "Antioxydant", "VitamineB9", "Saison", "Alimentsantiinflammatoire"]
 		},
 		{
 			"name": "Pomme",
@@ -87,7 +87,7 @@
 			"proteines": 0.27,
 			"lipides": 0.13,
 			"glucides": 10.7,
-			"tags": [ "Fruit", "Fructose", "Richeenfibres", "Alimentlaxatif", "Indexglycémiquebas", "Résidu" ]
+			"tags": [ "Fruit", "Fructose", "Richeenfibres", "Alimentlaxatif", "Indexglycémiquebas", "Antioxydant"]
 		},
 		{
 			"name": "Pruneau sec",
@@ -98,7 +98,7 @@
 			"proteines": 0.49,
 			"lipides": 0.12,
 			"glucides": 16.62,
-			"tags": [ "Alimentlaxatif", "Fructose", "Résidu" ]
+			"tags": [ "Alimentlaxatif", "Fructose", "Antioxydant"]
 		},
 		{
 			"name": "Raisin",
@@ -109,7 +109,7 @@
 			"proteines": 0.36,
 			"lipides": 0.08,
 			"glucides": 7.85,
-			"tags": [ "Fruit", "Fructose", "Antioxydant", "Résidu" ]
+			"tags": [ "Fruit", "Fructose", "Antioxydant", "Alimentlaxatif"]
 		},
 		{
 			"name": "Tomate",
@@ -120,7 +120,7 @@
 			"proteines": 0.5,
 			"lipides": 0.5,
 			"glucides": 3.03,
-			"tags": [ "Légumes", "Solanacées", "Saison", "Résidu" ]
+			"tags": [ "Légumes", "Solanacées", "Saison", "Fruit", "Indexglycémiquebas"]
 		},
 		{
 			"name": "Amande",
@@ -131,7 +131,7 @@
 			"proteines": 5.65,
 			"lipides": 12.83,
 			"glucides": 2.38,
-			"tags": [ "Fruitsàcoque", "Indexglycémiquebas", "Richeenfibres", "Alimentlaxatif", "Résidu", "Alimentsantiinflammatoire" ]
+			"tags": [ "Fruitsàcoque", "Indexglycémiquebas", "Richeenfibres", "Alimentlaxatif", "Alimentsantiinflammatoire","Antioxydant", "Protéinevégétale", "Alimentgras"]
 		},
 		{
 			"name": "Noix",
@@ -142,7 +142,7 @@
 			"proteines": 3.93,
 			"lipides": 16.83,
 			"glucides": 1.72,
-			"tags": [ "Fruitsàcoque", "Alimentgras", "Alimentlaxatif", "Résidu", "Alimentsantiinflammatoire" ]
+			"tags": [ "Fruitsàcoque", "Alimentgras", "Alimentlaxatif", "Alimentsantiinflammatoire", "Richeenfibres", "Protéinevégétale" , "Antioxydant", "Indexglycémiquebas"]
 		},
 		{
 			"name": "Brocoli",
@@ -153,7 +153,7 @@
 			"proteines": 2.1,
 			"lipides": 0.78,
 			"glucides": 1.1,
-			"tags": [ "Légumes", "Légumescuits", "VitamineC", "VitamineB9", "Alimentlaxatif", "VitamineA", "Saison", "Résidu" ]
+			"tags": [ "Légumes", "Légumescuits", "VitamineC", "VitamineB9", "Alimentlaxatif", "VitamineA", "Saison","Indexglycémiquebas", "Alimentsantiinflammatoire"]
 		},
 		{
 			"name": "Carotte",
@@ -164,7 +164,7 @@
 			"proteines": 0.63,
 			"lipides": 0.5,
 			"glucides": 7.59,
-			"tags": [ "Légumes", "Antioxydant", "VitamineA", "Alimentlaxatif", "Saison", "Résidu" ]
+			"tags": [ "Légumes", "Antioxydant", "VitamineA", "Alimentlaxatif", "Saison"]
 		},
 		{
 			"name": "Chou-fleur",
@@ -175,7 +175,7 @@
 			"proteines": 1.6,
 			"lipides": 0.46,
 			"glucides": 1.6,
-			"tags": [ "Légumes", "Légumescuits", "VitamineC", "Richeenfibres", "Alimentlaxatif", "VitamineB9", "Saison", "Résidu" ]
+			"tags": [ "Légumes", "Légumescuits", "VitamineC", "Richeenfibres", "Alimentlaxatif", "VitamineB9", "Saison", "Alimentsantiinflammatoire", "Indexglycémiquebas"]
 		},
 		{
 			"name": "Courgette",
@@ -186,7 +186,7 @@
 			"proteines": 0.93,
 			"lipides": 0.36,
 			"glucides": 1.4,
-			"tags": [ "Légumes", "Légumescuits", "Eau", "Résidu" ]
+			"tags": [ "Légumes", "Légumescuits", "Eau", "Indexglycémiquebas"]
 		},
 		{
 			"name": "Champignon",
@@ -197,7 +197,7 @@
 			"proteines": 2.37,
 			"lipides": 0.23,
 			"glucides": 1.88,
-			"tags": [ "Légumes", "Résidu" ]
+			"tags": [ "Légumes", "Indexglycémiquebas"]
 		},
 		{
 			"name": "Oignon",
@@ -208,7 +208,7 @@
 			"proteines": 0.275,
 			"lipides": 0.156,
 			"glucides": 1.56,
-			"tags": [ "Légumes", "Saison", "Résidu", "Alimentsantiinflammatoire" ]
+			"tags": [ "Légumes", "Saison", "Alimentsantiinflammatoire", "Indexglycémiquebas"]
 		},
 		{
 			"name": "Betterave",
@@ -219,7 +219,7 @@
 			"proteines": 1.44,
 			"lipides": 0.4,
 			"glucides": 7.13,
-			"tags": [ "Légumes", "Légumescuits", "Résidu" ]
+			"tags": [ "Légumes", "Légumescuits"]
 		},
 		{
 			"name": "Haricot vert",
@@ -230,7 +230,7 @@
 			"proteines": 1.75,
 			"lipides": 0.3,
 			"glucides": 3.39,
-			"tags": [ "Légumes", "Légumescuits", "VitamineB9", "Richeenfibres", "Alimentlaxatif", "Saison", "Résidu" ]
+			"tags": [ "Légumes", "Légumescuits", "VitamineB9", "Richeenfibres", "Alimentlaxatif", "Saison", "Indexglycémiquebas"]
 		},
 		{
 			"name": "Epinard",
@@ -241,7 +241,7 @@
 			"proteines": 3.38,
 			"lipides": 0.7,
 			"glucides": 0.85,
-			"tags": [ "Légumes", "Légumescuits", "VitamineC", "Richeenfibres", "Alimentlaxatif", "VitamineB9", "Résidu", "VitamineA" ]
+			"tags": [ "Légumes", "Légumescuits", "VitamineC", "Richeenfibres", "Alimentlaxatif", "VitamineB9", "VitamineA" ,"Antioxydant" , "Indexglycémiquebas"]
 		},
 		{
 			"name": "Poireau",
@@ -252,7 +252,7 @@
 			"proteines": 2.56,
 			"lipides": 0.3,
 			"glucides": 2.23,
-			"tags": [ "Légumes", "Légumescuits", "Richeenfibres", "Résidu" ]
+			"tags": [ "Légumes", "Légumescuits", "Richeenfibres", "Indexglycémiquebas"]
 		},
 		{
 			"name": "Laitue",
@@ -263,7 +263,7 @@
 			"proteines": 1.3,
 			"lipides": 0.2,
 			"glucides": 1.33,
-			"tags": [ "Légumes", "Eau", "Résidu", "VitamineA" ]
+			"tags": [ "Légumes", "Eau", "VitamineA", "Indexglycémiquebas"]
 		},
 		{
 			"name": "Poivron Rouge",
@@ -274,7 +274,7 @@
 			"proteines": 0.8,
 			"lipides": 0.27,
 			"glucides": 4.55,
-			"tags": [ "Légumes", "Solanacées", "VitamineC", "Saison", "Résidu" ]
+			"tags": [ "Légumes", "Solanacées", "VitamineC", "Saison", "Indexglycémiquebas"]
 		},
 		{
 			"name": "Poivron Jaune",
@@ -285,7 +285,7 @@
 			"proteines": 0.8,
 			"lipides": 0.27,
 			"glucides": 4.55,
-			"tags": [ "Légumes", "Solanacées", "VitamineC", "Saison", "Résidu" ]
+			"tags": [ "Légumes", "Solanacées", "VitamineC", "Saison", "Indexglycémiquebas"]
 		},
 		{
 			"name": "Poivron Vert",
@@ -296,7 +296,7 @@
 			"proteines": 0.8,
 			"lipides": 0.27,
 			"glucides": 4.55,
-			"tags": [ "Légumes", "Solanacées", "VitamineC", "Saison", "Résidu" ]
+			"tags": [ "Légumes", "Solanacées", "VitamineC", "Saison", "Indexglycémiquebas"]
 		},
 		{
 			"name": "Foie de volaille",
@@ -307,7 +307,7 @@
 			"proteines": 32.25,
 			"lipides": 8,
 			"glucides": 0,
-			"tags": [ "Protéine", "VitamineB9", "Produitsanimaux", "Fer", "VitamineB12", "VitamineA" ]
+			"tags": [ "Protéine", "VitamineB9", "Produitsanimaux", "Fer", "VitamineB12", "VitamineA"]
 		},
 		{
 			"name": "Steak de boeuf",
@@ -373,7 +373,7 @@
 			"proteines": 31.38,
 			"lipides": 13,
 			"glucides": 0,
-			"tags": [ "Protéine", "Produitsanimaux", "Alimentgras", "Alimentsantiinflammatoire" ]
+			"tags": [ "Protéine", "Produitsanimaux", "Alimentgras", "Alimentsantiinflammatoire", "VitamineB12" ]
 		},
 		{
 			"name": "Saumon",
@@ -395,7 +395,7 @@
 			"proteines": 37.38,
 			"lipides": 2.29,
 			"glucides": 0,
-			"tags": [ "Protéine", "Produitsanimaux" ]
+			"tags": [ "Protéine", "Produitsanimaux", "VitamineB12" ]
 		},
 		{
 			"name": "Cabillaud",
@@ -417,7 +417,7 @@
 			"proteines": 23.75,
 			"lipides": 1.45,
 			"glucides": 2.34,
-			"tags": [ "Protéine", "Crustacés", "Produitsanimaux" ]
+			"tags": [ "Protéine", "Crustacés", "Produitsanimaux", "VitamineB12"]
 		},
 		{
 			"name": "Oeuf dur",
@@ -428,7 +428,7 @@
 			"proteines": 8.1,
 			"lipides": 5.17,
 			"glucides": 0.31,
-			"tags": [ "Protéine", "Produitsanimaux" ]
+			"tags": [ "Protéine", "Produitsanimaux"]
 		},
 		{
 			"name": "Omelette",
@@ -472,7 +472,7 @@
 			"proteines": 21.88,
 			"lipides": 13.75,
 			"glucides": 10.19,
-			"tags": [ "Protéine", "Produitultratransformé", "Protéinevégétale", "FerVégétal" ]
+			"tags": [ "Protéine", "Protéinevégétale", "FerVégétal"]
 		},
 		{
 			"name": "Haricots blancs",
@@ -483,10 +483,10 @@
 			"proteines": 6.75,
 			"lipides": 1.1,
 			"glucides": 12,
-			"tags": [ "Légumineuse", "Protéinevégétale", "Richeenfibres", "FerVégétal", "Alimentlaxatif", "Indexglycémiquebas", "Résidu" ]
+			"tags": [ "Légumineuse", "Protéinevégétale", "Richeenfibres", "FerVégétal", "Alimentlaxatif", "Indexglycémiquebas"]
 		},
 		{
-			"name": "Lentilles vertes",
+			"name": "Lentilles",
 			"spriteMenu": "lentilles",
 			"spriteInGame": "lentilles",
 			"quantité": 100.0,
@@ -494,7 +494,7 @@
 			"proteines": 10.1,
 			"lipides": 0.58,
 			"glucides": 16.2,
-			"tags": [ "Légumineuse", "Richeenfibres", "FerVégétal", "Alimentlaxatif", "Indexglycémiquebas", "Résidu" ]
+			"tags": [ "Légumineuse", "Richeenfibres", "FerVégétal", "Alimentlaxatif", "Indexglycémiquebas"]
 		},
 		{
 			"name": "Pois chiches",
@@ -516,7 +516,7 @@
 			"proteines": 6.38,
 			"lipides": 0.6,
 			"glucides": 9.93,
-			"tags": [ "Légumineuse", "Protéinevégétale", "Richeenfibres", "FerVégétal", "Indexglycémiquebas", "Saison", "Résidu" ]
+			"tags": [ "Légumineuse", "Protéinevégétale", "Richeenfibres", "FerVégétal", "Indexglycémiquebas", "Saison"]
 		},
 		{
 			"name": "Fèves",
@@ -527,7 +527,7 @@
 			"proteines": 6.4,
 			"lipides": 0.5,
 			"glucides": 9,
-			"tags": [ "Légumineuse", "Protéinevégétale", "Richeenfibres", "FerVégétal", "Indexglycémiquebas", "Résidu" ]
+			"tags": [ "Légumineuse", "Protéinevégétale", "Richeenfibres", "FerVégétal", "Indexglycémiquebas", "VitamineB9"]
 		},
 		{
 			"name": "Pois cassés",
@@ -538,7 +538,7 @@
 			"proteines": 8.6,
 			"lipides": 1.49,
 			"glucides": 16.3,
-			"tags": [ "Protéinevégétale", "Richeenfibres", "FerVégétal", "Indexglycémiquebas", "Résidu" ]
+			"tags": [ "Protéinevégétale", "Richeenfibres", "FerVégétal", "Indexglycémiquebas", "Légumineuse" ]
 		},
 		{
 			"name": "Pain seigle",
@@ -549,7 +549,7 @@
 			"proteines": 2.72,
 			"lipides": 0.3,
 			"glucides": 15.45,
-			"tags": [ "Gluten", "Richeenfibres", "Résidu" ]
+			"tags": [ "Gluten", "Richeenfibres"]
 		},
 		{
 			"name": "Pain sans gluten",
@@ -560,7 +560,7 @@
 			"proteines": 0.83,
 			"lipides": 0.99,
 			"glucides": 15.54,
-			"tags": [ "Pauvreenfibres", "Résidu" ]
+			"tags": [ "Pauvreenfibres"]
 		},
 		{
 			"name": "Pain blanc",
@@ -582,7 +582,7 @@
 			"proteines": 2.78,
 			"lipides": 0.54,
 			"glucides": 13.29,
-			"tags": [ "Gluten", "Richeenfibres", "Résidu" ]
+			"tags": [ "Gluten", "Richeenfibres"]
 		},
 		{
 			"name": "Pâtes blé",
@@ -593,7 +593,7 @@
 			"proteines": 4.38,
 			"lipides": 0.55,
 			"glucides": 25,
-			"tags": [ "Gluten", "Pauvreenfibres", "Résidu" ]
+			"tags": [ "Gluten", "Pauvreenfibres"]
 		},
 		{
 			"name": "Pâtes blé complet",
@@ -604,7 +604,7 @@
 			"proteines": 4.88,
 			"lipides": 0.9,
 			"glucides": 23.4,
-			"tags": [ "Gluten", "Richeenfibres", "Alimentlaxatif", "Résidu" ]
+			"tags": [ "Gluten", "Richeenfibres", "Alimentlaxatif"]
 		},
 		{
 			"name": "Riz basmati",
@@ -615,7 +615,7 @@
 			"proteines": 2.88,
 			"lipides": 0.6,
 			"glucides": 24.4,
-			"tags": [ "Indexglycémiquebas", "Résidu" ]
+			"tags": [ "Indexglycémiquebas"]
 		},
 		{
 			"name": "Riz complet",
@@ -648,7 +648,7 @@
 			"proteines": 2.82,
 			"lipides": 1.68,
 			"glucides": 18.4,
-			"tags": [ "Richeenfibres", "Résidu" ]
+			"tags": [ "Richeenfibres"]
 		},
 		{
 			"name": "Pomme de terre",
@@ -659,7 +659,7 @@
 			"proteines": 1.96,
 			"lipides": 0.1,
 			"glucides": 20.1,
-			"tags": [ "Pauvreenfibres", "Saison" ]
+			"tags": [ "Pauvreenfibres", "Saison"]
 		},
 		{
 			"name": "Patate douce",
@@ -681,7 +681,7 @@
 			"proteines": 0.07,
 			"lipides": 8.29,
 			"glucides": 0.09,
-			"tags": [ "Alimentgras", "Indexglycémiquebas", "VitamineA" ]
+			"tags": [ "Alimentgras", "Indexglycémiquebas", "VitamineA", "Pauvreenfibres"]
 		},
 		{
 			"name": "Crème fraîche",
@@ -692,7 +692,7 @@
 			"proteines": 0.26,
 			"lipides": 1.87,
 			"glucides": 0.29,
-			"tags": [ "Alimentgras", "Lactose", "Indexglycémiquebas", "Résidu" ]
+			"tags": [ "Alimentgras", "Lactose", "Indexglycémiquebas", "Pauvreenfibres"]
 		},
 		{
 			"name": "Huile d'olive",
@@ -703,7 +703,7 @@
 			"proteines": 0.08,
 			"lipides": 14.99,
 			"glucides": 0,
-			"tags": [ "Alimentgras", "Indexglycémiquebas", "Alimentsantiinflammatoire" ]
+			"tags": [ "Alimentgras", "Indexglycémiquebas", "Alimentsantiinflammatoire" , "Pauvreenfibres"]
 		},
 		{
 			"name": "Huile de colza",
@@ -714,7 +714,7 @@
 			"proteines": 0,
 			"lipides": 15,
 			"glucides": 0,
-			"tags": [ "Alimentgras", "Indexglycémiquebas" ]
+			"tags": [ "Alimentgras", "Indexglycémiquebas", "Pauvreenfibres" ]
 		},
 		{
 			"name": "Burger",
@@ -725,7 +725,7 @@
 			"proteines": 12.7,
 			"lipides": 11,
 			"glucides": 23.8,
-			"tags": [ "Alimentgras", "Produitultratransformé", "Gluten", "Résidu" ]
+			"tags": [ "Alimentgras", "Produitultratransformé", "Gluten", "Pauvreenfibres"]
 		},
 		{
 			"name": "Pizza",
@@ -736,7 +736,7 @@
 			"proteines": 9.09,
 			"lipides": 7.64,
 			"glucides": 29.6,
-			"tags": [ "Alimentgras", "Produitultratransformé", "Gluten", "Résidu" ]
+			"tags": [ "Alimentgras", "Produitultratransformé", "Gluten", "Pauvreenfibres" ]
 		},
 		{
 			"name": "Lait demi-écrémé",
@@ -747,7 +747,7 @@
 			"proteines": 4.7,
 			"lipides": 2.31,
 			"glucides": 7.35,
-			"tags": [ "Lactose", "Protéine", "Indexglycémiquebas", "Résidu" ]
+			"tags": [ "Lactose", "Protéine", "Indexglycémiquebas", "Pauvreenfibres"]
 		},
 		{
 			"name": "Lait sans lactose",
@@ -758,7 +758,7 @@
 			"proteines": 4.8,
 			"lipides": 1.8,
 			"glucides": 7.2,
-			"tags": [ "Protéine", "Indexglycémiquebas" ]
+			"tags": [ "Protéine", "Indexglycémiquebas", "Pauvreenfibres" ]
 		},
 		{
 			"name": "Emmental",
@@ -769,7 +769,7 @@
 			"proteines": 8.19,
 			"lipides": 8.64,
 			"glucides": 0,
-			"tags": [ "Protéine", "Lactose", "Alimentgras", "Indexglycémiquebas", "VitamineA" ]
+			"tags": [ "Protéine", "Lactose", "Alimentgras", "Indexglycémiquebas", "VitamineA" , "Pauvreenfibres"]
 		},
 		{
 			"name": "Mozzarella",
@@ -780,7 +780,7 @@
 			"proteines": 4.83,
 			"lipides": 5.31,
 			"glucides": 0.23,
-			"tags": [ "Lactose", "Indexglycémiquebas" ]
+			"tags": [ "Lactose", "Indexglycémiquebas", "Pauvreenfibres" ]
 		},
 		{
 			"name": "Yaourt nature",
@@ -791,7 +791,7 @@
 			"proteines": 4.75,
 			"lipides": 2.88,
 			"glucides": 5.91,
-			"tags": [ "Lactose", "Indexglycémiquebas" ]
+			"tags": [ "Lactose", "Indexglycémiquebas" , "Pauvreenfibres"]
 		},
 		{
 			"name": "Skyr",
@@ -802,7 +802,7 @@
 			"proteines": 12.5,
 			"lipides": 0.25,
 			"glucides": 4.88,
-			"tags": [ "Protéine", "Lactose" ]
+			"tags": [ "Protéine", "Lactose", "Pauvreenfibres" ]
 		},
 		{
 			"name": "Yaourt aromatisé",
@@ -813,7 +813,7 @@
 			"proteines": 4.19,
 			"lipides": 3.25,
 			"glucides": 15.25,
-			"tags": [ "Lactose", "Sucresajoutés", "Résidu" ]
+			"tags": [ "Lactose", "Sucresajoutés", "Pauvreenfibres"]
 		},
 		{
 			"name": "Boisson à l'amande",
@@ -824,7 +824,7 @@
 			"proteines": 1.59,
 			"lipides": 4.80,
 			"glucides": 1.02,
-			"tags": []
+			"tags": ["Eau","Pauvreenfibres"]
 		},
 		{
 			"name": "Dessert au soja",
@@ -835,7 +835,7 @@
 			"proteines": 4.45,
 			"lipides": 2.38,
 			"glucides": 19.13,
-			"tags": [ "Sucresajoutés" ]
+			"tags": [ "Sucresajoutés", "Pauvreenfibres" ]
 		},
 		{
 			"name": "Dessert au chocolat",
@@ -901,7 +901,7 @@
 			"proteines": 0.46,
 			"lipides": 1.25,
 			"glucides": 2.31,
-			"tags": [ "Indexglycémiquebas", "Résidu" ]
+			"tags": [ "Indexglycémiquebas"]
 		},
 		{
 			"name": "Sel",
@@ -912,7 +912,7 @@
 			"proteines": 0,
 			"lipides": 0,
 			"glucides": 0,
-			"tags": [ "Indexglycémiquebas", "Résidu" ]
+			"tags": [ "Indexglycémiquebas"]
 		},
 		{
 			"name": "Poivre",
@@ -923,7 +923,7 @@
 			"proteines": 0.04,
 			"lipides": 0.02,
 			"glucides": 0.12,
-			"tags": [ "Indexglycémiquebas", "Résidu" ]
+			"tags": [ "Indexglycémiquebas"]
 		},
 		{
 			"name": "Eau",
@@ -956,7 +956,7 @@
 			"proteines": 0,
 			"lipides": 0.007,
 			"glucides": 0,
-			"tags": [ "Sucresajoutés", "Antioxydant", "Alimentsantiinflammatoire" ]
+			"tags": ["Antioxydant", "Alimentsantiinflammatoire" ]
 		},
 		{
 			"name": "Jus de fruits",
@@ -982,4 +982,3 @@
 		}
 	]
 }
-

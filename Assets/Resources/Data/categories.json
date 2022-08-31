@@ -12,7 +12,7 @@
 	{ 
 		"name":"Légumineuses, céréales & tuberc", 
 		"sprite":"légumineuses",
-		"ingredients":["Haricots blancs","Lentilles vertes","Pois chiches","Petits pois","Fèves","Pois cassés","Pain seigle","Pain sans gluten","Pain blanc","Pain complet","Pâtes blé","Pâtes blé complet","Riz basmati","Riz complet","Quinoa","Maïs","Pomme de terre","Patate douce"]
+		"ingredients":["Haricots blancs","Lentilles","Pois chiches","Petits pois","Fèves","Pois cassés","Pain seigle","Pain sans gluten","Pain blanc","Pain complet","Pâtes blé","Pâtes blé complet","Riz basmati","Riz complet","Quinoa","Maïs","Pomme de terre","Patate douce"]
 	},
 	{ 
 		"name":"Matières grasses et produits gras", 

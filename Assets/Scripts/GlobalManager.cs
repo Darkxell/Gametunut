@@ -5,6 +5,7 @@ using System;
 using System.Security.Cryptography;
 using System.Text;
 using UnityEngine.Networking;
+using System.Globalization;
 
 public class GlobalManager : MonoBehaviour
 {
@@ -17,8 +18,13 @@ public class GlobalManager : MonoBehaviour
     /// </summary>
     public int CurrentDay;
 
+    /// <summary>
+    /// Flag raised to true if this is the first time the user stars the application
+    /// </summary>
+    private bool firstlaunch = false;
+
     // mm/dd/yyyy US format : https://docs.microsoft.com/fr-fr/dotnet/api/system.datetime.parse?view=net-6.0
-    public DateTime StartDate = System.DateTime.Parse("22/08/2022");
+    public DateTime StartDate;
 
     /// <summary>
     /// Hashed player ID, unique per device
@@ -34,8 +40,24 @@ public class GlobalManager : MonoBehaviour
     void Awake()
     {
         Application.SetStackTraceLogType(LogType.Log, StackTraceLogType.None);
+        DateTimeFormatInfo dtfi = CultureInfo.CreateSpecificCulture("en-US").DateTimeFormat;
         Instance = this;
         // Computes the current experiment day
+        if (PlayerPrefs.HasKey("startdate"))
+        {
+            Debug.Log("Playerspref dump : \"" + PlayerPrefs.GetString("startdate", "01/09/2022") + "\"");
+            StartDate = System.DateTime.Parse(PlayerPrefs.GetString("startdate", "01/09/2022") , dtfi);
+        }
+        else
+        {
+            StartDate = System.DateTime.Today;
+            PlayerPrefs.SetString("startdate", StartDate.ToString("d", dtfi));
+            firstlaunch = true;
+            Debug.Log("[First launch detected] Will be starting the welcome screen later.\nStart date stored : " + StartDate 
+                + " (Playerprefs Value : \"" + PlayerPrefs.GetString("startdate") + "\")");
+        }
+
+
         CurrentDay = Mathf.Max(0, (System.DateTime.Today - StartDate).Days);
         // Computes the unique hashed playerID based on deviceidentifier suffix-salted
         int seed;
@@ -68,7 +90,7 @@ public class GlobalManager : MonoBehaviour
 
     private bool globalSetup = false;
     /// <summary>
-    /// First game update post start setup
+    /// First game update post start setup. This is important that this is done in update and NOT start function.
     /// </summary>
     public void Update()
     {
@@ -104,6 +126,8 @@ public class GlobalManager : MonoBehaviour
                     Debug.LogError("TestClass was undefined or outside of possible range. This is an error and should be fixed.");
                     break;
             }
+            if (firstlaunch)
+                WelcomeScreenBehavior.Instance.show();
         }
     }
 

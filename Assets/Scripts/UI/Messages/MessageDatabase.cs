@@ -69,7 +69,7 @@ public class SenderInfo
     public string nom;
     public string sexe;
     public int age;
-    public int taille;
+    public float taille;
     public int poids;
     public float imc;
     public string probleme;

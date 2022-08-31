@@ -20,7 +20,7 @@ public class MessageInnerBehavior : MonoBehaviour
     public GameObject PictureSmall;
 
     public MessageInfo lastData = null;
-
+    
     public void Awake()
     {
         Instance = this;
@@ -33,13 +33,31 @@ public class MessageInnerBehavior : MonoBehaviour
 
         NameHeader.GetComponent<TextMeshProUGUI>().text = data.sender;
         RecievedText.GetComponent<TextMeshProUGUI>().text = "Release date : " + data.releasedate;
-        ContentText.GetComponent<TextMeshProUGUI>().text = data.textlong; // TODO : textshort here is possible
         NameSmall.GetComponent<TextMeshProUGUI>().text = data.infos.nom;
 
         // Image setters
 
         ProfilePicture.GetComponent<Image>().sprite = Resources.Load<Sprite>("profiles/" + data.picture);
         PictureSmall.GetComponent<Image>().sprite = Resources.Load<Sprite>("profiles/" + data.picture);
+
+        string repascomplettext = "<br><br>Un <b>Repas complet</b> nécessite de respecter les quatres jauges.";
+
+        // Text content generator
+        if (GlobalManager.Instance.hasStorytelling())
+        {
+            ContentText.GetComponent<TextMeshProUGUI>().text = data.textlong + (data.respectbars ? repascomplettext : ""); ;
+        }
+        else
+        {
+            ContentText.GetComponent<TextMeshProUGUI>().text = "Age : " + data.infos.age + "<br>"
+                    + "Taille : " + data.infos.taille + " m<br>"
+                    + "Poids : " + data.infos.poids + " kgs<br>"
+                    + "IMC : " + data.infos.imc + "<br>"
+                    + "Sexe : " + data.infos.sexe + "<br>"
+                    + "Problème : " + data.infos.probleme + "<br>"
+                    + "Requète : " + data.infos.requete
+                    + (data.respectbars ? repascomplettext : "");
+        }
 
     }
 }

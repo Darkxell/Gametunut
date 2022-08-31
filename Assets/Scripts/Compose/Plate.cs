@@ -116,10 +116,6 @@ public class Plate : MonoBehaviour
                 totalGlucids += datai.glucides;
             }
         }
-        slider_energy_current = totalEnergy;
-        slider_proteins_current = totalProteins;
-        slider_lipids_current = totalLipids;
-        slider_glucids_current = totalGlucids;
         Debug.Log("Updating compose jauges (plate contains " + contentinfo.content.Count + " elements). Total energy : " + totalEnergy);
         // Computes the sliders max values
         slider_energy_max = 2000; slider_proteins_max = 30; slider_lipids_max = 50; slider_glucids_max = 50;
@@ -149,6 +145,24 @@ public class Plate : MonoBehaviour
         {
             Debug.LogError("Couldn't compute max slider vanules for quest giver. Using factory defaults.");
         }
+        // logarithmic cheat to make things MUCH easier.
+        if (totalEnergy > slider_energy_max)
+        {
+            totalEnergy = slider_energy_max + Mathf.Sqrt(totalEnergy - slider_energy_max);
+        }
+        if (totalProteins > slider_proteins_max)
+        {
+            totalProteins = slider_proteins_max + Mathf.Sqrt(totalProteins - slider_proteins_max);
+        }
+        if (totalLipids > slider_lipids_max)
+        {
+            totalLipids = slider_lipids_max + Mathf.Sqrt(totalLipids - slider_lipids_max);
+        }
+        if (totalGlucids > slider_glucids_max)
+        {
+            totalGlucids = slider_glucids_max + Mathf.Sqrt(totalGlucids - slider_glucids_max);
+        }
+        // Set the slider's max value
         contentSlider1.GetComponent<Slider>().maxValue = slider_energy_max * 2;
         contentSlider2.GetComponent<Slider>().maxValue = slider_proteins_max * 2;
         contentSlider3.GetComponent<Slider>().maxValue = slider_lipids_max * 2;
@@ -158,6 +172,10 @@ public class Plate : MonoBehaviour
         contentSlider2.GetComponent<Slider>().value = Mathf.Clamp(totalProteins, 0, slider_proteins_max * 2);
         contentSlider3.GetComponent<Slider>().value = Mathf.Clamp(totalLipids, 0, slider_lipids_max * 2);
         contentSlider4.GetComponent<Slider>().value = Mathf.Clamp(totalGlucids, 0, slider_glucids_max * 2);
+        slider_energy_current = totalEnergy;
+        slider_proteins_current = totalProteins;
+        slider_lipids_current = totalLipids;
+        slider_glucids_current = totalGlucids;
         // Complete log values
         Debug.Log("Changed slider values! For the current plate and client, here is the data:" +
             "\n[GOALS] Energy : " + slider_energy_max + " | Proteins : " + slider_proteins_max + " | Lipids : " + slider_lipids_max + " | Glucids : " + slider_glucids_max +

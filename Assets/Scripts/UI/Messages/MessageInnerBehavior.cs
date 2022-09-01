@@ -20,7 +20,9 @@ public class MessageInnerBehavior : MonoBehaviour
     public GameObject PictureSmall;
 
     public MessageInfo lastData = null;
-    
+
+    private int forceSizeUpdate = 0;
+
     public void Awake()
     {
         Instance = this;
@@ -59,5 +61,22 @@ public class MessageInnerBehavior : MonoBehaviour
                     + (data.respectbars ? repascomplettext : "");
         }
 
+        // Bugfix layout srescaler : Schedule an update in 2 frames
+        forceSizeUpdate = 2;
+    }
+
+    private void Update()
+    {
+        // Dogshit code because this doesn't work : LayoutRebuilder.ForceRebuildLayoutImmediate(gameObject.transform as RectTransform);
+        if (forceSizeUpdate >= 0)
+            forceSizeUpdate--;
+        if (forceSizeUpdate == 1) {
+            forceSizeUpdate = 0;
+            ContentText.gameObject.transform.parent.gameObject.GetComponent<VerticalLayoutGroup>().enabled = false;
+            ContentText.gameObject.transform.parent.gameObject.GetComponent<VerticalLayoutGroup>().enabled = true;
+
+            ContentText.gameObject.transform.parent.gameObject.GetComponent<ContentSizeFitter>().enabled = false;
+            ContentText.gameObject.transform.parent.gameObject.GetComponent<ContentSizeFitter>().enabled = true;
+        }
     }
 }

@@ -304,6 +304,7 @@ public class Plate : MonoBehaviour
         contentSlider2.SetActive(false);
         contentSlider3.SetActive(false);
         contentSlider4.SetActive(false);
+        emptyPlate();
     }
 
     /// <summary>

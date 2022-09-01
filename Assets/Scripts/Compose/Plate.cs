@@ -100,6 +100,22 @@ public class Plate : MonoBehaviour
             UpdateGauges();
     }
 
+    /// <summary>
+    /// Removes all content added to this plate
+    /// </summary>
+    public void emptyPlate()
+    {
+        if (content.Count <= 0)
+            return;
+
+
+        content.ForEach( e => GameObject.Destroy(e));
+        content.Clear();
+        contentinfo.content.Clear();
+
+        if (currentQuest != null)
+            UpdateGauges();
+    }
 
     public void UpdateGauges()
     {

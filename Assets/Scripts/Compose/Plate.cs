@@ -18,6 +18,11 @@ public class Plate : MonoBehaviour
     public MessageInfo currentQuest = null;
 
     /// <summary>
+    /// Reference to the back to quest button for show/hide purposes when you start a plate compose.
+    /// </summary>
+    public GameObject buttonBacktoquest;
+
+    /// <summary>
     /// Half size of the plate, around the middle pivot point.
     /// </summary>
     public float sizeX, sizeY;
@@ -305,6 +310,7 @@ public class Plate : MonoBehaviour
         contentSlider3.SetActive(false);
         contentSlider4.SetActive(false);
         emptyPlate();
+        buttonBacktoquest.SetActive(false);
     }
 
     /// <summary>
@@ -322,6 +328,7 @@ public class Plate : MonoBehaviour
         contentSlider2.SetActive(true);
         contentSlider3.SetActive(true);
         contentSlider4.SetActive(true);
+        buttonBacktoquest.SetActive(true);
     }
 
 }

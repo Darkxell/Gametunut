@@ -11373,9 +11373,10 @@ MonoBehaviour:
     respectbars: 0
     whitelist: []
     blacklist: []
+  buttonBacktoquest: {fileID: 1125749162}
   sizeX: 1.5
   sizeY: 1.2
-  PlateContentPrefab: {fileID: 0}
+  PlateContentPrefab: {fileID: 6193793607050655288, guid: d538dd177f7518c4e84d0026321a8169, type: 3}
   contentSlider1: {fileID: 1640902014}
   contentSlider2: {fileID: 756039542}
   contentSlider3: {fileID: 1659553693}

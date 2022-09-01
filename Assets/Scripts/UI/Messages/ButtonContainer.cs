@@ -26,7 +26,7 @@ public class ButtonContainer : MonoBehaviour
             {
                 GameObject instanceLocale = Instantiate(messageButtonPrefab, transform);
 
-                instanceLocale.GetComponent<MessageButton>().ChangeText(db[i].textlong);
+                instanceLocale.GetComponent<MessageButton>().ChangeText(GlobalManager.Instance.hasStorytelling() ? db[i].textlong : db[i].infos.requete);
                 instanceLocale.GetComponent<MessageButton>().ChangeTextHeader(db[i].sender);
                 instanceLocale.GetComponent<MessageButton>().ChangeImage(db[i].picture);
                 instanceLocale.GetComponent<MessageButton>().ChangeNotifIcon(NotifIconType.Seen);

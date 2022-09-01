@@ -61,6 +61,9 @@ public class MessageButton : MonoBehaviour
     {
         ViewManager.Instance.OnViewChange(GameView.MessageInner);
         MessageInnerBehavior.Instance.SetFromData(data);
+        if (Plate.lastInstance != null) {
+            Plate.lastInstance.GetComponent<Plate>().emptyPlate();
+        }
     }
 
 }

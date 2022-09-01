@@ -18,6 +18,11 @@ public class Plate : MonoBehaviour
     public MessageInfo currentQuest = null;
 
     /// <summary>
+    /// Reference to the back to quest button for show/hide purposes when you start a plate compose.
+    /// </summary>
+    public GameObject buttonBacktoquest;
+
+    /// <summary>
     /// Half size of the plate, around the middle pivot point.
     /// </summary>
     public float sizeX, sizeY;
@@ -100,6 +105,22 @@ public class Plate : MonoBehaviour
             UpdateGauges();
     }
 
+    /// <summary>
+    /// Removes all content added to this plate
+    /// </summary>
+    public void emptyPlate()
+    {
+        if (content.Count <= 0)
+            return;
+
+
+        content.ForEach( e => GameObject.Destroy(e));
+        content.Clear();
+        contentinfo.content.Clear();
+
+        if (currentQuest != null)
+            UpdateGauges();
+    }
 
     public void UpdateGauges()
     {
@@ -288,6 +309,8 @@ public class Plate : MonoBehaviour
         contentSlider2.SetActive(false);
         contentSlider3.SetActive(false);
         contentSlider4.SetActive(false);
+        emptyPlate();
+        buttonBacktoquest.SetActive(false);
     }
 
     /// <summary>
@@ -305,6 +328,7 @@ public class Plate : MonoBehaviour
         contentSlider2.SetActive(true);
         contentSlider3.SetActive(true);
         contentSlider4.SetActive(true);
+        buttonBacktoquest.SetActive(true);
     }
 
 }

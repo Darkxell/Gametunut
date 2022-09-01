@@ -151,7 +151,7 @@
 		"sender":"Emma",
 		"picture":"PPEmma",
 		"textshort":"",
-		"textlong":"Hey, ça fait 1 mois que j'ai commencé mes études supérieures en archi, j'ai pris un appartement et qui dit vivre seul dit cuisiner et franchement j'ai vraiment la flemme de cuisiner, je pense que vous me comprenez après une journée de cours chargée, j'ai vraiment pas envie d'aller au magasin acheter des aliments et les cuisiner, depuis quelques temps je fais que manger dehors et prendre des plats à chauffer au micro onde, et j'aimerais changer ça, j'aimerais un exemple de repas complet qui ne demande pas trop d'effort en cuisine et avec des légumes cuits, parce que j'adore ça !! et que ma maman m'a toujours dit de manger des légumes car c'était bon pour la santé (ils sont surtout bons quand ils sont cuits, on sent moins le côté végétal lol).",
+		"textlong":"Hey, ça fait 1 mois que j'ai commencé mes études supérieures en archi, j'ai pris un appartement et qui dit vivre seul dit cuisiner et franchement j'ai vraiment la flemme de cuisiner, je pense que vous me comprenez après une journée de cours chargée, j'ai vraiment pas envie d'aller au magasin acheter des aliments et les cuisiner, depuis quelques temps je fais que manger dehors et prendre des plats à chauffer au micro onde, et j'aimerais changer ça, j'aimerais un exemple de repas complet qui ne demande pas trop d'effort en cuisine et avec des légumes, parce que j'adore ça !! et que ma maman m'a toujours dit de manger des légumes car c'était bon pour la santé (ils sont surtout bons quand ils sont cuits, on sent moins le côté végétal lol).",
 		"releasedate":1,
 		"infos":{
 			"nom":"Emma",
@@ -161,10 +161,10 @@
 			"poids":53.0,
 			"imc":20.7,
 			"probleme":"Flemme de cuisiner ",
-			"requete":"Repas complet avec légumes cuits"
+			"requete":"Repas complet avec légumes"
 		},
 		"respectbars":true,
-		"whitelist":["Légumescuits"],
+		"whitelist":["Légumes"],
 		"blacklist":[]
 	},
 	{ 
@@ -466,7 +466,7 @@
 		"sender":"MambaBadboy",
 		"picture":"PPMambaBadboy",
 		"textshort":"",
-		"textlong":"Hello ! Rdv chez mon nutritionniste hier (rdv que j'attendais depuis plusieurs semaines) résultat : il me conseille de manger plus d'aliments pauvres en fibres, de supprimer mes apports en lactose (mais comment je vais faire sans mon verre de lait du matin, au secooouurs) ! de manger plus de légumes cuits et de boire beaucoup d'eau pour garder une bonne hydratation. Mais le problème est que je ne suis pas habitué à changer drastiquement mes habitudes alimentaires, que me conseilleriez-vous comme plat pour suivre les conseils de mon nutritionniste ?",
+		"textlong":"Hello ! Rdv chez mon nutritionniste hier (rdv que j'attendais depuis plusieurs semaines) résultat : il me conseille de manger plus d'aliments pauvres en fibres, de supprimer mes apports en lactose (mais comment je vais faire sans mon verre de lait du matin, au secooouurs) ! de manger plus de légumes et de boire beaucoup d'eau pour garder une bonne hydratation. Mais le problème est que je ne suis pas habitué à changer drastiquement mes habitudes alimentaires, que me conseilleriez-vous comme plat pour suivre les conseils de mon nutritionniste ?",
 		"releasedate":6,
 		"infos":{
 			"nom":"MambaBadboy",
@@ -476,10 +476,10 @@
 			"poids":70.0,
 			"imc":22.9,
 			"probleme":"Déshydratation, Maldigestion/Malabsorption",
-			"requete":"Repas pauvre en fibres, sans lactose, avec légumes cuits, et riche en eau"
+			"requete":"Repas pauvre en fibres, sans lactose, avec des légumes, et riche en eau"
 		},
 		"respectbars":false,
-		"whitelist":["Pauvreenfibres","Eau","Légumescuits"],
+		"whitelist":["Pauvreenfibres","Eau","Légumes"],
 		"blacklist":["Lactose"]
 	},
 	{ 
@@ -559,7 +559,7 @@
 			"taille":1.72,
 			"poids":65.0,
 			"imc":22.0,
-			"probleme":"Repas complet riche en vitamine B9",
+			"probleme":"Carence en vitamine B9",
 			"requete":"Repas complet riche en vitamine B9"
 		},
 		"respectbars":true,
@@ -601,7 +601,7 @@
 			"taille":1.60,
 			"poids":85.0,
 			"imc":33.2,
-			"probleme":"Opération chirurgie bariatrique prévue / Régime hypocalorique pour diminuer la taille du foie.",
+			"probleme":"Opération chirurgie de l'obésité prévue / Régime hypocalorique pour diminuer la taille du foie.",
 			"requete":"Repas faible en sucres. Sans sodas ni jus de fruit. Sans produit ultratransformé.  Sans aliment gras. Sans sucres ajoutés."
 		},
 		"respectbars":false,
@@ -634,7 +634,7 @@
 		"sender":"SeaGalactic",
 		"picture":"PPSeaGalactic",
 		"textshort":"",
-		"textlong":"Salut toi, alors tu vas sûrement me trouver chelou mais je viens vous écrire parceque je n'en peux plus de mes boutons qui gâchent mon visage. Bon je t'avoue que je mange assez gras voire même très gras et bim ça se ressent sur ma face j'ai une tonne de boutons mais je sais et aussi d'après ma dermato que c'est à cause de ma bouffe. Je t'avoue que je ne mange pas de fruits et légumes, je ne bois pas d'eau non plus. Bref please, je veux bien un menu sans produits gras ultratransformés, avec des fruits et légumes, et de l'eau. Bisous et oublie pas les prot",
+		"textlong":"Salut toi, alors tu vas sûrement me trouver chelou mais je viens t'écrire parceque je n'en peux plus de mes boutons qui gâchent mon visage. Bon je t'avoue que je mange assez gras voire même très gras et bim ça se ressent sur ma face j'ai une tonne de boutons mais je sais et aussi d'après ma dermato que c'est à cause de ma bouffe. Je t'avoue que je ne mange pas de fruits et légumes, je ne bois pas d'eau non plus. Bref please, je veux bien un menu sans produits gras ultratransformés, avec des fruits et légumes, et de l'eau. Bisous et oublie pas les prot !",
 		"releasedate":9,
 		"infos":{
 			"nom":"SeaGalactic",
@@ -644,18 +644,18 @@
 			"poids":64.0,
 			"imc":21.1,
 			"probleme":"Boutons dû à la malbouffe. Alimentation trop grasse et pauvre en eau",
-			"requete":"Repas sans produits gras et ultratransformés avec des légumes, des fruits et riche en eau."
+			"requete":"Repas sans produits gras ni ultratransformés mais avec des légumes, des fruits et riche en eau."
 		},
 		"respectbars":false,
 		"whitelist":["Fruit","Eau","Légumes"],
-		"blacklist":["Produitsanimaux","Alimentgras"]
+		"blacklist":["Produitultratransformé","Alimentgras"]
 	},
 	{ 
 		"id":32,
 		"sender":"Amandine",
 		"picture":"PPAmandine",
 		"textshort":"",
-		"textlong":"Bonsoir, je suis tellement contente que la Covid soit derrière nous, cette période était très compliquée pour nous tous, et surtout pour nos balances et jean haha, personnellement je faisais que commander des plats sur les applications car je ne voulais pas sortir et prendre le risque d'attraper ce virus qui fait vraiment peur, j'ai réussi à ne jamais l'attraper par contre mon corps à attraper autre chose, 10KG !!!<br> Aujourd'hui c'est décidé je veux me reprendre en main et consommer que des repas sans sucres ajoutés sans sodas ni de jus de fruits et avec plein de légumes et légumineuses, je n'y connais rien c'est mon coach sportif qui m'a conseillé ça haha, je suis justement ici pour vous demander si vous pouvez me suggérer un plat que je pourrais consommer par exemple car j'ai peur de faire des erreurs et rechuter dans ma prise de poids.",
+		"textlong":"Bonsoir, je suis tellement contente que la Covid soit derrière nous, cette période était très compliquée pour nous tous, et surtout pour nos balances et jean haha, personnellement je faisais que commander des plats sur les applications car je ne voulais pas sortir et prendre le risque d'attraper ce virus qui fait vraiment peur, j'ai réussi à ne jamais l'attraper par contre mon corps à attraper autre chose, 10KG !!!<br> Aujourd'hui c'est décidé je veux me reprendre en main et consommer que des repas sans sucres ajoutés sans sodas ni de jus de fruits, sans produits ultra-transformés et avec plein de légumes et légumineuses, je n'y connais rien c'est mon coach sportif qui m'a conseillé ça haha, je suis justement ici pour vous demander si vous pouvez me suggérer un plat que je pourrais consommer par exemple car j'ai peur de faire des erreurs et rechuter dans ma prise de poids.",
 		"releasedate":9,
 		"infos":{
 			"nom":"Amandine",
@@ -665,7 +665,7 @@
 			"poids":86.0,
 			"imc":31.6,
 			"probleme":"Obésité stade 1",
-			"requete":"Repas sans sucres ajoutés, sans sodas ni jus de fruits et avec des légumineuses"
+			"requete":"Repas sans sucres ajoutés ni produits ultra-transformés sans sodas ni jus de fruits et avec des légumineuses"
 		},
 		"respectbars":false,
 		"whitelist":["Légumineuse","Légumes"],
@@ -676,7 +676,7 @@
 		"sender":"ShoqapikFreedom",
 		"picture":"PPShoqapikFreedom",
 		"textshort":"",
-		"textlong":"Salut, je suis une grande soeur et j'adore m'occuper de mes petites soeurs, j'essaye de leur transmettre ma passion pour la 'healthy food', je leur cuisine des repas complets sans produits ultra transformés, j'adorerais varier un peu en leur proposant de nouvelles choses, est-ce que vous pouvez me donner une idée de menu?",
+		"textlong":"Salut, je suis une grande soeur et j'adore m'occuper de mes petites soeurs, j'essaye de leur transmettre ma passion pour la 'healthy food', je leur cuisine des repas complets sans produits ultra transformés, j'adorerais varier un peu en leur proposant de nouvelles choses, est-ce que vous pouvez me donner une idée de menu ?",
 		"releasedate":9,
 		"infos":{
 			"nom":"ShoqapikFreedom",
@@ -707,7 +707,7 @@
 			"poids":70.0,
 			"imc":23.7,
 			"probleme":"Perte de poids de 3-4 kilos",
-			"requete":"Menu avec des aliments qui ont un index glycémique bas. Sans sucres ajoutés. Sans soda ni jus de fruit. Alimentation sans produit ultratransformé."
+			"requete":"Repas avec des protéines et des aliments qui ont un index glycémique bas. Sans sucres ajoutés. Sans soda ni jus de fruit. Sans produit ultratransformé."
 		},
 		"respectbars":false,
 		"whitelist":["Indexglycémiquebas","Protéine"],
@@ -728,7 +728,7 @@
 			"poids":93.0,
 			"imc":28.7,
 			"probleme":"Malbouffe",
-			"requete":"Repas avec légumineuses, légumes, sans sucres ajoutés, sans produits gras. Sans produit ultratransformé."
+			"requete":"Repas avec légumineuses, légumes, sans sucres ajoutés, sans produits gras et sans produit ultratransformé."
 		},
 		"respectbars":false,
 		"whitelist":["Légumes","Légumineuse"],
@@ -770,7 +770,7 @@
 			"poids":67.0,
 			"imc":22.9,
 			"probleme":"Veut devenir vegan",
-			"requete":"Repas avec des protéines végétales et sans produits animaux"
+			"requete":"Repas complet avec des protéines végétales et sans produits animaux"
 		},
 		"respectbars":true,
 		"whitelist":["Protéinevégétale"],
@@ -886,7 +886,7 @@
 		"sender":"CloudTwo",
 		"picture":"PPCloudTwo",
 		"textshort":"",
-		"textlong":"Salut, en ce moment je jeûne par intermittence. Je voulais juste voir comment mon corps réagirait. J'ai consulté une nutritionniste qui m'a conseillé de manger des repas complets riches en fibres et en protéines, avec des légumineuses. Vous pouvez me proposer un exemple de repas s'il vous plait?",
+		"textlong":"Salut, en ce moment je jeûne par intermittence. Je voulais juste voir comment mon corps réagirait. J'ai consulté une nutritionniste qui m'a conseillé de manger des repas complets riches en fibres et en protéines, avec des légumineuses. Vous pouvez me proposer un exemple de repas s'il vous plait ?",
 		"releasedate":13,
 		"infos":{
 			"nom":"CloudTwo",
@@ -895,7 +895,7 @@
 			"taille":1.65,
 			"poids":70.0,
 			"imc":25.7,
-			"probleme":"Repas complet jeûne",
+			"probleme":"Besoin conseils préparation jeûne",
 			"requete":"Repas complet riche en fibres, avec légumineuse et protéine"
 		},
 		"respectbars":true,
@@ -907,7 +907,7 @@
 		"sender":"TekVador",
 		"picture":"PPTekVador",
 		"textshort":"",
-		"textlong":"Bonjour, je viens vous voir car j'aimerais prendre de la masse, j'en peux plus d'être toute maigre, j'aimerais prendre des formes et des muscles. Ça fait quelques mois que je suis inscrit à la salle et mon coach m'a conseillé de manger des repas complets riches en protéines avec des aliments faibles en index glycémique et d'arrêter les conneries de produits industriels, sucrées et ultra-transformés, vous pensez pouvoir m'aider?",
+		"textlong":"Bonjour, je viens vous voir car j'aimerais prendre de la masse, j'en peux plus d'être toute maigre, j'aimerais prendre des formes et des muscles. Ça fait quelques mois que je suis inscrit à la salle et mon coach m'a conseillé de manger des repas complets riches en protéines avec des aliments faibles en index glycémique et d'arrêter les conneries de produits industriels, sucrées et ultra-transformés, vous pensez pouvoir m'aider ?",
 		"releasedate":13,
 		"infos":{
 			"nom":"TekVador",
@@ -917,7 +917,7 @@
 			"poids":60.0,
 			"imc":19.4,
 			"probleme":"Prise de masse",
-			"requete":"Repas complet riche en protéines avec aliments faibles en index glycémique"
+			"requete":"Repas complet riche en protéines avec aliments faibles en index glycémique et sans produits ultra-transformés"
 		},
 		"respectbars":true,
 		"whitelist":["Protéine","Indexglycémiquebas"],
@@ -937,7 +937,7 @@
 			"taille":1.80,
 			"poids":80.0,
 			"imc":24.7,
-			"probleme":"Repas complet + prise de masse",
+			"probleme":"Prise de masse",
 			"requete":"Repas complet riche en protéines, sans aliments ultratransformé, sans sodas ni jus de fruit et sans sucres ajoutés"
 		},
 		"respectbars":true,

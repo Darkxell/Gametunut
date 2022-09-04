@@ -114,7 +114,7 @@ public class Plate : MonoBehaviour
             return;
 
 
-        content.ForEach( e => GameObject.Destroy(e));
+        content.ForEach(e => GameObject.Destroy(e));
         content.Clear();
         contentinfo.content.Clear();
 
@@ -233,6 +233,7 @@ public class Plate : MonoBehaviour
                 "" + currentQuest.id :
                 (savedmissionsstr + "|" + currentQuest.id)
                 );
+                GlobalManager.Instance.sendLogToServer("questcomplete," + currentQuest.id);
             }
             // Updates battlepass and mission list
             unlock = BattlePassManager.Instance.computeCurentPoints();
@@ -242,8 +243,7 @@ public class Plate : MonoBehaviour
         PlateValidationUI.Instance.ChangeContent(questcomplete, unlock != null, unlock);
         PlateValidationUI.Instance.gameObject.SetActive(true);
         // sends a server packet with data about the completion
-        // TODO
-
+        GlobalManager.Instance.sendLogToServer("platesubmit," + JsonUtility.ToJson(contentinfo) + "," + (currentQuest == null ? "null" : currentQuest.id));
     }
 
     /// <summary>
@@ -311,6 +311,7 @@ public class Plate : MonoBehaviour
         contentSlider4.SetActive(false);
         emptyPlate();
         buttonBacktoquest.SetActive(false);
+        GlobalManager.Instance.sendLogToServer("platestart,null");
     }
 
     /// <summary>
@@ -329,6 +330,7 @@ public class Plate : MonoBehaviour
         contentSlider3.SetActive(true);
         contentSlider4.SetActive(true);
         buttonBacktoquest.SetActive(true);
+        GlobalManager.Instance.sendLogToServer("platestart," + currentQuest.id);
     }
 
 }

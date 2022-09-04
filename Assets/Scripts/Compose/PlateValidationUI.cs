@@ -51,6 +51,7 @@ public class PlateValidationUI : MonoBehaviour
             try
             {
                 unlockImage.sprite = Resources.Load<Sprite>("composer/Ingredients/" + unlockID);
+                GlobalManager.Instance.sendLogToServer("reward," + unlockID);
             }
             catch (System.Exception)
             {

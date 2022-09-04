@@ -19,6 +19,8 @@ public class InfoEnterButton : MonoBehaviour
         // TODO: show/hide back button here
 
         ViewManager.Instance.OnViewChange(GameView.InfoSub2);
+
+        GlobalManager.Instance.sendLogToServer("infoopen," + PanelName);
     }
 
 

@@ -46,14 +46,14 @@ public class GlobalManager : MonoBehaviour
         if (PlayerPrefs.HasKey("startdate"))
         {
             Debug.Log("Playerspref dump : \"" + PlayerPrefs.GetString("startdate", "01/09/2022") + "\"");
-            StartDate = System.DateTime.Parse(PlayerPrefs.GetString("startdate", "01/09/2022") , dtfi);
+            StartDate = System.DateTime.Parse(PlayerPrefs.GetString("startdate", "01/09/2022"), dtfi);
         }
         else
         {
             StartDate = System.DateTime.Today;
             PlayerPrefs.SetString("startdate", StartDate.ToString("d", dtfi));
             firstlaunch = true;
-            Debug.Log("[First launch detected] Will be starting the welcome screen later.\nStart date stored : " + StartDate 
+            Debug.Log("[First launch detected] Will be starting the welcome screen later.\nStart date stored : " + StartDate
                 + " (Playerprefs Value : \"" + PlayerPrefs.GetString("startdate") + "\")");
         }
 
@@ -127,7 +127,11 @@ public class GlobalManager : MonoBehaviour
                     break;
             }
             if (firstlaunch)
+            {
                 WelcomeScreenBehavior.Instance.show();
+                sendLogToServer("firsttime");
+            }
+            sendLogToServer("applaunch," + CurentTestClass + "," + CurrentDay);
         }
     }
 

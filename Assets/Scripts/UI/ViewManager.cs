@@ -117,6 +117,7 @@ public class ViewManager : MonoBehaviour
         }
         // Messages button notice to recompute its test case handle
         MessagesButtonReference.GetComponent<MessagesButtonBehavior>().updateVisibility();
+        GlobalManager.Instance.sendLogToServer("changepage," + target);
     }
 
     public void OnViewChange(int target)

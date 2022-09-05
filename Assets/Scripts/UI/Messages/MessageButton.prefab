@@ -531,7 +531,7 @@ MonoBehaviour:
     picture: 
     textshort: 
     textlong: 
-    releasedate: 
+    releasedate: 0
     infos:
       nom: 
       sexe: 

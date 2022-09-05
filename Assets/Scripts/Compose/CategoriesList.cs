@@ -74,11 +74,12 @@ public class CategoriesList : MonoBehaviour, DragCallable
         if (snapCooldownCurrent <= 0)
         {
             float scrolloffset = scroll % unitHeight;
-            if (Mathf.Abs(scrolloffset) < autoscrollspeed * 2)
+            if (Mathf.Abs(scrolloffset) < (autoscrollspeed * 2) 
+                || scrolloffset > (unitHeight - (autoscrollspeed*2)))
             {
                 if (scrolloffset <= unitHeight / 2)
-                    if (Mathf.Abs(scrolloffset) > 0.001f) scroll -= scrolloffset;
-                    else if (Mathf.Abs(scrolloffset) < unitHeight - 0.001f) scroll += scrolloffset;
+                    if (Mathf.Abs(scrolloffset) > 0.001f) scroll -= autoscrollspeed;
+                    else if (Mathf.Abs(scrolloffset) < unitHeight - 0.001f) scroll += autoscrollspeed;
             }
             else
             {

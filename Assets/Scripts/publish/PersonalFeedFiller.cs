@@ -61,7 +61,7 @@ public class PersonalFeedFiller : MonoBehaviour
                 }
                 catch (System.Exception)
                 {
-                    dataString += "";
+                    dataString += "Que des bonnes choses!";
                 }
                 parsedData.description = dataString;
                 parsedData.likeText = "Aimé par GtunutBot et 4 autres personnes";

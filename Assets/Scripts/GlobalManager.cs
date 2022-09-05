@@ -176,7 +176,7 @@ public class GlobalManager : MonoBehaviour
     /// <summary>
     /// Sends a pseudoaninimlized log to the server for any action the player makes.
     /// <param name="data">String data, in csv format. Can contain anything and will be posted to the server as a singleline log. Will not be parsed in any case. 
-    /// Note that serevr may cull carriage returns for security, but content will be only lightly sanitized and should not be considered safe.</param>
+    /// Note that server may cull carriage returns for security, but content will be only lightly sanitized and should not be considered safe.</param>
     /// </summary>
     public IEnumerator sendLogToServer(String data)
     {

@@ -43,6 +43,7 @@ public class PlateValidationUI : MonoBehaviour
     /// </summary>
     public void ChangeContent(bool questSuccess, bool unlock, string unlockID)
     {
+        Debug.Log("Changing content for plate validation confirmation UI : " + questSuccess + " / unlock : " + unlock + " - " + unlockID);
         currentSuccess = questSuccess;
         GbotTextfield.text = (questSuccess ? trans_success : trans_failure) + (unlock ? trans_unlock : "");
         unlockpanel.gameObject.SetActive(unlock);
@@ -50,7 +51,7 @@ public class PlateValidationUI : MonoBehaviour
         {
             try
             {
-                unlockImage.sprite = Resources.Load<Sprite>("composer/Ingredients/" + unlockID);
+                unlockImage.sprite = Resources.Load<Sprite>("composer/Ingredients/" + IngredientsManager.getDataFor(unlockID).spriteMenu);
                 GlobalManager.Instance.sendLogToServer("reward," + unlockID);
             }
             catch (System.Exception)

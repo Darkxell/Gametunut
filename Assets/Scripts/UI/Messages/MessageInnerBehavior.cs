@@ -21,6 +21,11 @@ public class MessageInnerBehavior : MonoBehaviour
 
     public MessageInfo lastData = null;
 
+    /// <summary>
+    /// Show/hide-able objects based on quest completion 
+    /// </summary>
+    public GameObject ButtonAccept, ButtonDeny, TextDone;
+
     private int forceSizeUpdate = 0;
 
     public void Awake()
@@ -61,6 +66,28 @@ public class MessageInnerBehavior : MonoBehaviour
                     + (data.respectbars ? repascomplettext : "");
         }
 
+        // Button/text enable logic
+        string[] completedmissions = PlayerPrefs.GetString("missions", "").Split("|");
+        bool missioncomplete = false;
+        for (int i = 0; i < completedmissions.Length; i++)
+            if (!completedmissions[i].Equals("") && int.Parse(completedmissions[i]) == data.id)
+            {
+                missioncomplete = true;
+                break;
+            }
+        if (missioncomplete)
+        {
+            ButtonAccept.SetActive(false);
+            ButtonDeny.SetActive(false);
+            TextDone.SetActive(true);
+        }
+        else
+        {
+            ButtonAccept.SetActive(true);
+            ButtonDeny.SetActive(true);
+            TextDone.SetActive(false);
+        }
+
         // Bugfix layout srescaler : Schedule an update in 2 frames
         forceSizeUpdate = 2;
     }
@@ -70,7 +97,8 @@ public class MessageInnerBehavior : MonoBehaviour
         // Dogshit code because this doesn't work : LayoutRebuilder.ForceRebuildLayoutImmediate(gameObject.transform as RectTransform);
         if (forceSizeUpdate >= 0)
             forceSizeUpdate--;
-        if (forceSizeUpdate == 1) {
+        if (forceSizeUpdate == 1)
+        {
             forceSizeUpdate = 0;
             ContentText.gameObject.transform.parent.gameObject.GetComponent<VerticalLayoutGroup>().enabled = false;
             ContentText.gameObject.transform.parent.gameObject.GetComponent<VerticalLayoutGroup>().enabled = true;

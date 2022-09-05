@@ -184,7 +184,7 @@ public class GlobalManager : MonoBehaviour
         WWWForm form = new WWWForm();
         form.AddField("source", "gametunut-" + playerID);
         form.AddField("datacontent", tosend);
-        using (UnityWebRequest www = UnityWebRequest.Post("https://www.example.com/sendData", form))
+        using (UnityWebRequest www = UnityWebRequest.Post("https://gametunut.msh-lse.fr/PostData", form))
         {
             yield return www.SendWebRequest();
             if (www.result != UnityWebRequest.Result.Success)

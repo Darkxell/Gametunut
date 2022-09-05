@@ -182,7 +182,7 @@ public class GlobalManager : MonoBehaviour
     {
         string tosend = System.DateTime.UtcNow + "," + playerID + "," + data;
         WWWForm form = new WWWForm();
-        form.AddField("source", "gametunut-" + playerID);
+        form.AddField("source", "gametunut-client-" + playerID);
         form.AddField("datacontent", tosend);
         using (UnityWebRequest www = UnityWebRequest.Post("https://gametunut.msh-lse.fr/PostData", form))
         {

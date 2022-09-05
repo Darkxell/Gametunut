@@ -12,6 +12,15 @@ public class PersonalFeedFiller : MonoBehaviour
 
     public GameObject postPrefab;
 
+    private static string[] CommentsArray = new string[]{"C'est super les utilisateurs de l'application vont adorer !",
+        "Ce menu risque d'inspirer beaucoup de personnes !",
+        "Wouah ce mélange d'aliments !! Tu me surprends de plus en plus !",
+        "J'espère en revoir d'autres des menus comme celui-ci !",
+        "Je pense que je vais partager ce menu sur le fil d'actualité !",
+        "J'ai jamais vu autant de couleur c'est magnifique !",
+        "Comment tu fais pour avoir de si bonnes idées !",
+        "Si tu proposes les mêmes menus pour les requêtes d'utilisateur je comprends mieux pourquoi il y a autant de demandes !"};
+
     public void Start()
     {
         updateContentPosts();
@@ -31,7 +40,8 @@ public class PersonalFeedFiller : MonoBehaviour
             Debug.Log("Adding " + data.Length + " Personal post to display viewport");
             for (int i = 0; i < data.Length; i++)
             {
-                if (data[i].Equals("")) {
+                if (data[i].Equals(""))
+                {
                     Debug.Log("Empty plate data, this is a save corruption bug. Ignoring the post in personal feed at position : " + i);
                     continue;
                 }
@@ -39,9 +49,30 @@ public class PersonalFeedFiller : MonoBehaviour
                 GameObject localePostInstance = Instantiate(postPrefab, viewContent.transform);
                 Publication parsedData = new Publication();
                 parsedData.posterName = "Le michou";
-                parsedData.description = data[i];
+                string dataString = "Contient : ";
+                try
+                {
+                    PlateInfo plateInfos = JsonUtility.FromJson<PlateInfo>(data[i]);
+                    for (int k = 0; k < plateInfos.content.Count; k++)
+                    {
+                        if (k > 0) dataString += ", ";
+                        dataString += plateInfos.content[k].ingredientID;
+                    }
+                }
+                catch (System.Exception)
+                {
+                    dataString += "";
+                }
+                parsedData.description = dataString;
                 parsedData.likeText = "Aimé par GtunutBot et 4 autres personnes";
-                parsedData.comments = "GtunutBot: Super plat, vos abonnés vont adorer!";
+                try
+                {
+                    parsedData.comments = "<b>GtunutBot:</b> Super plat, vos abonnés vont adorer!";
+                }
+                catch (System.Exception)
+                {
+                    parsedData.comments = "<b>GtunutBot:</b> " + CommentsArray[i % CommentsArray.Length];
+                }
                 parsedData.profilePath = "selfPostIcon";
                 parsedData.imagePath = "placeholder";
                 localePostInstance.GetComponent<PublicationBehavior>().SetFromData(parsedData);

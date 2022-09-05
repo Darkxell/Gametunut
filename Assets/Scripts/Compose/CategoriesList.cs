@@ -68,24 +68,20 @@ public class CategoriesList : MonoBehaviour, DragCallable
     void FixedUpdate()
     {
         selectedID = (int)((scroll + unitHeight / 2f) / unitHeight);
-        selectedID = Mathf.Clamp(selectedID, 0, categories.Count -1);
+        selectedID = Mathf.Clamp(selectedID, 0, categories.Count - 1);
         float autoscrollspeed = 0.05f;
         // If no scroll for a while, snap scroll to nearest element index.
         if (snapCooldownCurrent <= 0)
         {
             float scrolloffset = scroll % unitHeight;
-            if (Mathf.Abs(scrolloffset) < (autoscrollspeed * 2) 
-                || scrolloffset > (unitHeight - (autoscrollspeed*2)))
+            if (scrolloffset <= unitHeight / 2)
             {
-                if (scrolloffset <= unitHeight / 2)
-                    if (Mathf.Abs(scrolloffset) > 0.001f) scroll -= autoscrollspeed;
-                    else if (Mathf.Abs(scrolloffset) < unitHeight - 0.001f) scroll += autoscrollspeed;
+                scroll -= (scrolloffset < autoscrollspeed * 2) ? scrolloffset : autoscrollspeed;
             }
             else
             {
-                scroll += (scrolloffset >= unitHeight / 2) ? autoscrollspeed : -autoscrollspeed;
+                scroll += (scrolloffset > unitHeight - (autoscrollspeed * 2)) ? (unitHeight - scrolloffset) : autoscrollspeed;
             }
-
         }
         // If outside array range, force go back in it.
         float maxscroll = (categories.Count - 1) * unitHeight;

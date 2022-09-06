@@ -178,18 +178,28 @@ public class GlobalManager : MonoBehaviour
     /// <param name="data">String data, in csv format. Can contain anything and will be posted to the server as a singleline log. Will not be parsed in any case. 
     /// Note that server may cull carriage returns for security, but content will be only lightly sanitized and should not be considered safe.</param>
     /// </summary>
-    public IEnumerator sendLogToServer(String data)
+    public void sendLogToServer(String data)
     {
-        string tosend = System.DateTime.UtcNow + "," + playerID + "," + data;
-        WWWForm form = new WWWForm();
-        form.AddField("source", "gametunut-client-" + playerID);
-        form.AddField("datacontent", tosend);
-        using (UnityWebRequest www = UnityWebRequest.Post("https://gametunut.msh-lse.fr/PostData", form))
-        {
-            yield return www.SendWebRequest();
-            if (www.result != UnityWebRequest.Result.Success)
-                Debug.Log(www.error);
-        }
+        string tosend = System.DateTime.UtcNow + ",source=gametunut-client-" + playerID + "," + data;
+        StartCoroutine(postRequestCoroutine(tosend));
+    }
+
+    private IEnumerator postRequestCoroutine(string data)
+    {
+        Debug.Log("Server notification coroutine started.\nSending following data: " + data);
+        var uwr = new UnityWebRequest("https://gametunut.msh-lse.fr/PostData", "POST");
+        byte[] databyte = new System.Text.UTF8Encoding().GetBytes(data);
+        uwr.uploadHandler = new UploadHandlerRaw(databyte);
+        uwr.downloadHandler = new DownloadHandlerBuffer();
+        uwr.SetRequestHeader("Content-Type", "text/plain");
+
+        //Send the request then wait here until it returns
+        yield return uwr.SendWebRequest();
+
+        if (uwr.result == UnityWebRequest.Result.Success)
+            Debug.Log("Server payload received: " + uwr.downloadHandler.text);
+        else
+            Debug.Log("Error While Sending: " + uwr.error);
     }
 
 }

@@ -346,7 +346,7 @@ GameObject:
   - component: {fileID: 43391699}
   - component: {fileID: 43391698}
   - component: {fileID: 43391697}
-  - component: {fileID: 43391696}
+  - component: {fileID: 43391700}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -374,18 +374,6 @@ RectTransform:
   m_AnchoredPosition: {x: -52, y: 21}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &43391696
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 43391694}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c11e05b71cc30a84f80607ecdb415c6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &43391697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -430,10 +418,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 43391696}
-        m_TargetAssemblyTypeName: ViewChangeTrigger, Assembly-CSharp
-        m_MethodName: changeView
-        m_Mode: 3
+      - m_Target: {fileID: 43391700}
+        m_TargetAssemblyTypeName: InfoBackButton, Assembly-CSharp
+        m_MethodName: onClick
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -480,6 +468,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 43391694}
   m_CullTransparentMesh: 1
+--- !u!114 &43391700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43391694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4437c5fc61ae77b4696f99f160574528, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &45402714
 GameObject:
   m_ObjectHideFlags: 0
@@ -9995,9 +9995,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 922860490}
-        m_TargetAssemblyTypeName: ViewChangeTrigger, Assembly-CSharp
-        m_MethodName: changeView
-        m_Mode: 3
+        m_TargetAssemblyTypeName: InfoBackButton, Assembly-CSharp
+        m_MethodName: onClick
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -10053,7 +10053,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 922860485}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c11e05b71cc30a84f80607ecdb415c6a, type: 3}
+  m_Script: {fileID: 11500000, guid: 4437c5fc61ae77b4696f99f160574528, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &927148582
@@ -14436,7 +14436,7 @@ GameObject:
   - component: {fileID: 1330704509}
   - component: {fileID: 1330704508}
   - component: {fileID: 1330704507}
-  - component: {fileID: 1330704506}
+  - component: {fileID: 1330704510}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -14464,18 +14464,6 @@ RectTransform:
   m_AnchoredPosition: {x: -52, y: 21}
   m_SizeDelta: {x: 150, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1330704506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1330704504}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c11e05b71cc30a84f80607ecdb415c6a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1330704507
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14520,10 +14508,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1330704506}
-        m_TargetAssemblyTypeName: ViewChangeTrigger, Assembly-CSharp
-        m_MethodName: changeView
-        m_Mode: 3
+      - m_Target: {fileID: 1330704510}
+        m_TargetAssemblyTypeName: InfoBackButton, Assembly-CSharp
+        m_MethodName: onClick
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -14570,6 +14558,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1330704504}
   m_CullTransparentMesh: 1
+--- !u!114 &1330704510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1330704504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4437c5fc61ae77b4696f99f160574528, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1336845230
 GameObject:
   m_ObjectHideFlags: 0
@@ -16509,9 +16509,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1584158380}
-        m_TargetAssemblyTypeName: ViewChangeTrigger, Assembly-CSharp
-        m_MethodName: changeView
-        m_Mode: 3
+        m_TargetAssemblyTypeName: InfoBackButton, Assembly-CSharp
+        m_MethodName: onClick
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -16567,7 +16567,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1584158375}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c11e05b71cc30a84f80607ecdb415c6a, type: 3}
+  m_Script: {fileID: 11500000, guid: 4437c5fc61ae77b4696f99f160574528, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1585940835

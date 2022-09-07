@@ -67,7 +67,8 @@ public class ViewManager : MonoBehaviour
     public void FixedUpdate()
     {
         // No idea why this gets triggered, but in case it does, thgis fixes a bug where the ball gets stuck on the left side of the screen
-        if (xTargetCurrent == 0) {
+        if (xTargetCurrent == 0)
+        {
             GameObject button = IDtoButtonOject(currentView);
             xTargetCurrent = (button && button.activeInHierarchy) ? button.transform.position.x : xTargetDefault;
         }
@@ -98,6 +99,7 @@ public class ViewManager : MonoBehaviour
     {
         currentView = target;
         // Local footer UI changes
+        InfoBackButton.setBackAnchor(target);
         BallReference.transform.localScale = Vector3.zero;
         BallSize = 0f;
         Debug.Log("Changing view to : " + target);
@@ -105,16 +107,7 @@ public class ViewManager : MonoBehaviour
         xTargetCurrent = (button && button.activeInHierarchy) ? button.transform.position.x : xTargetDefault;
         // Global UI swap notification
         foreach (var item in PageElement.elements)
-        {
-            if (item.GameViewType == (int)target)
-            {
-                item.gameObject.SetActive(true);
-            }
-            else
-            {
-                item.gameObject.SetActive(false);
-            }
-        }
+            item.gameObject.SetActive(item.GameViewType == (int)target);
         // Messages button notice to recompute its test case handle
         MessagesButtonReference.GetComponent<MessagesButtonBehavior>().updateVisibility();
         GlobalManager.Instance.sendLogToServer("changepage," + target);

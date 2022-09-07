@@ -23,7 +23,8 @@ public class PublicationBehavior : MonoBehaviour
     {
         // Text setters
         PosterName.GetComponent<TextMeshProUGUI>().text = Data.posterName;
-        DateText.GetComponent<TextMeshProUGUI>().text = "Aujourd'hui";
+        int jrsdiff = GlobalManager.Instance.CurrentDay - Data.day;
+        DateText.GetComponent<TextMeshProUGUI>().text = Data.day == -1 ? "" : (jrsdiff == 0 ? "Aujourd'hui" : ("Il y a " + jrsdiff + " jours"));
         DescriptionText.GetComponent<TextMeshProUGUI>().text = Data.description;
         LikeText.GetComponent<TextMeshProUGUI>().text = Data.likeText;
         CommentsText.GetComponent<TextMeshProUGUI>().text = Data.comments;

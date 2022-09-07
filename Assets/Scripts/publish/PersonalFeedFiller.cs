@@ -65,6 +65,7 @@ public class PersonalFeedFiller : MonoBehaviour
                 }
                 parsedData.description = dataString;
                 parsedData.likeText = "Aimé par GtunutBot et 4 autres personnes";
+                parsedData.day = -1;
                 try
                 {
                     parsedData.comments = "<b>GtunutBot:</b> " + CommentsArray[i % CommentsArray.Length];

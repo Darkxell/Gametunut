@@ -20,7 +20,7 @@ public class ButtonContainer : MonoBehaviour
     {
         MessageInfo[] db = MessageDatabase.getList();
         Debug.Log("Loading messages from database in UI, found " + db.Length + " entries.\nTodays date is " + System.DateTime.Today + " and we are day " + GlobalManager.Instance.CurrentDay + " in the experiment.");
-        for (int i = 0; i < db.Length; i++)
+        for (int i = db.Length - 1; i >= 0; i--)
         {
             if (db[i].releasedate <= GlobalManager.Instance.CurrentDay)
             {

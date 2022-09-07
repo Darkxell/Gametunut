@@ -39,11 +39,11 @@ public class MessageInnerBehavior : MonoBehaviour
         // Text setters
 
         NameHeader.GetComponent<TextMeshProUGUI>().text = data.sender;
-        RecievedText.GetComponent<TextMeshProUGUI>().text = "Release date : " + data.releasedate;
+        int jrsdiff = GlobalManager.Instance.CurrentDay - data.releasedate;
+        RecievedText.GetComponent<TextMeshProUGUI>().text = jrsdiff == 0 ? "Aujourd'hui" : ("Il y a " + jrsdiff + " jours");
         NameSmall.GetComponent<TextMeshProUGUI>().text = data.infos.nom;
 
         // Image setters
-
         ProfilePicture.GetComponent<Image>().sprite = Resources.Load<Sprite>("profiles/" + data.picture);
         PictureSmall.GetComponent<Image>().sprite = Resources.Load<Sprite>("profiles/" + data.picture);
 

@@ -143,9 +143,9 @@ public class Plate : MonoBehaviour
         slider_energy_overcap = 2500; slider_proteins_overcap = 45; slider_lipids_overcap = 70; slider_glucids_overcap = 70;
         try
         {
-            float dailymultiplier = 0.3f; // math is for one day, this is to bring it to one meal, more or less
+            float dailymultiplier = 0.2f; // math is for one day, this is to bring it to one meal, more or less
             float energyovercapmulti = 1.5f;
-            float fourchette1a = 10, fourchette1b = 15, fourchette2a = 35, fourchette2b = 52, fourchette3a = 40, fourchette3b = 60;
+            float fourchette1a = 20, fourchette1b = 30, fourchette2a = 35, fourchette2b = 52, fourchette3a = 40, fourchette3b = 60;
             // fourchette B for overcap maximum. Could probbaly be a percentage, but actually correct this way. Edit: actually changet to ALWAYS be equivalent to a 50% more change, for balance. Also, I don't have time to make procedural sliders.
             SenderInfo personinfos = currentQuest.infos;
             // Energy
@@ -169,19 +169,19 @@ public class Plate : MonoBehaviour
         // logarithmic cheat to make things MUCH easier.
         if (totalEnergy > slider_energy_max)
         {
-            totalEnergy = slider_energy_max + Mathf.Sqrt(totalEnergy - slider_energy_max);
+            totalEnergy = slider_energy_max + Mathf.Pow(totalEnergy - slider_energy_max, 0.5f);
         }
         if (totalProteins > slider_proteins_max)
         {
-            totalProteins = slider_proteins_max + Mathf.Sqrt(totalProteins - slider_proteins_max);
+            totalProteins = slider_proteins_max + Mathf.Pow(totalProteins - slider_proteins_max, 0.4f);
         }
         if (totalLipids > slider_lipids_max)
         {
-            totalLipids = slider_lipids_max + Mathf.Sqrt(totalLipids - slider_lipids_max);
+            totalLipids = slider_lipids_max + Mathf.Pow(totalLipids - slider_lipids_max, 0.5f);
         }
         if (totalGlucids > slider_glucids_max)
         {
-            totalGlucids = slider_glucids_max + Mathf.Sqrt(totalGlucids - slider_glucids_max);
+            totalGlucids = slider_glucids_max + Mathf.Pow(totalGlucids - slider_glucids_max, 0.5f);
         }
         // Set the slider's max value
         contentSlider1.GetComponent<Slider>().maxValue = slider_energy_max * 2;

@@ -87,23 +87,23 @@
 			"proteines": 0.27,
 			"lipides": 0.13,
 			"glucides": 10.7,
-			"tags": [ "Fruit", "Fructose", "Richeenfibres", "Alimentlaxatif", "Indexglycémiquebas", "Antioxydant"]
+			"tags": ["Fruit", "Fructose", "Richeenfibres", "Alimentlaxatif", "Indexglycémiquebas", "Antioxydant"]
 		},
 		{
 			"name": "Pruneau sec",
 			"spriteMenu": "pruneaux sec",
-			"spriteInGame": "pruneaux sec",
+			"spriteInGame": "pruneaux sec portion",
 			"quantité": 30.0,
 			"energie": 68.7,
 			"proteines": 0.49,
 			"lipides": 0.12,
 			"glucides": 16.62,
-			"tags": [ "Alimentlaxatif", "Fructose", "Antioxydant"]
+			"tags": ["Fruit","Alimentlaxatif", "Fructose", "Antioxydant"]
 		},
 		{
 			"name": "Raisin",
 			"spriteMenu": "raisin - icone",
-			"spriteInGame": "raisin - icone",
+			"spriteInGame": "raisin - portion",
 			"quantité": 50.0,
 			"energie": 33.6,
 			"proteines": 0.36,
@@ -125,7 +125,7 @@
 		{
 			"name": "Amande",
 			"spriteMenu": "amandes",
-			"spriteInGame": "amandes",
+			"spriteInGame": "amandes portion",
 			"quantité": 25.0,
 			"energie": 147.9,
 			"proteines": 5.65,
@@ -136,7 +136,7 @@
 		{
 			"name": "Noix",
 			"spriteMenu": "noix",
-			"spriteInGame": "noix",
+			"spriteInGame": "noix portion",
 			"quantité": 25.0,
 			"energie": 174.0,
 			"proteines": 3.93,
@@ -235,7 +235,7 @@
 		{
 			"name": "Epinard",
 			"spriteMenu": "epinards icones",
-			"spriteInGame": "epinards icones",
+			"spriteInGame": "epinards portion",
 			"quantité": 100.0,
 			"energie": 28.1,
 			"proteines": 3.38,
@@ -301,7 +301,7 @@
 		{
 			"name": "Foie de volaille",
 			"spriteMenu": "foie de volaille",
-			"spriteInGame": "foie de volaille",
+			"spriteInGame": "foie de volaille portion",
 			"quantité": 125.0,
 			"energie": 205.0,
 			"proteines": 32.25,
@@ -312,7 +312,7 @@
 		{
 			"name": "Steak de boeuf",
 			"spriteMenu": "Steak - Aliment",
-			"spriteInGame": "Steak - Aliment",
+			"spriteInGame": "Steak - portion",
 			"quantité": 125.0,
 			"energie": 194.0,
 			"proteines": 31.88,
@@ -323,7 +323,7 @@
 		{
 			"name": "Brochette de boeuf",
 			"spriteMenu": "Brochettes boeuf - Aliment",
-			"spriteInGame": "Brochettes boeuf - Aliment",
+			"spriteInGame": "Brochettes boeuf - portion",
 			"quantité": 125.0,
 			"energie": 173.75,
 			"proteines": 27.37,
@@ -334,7 +334,7 @@
 		{
 			"name": "Escalope de dinde",
 			"spriteMenu": "Blanc de Dinde - Aliment",
-			"spriteInGame": "Blanc de Dinde - Aliment",
+			"spriteInGame": "Blanc de Dinde - portion",
 			"quantité": 125.0,
 			"energie": 155.0,
 			"proteines": 35.63,
@@ -345,7 +345,7 @@
 		{
 			"name": "Pilon de poulet",
 			"spriteMenu": "Patte de poulet - Aliment",
-			"spriteInGame": "Patte de poulet - Aliment",
+			"spriteInGame": "Patte de poulet - portion",
 			"quantité": 100,
 			"energie": 213,
 			"proteines": 28.9,
@@ -356,7 +356,7 @@
 		{
 			"name": "Jambon",
 			"spriteMenu": "jambon",
-			"spriteInGame": "jambon",
+			"spriteInGame": "jambon portion",
 			"quantité": 59.5,
 			"energie": 59.13,
 			"proteines": 10.15,
@@ -367,7 +367,7 @@
 		{
 			"name": "Sardine",
 			"spriteMenu": "sardine icone",
-			"spriteInGame": "sardine icone",
+			"spriteInGame": "sardine portion",
 			"quantité": 125.0,
 			"energie": 243.0,
 			"proteines": 31.38,
@@ -433,7 +433,7 @@
 		{
 			"name": "Omelette",
 			"spriteMenu": "Omelette",
-			"spriteInGame": "Omelette",
+			"spriteInGame": "Omelette portion",
 			"quantité": 100.0,
 			"energie": 184,
 			"proteines": 9.82,
@@ -444,7 +444,7 @@
 		{
 			"name": "Œuf au plat",
 			"spriteMenu": "Oeufs à la poelle",
-			"spriteInGame": "Oeufs à la poelle",
+			"spriteInGame": "Oeufs à la poelle portion",
 			"quantité": 100.0,
 			"energie": 147,
 			"proteines": 13.8,
@@ -466,7 +466,7 @@
 		{
 			"name": "Steak vegan",
 			"spriteMenu": "steack végé",
-			"spriteInGame": "steack végé",
+			"spriteInGame": "steack végé portion",
 			"quantité": 125.0,
 			"energie": 269.0,
 			"proteines": 21.88,
@@ -477,7 +477,7 @@
 		{
 			"name": "Haricots blancs",
 			"spriteMenu": "haricots blancs",
-			"spriteInGame": "haricots blancs",
+			"spriteInGame": "haricots blancs portion",
 			"quantité": 100.0,
 			"energie": 112,
 			"proteines": 6.75,
@@ -488,7 +488,7 @@
 		{
 			"name": "Lentilles",
 			"spriteMenu": "lentilles",
-			"spriteInGame": "lentilles",
+			"spriteInGame": "lentilles portion",
 			"quantité": 100.0,
 			"energie": 127,
 			"proteines": 10.1,
@@ -510,7 +510,7 @@
 		{
 			"name": "Petits pois",
 			"spriteMenu": "petits pois",
-			"spriteInGame": "petits pois",
+			"spriteInGame": "petits pois portion",
 			"quantité": 100.0,
 			"energie": 80.3,
 			"proteines": 6.38,
@@ -521,7 +521,7 @@
 		{
 			"name": "Fèves",
 			"spriteMenu": "fèves",
-			"spriteInGame": "fèves",
+			"spriteInGame": "fèves portion",
 			"quantité": 100.0,
 			"energie": 66.1,
 			"proteines": 6.4,
@@ -532,7 +532,7 @@
 		{
 			"name": "Pois cassés",
 			"spriteMenu": "pois cassés",
-			"spriteInGame": "pois cassés",
+			"spriteInGame": "pois cassés portion",
 			"quantité": 100.0,
 			"energie": 113.1,
 			"proteines": 8.6,
@@ -543,7 +543,7 @@
 		{
 			"name": "Pain seigle",
 			"spriteMenu": "Pain de seigle",
-			"spriteInGame": "Pain de seigle",
+			"spriteInGame": "Pain de seigle portion",
 			"quantité": 30.0,
 			"energie": 78.3,
 			"proteines": 2.72,
@@ -554,7 +554,7 @@
 		{
 			"name": "Pain sans gluten",
 			"spriteMenu": "pain blanc",
-			"spriteInGame": "pain blanc",
+			"spriteInGame": "pain blanc portion",
 			"quantité": 30.0,
 			"energie": 78.3,
 			"proteines": 0.83,
@@ -565,7 +565,7 @@
 		{
 			"name": "Pain blanc",
 			"spriteMenu": "pain blanc",
-			"spriteInGame": "pain blanc",
+			"spriteInGame": "pain blanc portion",
 			"quantité": 30.0,
 			"energie": 82.8,
 			"proteines": 2.7,
@@ -576,7 +576,7 @@
 		{
 			"name": "Pain complet",
 			"spriteMenu": "pain complet",
-			"spriteInGame": "pain complet",
+			"spriteInGame": "pain complet portion",
 			"quantité": 30.0,
 			"energie": 73.2,
 			"proteines": 2.78,
@@ -587,7 +587,7 @@
 		{
 			"name": "Pâtes blé",
 			"spriteMenu": "pates blé",
-			"spriteInGame": "pates blé",
+			"spriteInGame": "pates blé portion",
 			"quantité": 100.0,
 			"energie": 126,
 			"proteines": 4.38,
@@ -598,7 +598,7 @@
 		{
 			"name": "Pâtes blé complet",
 			"spriteMenu": "pates blé complet",
-			"spriteInGame": "pates blé complet",
+			"spriteInGame": "pates blé complet portion",
 			"quantité": 100.0,
 			"energie": 128,
 			"proteines": 4.88,
@@ -609,7 +609,7 @@
 		{
 			"name": "Riz basmati",
 			"spriteMenu": "riz basmati",
-			"spriteInGame": "riz basmati",
+			"spriteInGame": "riz basmati portion",
 			"quantité": 100.0,
 			"energie": 117,
 			"proteines": 2.88,
@@ -620,7 +620,7 @@
 		{
 			"name": "Riz complet",
 			"spriteMenu": "riz complet",
-			"spriteInGame": "riz complet",
+			"spriteInGame": "riz complet portion",
 			"quantité": 100.0,
 			"energie": 158,
 			"proteines": 3.38,
@@ -631,7 +631,7 @@
 		{
 			"name": "Quinoa",
 			"spriteMenu": "quinoa",
-			"spriteInGame": "quinoa",
+			"spriteInGame": "quinoa portion",
 			"quantité": 100.0,
 			"energie": 149,
 			"proteines": 5,
@@ -675,7 +675,7 @@
 		{
 			"name": "Beurre",
 			"spriteMenu": "beurre",
-			"spriteInGame": "beurre",
+			"spriteInGame": "beurre portion",
 			"quantité": 10.0,
 			"energie": 75.3,
 			"proteines": 0.07,
@@ -686,7 +686,7 @@
 		{
 			"name": "Crème fraîche",
 			"spriteMenu": "creme fraiche",
-			"spriteInGame": "creme fraiche",
+			"spriteInGame": "creme",
 			"quantité": 10.0,
 			"energie": 19.4,
 			"proteines": 0.26,
@@ -697,7 +697,7 @@
 		{
 			"name": "Huile d'olive",
 			"spriteMenu": "huiledolive",
-			"spriteInGame": "huiledolive",
+			"spriteInGame": "huile",
 			"quantité": 15.0,
 			"energie": 135.16,
 			"proteines": 0.08,
@@ -708,7 +708,7 @@
 		{
 			"name": "Huile de colza",
 			"spriteMenu": "huile tournesol",
-			"spriteInGame": "huile tournesol",
+			"spriteInGame": "huile",
 			"quantité": 15.0,
 			"energie": 135,
 			"proteines": 0,
@@ -719,7 +719,7 @@
 		{
 			"name": "Burger",
 			"spriteMenu": "burger",
-			"spriteInGame": "burger",
+			"spriteInGame": "burger portion",
 			"quantité": 100,
 			"energie": 249,
 			"proteines": 12.7,
@@ -741,7 +741,7 @@
 		{
 			"name": "Lait demi-écrémé",
 			"spriteMenu": "lait semi-écrémé",
-			"spriteInGame": "lait semi-écrémé",
+			"spriteInGame": "verre_de_lait",
 			"quantité": 150.0,
 			"energie": 69.6,
 			"proteines": 4.7,
@@ -752,7 +752,7 @@
 		{
 			"name": "Lait sans lactose",
 			"spriteMenu": "lait sans lactose",
-			"spriteInGame": "lait sans lactose",
+			"spriteInGame": "verre_de_lait",
 			"quantité": 150.0,
 			"energie": 64.5,
 			"proteines": 4.8,
@@ -763,7 +763,7 @@
 		{
 			"name": "Emmental",
 			"spriteMenu": "fromage tranches",
-			"spriteInGame": "fromage tranches",
+			"spriteInGame": "fromage tranches portion",
 			"quantité": 30.0,
 			"energie": 111.9,
 			"proteines": 8.19,
@@ -774,7 +774,7 @@
 		{
 			"name": "Mozzarella",
 			"spriteMenu": "mozza",
-			"spriteInGame": "mozza",
+			"spriteInGame": "mozza portion",
 			"quantité": 30.0,
 			"energie": 68.1,
 			"proteines": 4.83,
@@ -785,7 +785,7 @@
 		{
 			"name": "Yaourt nature",
 			"spriteMenu": "yaourt nature",
-			"spriteInGame": "yaourt nature",
+			"spriteInGame": "yaourt nature portion",
 			"quantité": 125.0,
 			"energie": 71,
 			"proteines": 4.75,
@@ -796,7 +796,7 @@
 		{
 			"name": "Skyr",
 			"spriteMenu": "Skyr",
-			"spriteInGame": "Skyr",
+			"spriteInGame": "Skyr portion",
 			"quantité": 125.0,
 			"energie": 71.25,
 			"proteines": 12.5,
@@ -807,7 +807,7 @@
 		{
 			"name": "Yaourt aromatisé",
 			"spriteMenu": "yaourt aux fruits",
-			"spriteInGame": "yaourt aux fruits",
+			"spriteInGame": "yaourt aux fruits portion",
 			"quantité": 125.0,
 			"energie": 111.37,
 			"proteines": 4.19,
@@ -829,7 +829,7 @@
 		{
 			"name": "Dessert au soja",
 			"spriteMenu": "Skyr (1)",
-			"spriteInGame": "Skyr (1)",
+			"spriteInGame": "Skyr (2)",
 			"quantité": 125.0,
 			"energie": 118.75,
 			"proteines": 4.45,
@@ -840,7 +840,7 @@
 		{
 			"name": "Dessert au chocolat",
 			"spriteMenu": "Sans titre (18)",
-			"spriteInGame": "Sans titre (18)",
+			"spriteInGame": "Sans titre (18) portion",
 			"quantité": 125.0,
 			"energie": 162.5,
 			"proteines": 4.15,
@@ -851,7 +851,7 @@
 		{
 			"name": "Muffins",
 			"spriteMenu": "muffin",
-			"spriteInGame": "muffin",
+			"spriteInGame": "muffin portion",
 			"quantité": 75.0,
 			"energie": 321.42,
 			"proteines": 4.19,
@@ -862,7 +862,7 @@
 		{
 			"name": "Sucre blanc",
 			"spriteMenu": "sucre blanc",
-			"spriteInGame": "sucre blanc",
+			"spriteInGame": "sucre blanc portion",
 			"quantité": 8.0,
 			"energie": 32,
 			"proteines": 0,
@@ -873,7 +873,7 @@
 		{
 			"name": "Miel",
 			"spriteMenu": "honey",
-			"spriteInGame": "honey",
+			"spriteInGame": "miel",
 			"quantité": 10.0,
 			"energie": 32.90,
 			"proteines": 0.06,
@@ -884,7 +884,7 @@
 		{
 			"name": "Chocolat noir",
 			"spriteMenu": "chocolat",
-			"spriteInGame": "chocolat",
+			"spriteInGame": "chocolat portion",
 			"quantité": 20.0,
 			"energie": 118.2,
 			"proteines": 2.08,
@@ -895,7 +895,7 @@
 		{
 			"name": "Sauce tomate",
 			"spriteMenu": "sauce tomate",
-			"spriteInGame": "sauce tomate",
+			"spriteInGame": "sauce_tomate",
 			"quantité": 30.0,
 			"energie": 22.34,
 			"proteines": 0.46,
@@ -906,7 +906,7 @@
 		{
 			"name": "Sel",
 			"spriteMenu": "sel",
-			"spriteInGame": "sel",
+			"spriteInGame": "sel portion",
 			"quantité": 0.3,
 			"energie": 0,
 			"proteines": 0,
@@ -917,7 +917,7 @@
 		{
 			"name": "Poivre",
 			"spriteMenu": "poivre",
-			"spriteInGame": "poivre",
+			"spriteInGame": "poivre portion",
 			"quantité": 0.3,
 			"energie": 0.99,
 			"proteines": 0.04,
@@ -939,7 +939,7 @@
 		{
 			"name": "Café",
 			"spriteMenu": "Sans titre (11)",
-			"spriteInGame": "Sans titre (11)",
+			"spriteInGame": "Sans titre (11) portion",
 			"quantité": 100.0,
 			"energie": 1.64,
 			"proteines": 0.1,
@@ -950,7 +950,7 @@
 		{
 			"name": "Thé",
 			"spriteMenu": "Sans titre (12)",
-			"spriteInGame": "Sans titre (12)",
+			"spriteInGame": "Sans titre (12) portion",
 			"quantité": 100.0,
 			"energie": 0.063,
 			"proteines": 0,

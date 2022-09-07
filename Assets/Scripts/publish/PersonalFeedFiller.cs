@@ -48,7 +48,7 @@ public class PersonalFeedFiller : MonoBehaviour
                 PlateInfo localeinfo = JsonUtility.FromJson<PlateInfo>(data[i]);
                 GameObject localePostInstance = Instantiate(postPrefab, viewContent.transform);
                 Publication parsedData = new Publication();
-                parsedData.posterName = "Le michou";
+                parsedData.posterName = "KingOfDishes";
                 string dataString = "Contient : ";
                 try
                 {

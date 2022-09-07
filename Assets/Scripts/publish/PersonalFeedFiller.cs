@@ -67,11 +67,11 @@ public class PersonalFeedFiller : MonoBehaviour
                 parsedData.likeText = "Aimé par GtunutBot et 4 autres personnes";
                 try
                 {
-                    parsedData.comments = "<b>GtunutBot:</b> Super plat, vos abonnés vont adorer!";
+                    parsedData.comments = "<b>GtunutBot:</b> " + CommentsArray[i % CommentsArray.Length];
                 }
                 catch (System.Exception)
-                {
-                    parsedData.comments = "<b>GtunutBot:</b> " + CommentsArray[i % CommentsArray.Length];
+                { 
+                    parsedData.comments = "<b>GtunutBot:</b> Super plat, vos abonnés vont adorer!";
                 }
                 parsedData.profilePath = "selfPostIcon";
                 parsedData.imagePath = "placeholder";

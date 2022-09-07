@@ -8,8 +8,9 @@ using UnityEngine;
 public class PersonalFeedFiller : MonoBehaviour
 {
 
-    public GameObject viewContent;
+    public static PersonalFeedFiller Instance;
 
+    public GameObject viewContent;
     public GameObject postPrefab;
 
     private static string[] CommentsArray = new string[]{"C'est super les utilisateurs de l'application vont adorer !",
@@ -20,6 +21,11 @@ public class PersonalFeedFiller : MonoBehaviour
         "J'ai jamais vu autant de couleur c'est magnifique !",
         "Comment tu fais pour avoir de si bonnes idées !",
         "Si tu proposes les mêmes menus pour les requêtes d'utilisateur je comprends mieux pourquoi il y a autant de demandes !"};
+
+    public void Awake()
+    {
+        Instance = this;
+    }
 
     public void Start()
     {

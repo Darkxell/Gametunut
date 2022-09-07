@@ -240,7 +240,7 @@ public class Plate : MonoBehaviour
             ButtonContainer.Instance.updateNotifIcons();
         }
         // Setup plate validation UI
-        PlateValidationUI.Instance.ChangeContent(questcomplete, unlock != null, unlock);
+        PlateValidationUI.Instance.ChangeContent(questcomplete, unlock != null, unlock, currentQuest != null);
         PlateValidationUI.Instance.gameObject.SetActive(true);
         // sends a server packet with data about the completion
         GlobalManager.Instance.sendLogToServer("platesubmit," + JsonUtility.ToJson(contentinfo) + "," + (currentQuest == null ? "null" : currentQuest.id));

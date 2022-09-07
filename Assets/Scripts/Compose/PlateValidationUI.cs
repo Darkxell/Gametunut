@@ -21,6 +21,7 @@ public class PlateValidationUI : MonoBehaviour
     public Image unlockImage;
 
     private bool currentSuccess = false;
+    private bool hadquest = false;
 
     void Awake()
     {
@@ -32,20 +33,22 @@ public class PlateValidationUI : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    private static string trans_empty = "Il semblerait que le plat que vous proposez soit vide. Essayez de glisser-déposer des aliments choisis à gauche dans l'assiette!";
-    private static string trans_success = "Félicitations!<br> Le plat que vous avez proposé convient à merveille!";
+    private static string trans_empty = "Il semblerait que le plat que vous proposez soit vide. Essayez de glisser-déposer des aliments choisis à gauche dans l'assiette !";
+    private static string trans_success = "Félicitations!<br>Le plat que vous avez proposé convient à merveille !";
+    private static string trans_success_questless = "Félicitations!<br>Je poste ça sur votre page personnelle tout de suite !";
     private static string trans_failure = "Ce plat ne semble correspondre à la requète de l'expéditeur, essaye de lui proposer un autre menu.";
-    private static string trans_unlock = "<br><br>Vous avez débloqué un nouvel aliment!";
+    private static string trans_unlock = "<br><br>Vous avez débloqué un nouvel aliment !";
 
     /// <summary>
     /// Changes the content of the plate validation ui given the wanted parametters.
     /// Call this method before setting the view to active
     /// </summary>
-    public void ChangeContent(bool questSuccess, bool unlock, string unlockID)
+    public void ChangeContent(bool questSuccess, bool unlock, string unlockID, bool hasquest)
     {
         Debug.Log("Changing content for plate validation confirmation UI : " + questSuccess + " / unlock : " + unlock + " - " + unlockID);
         currentSuccess = questSuccess;
-        GbotTextfield.text = (questSuccess ? trans_success : trans_failure) + (unlock ? trans_unlock : "");
+        hadquest = hasquest;
+        GbotTextfield.text = (questSuccess ? (hasquest ? trans_success : trans_success_questless) : trans_failure) + (unlock ? trans_unlock : "");
         unlockpanel.gameObject.SetActive(unlock);
         if (unlock)
         {
@@ -69,7 +72,15 @@ public class PlateValidationUI : MonoBehaviour
 
         if (currentSuccess)
         {
-            ViewManager.Instance.OnViewChange(GlobalManager.Instance.CurentTestClass == GlobalManager.TestClass.Class_Goal ? GameView.Messages : GameView.Profil);
+            PersonalFeedFiller.Instance.updateContentPosts();
+            if (hadquest)
+            {
+                ViewManager.Instance.OnViewChange(GameView.Messages);
+            }
+            else
+            {
+                ViewManager.Instance.OnViewChange(GlobalManager.Instance.CurentTestClass == GlobalManager.TestClass.Class_Goal ? GameView.Messages : GameView.Profil);
+            }
         }
         else
         {

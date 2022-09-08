@@ -416,7 +416,7 @@
 			"requete":"Repas sans produits animaux, riche en protéines végétales et riche en fer végétal"
 		},
 		"respectbars":false,
-		"whitelist":["Protéinevégétale","Fer"],
+		"whitelist":["Protéinevégétale","FerVégétal"],
 		"blacklist":["Produitsanimaux"]
 	},
 	{ 

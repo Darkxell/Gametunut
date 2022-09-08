@@ -47,7 +47,7 @@
 		"isPlate":false,
 		"imagePath":"MissGalaxy",
 		"likeText":"Aimé par 430 autres personnes",
-		"comments":"<b>NorrisLove:</b> Une margarita tu es sérieuse mdr? vive la 4 fromage en plus le chorizo ça pique et c'est super gras beurk<br><b>OnemoreIl:</b> Vous êtes trop mignonne<br><b>BlackFleur:</b> Vous avez pris quoi comme boisson pour accompagner ça?<br><b>MissGalaxy:</b> J'ai pris un thé vert, j'adore le goût et j'ai entendu dire que ça facilitait la digestion"
+		"comments":"<b>NorrisLove:</b> Une margarita tu es sérieuse mdr? vive la 4 fromages en plus le chorizo ça pique et c'est super gras beurk<br><b>OnemoreIl:</b> Vous êtes trop mignonnes<br><b>BlackFleur:</b> Vous avez pris quoi comme boisson pour accompagner ça?<br><b>MissGalaxy:</b> J'ai pris un thé vert, j'adore le goût et j'ai entendu dire que ça facilitait la digestion"
 	},
 	{
 		"posterName":"VitalPops",
@@ -73,7 +73,7 @@
 		"posterName":"PonyItsme",
 		"profilePath":"PPPonyItsme",
 		"day":6,
-		"description":"Jour 10 de mon régime !! J'hésite encore entre la pomme et le donut LOL<br>Je déconne jamais je ferais de régimes, et si je peux vous donner un conseil mangez de tout sans vous priver mais faites du sport vraiment et stop les fast-food mais laissez-vous des moments de plaisir, c'est vraiment la BASE !",
+		"description":"Jour 10 de mon régime !! J'hésite encore entre la pomme et le donut LOL<br>Je déconne, jamais je ferais de régimes, et si je peux vous donner un conseil mangez de tout sans vous priver mais faites du sport vraiment et stop les fast-food mais laissez-vous des moments de plaisir, c'est vraiment la BASE !",
 		"isPlate":false,
 		"imagePath":"PonyItsme",
 		"likeText":"Aimé par 764 autres personnes",
@@ -83,11 +83,11 @@
 		"posterName":"ConseilNutri",
 		"profilePath":"PPConseilNutri",
 		"day":1,
-		"description":"Tu en marre des explications trop compliquées en nutrition. Voici un exemple très simplifiée des 3 nutriments essentiels pour notre corps et surtout de leurs sources.<br>Ps: Un aliment contient plusieurs nutriments, ici, nous les avons classé par nutriment majoritaire.",
+		"description":"Tu en as marre des explications trop compliquées en nutrition. Voici un exemple très simplifiée des 3 nutriments essentiels pour notre corps et surtout de leurs sources.<br>Ps: Un aliment contient plusieurs nutriments, ici, nous les avons classé par nutriment majoritaire.",
 		"isPlate":false,
 		"imagePath":"Nutriments",
 		"likeText":"Aimé par 291 autres personnes",
-		"comments":"<b>Vera:</b> simple et efficace !!<br><b>Coco:</b> C'est assez claire<br><b>Astride:</b> Top, manger des légumineuses et éviter la viande au maximum<br><b>SynnDela:</b> Oui c'est sur que on retrouve des protéines végétales dans les légumineuses"
+		"comments":"<b>Vera:</b> simple et efficace !!<br><b>Coco:</b> C'est assez claire<br><b>Astride:</b> Top, manger des légumineuses et éviter la viande au maximum<br><b>SynnDela:</b> Oui c'est sûr qu'on retrouve des protéines végétales dans les légumineuses"
 	},
 	{
 		"posterName":"LoveToast",
@@ -103,7 +103,7 @@
 		"posterName":"Katipower",
 		"profilePath":"PPKatipower",
 		"day":2,
-		"description":"A l'entrainement de mon amour aujourd'hui une idée m'est venue, alors on a décidé de s'affronter et de voir qui est le meilleur d'entre nous, Qui va gagner à votre avis ?",
+		"description":"A l'entraînement de mon amour aujourd'hui une idée m'est venue, alors on a décidé de s'affronter et de voir qui est le meilleur d'entre nous, À votre avis qui va gagner ?",
 		"isPlate":false,
 		"imagePath":"2",
 		"likeText":"Aimé par 900 autres personnes",
@@ -113,7 +113,7 @@
 		"posterName":"Marmita",
 		"profilePath":"PPMarmita",
 		"day":0,
-		"description":"Recette chef INSTITUT PAUL BOCUSE<br>Astuces de chef:<br>• Réaliser ton mix de curry doux maison :1 dose de curcuma, ½  de coriandre en poudre, ½ dose de cumin en poudre, ½ dose de paprika doux, ¼  de cardamome en poudre et ¼ dose de cannelle et poudre.<br>• Tu peux faire tremper les pois chiches la veille et les cuire pendant 1h-1h30.",
+		"description":"Recette chef INSTITUT PAUL BOCUSE<br>Astuces de chef:<br>• Réalise ton mix de curry doux maison :1 dose de curcuma, ½  de coriandre en poudre, ½ dose de cumin en poudre, ½ dose de paprika doux, ¼  de cardamome en poudre et ¼ dose de cannelle en poudre.<br>• Tu peux faire tremper les pois chiches la veille et les faire cuire pendant 1h-1h30.",
 		"isPlate":false,
 		"imagePath":"Curry",
 		"likeText":"Aimé par 890 autres personnes",
@@ -133,7 +133,7 @@
 		"posterName":"FruityFormula",
 		"profilePath":"PPFruityFormula",
 		"day":2,
-		"description":"L'idéal c'est de choisir un jus de fruit fraîchement pressé et le consommer dans les minutes qui suivent pour bénéficier de ses vitamines. Tu peux également choisir un jus 100% pur jus qui ne soit pas fait 'à base de concentré'.<br>N'oublie pas que l'eau ça reste la meilleure des boissons !",
+		"description":"Bon les jus de fruit c'est bof bof mais si on veut se faire plaisir, autant en choisir un bon:l'idéal c'est de choisir un jus de fruit fraîchement pressé et le consommer dans les minutes qui suivent pour bénéficier de ses vitamines. Tu peux également choisir un jus 100% pur jus qui ne soit pas fait 'à base de concentré'.<br>N'oublie pas que l'eau ça reste la meilleure des boissons !",
 		"isPlate":false,
 		"imagePath":"Jus",
 		"likeText":"Aimé par 137 autres personnes",
@@ -153,7 +153,7 @@
 		"posterName":"Marmita",
 		"profilePath":"PPMarmita",
 		"day":0,
-		"description":"Recette chef INSTITUT PAUL BOCUSE<br>Astuces de chef:<br>• Tu peux ajouter les crudités de ton choix et remplacer le céleri par du choux rouge ou blanc.<br>• Pour le mélange de graines tu peux ajouter des graines de  tournesol ou courge.<br>• Tu peux également ajouter une légumineuses (pois chiche ou lentille) ",
+		"description":"Recette chef INSTITUT PAUL BOCUSE<br>Astuces de chef:<br>• Tu peux ajouter les crudités de ton choix et remplacer le céleri par du choux rouge ou blanc.<br>• Pour le mélange de graines tu peux ajouter des graines de  tournesol ou courge.<br>• Tu peux également ajouter une source de légumineuse (pois chiche ou lentille) ",
 		"isPlate":false,
 		"imagePath":"Orange",
 		"likeText":"Aimé par 646 autres personnes",
@@ -173,11 +173,11 @@
 		"posterName":"Yihealth",
 		"profilePath":"PPYihealth",
 		"day":3,
-		"description":"On a tendance à siroter un jus de fruit et se dire ok cool je consomme des fruits mais c'est totalement FAUX. <br>On consomme des fruits parce qu'ils contiennent des fibres mais aussi parce qu'ils vont nous apporter de la satiété. <br>Faites attention aussi aux allégations ou tu verras écris 'ce jus de fruits équivaut à 2 fruits'. Cette allégation est totalement inepte d'un point de vue nutritionnel.",
+		"description":"On a tendance à siroter un jus de fruit et se dire ok cool je consomme des fruits mais c'est totalement FAUX. <br>On consomme des fruits parce qu'ils contiennent des fibres mais aussi parce qu'ils vont nous apporter de la satiété. <br>Faites attention aussi aux allégations ou tu verras écris 'ce jus de fruit équivaut à 2 fruits'. Cette allégation est totalement inepte d'un point de vue nutritionnel.",
 		"isPlate":false,
 		"imagePath":"Jussante",
 		"likeText":"Aimé par 738 autres personnes",
-		"comments":"<b>GamaShoot:</b> Hahaha vous parlez des jus de fruits comme si c'était des sodas<br><b>PâlePosé:</b> Je confirme rien de mieux que de manger mes tranches d'ananas, à contrario je kiffe le jus d'ananas mais perso ça rassasie pas du tout.<br><b>Hugo:</b> Totalement, je préfère manger une poire et une pomme dans la journée que manger une compote de pommes, on a la chance d'avoir toutes nos dents encore lol"
+		"comments":"<b>GamaShoot:</b> Hahaha vous parlez des jus de fruit comme si c'était des sodas<br><b>PâlePosé:</b> Je confirme rien de mieux que de manger mes tranches d'ananas, à contrario je kiffe le jus d'ananas mais perso ça rassasie pas du tout.<br><b>Hugo:</b> Totalement, je préfère manger une poire et une pomme dans la journée que manger une compote de pommes, on a la chance d'avoir toutes nos dents encore lol"
 	},
 	{
 		"posterName":"Katipower",
@@ -187,7 +187,7 @@
 		"isPlate":false,
 		"imagePath":"3",
 		"likeText":"Aimé par 473 autres personnes",
-		"comments":"<b>WaWa:</b> Il est trop beau ton legging, on peut le retrouver sur ta boutique bientôt ? <br><b>VRdog:</b> Le cardio c'est la base c'est trop important surtout avec la différence de physique qu'il y'a entre vous, courage !"
+		"comments":"<b>WaWa:</b> Il est trop beau ton legging, on peut le retrouver sur ta boutique bientôt ? <br><b>VRdog:</b> Le cardio c'est la base c'est trop important surtout avec la différence de physique qu'il y a entre vous, courage !"
 	},
 	{
 		"posterName":"Mamad",
@@ -197,13 +197,13 @@
 		"isPlate":false,
 		"imagePath":"Discute",
 		"likeText":"Aimé par 452 autres personnes",
-		"comments":"<b>Abricot26:</b> C'est une super idée grâce cet évènement on découvre des plats sans voyager<br><b>Abdel:</b> Y'a un gagnant? je mise tout sur le brésil moi <br><b>Mamad:</b> Non non on fait ça pour le fun et surtout pour découvrir des plats et passer du temps ensemble"
+		"comments":"<b>Abricot26:</b> C'est une super idée grâce à cet évènement on découvre des plats sans voyager<br><b>Abdel:</b> Y a un gagnant? je mise tout sur le brésil moi <br><b>Mamad:</b> Non non on fait ça pour le fun et surtout pour découvrir des plats et passer du temps ensemble"
 	},
 	{
 		"posterName":"JokerPony",
 		"profilePath":"ppJokerPony",
 		"day":6,
-		"description":"Je vous explique même pas comment j'ai rentré mon ventre pour la photo, haha fitgirl<br>Je kiffe les fruits et là je me suis fait une salade de fruits et comment vous dire que c'est trooooop bonnnn",
+		"description":"Je vous explique même pas comment j'ai rentré mon ventre pour la photo, haha fitgirl<br>Je kiffe les fruits et là je me suis faite une salade de fruits et comment vous dire que c'est trooooop bonnnn",
 		"isPlate":false,
 		"imagePath":"JokerPony",
 		"likeText":"Aimé par 332 autres personnes",
@@ -257,7 +257,7 @@
 		"isPlate":false,
 		"imagePath":"Chine",
 		"likeText":"Aimé par 416 autres personnes",
-		"comments":"<b>Ziane:</b> Woohh ce que j'aurais donné pour y goûter, ça a l'air succulent !<br><b>Coolhealth:</b> Ca a vraiment l'air super, elle a mis du poulet ou du porc dedans ?"
+		"comments":"<b>Ziane:</b> Woohh ce que j'aurais donné pour y goûter, ça a l'air succulent !<br><b>Coolhealth:</b> Ça a vraiment l'air super, elle a mis du poulet ou du porc dedans ?"
 	},
 	{
 		"posterName":"Fealthy",
@@ -293,7 +293,7 @@
 		"posterName":"Infoconseilix",
 		"profilePath":"PPInfoconseilix",
 		"day":4,
-		"description":"Voici un exemple d'équivalences glucidiques<br>Les équivalences nous permettent à la foie de remplacer un aliment par un autre et également de diversifier nos repas.<br>Le poids des féculents crus et cuits n'est pas le même. Ils gonflent à la cuisson <br>50g de lentilles crues= 150 de lentilles cuites.<br>Pour les tubercules comme la pomme de terre et la patate douce, leurs poids ne changent pas",
+		"description":"Voici un exemple d'équivalences glucidiques<br>Les équivalences nous permettent à la fois de remplacer un aliment par un autre et également de diversifier nos repas.<br>Le poids des féculents crus et cuits n'est pas le même. Ils gonflent à la cuisson <br>50g de lentilles crues= 150 de lentilles cuites.<br>Pour les tubercules comme la pomme de terre et la patate douce, leurs poids ne changent pas",
 		"isPlate":false,
 		"imagePath":"Glucide",
 		"likeText":"Aimé par 524 autres personnes",
@@ -313,7 +313,7 @@
 		"posterName":"Helloconseileo",
 		"profilePath":"PPHelloconseileo",
 		"day":8,
-		"description":"Oléagineux c'est un terme qui englobe les végétaux dont on va pouvoir extraire des huiles. On retrouve les graines oléagineuses comme les graines de sésame, les graines de lin, des fruits secs oléagineux comme des amandes, des noisettes et les fruits oléagineux comme l'avocat, l'olive ou la noix de coco.<br>Consomme une poignée d'oléagineux par jour.<br>Ils sont constitué majoritairement de lipides et d' acides gras de bonne qualité.<br>On retrouve des minéraux (magnésium, phosphore), des vitamines (vitamine E) et même des protéines.<br>Pensez à bien les rincer ou les faire tremper avant consommation pour enlever l'acide phytique qui empêche l'absorption de certains minéraux comme le fer.<br>Eviter les fruits à coque grillé et salé. Les choisir nature.<br>Les phytostérols c'est des composés végétaux qui permettent de faire diminuer le cholestérol dans notre corps.",
+		"description":"Oléagineux c'est un terme qui englobe les végétaux dont on va pouvoir extraire des huiles. On retrouve les graines oléagineuses comme les graines de sésame, les graines de lin, des fruits secs oléagineux comme des amandes, des noisettes et les fruits oléagineux comme l'avocat, l'olive ou la noix de coco.<br>Consomme une poignée d'oléagineux par jour.<br>Ils sont constitués majoritairement de lipides et d' acides gras de bonne qualité.<br>On retrouve des minéraux (magnésium, phosphore), des vitamines (vitamine E) et même des protéines.<br>Pensez à bien les rincer ou les faire tremper avant consommation pour enlever l'acide phytique qui empêche l'absorption de certains minéraux comme le fer.<br>Evitez les fruits à coque grillés et salés. Les choisir natures.<br>Les phytostérols c'est des composés végétaux qui permettent de faire diminuer le cholestérol dans notre corps.",
 		"isPlate":false,
 		"imagePath":"Oleagineux",
 		"likeText":"Aimé par 718 autres personnes",
@@ -323,7 +323,7 @@
 		"posterName":"Tohealthyaw",
 		"profilePath":"PPTohealthyaw",
 		"day":10,
-		"description":"Quelques idées pour t'aider à faire tes courses.<br>Tu peux adapter en fonction de tes goûts et du lieu où tu fais tes courses.<br>Un conseil évite les produits industriels, ce n'est ni bon pour toi ni pour ton porte monnaie.<br>Vege/Vegan (Boissons à l'amande, noisette, soja, steak de quinoa, tofu, riz+ pois chiche)<br>Evite les produits industriels dédiés aux personnes végé, ce sont des produits ultra-transformés pas top.",
+		"description":"Quelques idées pour t'aider à faire tes courses.<br>Tu peux adapter en fonction de tes goûts et du lieu où tu fais tes courses.<br>Un conseil évite les produits industriels, ce n'est ni bon pour toi ni pour ton porte monnaie.<br>Végé/Vegan (Boissons à l'amande, noisette, soja, steak de quinoa, tofu, riz + pois chiches)<br>Evite les produits industriels dédiés aux personnes végé, ce sont des produits ultra-transformés pas top.",
 		"isPlate":false,
 		"imagePath":"mescourses",
 		"likeText":"Aimé par 289 autres personnes",
@@ -343,11 +343,11 @@
 		"posterName":"Gegoodpro",
 		"profilePath":"PPGegoodpro",
 		"day":13,
-		"description":"L'eau la meilleure boisson du monde et surtout la seule boisson indispensable.<br>L'ANSES préconise de boire au minimum 1L et demi par jour.<br>Un conseil: essaye de boire régulièrement tout au long de la journée.",
+		"description":"L'eau la meilleure boisson du monde et surtout la seule boisson indispensable.<br>L'ANSES (Agence nationale de sécurité sanitaire de l’alimentation, de l’environnement et du travail) préconise de boire au minimum 1L et demi par jour.<br>Un conseil: essaye de boire régulièrement tout au long de la journée.",
 		"isPlate":false,
 		"imagePath":"Leau",
 		"likeText":"Aimé par 902 autres personnes",
-		"comments":"<b>GameFly:</b> J'essaye de boire beaucoup de tisanes, ça me permet de varier les formes de consommation.<br><b>PâleBad:</b> OMG entre 2 et 2,6 de pertes hydriques par jour c'est énorme.<br><b>Gegoodpro:</b> Oui totalement, nous perdons environ cette quantité d'eau par jour entre les pertes urinaires, fécales, de transpiration."
+		"comments":"<b>GameFly:</b> J'essaye de boire beaucoup de tisanes, ça me permet de varier les formes de consommation.<br><b>PâleBad:</b> OMG entre 2 et 2,6 de pertes hydriques par jour c'est énorme.<br><b>Gegoodpro:</b> Oui totalement, nous perdons environ cette quantité d'eau par jour entre les pertes urinaires, fécales et la transpiration."
 	},
 	{
 		"posterName":"HealthyKibble",
@@ -377,13 +377,13 @@
 		"isPlate":false,
 		"imagePath":"Nourrir",
 		"likeText":"Aimé par 986 autres personnes",
-		"comments":"<b>CrabyDemon:</b> Manger en pleine conscience c'est vraiment incroyable, quand tu te concentres sur ta bouchée et sur ce que tu as dans la bouche tu prends plaisir à manger et surtout tu mastiques ce que tu manges, c'est très important !<br><b>SeaIron:</b> Rolalala la téle, c'est dur de manger sans écran"
+		"comments":"<b>CrabyDemon:</b> Manger en pleine conscience c'est vraiment incroyable, quand tu te concentres sur ta bouchée et sur ce que tu as dans la bouche tu prends plaisir à manger et surtout tu mastiques ce que tu manges, c'est très important !<br><b>SeaIron:</b> Rolalala la télé, c'est dur de manger sans écran"
 	},
 	{
 		"posterName":"Vitaclub",
 		"profilePath":"PPVitaclub",
 		"day":7,
-		"description":"Cocot, Les oeufs font parti des meilleurs sources de protéines mais le choix des oeufs semble tellement compliqué !<br>C'est assez simple il y a 3 infos à retenir (plutôt deux):<br>- Le 1er chiffre c'est le mode d'élevage<br>- Les 2 lettres c'est le pays d'origine<br>- Le code final c'est l'élevage d'origine",
+		"description":"Cocot, les oeufs font parti des meilleures sources de protéines mais le choix des oeufs semble tellement compliqué !<br>C'est assez simple il y a 3 infos à retenir (plutôt deux):<br>- Le 1er chiffre c'est le mode d'élevage<br>- Les 2 lettres c'est le pays d'origine<br>- Le code final c'est l'élevage d'origine",
 		"isPlate":false,
 		"imagePath":"Oeufs",
 		"likeText":"Aimé par 153 autres personnes",
@@ -407,7 +407,7 @@
 		"isPlate":false,
 		"imagePath":"IG",
 		"likeText":"Aimé par 738 autres personnes",
-		"comments":"<b>FortRider:</b> Les fruits rouges c'est top, elles ont un index glycémique bas ! Je peux manger une petite barquette de myrtilles ou framboises par jour !<br><b>RealityFlying:</b> T'es vraiment une gourmande !<br><b>CovidLegend:</b> Les fruits et légumes c'est un IG bas !<br><b>Foodly:</b> Notre objectif c'est vraiment d'éviter ces picks de glycémie mais de rester plutôt à une valeur constante, n'oubliez pas que lorsque les cellules sont pleines de sucre, on fait de la graisse donc on grossit !<br><b>SmartEating:</b> On a une clé dans notre corps qui s'appelle l'insuline, elle permet de faire rentrer le sucre dans nos cellules mais quand les cellules sont pleines ben ça se stocke autre part et qui dit autre part dis nos cellules graisseuses !"
+		"comments":"<b>FortRider:</b> Les fruits rouges c'est top, elles ont un index glycémique bas ! Je peux manger une petite barquette de myrtilles ou framboises par jour !<br><b>RealityFlying:</b> T'es vraiment une gourmande !<br><b>CovidLegend:</b> Les fruits et légumes c'est un IG bas !<br><b>Foodly:</b> Notre objectif c'est vraiment d'éviter ces picks de glycémie mais de rester plutôt à une valeur constante, n'oubliez pas que lorsque les cellules sont pleines de sucre, on fait de la graisse donc on grossit !<br><b>SmartEating:</b> On a une clé dans notre corps qui s'appelle l'insuline, elle permet de faire rentrer le sucre dans nos cellules mais quand les cellules sont pleines ben ça se stocke autre part et qui dit autre part dit nos cellules graisseuses !"
 	},
 	{
 		"posterName":"SmartEating",
@@ -437,13 +437,13 @@
 		"isPlate":false,
 		"imagePath":"Courses",
 		"likeText":"Aimé par 136 autres personnes",
-		"comments":"<b>TyraGood:</b> Top je galère tellement<br><b>LegendHydro:</b> Essayer le batch cooking, franchement moi je cuisine le dimanche pour toute la semaine et je peux vous dire que c'est un économie de temps, d'argent et surtout je me retrouve pas à ranger ma cuisine tous les jours"
+		"comments":"<b>TyraGood:</b> Top je galère tellement<br><b>LegendHydro:</b> Essayer le batch cooking, franchement moi je cuisine le dimanche pour toute la semaine et je peux vous dire que c'est une économie de temps, d'argent et surtout je me retrouve pas à ranger ma cuisine tous les jours"
 	},
 	{
 		"posterName":"QuotesDinner",
 		"profilePath":"PPQuotesDinner",
 		"day":12,
-		"description":"Souvent appelée 'l'alimentation des pauvres', les légumineuses font aujourd'hui parti de notre alimentation quotidienne.<br>Houmous, Dahl de lentille corail, steak d'haricots rouges.<br>On les trouve partout !",
+		"description":"Souvent appelées 'l'alimentation des pauvres', les légumineuses font aujourd'hui parti de notre alimentation quotidienne.<br>Houmous, Dahl de lentille corail, steak d'haricots rouges.<br>On les trouve partout !",
 		"isPlate":false,
 		"imagePath":"DefLegumineuses",
 		"likeText":"Aimé par 87 autres personnes",
@@ -457,7 +457,7 @@
 		"isPlate":false,
 		"imagePath":"ErrorMiel",
 		"likeText":"Aimé par 619 autres personnes",
-		"comments":"<b>Coquelicot3:</b> Miam, quelle bonne idée pour accompagner les grosses chaleurs de l'été ! Pourquoi ne pas rajouter quelques grains de maïs avec ? En tout cas ça a l'air délicieux !"
+		"comments":"<b>Coquelicot3:</b> Miam, quelle bonne idée pour accompagner les grosses chaleurs de l'été ! <br><b>VirusRush:</b> Pourquoi ne pas rajouter quelques grains de maïs avec ? <br><b>HulkToto:</b> En tout cas ça a l'air délicieux !"
 	},
 	{
 		"posterName":"GoldRainbow",
@@ -487,17 +487,17 @@
 		"isPlate":false,
 		"imagePath":"ChocolatOlive",
 		"likeText":"Aimé par 151 autres personnes",
-		"comments":"<b>FriteCallof:</b> On n'a pas la même mamie alors, haha<br><b>Healthywealth:</b> Ca a l'air succulent, mais heureusement pour nos lignes qu'on ne mange pas toujours chez nos grand-mères"
+		"comments":"<b>FriteCallof:</b> On n'a pas la même mamie alors, haha<br><b>Healthywealth:</b> Ça a l'air succulent, mais heureusement pour nos lignes qu'on ne mange pas toujours chez nos grand-mères"
 	},
 	{
 		"posterName":"FrostVif",
 		"profilePath":"PPFrostVif",
 		"day":10,
-		"description":"En binôme avec mon BROcoli PTDR j'adore passer du temps avec lui autour d'une soupe ou d'un gratin, miam !<br>Au passage j'ai été chez le coiffeur, je me suis fait une nouvelle couleur pink & blue, vous aimez ?",
+		"description":"En binôme avec mon BROcoli PTDR j'adore passer du temps avec lui autour d'une soupe ou d'un gratin, miam !<br>Au passage j'ai été chez le coiffeur, je me suis faite une nouvelle couleur pink & blue, vous aimez ?",
 		"isPlate":false,
 		"imagePath":"FrostVif",
 		"likeText":"Aimé par 273 autres personnes",
-		"comments":"<b>ManAzur:</b> Wohhw ta fais ta couleur toute seule ? elle est vraiment réussie tu es meilleure que mon coiffeur mdrrr<br><b>CalinAir:</b> OMG j'ai juste mis 5 minutes a comprendre le jeu de mot avec le BRO de brocoli, ne me juge pas s'il te plait haha"
+		"comments":"<b>ManAzur:</b> Wohhw ta fais ta couleur toute seule ? elle est vraiment réussie tu es meilleure que mon coiffeur mdrrr<br><b>CalinAir:</b> OMG j'ai juste mis 5 minutes à comprendre le jeu de mot avec le BRO de brocoli, ne me juge pas s'il te plait haha"
 	},
 	{
 		"posterName":"ArmyCutie",
@@ -507,7 +507,7 @@
 		"isPlate":false,
 		"imagePath":"ArmyCutie",
 		"likeText":"Aimé par 314 autres personnes",
-		"comments":"<b>URe:</b> Trop mignon la chemise il ressemble tellement a son père <br><b>PonyIsee:</b> Woahw ton chien a tellement grandi, ça fait longtemps que je l'ai pas vu ! il a quel âge maintenant?"
+		"comments":"<b>URe:</b> Trop mignon la chemise il ressemble tellement à son père <br><b>PonyIsee:</b> Woahw ton chien a tellement grandi, ça fait longtemps que je l'ai pas vu ! il a quel âge maintenant?"
 	},
 	{
 		"posterName":"KiwiLegrand",
@@ -547,7 +547,7 @@
 		"isPlate":false,
 		"imagePath":"Trek 2",
 		"likeText":"Aimé par 852 autres personnes",
-		"comments":"<b>HeroOne:</b> Un conseil : ne sois pas végétarienne mdr<br><b>LeaWorld:</b> Je vois que le rayon humour était en rupture de stock à ta naissance haha<br><b>Malika:</b> Il y a beaucoup de façons de pallier le manque d'apport en macronutriments quand on est végétarien, essaie peut-être de manger de l'épeautre, je n'en ai jamais mangé mais j'ai toujours entendu que des bienfaits sur cet aliment et ses apports<br><b>LeaWorld:</b> Merci pour ce conseil Malika, je vais essayer ça !<br><b>Eloise:</b> Est-ce-que tu te supplémentes en vitamine B12 ? Etant moi même végétarienne, je fais bien attention à en consommer quotidiennement !"
+		"comments":"<b>HeroOne:</b> Un conseil : ne sois pas végétarienne mdr<br><b>LeaWorld:</b> Je vois que le rayon humour était en rupture de stock à ta naissance haha <br><b>Eloise:</b> Est-ce-que tu te supplémentes en vitamine B12 ? Etant moi même végétarienne, je fais bien attention à en consommer quotidiennement !"
 	},
 	{
 		"posterName":"LovelyStone",
@@ -587,17 +587,17 @@
 		"isPlate":false,
 		"imagePath":"Trek 6",
 		"likeText":"Aimé par 589 autres personnes",
-		"comments":"<b>Clara:</b> Je suis contente pour toi si tu as réussi à trouver une solution à ces carences, profite bien du reste de ton voyage !<br><b>QopA:</b> Je suis moi aussi végétarienne depuis peu et je ne savais pas que le fait d'oublier ma vitamine B12 peut induire ces symptômes. Tes posts m'ont beaucoup aidé à savoir, merci à toi !<br><b>LeaWorld:</b> Oui, moi même je ne savais pas, avec plaisir ;)"
+		"comments":"<b>Clara:</b> Je suis contente pour toi si tu as réussi à trouver une solution à ces carences, profite bien du reste de ton voyage !<br><b>QopA:</b> Je suis moi aussi végétarienne depuis peu et je ne savais pas que le fait d'oublier ma vitamine B12 peut induire ces symptômes. Tes posts m'ont beaucoup aidé, merci à toi !<br><b>LeaWorld:</b> Oui, moi même je ne savais pas, avec plaisir ;)"
 	},
 	{
 		"posterName":"LifeStep",
 		"profilePath":"PPLifeStep",
 		"day":1,
-		"description":"Première étape : Le producteur plante les espèces qu'il aura choisi préalablement (cela peut-être des fruits ou bien des légumes), puis les fait pousser, les protège et les récolte, en choisissant les sols adaptés aux variétés qu'il fait pousser et en surveillant la météo et les ravageurs (insectes...).",
+		"description":"Première étape : Le producteur plante les espèces qu'il aura choisi préalablement (cela peut-être des fruits ou bien des légumes), puis les fait pousser, les protègent et les récoltent, en choisissant les sols adaptés aux variétés qu'il fait pousser et en surveillant la météo et les ravageurs (insectes...).",
 		"isPlate":false,
 		"imagePath":"Fruit 1",
 		"likeText":"Aimé par 234 autres personnes",
-		"comments":"<b>BlackRoses:</b> C'est quand même tout un travail de s'occuper de la plantation et de la récolte des fruits et légumes, un grand merci à tous les agriculteurs et cultivateurs !"
+		"comments":"<b>BlackRoses:</b> C'est quand même tout un travail de s'occuper de la plantation et de la récolte des fruits et légumes, un grand merci à tous les maraîchers, agriculteurs et cultivateurs !"
 	},
 	{
 		"posterName":"LifeStep",
@@ -633,7 +633,7 @@
 		"posterName":"LifeStep",
 		"profilePath":"PPLifeStep",
 		"day":13,
-		"description":"Cinquième étape : Les fruits et les légumes sont ensuite entreposés dans les rayons des supermarchés, ils sont prêts à être utilisés pour la création de plats cuisinés variés dans vos restaurants favoris... A cette étape du processus, il ne vous reste plus qu'à les déguster, bon appétit !",
+		"description":"Cinquième étape : Les fruits et les légumes sont ensuite entreposés dans les rayons des magasins, ils sont prêts à être utilisés pour la création de plats cuisinés variés dans vos restaurants favoris... A cette étape du processus, il ne vous reste plus qu'à les déguster, bon appétit !",
 		"isPlate":false,
 		"imagePath":"Fruit 5",
 		"likeText":"Aimé par 203 autres personnes",
@@ -657,7 +657,7 @@
 		"isPlate":false,
 		"imagePath":"6",
 		"likeText":"Aimé par 764 autres personnes",
-		"comments":"<b>ToutNature:</b> C'est quoi ces cuisses de malades ? au début je pensais que tu n'avais aucune chance mais plus je vois ta détermination et ton physique plus je me dis que tu peux le défoncer !!<br><b>Horsing90:</b> J'adore cet exo mais la dernière fois j'ai essayé de le faire et je tirais trop sur ma nuque ! Résultat des douleurs insupportables le lendemain je vais essayer de faire comme toi ce soir"
+		"comments":"<b>ToutNature:</b> C'est quoi ces cuisses de malades ? au début je pensais que tu n'avais aucune chance mais plus je vois ta détermination et ton physique plus je me dis que tu peux le défoncer !!<br><b>Horsing90:</b> J'adore cet exo mais la dernière fois j'ai essayé de le faire et je tirais trop sur ma nuque ! Résultats des douleurs insupportables le lendemain je vais essayer de faire comme toi ce soir"
 	},
 	{
 		"posterName":"Katipower",
@@ -677,7 +677,7 @@
 		"isPlate":false,
 		"imagePath":"8",
 		"likeText":"Aimé par 745 autres personnes",
-		"comments":"<b>Opi:</b> Le vin c'est riche en antioxydants ! <br><b>Mimi:</b> haha ​​ça me rappelle les cours de nut les antixoydants. Alors pour info le vin contient des antixoydants comme le resvératrol et les proanthocyanidines !"
+		"comments":"<b>Opi:</b> Le vin c'est riche en antioxydants ! <br><b>Mimi:</b> haha ​​ça me rappelle les cours de nut les antixoydants. Alors pour info le vin contient des antioxydants comme le resvératrol et les proanthocyanidines !"
 	},
 	{
 		"posterName":"Katipower",
@@ -707,7 +707,7 @@
 		"isPlate":false,
 		"imagePath":"Maroc",
 		"likeText":"Aimé par 634 autres personnes",
-		"comments":"<b>Lullaby:</b> Ca donne l'eau à la bouche ! Par contre j'espère que les citrons c'est juste pour faire joli mdr<br><b>Manfred:</b> Trop appétissant, régalez-vous"
+		"comments":"<b>Lullaby:</b> Ça donne l'eau à la bouche ! Par contre j'espère que les citrons c'est juste pour faire joli mdr<br><b>Manfred:</b> Trop appétissant, régalez-vous"
 	},
 	{
 		"posterName":"Mamad",
@@ -727,7 +727,7 @@
 		"isPlate":false,
 		"imagePath":"Senegal",
 		"likeText":"Aimé par 704 autres personnes",
-		"comments":"<b>Snowwhite:</b> Pourtant c'est tellement meilleur quand c'est épicé, dommage ça avait l'air excellent<br><b>Fortfil:</b> Waouhh alors ça ça a vraiment l'air super bon, le poisson a l'air d'être cuit juste comme il faut, ça a dû être un vrai régal !"
+		"comments":"<b>Snowwhite:</b> Pourtant c'est tellement meilleur quand c'est épicé, dommage ça avait l'air excellent<br><b>Fortfil:</b> Waouhh alors ça a vraiment l'air super bon, le poisson a l'air d'être cuit juste comme il faut, ça a dû être un vrai régal !"
 	},
 	{
 		"posterName":"Mamad",
@@ -737,7 +737,7 @@
 		"isPlate":false,
 		"imagePath":"Brésil",
 		"likeText":"Aimé par 654 autres personnes",
-		"comments":"<b>Eralph:</b> Ca a pas l'air super appétissant, mais les goûts et les couleurs ça se discute pas comme on dit<br><b>Brandy:</b> Tu dis n'importe quoi ça a l'air délicieux !<br><b>Eralph:</b> De quoi choper la diarrhée pour une semaine ouais mdr"
+		"comments":"<b>Eralph:</b> Ça a pas l'air super appétissant, mais les goûts et les couleurs ça se discute pas comme on dit<br><b>Brandy:</b> Tu dis n'importe quoi ça a l'air délicieux !<br><b>Eralph:</b> De quoi choper la diarrhée pour une semaine ouais mdr"
 	},
 	{
 		"posterName":"Mamad",
@@ -747,7 +747,7 @@
 		"isPlate":false,
 		"imagePath":"Suede",
 		"likeText":"Aimé par 481 autres personnes",
-		"comments":"<b>Sarafine:</b> C'est vrai que je trouve pas ça non plus très original, après au moins on est sûr que c'est bon même avant d'en manger !<br><b>Bristas16:</b> Perso j'évite de manger du saumon d'élevage depuis que j'ai découvert que ces poissons étaient exposés à énormément de polluants cancérigènes comme les PCB, après ce que j'en dis..."
+		"comments":"<b>Sarafine:</b> C'est vrai que je ne trouve pas ça très original, après au moins on est sûr que c'est bon même avant d'en manger !<br><b>Bristas16:</b> Perso j'évite de manger du saumon d'élevage depuis que j'ai découvert que ces poissons étaient exposés à énormément de polluants cancérigènes comme les PCB, après ce que j'en dis..."
 	},
 	{
 		"posterName":"Mamad",
@@ -763,7 +763,7 @@
 		"posterName":"Marmita",
 		"profilePath":"PPMarmita",
 		"day":3,
-		"description":"Recette chef INSTITUT PAUL BOCUSE<br>Astuces de chef:<br>• Tu peux réaliser cette recette en remplaçant les tomates par des carottes, de la courge, du potimarron, des lentilles, les légumes ou légumineuses que tu souhaites.<br>• Pour les œufs, choisis des œufs plein air et bio et si tu peux avec le label bleu-blanc cœur.",
+		"description":"Recette chef INSTITUT PAUL BOCUSE<br>Astuces de chef:<br>• Tu peux réaliser cette recette en remplaçant les tomates par des carottes, de la courge, du potimarron, des lentilles, des légumes ou légumineuses.<br>• Pour les œufs, choisis des œufs plein air et bio et si tu peux avec le label bleu-blanc-cœur.",
 		"isPlate":false,
 		"imagePath":"Soupe",
 		"likeText":"Aimé par 348 autres personnes",
@@ -797,7 +797,7 @@
 		"isPlate":false,
 		"imagePath":"Chausson",
 		"likeText":"Aimé par 348 autres personnes",
-		"comments":"<b>BeauEpic:</b> Avec de la chantillllllllllyyyyyyyyyyyyy <br><b>OscarMaj:</b> Mieux qu'en boulangerie<br><b>RoninRussian:</b> Imaginez avec du chocolat ...<br><b>TrollKing:</b> En version salée: des chaussons chèvre miel, thon façon provençale,  ou tomates mozzarella"
+		"comments":"<b>BeauEpic:</b> Avec de la chantillllllllllyyyyyyyyyyyyy <br><b>OscarMaj:</b> Mieux qu'en boulangerie<br><b>RoninRussian:</b> Imaginez avec du chocolat ...<br><b>TrollKing:</b> En version salée: des chaussons chèvre miel, thon façon provençale, ou tomates mozzarella"
 	},
 	{
 		"posterName":"Marmita",
@@ -823,7 +823,7 @@
 		"posterName":"Marmita",
 		"profilePath":"PPMarmita",
 		"day":8,
-		"description":"Recette chef INSTITUT PAUL BOCUSE<br>Astuces de chef: <br>• Tu peux utiliser des fruits de saison dans ton tiramisu et pour une version + allégée on peut utiliser du fromage blanc.<br>• Tu peux également réaliser cette recette en version traditionnelle tiramisù au café.<br>• A la place de la sauce chocolat tu peux faire fondre du chocolat noir.",
+		"description":"Recette chef INSTITUT PAUL BOCUSE<br>Astuces de chef: <br>• Tu peux utiliser des fruits de saison dans ton tiramisù et pour une version + allégée on peut utiliser du fromage blanc.<br>• Tu peux également réaliser cette recette en version traditionnelle tiramisù au café.<br>• À la place de la sauce chocolat tu peux faire fondre du chocolat noir.",
 		"isPlate":false,
 		"imagePath":"Tiramisu",
 		"likeText":"Aimé par 348 autres personnes",
@@ -867,7 +867,7 @@
 		"isPlate":false,
 		"imagePath":"Fruitgranola",
 		"likeText":"Aimé par 348 autres personnes",
-		"comments":"<b>BeauBeau</b> Avec du fromage de brebis ça doit bien passer<br><b>DrakeMr:</b> Ah nannn yaourt nature la base et des pépites de chocolat, la kiffance totale<br><b>ZeRubis:</b> Je fais mon granola maison depuis des années et perso rien avoir avec celui qu'on achète niveau goût et niveau prix"
+		"comments":"<b>BeauBeau</b> Avec du yaourt de brebis ça doit bien passer<br><b>DrakeMr:</b> Ah nannn yaourt nature la base et des pépites de chocolat, la kiffance totale<br><b>ZeRubis:</b> Je fais mon granola maison depuis des années et perso rien avoir avec celui qu'on achète niveau goût et niveau prix"
 	},
 	{
 		"posterName":"Marmita",
@@ -877,7 +877,7 @@
 		"isPlate":false,
 		"imagePath":"Tapenade",
 		"likeText":"Aimé par 348 autres personnes",
-		"comments":"<b>RoxxorFish:</b> Avec du miel dans le confit d'oignons une tuueriee<br><b>SaleMini:</b> Les oignons caramélisées c'est la vie"
+		"comments":"<b>RoxxorFish:</b> Avec du miel dans le confit d'oignons une tuueriee<br><b>SaleMini:</b> Les oignons caramélisés c'est la vie"
 	},
 	{
 		"posterName":"Marmita",
@@ -887,7 +887,7 @@
 		"isPlate":false,
 		"imagePath":"Pates",
 		"likeText":"Aimé par 348 autres personnes",
-		"comments":"<b>kikadou:</b> Cool, à tester.<br><b>lopom:</b> Pour caraméliser les oignons, ajouter un peu de sucre."
+		"comments":"<b>kikadou:</b> Cool, à tester.<br><b>lopom:</b> Pour caraméliser les oignons, ajoute un peu de sucre."
 	}
 ]}
 

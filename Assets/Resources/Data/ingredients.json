@@ -362,7 +362,7 @@
 			"proteines": 10.15,
 			"lipides": 1.83,
 			"glucides": 0.52,
-			"tags": [ "Alimentgras", "Produitultratransformé", "Indexglycémiquebas" ]
+			"tags": [ "Alimentgras", "Produitultratransformé", "Indexglycémiquebas", "Protéine"]
 		},
 		{
 			"name": "Sardine",
@@ -494,7 +494,7 @@
 			"proteines": 10.1,
 			"lipides": 0.58,
 			"glucides": 16.2,
-			"tags": [ "Légumineuse", "Richeenfibres", "FerVégétal", "Alimentlaxatif", "Indexglycémiquebas"]
+			"tags": [ "Légumineuse", "Richeenfibres", "FerVégétal", "Alimentlaxatif", "Indexglycémiquebas", "Protéinevégétale"]
 		},
 		{
 			"name": "Pois chiches",

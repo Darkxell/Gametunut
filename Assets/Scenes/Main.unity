@@ -7278,8 +7278,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 806056501}
   m_HandleRect: {fileID: 806056500}
   m_Direction: 2
-  m_Value: 0.9999996
-  m_Size: 0.7293539
+  m_Value: 0.99999976
+  m_Size: 0.6815486
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -9317,8 +9317,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 400, y: -808.96106}
-  m_SizeDelta: {x: 740, y: 1255.4113}
+  m_AnchoredPosition: {x: 400, y: -769.70624}
+  m_SizeDelta: {x: 740, y: 1177.0583}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &793318028
 MonoBehaviour:
@@ -9441,7 +9441,7 @@ RectTransform:
   m_Father: {fileID: 1462673614}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.2706461}
+  m_AnchorMin: {x: 0, y: 0.3184513}
   m_AnchorMax: {x: 1, y: 0.9999998}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -13629,8 +13629,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 400, y: -105.62771}
-  m_SizeDelta: {x: 740, y: 151.25542}
+  m_AnchoredPosition: {x: 400, y: -105.58853}
+  m_SizeDelta: {x: 740, y: 151.17706}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1240686879
 MonoBehaviour:
@@ -20800,13 +20800,15 @@ MonoBehaviour:
     de composition nutritionnelle des aliments : Source <b>Ciqual</b>\nR\xE9f\xE9rences
     nutritionnelles macro et micro-nutriments : Source <b>ANSES</b> (Agence nationale
     de s\xE9curit\xE9 sanitaire de l\u2019alimentation, de l\u2019environnement et
-    du travail)\r\nCette application et les donn\xE9es qui en d\xE9coulent sont uniquement
-    utilis\xE9es \xE0 des fins de recherche de fa\xE7on agr\xE9g\xE9e. Les r\xE9sultats
-    publi\xE9s seront strictement anonymes.\r\nL\u2019utilisation de cette application
-    ne sera faite qu\u2019\xE0 des fins de recherche que dans le cadre de l\u2019exp\xE9rimentation.\r\nLes
-    donn\xE9es sont r\xE9colt\xE9es et h\xE9berg\xE9es via le serveur de la Maison
-    des Sciences de l\u2019Homme. Un droit de retrait peut \xEAtre op\xE9r\xE9 en
-    s\u2019adressant \xE0 <u>hamidreza.khodaverdi@univ-lyon2.fr</u> ou <u>dpo@univ-lyon2.fr</u>"
+    du travail)\r\nRecommandations nutritionnelles : <b>PNNS</b> (Programme National
+    Nutrition Sant\xE9)\nCette application et les donn\xE9es qui en d\xE9coulent
+    sont uniquement utilis\xE9es \xE0 des fins de recherche de fa\xE7on agr\xE9g\xE9e.
+    Les r\xE9sultats publi\xE9s seront strictement anonymes.\r\nL\u2019utilisation
+    de cette application ne sera faite qu\u2019\xE0 des fins de recherche que dans
+    le cadre de l\u2019exp\xE9rimentation.\r\nLes donn\xE9es sont r\xE9colt\xE9es
+    et h\xE9berg\xE9es via le serveur de la Maison des Sciences de l\u2019Homme.
+    Un droit de retrait peut \xEAtre op\xE9r\xE9 en s\u2019adressant \xE0 <u>hamidreza.khodaverdi@univ-lyon2.fr</u>
+    ou <u>dpo@univ-lyon2.fr</u>"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5f61dd530f91a50408ace58282d965d7, type: 2}
   m_sharedMaterial: {fileID: -1300797926505914899, guid: 5f61dd530f91a50408ace58282d965d7, type: 2}
@@ -20833,8 +20835,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28
-  m_fontSizeBase: 28
+  m_fontSize: 26
+  m_fontSizeBase: 26
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

@@ -1050,14 +1050,34 @@
 		"comments":"<b>ChocolatineBrave:</b> Je mettrais bien cette galette dans un bon burger<br><b>StoneZe:</b> J'avoue"
 	},
 	{
-		"posterName":"EasyCooking",
-		"profilePath":"PPEasyCooking",
-		"day":13,
-		"description":"1. Coupez la betterave et pelez l'ail.<br>2. Mixez la betterave et l'ail.<br>3. Ajoutez le jus de citron et l'huile d'olive.<br>4. Assaisonnez.",
+		"posterName":"EatWell",
+		"profilePath":"PPEatWell",
+		"day":0,
+		"description":"Le nutriscore c'est un logo qu'on trouve sur l'avant des produits alimentaires.<br>Il repose sur 5 couleurs (du vert au rouge) et 5 lettres (du A au E). Son objectif c'est de rendre l'information nutritionnelle + visible pour tous.<br>Le score est calculé à partir d'un algorithme pour 100g d'aliment. Il prend en compte les composantes à favoriser comme les protéines, les fruits & légumes, les fibres et les composantes à limiter comme les acides gras saturés, le sucre et le sel.<br>N'oublie pas d'avoir un regard critique sur le nutriscore, la frite surgelé a un nutriscore B et l'huile d'olive a un nutriscore D ou E. On ne consomme pas 100g d'huile d'olive mais bien une à deux cuillères par jour.",
 		"isPlate":false,
-		"imagePath":"betterave",
-		"likeText":"Aimé par 204 autres personnes",
-		"comments":"<b>FrenchCaptain:</b> Pour l'apéro à tester"
+		"imagePath":"nutriscore1",
+		"likeText":"Aimé par 316 autres personnes",
+		"comments":"<b>TrollPotato:</b> Le nutriscore ne prend pas en compte les additifs<br><b>BlackAmibo:</b> C'est clair qu'il faut vraiment être critique et bien comparer les produits entre eux<br><b>AuraFort:</b> Moi perso j'achète des aliments bruts et surtout pas transformé et j'ai pas besoin de lire le nutriscore, je fais tout maison<br><b>GoldBurger:</b> Moi je comprend rien au tableau avec des chiffres sur les emballages et je trouve que le nutriscore ça m'aide pas mal dans mes courses"
+	},
+	{
+		"posterName":"EatWell",
+		"profilePath":"PPEatWell",
+		"day":3,
+		"description":"Le nutriscore c'est un logo qu'on trouve sur l'avant des produits alimentaires.<br>Il repose sur 5 couleurs (du vert au rouge) et 5 lettres (du A au E). Son objectif c'est de rendre l'information nutritionnelle + visible pour tous.<br>Le score est calculé à partir d'un algorithme pour 100g d'aliment. Il prend en compte les composantes à favoriser comme les protéines, les fruits & légumes, les fibres et les composantes à limiter comme les acides gras saturés, le sucre et le sel.<br>N'oublie pas d'avoir un regard critique sur le nutriscore, la frite surgelé a un nutriscore B et l'huile d'olive a un nutriscore D ou E. On ne consomme pas 100g d'huile d'olive mais bien une à deux cuillères par jour.",
+		"isPlate":false,
+		"imagePath":"nutriscore2",
+		"likeText":"Aimé par 127 autres personnes",
+		"comments":"<b>TrollPotato:</b> Le nutriscore ne prend pas en compte les additifs<br><b>BlackAmibo:</b> C'est clair qu'il faut vraiment être critique et bien comparer les produits entre eux<br><b>AuraFort:</b> Moi perso j'achète des aliments bruts et surtout pas transformé et j'ai pas besoin de lire le nutriscore, je fais tout maison<br><b>GoldBurger:</b> Moi je comprend rien au tableau avec des chiffres sur les emballages et je trouve que le nutriscore ça m'aide pas mal dans mes courses"
+	},
+	{
+		"posterName":"EatWell",
+		"profilePath":"PPEatWell",
+		"day":9,
+		"description":"Le nutriscore c'est un logo qu'on trouve sur l'avant des produits alimentaires.<br>Il repose sur 5 couleurs (du vert au rouge) et 5 lettres (du A au E). Son objectif c'est de rendre l'information nutritionnelle + visible pour tous.<br>Le score est calculé à partir d'un algorithme pour 100g d'aliment. Il prend en compte les composantes à favoriser comme les protéines, les fruits & légumes, les fibres et les composantes à limiter comme les acides gras saturés, le sucre et le sel.<br>N'oublie pas d'avoir un regard critique sur le nutriscore, la frite surgelé a un nutriscore B et l'huile d'olive a un nutriscore D ou E. On ne consomme pas 100g d'huile d'olive mais bien une à deux cuillères par jour.",
+		"isPlate":false,
+		"imagePath":"nutriscore3",
+		"likeText":"Aimé par 345 autres personnes",
+		"comments":"<b>TrollPotato:</b> Le nutriscore ne prend pas en compte les additifs<br><b>BlackAmibo:</b> C'est clair qu'il faut vraiment être critique et bien comparer les produits entre eux<br><b>AuraFort:</b> Moi perso j'achète des aliments bruts et surtout pas transformé et j'ai pas besoin de lire le nutriscore, je fais tout maison<br><b>GoldBurger:</b> Moi je comprend rien au tableau avec des chiffres sur les emballages et je trouve que le nutriscore ça m'aide pas mal dans mes courses"
 	}
 ]}
 

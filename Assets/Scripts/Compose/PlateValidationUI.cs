@@ -69,10 +69,9 @@ public class PlateValidationUI : MonoBehaviour
     /// </summary>
     public void onButtonPress()
     {
-
+        PersonalFeedFiller.Instance.updateContentPosts();
         if (currentSuccess)
         {
-            PersonalFeedFiller.Instance.updateContentPosts();
             if (hadquest)
             {
                 ViewManager.Instance.OnViewChange(GameView.Messages);

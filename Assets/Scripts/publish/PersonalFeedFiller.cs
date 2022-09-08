@@ -44,7 +44,7 @@ public class PersonalFeedFiller : MonoBehaviour
         if (data != null && data.Length >= 1 && !data[0].Equals(""))
         {
             Debug.Log("Adding " + data.Length + " Personal post to display viewport");
-            for (int i = 0; i < data.Length; i++)
+            for (int i = data.Length -1; i >= 0 ; i--)
             {
                 if (data[i].Equals(""))
                 {
@@ -70,7 +70,7 @@ public class PersonalFeedFiller : MonoBehaviour
                     dataString += "Que des bonnes choses!";
                 }
                 parsedData.description = dataString;
-                parsedData.likeText = "Aimé par GtunutBot et 4 autres personnes";
+                parsedData.likeText = "Aimé par GtunutBot et " + (int)(3 + 5* Mathf.Pow(i,0.8f)) +" autres personnes";
                 parsedData.day = -1;
                 try
                 {

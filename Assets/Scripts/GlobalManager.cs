@@ -74,7 +74,7 @@ public class GlobalManager : MonoBehaviour
         if (CurentTestClass == TestClass.Undefined)
         {
             UnityEngine.Random.InitState(seed);
-            CurentTestClass = (TestClass)UnityEngine.Random.Range(0, 8);
+            CurentTestClass = (TestClass)UnityEngine.Random.Range(0, 7);
         }
         else
         {

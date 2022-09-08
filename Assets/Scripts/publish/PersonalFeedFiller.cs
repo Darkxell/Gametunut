@@ -70,7 +70,7 @@ public class PersonalFeedFiller : MonoBehaviour
                     dataString += "Que des bonnes choses!";
                 }
                 parsedData.description = dataString;
-                parsedData.likeText = "Aimé par GtunutBot et 4 autres personnes";
+                parsedData.likeText = "Aimé par GtunutBot et " + (int)(3 + 5* Mathf.Pow(i,0.8f)) +" autres personnes";
                 parsedData.day = -1;
                 try
                 {

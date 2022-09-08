@@ -52,6 +52,9 @@ public class InfoBackButton : MonoBehaviour
     {
         Debug.Log("Exited info pannel, changing view back to : " + backanchor);
         ViewManager.Instance.OnViewChange(backanchor);
+        if (backanchor == GameView.Compose) {
+            Plate.lastInstance.GetComponent<Plate>().forceCheckElements();
+        }
     }
 
 

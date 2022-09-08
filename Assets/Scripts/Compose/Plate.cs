@@ -315,6 +315,18 @@ public class Plate : MonoBehaviour
     }
 
     /// <summary>
+    /// Force checks elemeents visibility in the compose view depending on quest existance
+    /// </summary>
+    public void forceCheckElements() {
+        bool quest = currentQuest != null;
+        contentSlider1.SetActive(quest);
+        contentSlider2.SetActive(quest);
+        contentSlider3.SetActive(quest);
+        contentSlider4.SetActive(quest);
+        buttonBacktoquest.SetActive(quest);
+    }
+
+    /// <summary>
     /// Initialises the plate and interface with the last data seen in the message inner behavior ui.
     /// </summary>
     public void startQuest()

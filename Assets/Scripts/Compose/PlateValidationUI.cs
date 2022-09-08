@@ -49,8 +49,9 @@ public class PlateValidationUI : MonoBehaviour
         currentSuccess = questSuccess;
         hadquest = hasquest;
         GbotTextfield.text = (questSuccess ? (hasquest ? trans_success : trans_success_questless) : trans_failure) + (unlock ? trans_unlock : "");
-        unlockpanel.gameObject.SetActive(unlock);
-        if (unlock)
+        bool unlocsplash = unlock && GlobalManager.Instance.hasAwards();
+        unlockpanel.gameObject.SetActive(unlocsplash);
+        if (unlocsplash)
         {
             try
             {

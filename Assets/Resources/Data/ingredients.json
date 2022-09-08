@@ -670,7 +670,7 @@
 			"proteines": 1.69,
 			"lipides": 0.15,
 			"glucides": 12.2,
-			"tags": [ "VitamineA" ]
+			"tags": [ "VitamineA","Indexglycémiquebas"]
 		},
 		{
 			"name": "Beurre",
@@ -934,7 +934,7 @@
 			"proteines": 0,
 			"lipides": 0,
 			"glucides": 0,
-			"tags": [ "Eau" ]
+			"tags": ["Eau"]
 		},
 		{
 			"name": "Café",
@@ -945,7 +945,7 @@
 			"proteines": 0.1,
 			"lipides": 0.004,
 			"glucides": 0.3,
-			"tags": [ "Antioxydant" ]
+			"tags": ["Antioxydant"]
 		},
 		{
 			"name": "Thé",

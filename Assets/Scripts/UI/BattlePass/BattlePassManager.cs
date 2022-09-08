@@ -109,6 +109,8 @@ public class BattlePassManager : MonoBehaviour
         int amount_missions = savedmissionsstr.Equals("") ? 0 : savedmissionsstr.Split("|").Length, amount_plates = savedplatesstr.Equals("") ? 0 : savedplatesstr.Split("|").Length;
         // Points math
         currentpoints = 40 * amount_missions + 10 * amount_plates;
+        if (GlobalManager.Instance.CurentTestClass == GlobalManager.TestClass.Class_Awards)
+            currentpoints *= 7;
         // Subscribers math
         int subscribers = 250 + 7 * GlobalManager.Instance.CurrentDay + 13 * amount_plates;
         foreach (BattlePassAward award in AwardsDatabase)

@@ -4,7 +4,7 @@
 		"sender":"Marine",
 		"picture":"PPMarine",
 		"textshort":"",
-		"textlong":"Salut, j'ai essayé de chercher des menus sur votre page pour les personnes qui consomment uniquement des légumes de saison, donc je ne sais pas si vous connaissez ce 'concept' ou plutôt ce mode de vie, j'ai pour habitude de consommer uniquement des fruits et légumes de saison car cela est moins cher, les produits sont de meilleure qualité que ça soit visuelle, nutritionnelle ou même au niveau du goût et surtout cela a moins d'impact sur l'environnement. L'été est bientôt fini et la saison d'automne va bientôt commencer, c'est l'une de mes saisons préférées, j'aimerais juste que vous me fassiez un repas avec de bons fruits et légumes de saison (pour le mois de septembre, je vous donne quelques exemples: brocoli, carotte, tomate, pomme, raisin, cassis).",
+		"textlong":"Salut, j'ai essayé de chercher des menus sur votre page pour les personnes qui consomment uniquement des légumes de saison, donc je ne sais pas si vous connaissez ce 'concept' ou plutôt ce mode de vie, j'ai pour habitude de consommer uniquement des fruits et légumes de saison car cela est moins cher, les produits sont de meilleure qualité que ça soit visuelle, nutritionnelle ou même au niveau du goût et surtout cela a moins d'impact sur l'environnement. L'été est bientôt fini et la saison d'automne va bientôt commencer, c'est l'une de mes saisons préférées, j'aimerais juste que vous me fassiez un repas avec de bons fruits et légumes de saison (pour le mois de septembre, je vous donne quelques exemples: (brocoli, carotte, tomate, pomme, raisin, cassis).",
 		"releasedate":0,
 		"infos":{
 			"nom":"Marine",
@@ -14,7 +14,7 @@
 			"poids":73,
 			"imc":21.8,
 			"probleme":"Je veux consommer des fruits et légumes de saison",
-			"requete":"Repas avec fruits et légumes de saison"
+			"requete":"Repas avec fruits et légumes de saison (brocoli, carotte, tomate, pomme, raisin, cassis)"
 		},
 		"respectbars":false,
 		"whitelist":["Saison"],
@@ -193,7 +193,7 @@
 		"sender":"Pierre",
 		"picture":"PPPierre",
 		"textshort":"",
-		"textlong":"Bonjour, je viens vers vous car j'ai souvent des problèmes de constipation, mon médecin m'a conseillé de boire beaucoup d'eau et de manger des plats riches en fibre et avec des aliments laxatifs (pruneau sec). Est-ce-que vous pouvez me créer un menu riche en fibres, eau et avec au moins un aliment laxatif. ",
+		"textlong":"Bonjour, je viens vers vous car j'ai souvent des problèmes de constipation, mon médecin m'a conseillé de boire beaucoup d'eau et de manger des plats riches en fibre et avec des aliments laxatifs (légumineuses et pruneau). Est-ce-que vous pouvez me créer un menu riche en fibres, eau et avec au moins un aliment laxatif. ",
 		"releasedate":2,
 		"infos":{
 			"nom":"Pierre",
@@ -203,7 +203,7 @@
 			"poids":72.0,
 			"imc":23.2,
 			"probleme":"Constipation",
-			"requete":"Repas riches en fibres et en eau"
+			"requete":"Repas riches en fibres, en Alimentlaxatif (légumineuses et pruneau) et en eau"
 		},
 		"respectbars":false,
 		"whitelist":["Eau","Richeenfibres","Alimentlaxatif"],
@@ -266,7 +266,7 @@
 			"poids":62.0,
 			"imc":22.0,
 			"probleme":"Diarrhées",
-			"requete":"Repas pauvre en fibres et en eau et sans lactose"
+			"requete":"Repas avec des aliments pauvres en fibres, avec de l'eau et sans lactose"
 		},
 		"respectbars":false,
 		"whitelist":["Eau","Pauvreenfibres"],
@@ -413,7 +413,7 @@
 			"poids":60.0,
 			"imc":20.8,
 			"probleme":"Vegan depuis peu /Absence de connaissances en nutrition",
-			"requete":"Repas sans produits animaux, riche en protéines végétales et riche en fer végétal"
+			"requete":"Repas sans produits animaux, avec des aliments riches en protéines végétales et riche en fer végétal"
 		},
 		"respectbars":false,
 		"whitelist":["Protéinevégétale","FerVégétal"],
@@ -476,7 +476,7 @@
 			"poids":70.0,
 			"imc":22.9,
 			"probleme":"Déshydratation, Maldigestion/Malabsorption",
-			"requete":"Repas pauvre en fibres, sans lactose, avec des légumes, et riche en eau"
+			"requete":"Repas avec des aliments pauvres en fibres, avec des légumes, avec de l'eau et sans lactose"
 		},
 		"respectbars":false,
 		"whitelist":["Pauvreenfibres","Eau","Légumes"],
@@ -518,7 +518,7 @@
 			"poids":77.0,
 			"imc":27.3,
 			"probleme":"Diabète type II",
-			"requete":"Repas avec un index glycémique bas, riche en fibres sans sucres ajoutés et sans sodas ni jus de fruits"
+			"requete":"Repas avec un index glycémique bas, aliments riche en fibres sans sucres ajoutés et sans sodas ni jus de fruits"
 		},
 		"respectbars":false,
 		"whitelist":["Indexglycémiquebas","Richeenfibres"],
@@ -665,7 +665,7 @@
 			"poids":86.0,
 			"imc":31.6,
 			"probleme":"Obésité stade 1",
-			"requete":"Repas sans sucres ajoutés ni produits ultra-transformés sans sodas ni jus de fruits et avec des légumineuses"
+			"requete":"Repas sans sucres ajoutés ni produits ultra-transformés sans sodas ni jus de fruits et avec des légumineuses et des légumes"
 		},
 		"respectbars":false,
 		"whitelist":["Légumineuse","Légumes"],
@@ -781,7 +781,7 @@
 		"sender":"CrabyViper",
 		"picture":"PPCrabyViper",
 		"textshort":"",
-		"textlong":"Bonjour, un jour j'ai des problèmes de constipation et un jour des problèmes de diarrhée, je suis parti voir mon médecin, et il m'a dit que j'avais des problèmes de transit. Il m'a prescrit des médicaments et m'a conseillé de manger des repas complets avec des aliments laxatifs (légumineuses, pruneau)  et de boire beaucoup d'eau; il m'a conseillé aussi de vous envoyer un message pour me proposer un exemple de menu qui pourrait m'aider. C'est pas très fun ce message, j'avoue surtout que j'attaque direct en vous donnant les détails lol mais j'ai vraiment besoin d'aide pour la réalisation des repas.",
+		"textlong":"Bonjour, un jour j'ai des problèmes de constipation et un jour des problèmes de diarrhée, je suis parti voir mon médecin, et il m'a dit que j'avais des problèmes de transit. Il m'a prescrit des médicaments et m'a conseillé de manger des repas complets avec des aliments laxatifs (légumineuses et pruneau)  et de boire beaucoup d'eau; il m'a conseillé aussi de vous envoyer un message pour me proposer un exemple de menu qui pourrait m'aider. C'est pas très fun ce message, j'avoue surtout que j'attaque direct en vous donnant les détails lol mais j'ai vraiment besoin d'aide pour la réalisation des repas.",
 		"releasedate":11,
 		"infos":{
 			"nom":"CrabyViper",
@@ -791,7 +791,7 @@
 			"poids":53.0,
 			"imc":19.2,
 			"probleme":"Problèmes de transit",
-			"requete":"Repas complet avec aliments laxatifs et riche en eau"
+			"requete":"Repas complet avec aliments laxatifs (légumineuses et pruneau) et riche en eau"
 		},
 		"respectbars":true,
 		"whitelist":["Eau","Alimentlaxatif"],

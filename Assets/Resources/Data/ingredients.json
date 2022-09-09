@@ -681,7 +681,7 @@
 			"proteines": 0.07,
 			"lipides": 8.29,
 			"glucides": 0.09,
-			"tags": [ "Alimentgras", "Indexglycémiquebas", "VitamineA", "Pauvreenfibres"]
+			"tags": [ "Alimentgras", "Indexglycémiquebas", "VitamineA", "Pauvreenfibres","Produitsanimaux"]
 		},
 		{
 			"name": "Crème fraîche",
@@ -692,7 +692,7 @@
 			"proteines": 0.26,
 			"lipides": 1.87,
 			"glucides": 0.29,
-			"tags": [ "Alimentgras", "Lactose", "Indexglycémiquebas", "Pauvreenfibres"]
+			"tags": [ "Alimentgras", "Lactose", "Indexglycémiquebas", "Pauvreenfibres", "Produitsanimaux"]
 		},
 		{
 			"name": "Huile d'olive",
@@ -725,7 +725,7 @@
 			"proteines": 12.7,
 			"lipides": 11,
 			"glucides": 23.8,
-			"tags": [ "Alimentgras", "Produitultratransformé", "Gluten", "Pauvreenfibres"]
+			"tags": [ "Alimentgras", "Produitultratransformé", "Gluten", "Pauvreenfibres", "Produitsanimaux"]
 		},
 		{
 			"name": "Pizza",
@@ -747,7 +747,7 @@
 			"proteines": 4.7,
 			"lipides": 2.31,
 			"glucides": 7.35,
-			"tags": [ "Lactose", "Protéine", "Indexglycémiquebas", "Pauvreenfibres"]
+			"tags": [ "Lactose", "Protéine", "Indexglycémiquebas", "Pauvreenfibres","Produitsanimaux"]
 		},
 		{
 			"name": "Lait sans lactose",
@@ -758,7 +758,7 @@
 			"proteines": 4.8,
 			"lipides": 1.8,
 			"glucides": 7.2,
-			"tags": [ "Protéine", "Indexglycémiquebas", "Pauvreenfibres" ]
+			"tags": [ "Protéine", "Indexglycémiquebas", "Pauvreenfibres","Produitsanimaux"]
 		},
 		{
 			"name": "Emmental",
@@ -769,7 +769,7 @@
 			"proteines": 8.19,
 			"lipides": 8.64,
 			"glucides": 0,
-			"tags": [ "Protéine", "Lactose", "Alimentgras", "Indexglycémiquebas", "VitamineA" , "Pauvreenfibres"]
+			"tags": [ "Protéine", "Lactose", "Alimentgras", "Indexglycémiquebas", "VitamineA" , "Pauvreenfibres","Produitsanimaux"]
 		},
 		{
 			"name": "Mozzarella",
@@ -780,7 +780,7 @@
 			"proteines": 4.83,
 			"lipides": 5.31,
 			"glucides": 0.23,
-			"tags": [ "Lactose", "Indexglycémiquebas", "Pauvreenfibres" ]
+			"tags": [ "Lactose", "Indexglycémiquebas", "Pauvreenfibres","Produitsanimaux" ]
 		},
 		{
 			"name": "Yaourt nature",
@@ -791,7 +791,7 @@
 			"proteines": 4.75,
 			"lipides": 2.88,
 			"glucides": 5.91,
-			"tags": [ "Lactose", "Indexglycémiquebas" , "Pauvreenfibres"]
+			"tags": [ "Lactose", "Indexglycémiquebas" , "Pauvreenfibres","Produitsanimaux"]
 		},
 		{
 			"name": "Skyr",
@@ -802,7 +802,7 @@
 			"proteines": 12.5,
 			"lipides": 0.25,
 			"glucides": 4.88,
-			"tags": [ "Protéine", "Lactose", "Pauvreenfibres" ]
+			"tags": [ "Protéine", "Lactose", "Pauvreenfibres","Produitsanimaux" ]
 		},
 		{
 			"name": "Yaourt aromatisé",
@@ -813,7 +813,7 @@
 			"proteines": 4.19,
 			"lipides": 3.25,
 			"glucides": 15.25,
-			"tags": [ "Lactose", "Sucresajoutés", "Pauvreenfibres"]
+			"tags": [ "Lactose", "Sucresajoutés", "Pauvreenfibres","Produitsanimaux"]
 		},
 		{
 			"name": "Boisson à l'amande",
@@ -846,7 +846,7 @@
 			"proteines": 4.15,
 			"lipides": 4.91,
 			"glucides": 24.88,
-			"tags": [ "Sucresajoutés", "Produitultratransformé", "Gluten", "Lactose" ]
+			"tags": [ "Sucresajoutés", "Produitultratransformé", "Gluten", "Lactose","Produitsanimaux"]
 		},
 		{
 			"name": "Muffins",
@@ -879,7 +879,7 @@
 			"proteines": 0.06,
 			"lipides": 0,
 			"glucides": 8.17,
-			"tags": [ "Sucresajoutés", "Fructose" ]
+			"tags": [ "Sucresajoutés", "Fructose","Produitsanimaux" ]
 		},
 		{
 			"name": "Chocolat noir",

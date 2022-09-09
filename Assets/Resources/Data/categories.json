@@ -1,0 +1,42 @@
+{"Items":[
+	{ 
+		"name":"Fruits & Légumes", 
+		"sprite":"fruits et legumes",
+		"ingredients": [ "Ananas", "Avocat", "Banane", "Cassis", "Concombre", "Myrtille", "Fraise", "Pomme", "Pruneau sec", "Raisin", "Tomate", "Amande", "Noix", "Brocoli", "Carotte", "Chou-fleur", "Courgette", "Champignon", "Oignon", "Betterave", "Haricot vert", "Epinard", "Poireau", "Laitue", "Poivron Rouge", "Poivron Jaune", "Poivron Vert"]
+	},
+	{ 
+		"name":"Viandes, poissons, oeufs & alte", 
+		"sprite":"viande& poisson",
+		"ingredients": [ "Foie de volaille", "Steak de boeuf", "Brochette de boeuf", "Escalope de dinde", "Pilon de poulet","Jambon", "Sardine", "Saumon", "Thon", "Cabillaud", "Crevettes", "Oeuf dur", "Omelette", "Œuf au plat", "Tofu", "Steak vegan"]
+	},
+	{ 
+		"name":"Légumineuses, céréales & tuberc", 
+		"sprite":"légumineuses",
+		"ingredients":["Haricots blancs","Lentilles","Pois chiches","Petits pois","Fèves","Pois cassés","Pain seigle","Pain sans gluten","Pain blanc","Pain complet","Pâtes blé","Pâtes blé complet","Riz basmati","Riz complet","Quinoa","Maïs","Pomme de terre","Patate douce"]
+	},
+	{ 
+		"name":"Matières grasses et produits gras", 
+		"sprite":"matières grasses & produits gras",
+		"ingredients":["Beurre","Crème fraîche","Huile d'olive","Huile de colza","Burger","Pizza"]
+	},
+	{ 
+		"name":"Lait, produits laitiers et alternatives végétales", 
+		"sprite":"Produits laitiers",
+		"ingredients":["Lait demi-écrémé","Lait sans lactose","Emmental","Mozzarella","Yaourt nature","Skyr","Yaourt aromatisé","Boisson à l'amande","Dessert au soja"]
+	},
+	{ 
+		"name":"Sucres et produits sucrés", 
+		"sprite":"Aliments sucrés",
+		"ingredients":["Dessert au chocolat","Muffins","Sucre blanc","Miel","Chocolat noir"]
+	},
+	{ 
+		"name":"Epices et condiments", 
+		"sprite":"Epices et condiments",
+		"ingredients":["Sauce tomate","Sel","Poivre"]
+	},
+	{ 
+		"name":"Eau et boissons", 
+		"sprite":"boissons",
+		"ingredients":["Eau","Café","Thé","Jus de fruits","Soda"]
+	}
+]}

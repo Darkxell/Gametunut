@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 4037ebd08d4504144a768b5e8c1e6adb
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - QuasimodaW03-Medium
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 192340079901dce4086e664d6a475349, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

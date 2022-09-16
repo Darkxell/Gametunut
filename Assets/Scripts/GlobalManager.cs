@@ -200,6 +200,7 @@ public class GlobalManager : MonoBehaviour
             Debug.Log("Server payload received: " + uwr.downloadHandler.text);
         else
             Debug.Log("Error While Sending: " + uwr.error);
+        uwr.Dispose();
     }
 
 }
